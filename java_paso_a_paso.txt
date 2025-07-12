@@ -8,6 +8,8 @@
 ||| --  01. CREAR UN PROYECTO                                                                                                                          |||
 ||| --  02. ESTRUCTURA DE UN ALGORITMO                                                                                                                 |||
 ||| --  03. VARIABLES, CONSTANTES Y TIPOS DE DATOS                                                                                                     |||
+||| --  04. OPERADORES ARITMÉTICOS                                                                                                                     |||
+||| --  05. CONDICIONALES                                                                                                                              |||
 |||                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS. SENA, 2025.                                                                                                             |||
 |||                                                                                                                                                    |||
@@ -124,11 +126,7 @@
             
             04. En 'Project Name: ex02_estructura_algoritmo'.
             
-            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
-            
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.02.   Archivo 'ex02_estructura_algoritmo\src\paquete\Clase': -------------------------------------------------------------------------------------|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.            
                     
                     01   package paquete;
                     02 
@@ -173,7 +171,7 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||--------------------------------------------------- 02.  VARIABLES, CONSTANTES Y TIPOS DE DATOS ----------------------------------------------------|||
+|||--------------------------------------------------- 03.  VARIABLES, CONSTANTES Y TIPOS DE DATOS ----------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -191,10 +189,6 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.02.   Comprender el archivo 'ex03_variables_constantes_tiposdatos\src\paquete\Clase': ------------------------------------------------------------|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -257,7 +251,7 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||----------------------------------------------------------- 03.  OPERADORES ARITMÉTICOS ------------------------------------------------------------|||
+|||----------------------------------------------------------- 04.  OPERADORES ARITMÉTICOS ------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -275,10 +269,6 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.02.   Comprender el archivo 'ex04_operadores_aritmeticos\src\paquete\Clase': ---------------------------------------------------------------------|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -335,7 +325,7 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||----------------------------------------------------------- 04.  CONDICIONAL SIMPLE 'IF' -----------------------------------------------------------|||
+|||---------------------------------------------------------------- 05.  CONDICIONALES ----------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -353,10 +343,6 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.02.   Comprender el archivo 'ex05_condicional_simple\src\paquete\Clase': ---------------------------------------------------------------------|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -380,7 +366,7 @@
                     21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
                     22           if (num01 > num02) {
                     23              // Salida de Datos. Resultado(s).	        
-                    24              System.out.println("El Número Uno es mayor al Número 2");
+                    24              System.out.println("El Número Uno es mayor al Número Dos");
                     25           }
                     26                 
                     27       }
@@ -406,31 +392,8 @@
                 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
-|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||--------------------------------------------------------------- XX.  MODELO DE CAPAS ---------------------------------------------------------------|||
-|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
-
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.01.  Crear el proyecto 'ex02_modelo_capas': ------------------------------------------------------------------------------------------------------|
+|-- 01.02.  Crear el proyecto 'ex06_condicional_doble': -------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Abrir 'Netbeans'.
@@ -439,11 +402,196 @@
             
             03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
             
-            04. En 'Project Name: ex02_modelo_capas'.
+            04. En 'Project Name: ex06_condicional_doble'.
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Número Mayor o Menor");
+                    08                 
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           int num01, num02;
+                    11                 
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 10;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           if (num01 > num02) {
+                    23              // Salida de Datos. Resultado(s).	        
+                    24              System.out.println("El Número Uno es mayor al Número Dos");
+                    25           } else {
+                    26             // Salida de Datos. Resultado(s).	        
+                    27             System.out.println("El Número Dos es mayor al Número Uno");
+                    28           }
+                    29       }
+                    30           
+                    31   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.02.   Comprender el archivo 'ex01_proyecto\src\paquete\Clase': -----------------------------------------------------------------------------------|
+|-- 01.03.  Crear el proyecto 'ex07_condicional_anidado': -----------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex07_condicional_anidado'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Número Mayor, Menor o igual");
+                    08                 
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           int num01, num02;
+                    11                 
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 5;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           if (num01 > num02) {
+                    23               // Salida de Datos. Resultado(s).	        
+                    24               System.out.println("El Número Uno es mayor al Número Dos");
+                    25           } else {
+                    26               if (num01 == num02) {
+                    27                   // Salida de Datos. Resultado(s).	        
+                    28                   System.out.println("Los números son iguales");
+                    29               } else {
+                    30                   // Salida de Datos. Resultado(s).	        
+                    31                   System.out.println("El Número Dos es mayor al Número Uno");
+                    32               }
+                    33           }
+                    34       }
+                    35       
+                    36   }                   
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.03.  Crear el proyecto 'ex08_condicional_multiple_elseif': ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex08_condicional_multiple_elseif'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+
+                          public static void main(String[] args) {
+                              // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                              System.out.println("Día de la Semana");
+                              
+                              // Declarar variables, constantes y/o arreglos e iniciarlos.
+                              int dia = 1;
+                                    String nombreDia = "";
+                              
+                              // Dimensionar arreglos.	
+                                
+                              // Entrada de Datos: Pueden ser solicitados o no
+                              
+                              // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                              //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                              if (dia == 1) {
+                                  nombreDia = "Lunes";
+                              } else if (dia == 2) {
+                                  nombreDia = "Martes";            
+                              } else if (dia == 3) {
+                                  nombreDia = "Miércoles";            
+                              } else if (dia == 4) {
+                                  nombreDia = "Jueves";
+                              } else if (dia == 5) {
+                                  nombreDia = "Viernes";
+                              } else if (dia == 6) {
+                                  nombreDia = "Sábado";
+                              } else if (dia == 7) {
+                                  nombreDia = "Domingo";
+                              }
+                              
+                              // Salida de Datos. Resultado(s).
+                              System.out.println("El día seleccionado de la semana es: " + nombreDia);
+                          }
+                          
+                      }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
 
