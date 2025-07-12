@@ -16,23 +16,31 @@ public class Clase {
 	
 	// Proceso: Determinar los requerimientos y validaciones. Generalmente,	
 	//          se usan las estructuras de control: Secuencial, condicional, repetición.
-	if (dia == 1) {
-            nombreDia = "Lunes";
-        } else if (dia == 2) {
-            nombreDia = "Martes";            
-        } else if (dia == 3) {
-            nombreDia = "Miércoles";            
-        } else if (dia == 4) {
-            nombreDia = "Jueves";
-        } else if (dia == 5) {
-            nombreDia = "Viernes";
-        } else if (dia == 6) {
-            nombreDia = "Sábado";
-        } else if (dia == 7) {
-            nombreDia = "Domingo";
-        } else {
-            nombreDia = "No es un día de la Semana";
-        }
+        switch (dia) {
+            case 1:
+                nombreDia = "Lunes";
+                break;
+            case 2:                
+                nombreDia = "Martes";            
+                break;
+            case 3:
+                nombreDia = "Miércoles";
+                break;
+            case 4:
+                nombreDia = "Jueves";
+                break;
+            case 5:
+                nombreDia = "Viernes";
+                break;
+            case 6:
+                nombreDia = "Sábado";
+                break;
+            case 7:
+                nombreDia = "Domingo";
+                break;
+            default:
+                nombreDia = "No es un día de la Semana";;
+        }	
         
         // Salida de Datos. Resultado(s).
         System.out.println("El día seleccionado de la semana es: " + nombreDia);

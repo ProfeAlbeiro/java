@@ -525,7 +525,7 @@
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.03.  Crear el proyecto 'ex08_condicional_multiple_elseif': ---------------------------------------------------------------------------------------|
+|-- 01.04.  Crear el proyecto 'ex08_condicional_multiple_elseif': ---------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Abrir 'Netbeans'.
@@ -541,42 +541,126 @@
                     01   package paquete;
                     02 
                     03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Día de la Semana");
+                    08           
+                    09           // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10           int dia = 1;
+                    11                 String nombreDia = "";
+                    12           
+                    13           // Dimensionar arreglos.	
+                    14             
+                    15           // Entrada de Datos: Pueden ser solicitados o no
+                    16           
+                    17           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    18           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    19           if (dia == 1) {
+                    20               nombreDia = "Lunes";
+                    21           } else if (dia == 2) {
+                    22               nombreDia = "Martes";            
+                    23           } else if (dia == 3) {
+                    24               nombreDia = "Miércoles";            
+                    25           } else if (dia == 4) {
+                    26               nombreDia = "Jueves";
+                    27           } else if (dia == 5) {
+                    28               nombreDia = "Viernes";
+                    29           } else if (dia == 6) {
+                    30               nombreDia = "Sábado";
+                    31           } else if (dia == 7) {
+                    32               nombreDia = "Domingo";
+                    33           } else {
+                    34              nombreDia = "No es un día de la Semana";
+                    35           }
+                    36           
+                    37           // Salida de Datos. Resultado(s).
+                    38           System.out.println("El día seleccionado de la semana es: " + nombreDia);
+                    39       }
+                    40       
+                    41   }
 
-                          public static void main(String[] args) {
-                              // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
-                              System.out.println("Día de la Semana");
-                              
-                              // Declarar variables, constantes y/o arreglos e iniciarlos.
-                              int dia = 1;
-                                    String nombreDia = "";
-                              
-                              // Dimensionar arreglos.	
-                                
-                              // Entrada de Datos: Pueden ser solicitados o no
-                              
-                              // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
-                              //          se usan las estructuras de control: Secuencial, condicional, repetición.
-                              if (dia == 1) {
-                                  nombreDia = "Lunes";
-                              } else if (dia == 2) {
-                                  nombreDia = "Martes";            
-                              } else if (dia == 3) {
-                                  nombreDia = "Miércoles";            
-                              } else if (dia == 4) {
-                                  nombreDia = "Jueves";
-                              } else if (dia == 5) {
-                                  nombreDia = "Viernes";
-                              } else if (dia == 6) {
-                                  nombreDia = "Sábado";
-                              } else if (dia == 7) {
-                                  nombreDia = "Domingo";
-                              }
-                              
-                              // Salida de Datos. Resultado(s).
-                              System.out.println("El día seleccionado de la semana es: " + nombreDia);
-                          }
-                          
-                      }
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.05.  Crear el proyecto 'ex09_condicional_multiple_switch': ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex09_condicional_multiple_switch'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Día de la Semana");
+                    08           
+                    09           // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10           int dia = 3;
+                    11                 String nombreDia = "";
+                    12           
+                    13           // Dimensionar arreglos.	
+                    14             
+                    15           // Entrada de Datos: Pueden ser solicitados o no
+                    16           
+                    17           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    18           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    19           switch (dia) {
+                    20               case 1:
+                    21                   nombreDia = "Lunes";
+                    22                   break;
+                    23               case 2:                
+                    24                   nombreDia = "Martes";            
+                    25                   break;
+                    26               case 3:
+                    27                   nombreDia = "Miércoles";
+                    28                   break;
+                    29               case 4:
+                    30                   nombreDia = "Jueves";
+                    31                   break;
+                    32               case 5:
+                    33                   nombreDia = "Viernes";
+                    34                   break;
+                    35               case 6:
+                    36                   nombreDia = "Sábado";
+                    37                   break;
+                    38               case 7:
+                    39                   nombreDia = "Domingo";
+                    40                   break;
+                    41               default:
+                    42                   nombreDia = "No es un día de la Semana";;
+                    43           }	
+                    44           
+                    45           // Salida de Datos. Resultado(s).
+                    46           System.out.println("El día seleccionado de la semana es: " + nombreDia);
+                    47       }
+                    48       
+                    49   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
