@@ -8,10 +8,15 @@
 ||| --  01. CREAR UN PROYECTO                                                                                                                          |||
 ||| --  02. ESTRUCTURA DE UN ALGORITMO                                                                                                                 |||
 ||| --  03. VARIABLES, CONSTANTES Y TIPOS DE DATOS                                                                                                     |||
-||| --  04. OPERADORES ARITMÉTICOS                                                                                                                     |||
-||| --  05. CONDICIONALES                                                                                                                              |||
+||| --  04. ENTRADA DE DATOS                                                                                                                           |||
+||| --  05. OPERADORES                                                                                                                                 |||
+||| --  06. ESTRUCTURA DE CONTROL. CONDICIONAL                                                                                                         |||
+||| --  07. ESTRUCTURA DE CONTROL. REPETICIÓN                                                                                                          |||
+||| --  08. ESTRUCTURA DE DATOS. ARREGLO EN UNA DIMENSIÓN (VECTOR)                                                                                     |||
+||| --  09. ESTRUCTURA DE DATOS. ARREGLO EN DOS DIMENSIONES (MATRIZ)                                                                                   |||
+||| --  10. FUNCIONES                                                                                                                                  |||
 |||                                                                                                                                                    |||
-||| --  AUTOR:  ALBEIRO RAMOS. SENA, 2025.                                                                                                             |||
+||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
 |||                                                                                                                                                    |||
 ||| --  Bibliografía  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                    |||
 |||                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                         |||
@@ -163,9 +168,9 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            06. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+            07. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
                 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
 
 
@@ -243,15 +248,103 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            06. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+            07. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
                 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||----------------------------------------------------------- 04.  OPERADORES ARITMÉTICOS ------------------------------------------------------------|||
+|||-------------------------------------------------------------- 04.  ENTRADA DE DATOS ---------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.01.  Crear el proyecto 'ex04_entrada_datos': -----------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex04_entrada_datos'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+                    01   package paquete;
+                    02   import java.util.Scanner;
+                    03 
+                    04   public class Clase {
+                    05 
+                    06       public static void main(String[] args) {
+                    07           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    08           System.out.println("Ingresar Datos:\n");
+                    09           
+                    10           // Declarar variables, constantes, arreglos u objetos.
+                    11           int numero;
+                    12           String nombre;
+                    13           char letra;
+                    14           double temperatura;
+                    15           boolean estado;
+                    16           long numeroLargo;
+                    17           Scanner in = new Scanner(System.in);
+                    18           
+                    19           // Dimensionar: arreglos.
+                    20           
+                    21           // Iniciar: variables, constantes y/o arreglos        
+                    22           
+                    23           // Entrada de Datos: Pueden ser solicitados o no        
+                    24           System.out.print("Ingrese un número: ");
+                    25           numero = in.nextInt();
+                    26           System.out.print("Ingrese un nombre: ");
+                    27           nombre = in.next();
+                    28           System.out.print("Ingrese una letra: ");
+                    29           letra = in.next().charAt(0);
+                    30           System.out.print("Ingrese un valor de temperatura: ");
+                    31           temperatura = in.nextDouble();
+                    32           System.out.print("Ingrese un estado (Verdadero = true, Falso = false): ");
+                    33           estado = in.nextBoolean();
+                    34           System.out.print("Ingrese un número Largo: ");
+                    35           numeroLargo = in.nextLong();
+                    36           
+                    37           // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    38           
+                    39           // Salida de Datos: Resultado(s).
+                    40           System.out.println("\nEl número ingresado fue: " + numero);        
+                    41           System.out.println("El nombre ingresado fue: " + nombre);        
+                    42           System.out.println("La letra ingresada fue: " + letra);
+                    43           System.out.println("La temperatura ingresada fue: " + temperatura);
+                    44           System.out.println("El estado ingresado fue: " + estado);
+                    45           System.out.println("El número largo ingresado fue: " + numeroLargo);
+                    46       }
+                    47       
+                    48   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            06. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            07. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
+                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------------- 05.  OPERADORES ARITMÉTICOS ------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -325,7 +418,7 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||---------------------------------------------------------------- 05.  CONDICIONALES ----------------------------------------------------------------|||
+|||---------------------------------------------------------------- 06.  CONDICIONALES ----------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
