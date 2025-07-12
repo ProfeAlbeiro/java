@@ -1,0 +1,1909 @@
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||--------------------------------------------------------------- FLUTTER PASO A PASO ----------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||                                                                                                                                                    |||
+||| --  --. CONFIGURACIÓN ENTORNO                                                                                                                      |||
+||| --  01. CREAR UN PROYECTO. Archivo lib/main.dart                                                                                                   |||
+||| --  02. RunApp(), StatelessWidget, MaterialApp(title, home), Text()                                                                                |||
+||| --  03. Column(), Icon(), ElevatedButton()                                                                                                         |||
+||| --  04. Scaffold(appBar, body), backgroundColor, Colors, ElevatedButton()                                                                          |||
+||| --  05. MaterialApp(debugShowCheckedModeBanner), AppBar(), foregroundColor, Padding(), Image(), ListTile(), Divider()                              |||
+||| --  06. MaterialApp(home: HomePrincipal()), StatefulWidget, Card(), Center()                                                                       |||
+||| --  07. ListView.builder(), List<String> sitiosTuristicos=[]                                                                                       |||
+||| --  08. List<Map<String, dynamic>> sitiosTuristicos = []                                                                                           |||
+||| --  09. CircleAvatar(), NetworkImage(), onTap: () {}, showModalBottomSheet(),  List<Map<String, dynamic>> sitiosTuristicos = [Colors, foto]        |||
+||| --  10. FloatingActionButton(), TextFormField(), TextEditingController()                                                                           |||
+||| --  11. Consultar API Externa. post, comments, albums y photos                                                                                     |||
+|||                                                                                                                                                    |||
+||| --  AUTOR:  ALBEIRO RAMOS. SENA, 2025.                                                                                                             |||
+|||                                                                                                                                                    |||
+||| --  Bibliografía  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                    |||
+|||                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                         |||
+|||                                                                                                                                                    |||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------- CONFIGURACIÓN ENTORNO ---------------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Instalar Flutter: ---------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Descargar 'Flutter': https://docs.flutter.dev/get-started/install/windows/desktop?tab=download.
+
+                    ⦿   Seleccionar 'Download and install / flutter_windows_3.32.4-stable.zip' (O la version más reciente y estable).
+                    ⦿   Descargar la carpeta comprimida en cualquier parte de la PC.
+
+            02. Descomprimir la carpeta en 'C:\'.
+            
+            03. Ingresar a 'C:\flutter\bin'.
+            
+            04. Copiar la ruta del explorador, es decir, 'C:\flutter\bin'.
+
+            
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Configurar las variables de entorno del usuario y del sistema: ------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Presionar la tecla 'Windows' y escribir 'Editar las variables de entorno del sistema' / 'Enter'.
+            
+            02. Dar clic en 'Variables de entorno…'.
+
+            03. En 'Variables de usuario' y en 'Variables del sistema':
+
+                    ⦿   Dar click en 'Path' / 'Editar'
+                    ⦿   Dar click en 'Nuevo'
+                    ⦿   Pegar la ruta 'C:\flutter\bin'
+                    ⦿   Dar click en 'Aceptar' / 'Aceptar'.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Verificar la instalación de Flutter con el PowerShell: --------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir el PowerShell de Windows como administrador.
+
+            02. Ejecutar el siguiente comando para instalar 'flutter':
+
+                    PS C:\..\..> flutter
+
+            03. Ejecutar el siguiente comando, para obtener más información de flutter:
+
+                    PS C:\..\..> flutter help
+
+            04. Ejecutar el siguiente comando, para mostrar información sobre las herramientas instaladas e identificar si hay alguna dependencia de 
+                plataforma que se necesite para completar la configuración:
+
+                    PS C:\..\..> flutter doctor
+            
+            05. Posibles errores que se pueden presentar:
+
+                    ⦿	No tiene el componente 'cmdline-tools component'. Escribir el siguiente comando
+
+                        PS C:\..\..> flutter doctor --android-licenses
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Instalar Visual Studio Code: ----------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Descargar 'Visual Studio Code': https://code.visualstudio.com/download.
+
+            02. Instalar Visual Studio Code.
+
+                    ⦿   En el asistente de instalación dejar marcado:   ☑ 'Agregar PATH…'.                    
+
+            03. Abrir Visual Studio Code.
+            
+            04. Instalar las siguientes extensiones en Visual Studio Code:                    
+                    
+                    ⦿   Dart
+                    ⦿   Flutter
+                    ⦿   Flutter Color
+                    ⦿   Flutter Widget Snippets
+                    ⦿   Awesome Flutter Snippets
+                    ⦿   Material Icon Theme
+
+            05. Ir a 'File / Preferences / Settings' o 'CTRL + ,' y seleccionar la opción 'Format On Save'.
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------- 01.  CREAR UN PROYECTO. Archivo lib/main.dart ---------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.01.  Crear el proyecto 'app01': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app01' / Enter.
+            
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.02.   Comprender el archivo 'app01/lib/main.dart': -----------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02
+                    03    void main() {
+                    04      runApp(const MyApp());
+                    05    }
+                    06
+                    07   class MyApp extends StatelessWidget {
+                    08     const MyApp({super.key});
+                    09 
+                    10     // This widget is the root of your application.
+                    11     @override
+                    12     Widget build(BuildContext context) {
+                    13       return MaterialApp(
+                    14         title: 'Flutter Demo',
+                    15         theme: ThemeData(
+                    16           // This is the theme of your application.
+                    17           //
+                    18           // TRY THIS: Try running your application with "flutter run". You'll see
+                    19           // the application has a purple toolbar. Then, without quitting the app,
+                    20           // try changing the seedColor in the colorScheme below to Colors.green
+                    21           // and then invoke "hot reload" (save your changes or press the "hot
+                    22           // reload" button in a Flutter-supported IDE, or press "r" if you used
+                    23           // the command line to start the app).
+                    24           //
+                    25           // Notice that the counter didn't reset back to zero; the application
+                    26           // state is not lost during the reload. To reset the state, use hot
+                    27           // restart instead.
+                    28           //
+                    29           // This works for code too, not just values: Most code changes can be
+                    30           // tested with just a hot reload.
+                    31           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+                    32           useMaterial3: true,
+                    33         ),
+                    34         home: const MyHomePage(title: 'Flutter Demo Home Page'),
+                    35       );
+                    36     }
+                    37   }
+                    38 
+                    39   class MyHomePage extends StatefulWidget {
+                    40     const MyHomePage({super.key, required this.title});
+                    41 
+                    42     // This widget is the home page of your application. It is stateful, meaning
+                    43     // that it has a State object (defined below) that contains fields that affect
+                    44     // how it looks.
+                    45 
+                    46     // This class is the configuration for the state. It holds the values (in this
+                    47     // case the title) provided by the parent (in this case the App widget) and
+                    48     // used by the build method of the State. Fields in a Widget subclass are
+                    49     // always marked "final".
+                    50 
+                    51     final String title;
+                    52 
+                    53     @override
+                    54     State<MyHomePage> createState() => _MyHomePageState();
+                    55   }
+                    56 
+                    57   class _MyHomePageState extends State<MyHomePage> {
+                    58     int _counter = 0;
+                    59 
+                    60     void _incrementCounter() {
+                    61       setState(() {
+                    62         // This call to setState tells the Flutter framework that something has
+                    63         // changed in this State, which causes it to rerun the build method below
+                    64         // so that the display can reflect the updated values. If we changed
+                    65         // _counter without calling setState(), then the build method would not be
+                    66         // called again, and so nothing would appear to happen.
+                    67         _counter++;
+                    68       });
+                    69     }
+                    70 
+                    71     @override
+                    72     Widget build(BuildContext context) {
+                    73       // This method is rerun every time setState is called, for instance as done
+                    74       // by the _incrementCounter method above.
+                    75       //
+                    76       // The Flutter framework has been optimized to make rerunning build methods
+                    77       // fast, so that you can just rebuild anything that needs updating rather
+                    78       // than having to individually change instances of widgets.
+                    79       return Scaffold(
+                    80         appBar: AppBar(
+                    81           // TRY THIS: Try changing the color here to a specific color (to
+                    82           // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+                    83           // change color while the other colors stay the same.
+                    84           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+                    85           // Here we take the value from the MyHomePage object that was created by
+                    86           // the App.build method, and use it to set our appbar title.
+                    87           title: Text(widget.title),
+                    88         ),
+                    89         body: Center(
+                    90           // Center is a layout widget. It takes a single child and positions it
+                    91           // in the middle of the parent.
+                    92           child: Column(
+                    93             // Column is also a layout widget. It takes a list of children and
+                    94             // arranges them vertically. By default, it sizes itself to fit its
+                    95             // children horizontally, and tries to be as tall as its parent.
+                    96             //
+                    97             // Column has various properties to control how it sizes itself and
+                    98             // how it positions its children. Here we use mainAxisAlignment to
+                    99             // center the children vertically; the main axis here is the vertical
+                   100             // axis because Columns are vertical (the cross axis would be
+                   101             // horizontal).
+                   102             //
+                   103             // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
+                   104             // action in the IDE, or press "p" in the console), to see the
+                   105             // wireframe for each widget.
+                   106             mainAxisAlignment: MainAxisAlignment.center,
+                   107             children: <Widget>[
+                   108               const Text(
+                   109                 'You have pushed the button this many times:',
+                   110               ),
+                   111               Text(
+                   112                 '$_counter',
+                   113                 style: Theme.of(context).textTheme.headlineMedium,
+                   114               ),
+                   115             ],
+                   116           ),
+                   117         ),
+                   118         floatingActionButton: FloatingActionButton(
+                   119           onPressed: _incrementCounter,
+                   120           tooltip: 'Increment',
+                   121           child: const Icon(Icons.add),
+                   122         ), // This trailing comma makes auto-formatting nicer for build methods.
+                   123       );
+                   124     }
+                   125   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.03.  Ejecutar el proyecto en el Navegador: -------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+            
+            01. Abrir una 'Terminal' en Visual Studio Code: 'Terminal / New Terminal' ó 'Ctrl + Shift + ñ'.
+            
+            02. Ejecutar el siguiente comando:
+
+                    PS C:\..\..\flutter\app01> flutter run
+            
+                    Connected devices:
+                    Windows (desktop) • windows • windows-x64    • Microsoft Windows [Versi¢n 10.0.19045.5965]
+                    Chrome (web)      • chrome  • web-javascript • Google Chrome 137.0.7151.120
+                    Edge (web)        • edge    • web-javascript • Microsoft Edge 137.0.3296.93
+                    [1]: Windows (windows)
+                    [2]: Chrome (chrome)
+                    [3]: Edge (edge)
+                    Please choose one (or "q" to quit): 2
+            
+            NOTA:   ⦿   Tambien se puede acceder de las siguientes formas:
+
+                         A.	'Run / Star debbuging'.
+                         B.	En la parte superior derecha, con el Icono de punta de flecha hacia la derecha: 'Run'.
+
+                    ⦿   Para cerrar el servidor, se da clic en la terminal y se combinan las teclas 'CTRL + C' y 'S'.
+
+            03. Al abrir el navegador, se presiona la tecla 'F12' y la combinación de teclas 'CTRL + SHIFT + M' para visualizar como celular.            
+            
+            NOTA:   ⦿   En 'Dimensions: Responsive', se puede seleccionar el dispositivo de preferencia, por ejemplo 'Samsung Galaxy S8+'.
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------- 02.  RunApp(), StatelessWidget, MaterialApp(title, home), Text() -----------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 02.01.  Crear el proyecto 'app02': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app02' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 02.02.  Modificar el archivo 'app02/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         title: "SENA",
+                    11         home: Text('ProfeAlbeiro'),
+                    12       );
+                    13     }
+                    14   }                    
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------- 03.  Column(), Icon(), ElevatedButton() ------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.01.  Crear el proyecto 'app03': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app03' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.02.  Modificar el archivo 'app03/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         title: "SENA | DISTRITO CAPITAL | CEET",
+                    11         home: Column(
+                    12           children: [
+                    13             Text("Instructor"),
+                    14             Text("ProfeAlbeiro"),
+                    15             Icon(Icons.calculate),
+                    16             Icon(Icons.star),
+                    17             ElevatedButton(onPressed: (){}, child: Text("Insertar")),
+                    18             ElevatedButton(onPressed: (){}, child: Text("Actualizar")),
+                    19             ElevatedButton(onPressed: (){}, child: Text("Guardar")),
+                    20           ],
+                    21         ),
+                    22       );
+                    23     }
+                    24   }                    
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------- 04.  Scaffold(appBar, body), backgroundColor, Colors, ElevatedButton() --------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.01.  Crear el proyecto 'app04': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app04' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.02.  Modificar el archivo 'app04/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         title: "SENA | CEET",
+                    11         home: Scaffold(
+                    12           appBar: AppBar(
+                    13             backgroundColor: Colors.cyan,
+                    14             title: Text("SENA | CEET"),
+                    15           ),
+                    16           body: Column(
+                    17             children: [
+                    18               Text("Instructor"),
+                    19               Text("Albeiro Ramos"),
+                    20               Icon(Icons.star),
+                    21               Icon(Icons.calculate),
+                    22               ElevatedButton(onPressed: (){}, child: Text("Insertar")),
+                    23               ElevatedButton(onPressed: (){}, child: Text("Actualizar")),
+                    24               ElevatedButton(onPressed: (){}, child: Text("Guardar")),
+                    25             ],
+                    26           ),
+                    27         ),
+                    28       );
+                    29     }
+                    30   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||---------------- 05.  MaterialApp(debugShowCheckedModeBanner), AppBar(), foregroundColor, Padding(), Image(), ListTile(), Divider() ----------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.01.  Crear el proyecto 'app05': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app05' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.02.  Modificar el archivo 'app05/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'dart:js_util';
+                    02   import 'package:flutter/material.dart';
+                    03   void main(List<String> args) {
+                    04     runApp(Principal());
+                    05   }
+                    06   class Principal extends StatelessWidget {
+                    07     const Principal({super.key});
+                    08     @override
+                    09     Widget build(BuildContext context) {
+                    10       return MaterialApp(
+                    11         debugShowCheckedModeBanner: false,
+                    12         title: "SENA | CEET",
+                    13         home: Scaffold(
+                    14           appBar: AppBar(
+                    15             foregroundColor: Colors.white,
+                    16             backgroundColor: Colors.blue[900],
+                    17             title: Text("Información Personal"),
+                    18           ),
+                    19           body: Padding(
+                    20             padding: const EdgeInsets.all(20.0),
+                    21             child: Column(
+                    22               children: [
+                    23                 Image(
+                    24                   image: NetworkImage("https://i.ebayimg.com/images/g/lLgAAOSwNB1lu5zn/s-l960.png")
+                    25                 ),
+                    26                 ListTile(
+                    27                   title: Text("EDWIN ALBEIRO"),
+                    28                   subtitle: Text("Nombres"),
+                    29                   leading: Icon(Icons.person),
+                    30                 ),
+                    31                 Divider(),
+                    32                 ListTile(
+                    33                   title: Text("RAMOS VILLAMIL"),
+                    34                   subtitle: Text("Apellidos"),
+                    35                   leading: Icon(Icons.person_add_alt),
+                    36                 ),
+                    37                 Divider(),
+                    38                 ListTile(
+                    39                   title: Text("3332221111"),
+                    40                   subtitle: Text("Celular"),
+                    41                   leading: Icon(Icons.phone),
+                    42                 ),
+                    43                 Divider(),
+                    44                 ListTile(
+                    45                   title: Text("DISTRITO CAPITAL"),
+                    46                   subtitle: Text("Regional"),
+                    47                   leading: Icon(Icons.location_city),
+                    48                 ),
+                    49                 Divider(),
+                    50                 ListTile(
+                    51                   title: Text("CEET"),
+                    52                   subtitle: Text("Centro de Formación"),
+                    53                   leading: Icon(Icons.location_on),
+                    54                 ),
+                    55                 Divider(),
+                    56               ],
+                    57             ),
+                    58           ),
+                    59         ),
+                    60       );
+                    61     }
+                    62   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||------------------------------------ 06.  MaterialApp(home: HomePrincipal()), StatefulWidget, Card(), Center() -------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.01.  Crear el proyecto 'app06': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app06' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.02.  Modificar el archivo 'app06/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         title: "SENA | CEET",
+                    11         debugShowCheckedModeBanner: false,
+                    12         home: HomePrincipal(),
+                    13       );
+                    14     }
+                    15   }
+                    16   class HomePrincipal extends StatefulWidget {
+                    17     const HomePrincipal({super.key});
+                    18     @override
+                    19     State<HomePrincipal> createState() => _HomePrincipalState();
+                    20   }
+                    21   class _HomePrincipalState extends State<HomePrincipal> {
+                    22     @override
+                    23     Widget build(BuildContext context) {
+                    24       return Scaffold(
+                    25         appBar: AppBar(
+                    26           foregroundColor: Colors.white,
+                    27           backgroundColor: Colors.green,
+                    28           title: Text("SENA | CEET"),
+                    29         ),
+                    30         body: GridView.builder(
+                    31           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    32             crossAxisCount: 5,
+                    33           ),
+                    34           itemCount: 50,
+                    35           itemBuilder: (BuildContext context, int index) {
+                    36             return Card(
+                    37               child: Center(child: Text(index.toString())),
+                    38               color: Colors.cyan,
+                    39             );
+                    40           },
+                    41         ),
+                    42       );
+                    43     }
+                    44   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------- 07.  ListView.builder(), List<String> sitiosTuristicos=[] ---------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.01.  Crear el proyecto 'app07': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app07' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.02.  Modificar el archivo 'app07/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());  
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         title: "SENA | CEET",
+                    11         debugShowCheckedModeBanner: false,
+                    12         home: HomePrincipal(),
+                    13       );
+                    14     }
+                    15   }
+                    16   class HomePrincipal extends StatefulWidget {
+                    17     const HomePrincipal({super.key});
+                    18     @override
+                    19     State<HomePrincipal> createState() => _HomePrincipalState();
+                    20   }
+                    21   class _HomePrincipalState extends State<HomePrincipal> {
+                    22     @override
+                    23     Widget build(BuildContext context) {
+                    24       return Scaffold(
+                    25         appBar: AppBar(
+                    26           foregroundColor: Colors.white,
+                    27           backgroundColor: Colors.green,
+                    28           title: Text("Sitios Turísticos"),
+                    29         ),
+                    30         body: Padding(
+                    31           padding: const EdgeInsets.all(20.0),
+                    32           child: ListView.builder(          
+                    33             itemCount: sitiosTuristicos.length,
+                    34             itemBuilder: (BuildContext context, int index) {
+                    35               return Card(
+                    36                 child: ListTile(
+                    37                   leading: Icon(Icons.star),
+                    38                   title: Text(sitiosTuristicos[index]),
+                    39                 ),
+                    40               );
+                    41             },
+                    42           ),
+                    43         ),      
+                    44       );
+                    45     }
+                    46   }
+                    47   List<String> sitiosTuristicos = [
+                    48       "La Gran Muralla China",
+                    49       "La Torre Eiffel, París, Francia",
+                    50       "La Estatua de la Libertad, Nueva York, Estados Unidos",
+                    51       "El Taj Mahal, Agra, India",
+                    52       "El Coliseo Romano, Roma, Italia",
+                    53       "Machu Picchu, Perú",
+                    54       "Las Pirámides de Giza, Egipto",
+                    55       "El Gran Cañón, Arizona, Estados Unidos",
+                    56       "La Gran Barrera de Coral, Australia",
+                    57       "La Ciudad Prohibida, Beijing, China",
+                    58       "El Parque Nacional de Yellowstone, Wyoming, Estados Unidos",
+                    59       "La Isla de Pascua, Chile",
+                    60       "El Monte Everest, Nepal/Tíbet",
+                    61       "La Alhambra, Granada, España",
+                    62       "El Parque Nacional de Banff, Alberta, Canadá",
+                    63       "La Isla de Santorini, Grecia",
+                    64       "El Parque Nacional de Yosemite, California, Estados Unidos",
+                    65       "Las Cataratas del Niágara, Canadá/Estados Unidos",
+                    66       "El Kremlin, Moscú, Rusia",
+                    67       "La Torre de Pisa, Italia",
+                    68       "El Parque Nacional de Serengeti, Tanzania",
+                    69       "La Gran Mezquita de Sheikh Zayed, Abu Dhabi, Emiratos Árabes Unidos",
+                    70       "La Isla Fraser, Queensland, Australia",
+                    71       "La Torre Inclinada de Pisa, Italia",
+                    72       "La Ópera de Sídney, Australia",
+                    73       "El Parque Nacional de Zion, Utah, Estados Unidos",
+                    74       "La Isla de Bali, Indonesia",
+                    75       "El Canal de Panamá",
+                    76       "La Ciudad de Petra, Jordania",
+                    77       "El Parque Nacional Kruger, Sudáfrica",
+                    78       "La Casa de la Ópera de Sídney, Australia",
+                    79       "La Estatua del Cristo Redentor, Río de Janeiro, Brasil",
+                    80       "El Puente Golden Gate, San Francisco, Estados Unidos",
+                    81       "La Ciudad de Praga, República Checa",
+                    82       "El Monte Kilimanjaro, Tanzania",
+                    83       "La Gran Muralla, China",
+                    84       "El Monte Rushmore, Dakota del Sur, Estados Unidos",
+                    85       "La Acrópolis de Atenas, Grecia",
+                    86       "El Parque Nacional de Yellowstone, Estados Unidos",
+                    87       "La Isla de Jeju, Corea del Sur",
+                    88       "El Parque Nacional del Gran Cañón, Arizona, Estados Unidos",
+                    89       "La Isla de Maui, Hawái, Estados Unidos",
+                    90       "El Parque Nacional del Gran Cañón, Estados Unidos",
+                    91       "El Templo de Borobudur, Java, Indonesia",
+                    92       "El Monte Fuji, Japón",
+                    93       "La Torre CN, Toronto, Canadá",
+                    94       "La Isla de Vancouver, Columbia Británica, Canadá",
+                    95       "El Museo del Louvre, París, Francia",
+                    96       "El Templo de Angkor Wat, Camboya",
+                    97       "La Ciudad de Kyoto, Japón",
+                    98       "El Palacio de Buckingham, Londres, Reino Unido",
+                    99       "El Gran Palacio, Bangkok, Tailandia",
+                   100       "El Parque Nacional Torres del Paine, Chile",
+                   101       "El Parque Nacional de los Lagos de Plitvice, Croacia",
+                   102       "La Estatua de la Libertad, Estados Unidos",
+                   103       "La Isla de Santorini, Grecia",
+                   104       "El Parque Nacional de Banff, Canadá",
+                   105       "El Gran Cañón del Colorado, Estados Unidos",
+                   106       "El Parque Nacional de Yellowstone, Estados Unidos",
+                   107       "La Ciudad de Praga, República Checa",
+                   108       "El Parque Nacional de Yosemite, Estados Unidos",
+                   109       "El Monte Everest, Nepal",
+                   110       "La Isla de Pascua, Chile",
+                   111       "La Gran Muralla China, China",
+                   112       "El Taj Mahal, India",
+                   113       "El Coliseo Romano, Italia",
+                   114       "La Pirámide de Giza, Egipto",
+                   115       "La Alhambra, España",
+                   116       "El Kremlin, Rusia",
+                   117       "La Torre de Pisa, Italia",
+                   118       "La Ópera de Sídney, Australia",
+                   119       "El Canal de Panamá",
+                   120       "La Ciudad de Petra, Jordania",
+                   121       "La Estatua del Cristo Redentor, Brasil",
+                   122       "El Puente Golden Gate, Estados Unidos",
+                   123       "El Monte Rushmore, Estados Unidos",
+                   124       "La Acrópolis de Atenas, Grecia",
+                   125       "La Isla de Jeju, Corea del Sur",
+                   126       "El Templo de Borobudur, Indonesia",
+                   127       "El Monte Fuji, Japón",
+                   128       "La Torre CN, Canadá",
+                   129       "El Museo del Louvre, Francia",
+                   130       "El Templo de Angkor Wat, Camboya",
+                   131       "El Palacio de Buckingham, Reino Unido",
+                   132       "El Gran Palacio, Tailandia",
+                   133       "El Parque Nacional Torres del Paine, Chile",
+                   134       "El Parque Nacional de los Lagos de Plitvice, Croacia",
+                   135       "La Estatua de la Libertad, Estados Unidos",
+                   136       "La Isla de Santorini, Grecia",
+                   137       "El Parque Nacional de Banff, Canadá",
+                   138       "El Gran Cañón del Colorado, Estados Unidos",
+                   139       "El Parque Nacional de Yellowstone, Estados Unidos",
+                   140       "La Ciudad de Praga, República Checa",
+                   141       "El Parque Nacional de Yosemite, Estados Unidos",
+                   142       "El Monte Everest, Nepal",
+                   143       "La Isla de Pascua, Chile",
+                   144       "La Gran Muralla China, China",
+                   145       "El Taj Mahal, India",
+                   146       "El Coliseo Romano, Italia",
+                   147       "La Pirámide de Giza, Egipto",
+                   148       "La Alhambra, España",
+                   149       "El Kremlin, Rusia",
+                   150       "La Torre de Pisa, Italia",
+                   151       "La Ópera de Sídney, Australia",
+                   152       "El Canal de Panamá",
+                   153       "La Ciudad de Petra, Jordania",
+                   154       "La Estatua del Cristo Redentor, Brasil",
+                   155       "El Puente Golden Gate, Estados Unidos",
+                   156       "El Monte Rushmore, Estados Unidos",
+                   157       "La Acrópolis de Atenas, Grecia",
+                   158       "La Isla de Jeju, Corea del Sur",
+                   159       "El Templo de Borobudur, Indonesia",
+                   160       "El Monte Fuji, Japón",
+                   161       "La Torre CN, Canadá",
+                   162       "El Museo del Louvre, Francia",
+                   163       "El Templo de Angkor Wat, Camboya",
+                   164       "El Palacio de Buckingham, Reino Unido",
+                   165       "El Gran Palacio, Tailand"
+                   166   ];
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||---------------------------------------------- 08.  List<Map<String, dynamic>> sitiosTuristicos = [] -----------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.01.  Crear el proyecto 'app08': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app08' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.02.  Modificar el archivo 'app08/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         debugShowCheckedModeBanner: false,
+                    11         title: "SENA | CEET",
+                    12         home: HomePrinicipal(),
+                    13       );
+                    14     }
+                    15   }
+                    16   class HomePrinicipal extends StatefulWidget {
+                    17     const HomePrinicipal({super.key});
+                    18     @override
+                    19     State<HomePrinicipal> createState() => _HomePrinicipalState();
+                    20   }
+                    21   class _HomePrinicipalState extends State<HomePrinicipal> {
+                    22     @override
+                    23     Widget build(BuildContext context) {
+                    24       return Scaffold(
+                    25         appBar: AppBar(
+                    26           foregroundColor: Colors.white,
+                    27           backgroundColor: Colors.green,
+                    28           title: Text("SENA | CEET"),
+                    29         ),
+                    30         body: ListView.builder(
+                    31           itemCount: sitiosTuristicos.length,
+                    32           itemBuilder: (BuildContext context, int index) {
+                    33             return ListTile(
+                    34               leading: Icon(Icons.flag),
+                    35               title: Text(sitiosTuristicos[index]['nombre']),
+                    36               subtitle: Text(sitiosTuristicos[index]['ubicacion']),
+                    37             );
+                    38           },
+                    39         ),
+                    40       );
+                    41     }
+                    42   }
+                    43   List<Map<String, dynamic>> sitiosTuristicos = [
+                    44     {
+                    45       'nombre': 'La Gran Muralla China',
+                    46       'pais': 'China',
+                    47       'descripcion':
+                    48           'La Gran Muralla China es una antigua fortificación china construida para proteger el imperio chino de las invasiones de los pueblos nómadas del norte.',
+                    49       'ubicacion': 'China',
+                    50       'fecha_lanzamiento': 'Siglo VII a.C.',
+                    51       'generacion': 'Antiguo'
+                    52     },
+                    53     {
+                    54       'nombre': 'Torre Eiffel',
+                    55       'pais': 'Francia',
+                    56       'descripcion':
+                    57           'La Torre Eiffel es una torre de hierro ubicada en el Campo de Marte, en París. Es uno de los símbolos más reconocidos de Francia y del mundo.',
+                    58       'ubicacion': 'París, Francia',
+                    59       'fecha_lanzamiento': '31 de marzo de 1889',
+                    60       'generacion': 'Moderno'
+                    61     },
+                    62     {
+                    63       'nombre': 'Estadio Maracaná',
+                    64       'pais': 'Brasil',
+                    65       'descripcion':
+                    66           'El Estadio Maracaná es uno de los estadios de fútbol más grandes del mundo y ha sido sede de importantes eventos deportivos, incluida la final de la Copa del Mundo de la FIFA.',
+                    67       'ubicacion': 'Río de Janeiro, Brasil',
+                    68       'fecha_lanzamiento': '2 de junio de 1950',
+                    69       'generacion': 'Contemporáneo'
+                    70     },
+                    71     {
+                    72       'nombre': 'Machu Picchu',
+                    73       'pais': 'Perú',
+                    74       'descripcion':
+                    75           'Machu Picchu es una antigua ciudad inca ubicada en los Andes peruanos. Es uno de los destinos turísticos más populares del mundo debido a su impresionante arquitectura y paisajes.',
+                    76       'ubicacion': 'Cuzco, Perú',
+                    77       'fecha_lanzamiento': 'Siglo XV',
+                    78       'generacion': 'Antiguo'
+                    79     },
+                    80     {
+                    81       'nombre': 'Coliseo Romano',
+                    82       'pais': 'Italia',
+                    83       'descripcion':
+                    84           'El Coliseo Romano es un antiguo anfiteatro ubicado en el centro de Roma. Es uno de los monumentos más famosos del mundo y un símbolo del Imperio Romano.',
+                    85       'ubicacion': 'Roma, Italia',
+                    86       'fecha_lanzamiento': '80 d.C.',
+                    87       'generacion': 'Antiguo'
+                    88     },
+                    89     {
+                    90       'nombre': 'Pirámides de Giza',
+                    91       'pais': 'Egipto',
+                    92       'descripcion':
+                    93           'Las Pirámides de Giza son una de las siete maravillas del mundo antiguo y uno de los sitios turísticos más famosos del planeta. Están ubicadas en las afueras de El Cairo, Egipto.',
+                    94       'ubicacion': 'El Cairo, Egipto',
+                    95       'fecha_lanzamiento': 'Siglo XXVI a.C.',
+                    96       'generacion': 'Antiguo'
+                    97     },
+                    98     {
+                    99       'nombre': 'Gran Cañón',
+                   100       'pais': 'Estados Unidos',
+                   101       'descripcion':
+                   102           'El Gran Cañón es un impresionante cañón tallado por el río Colorado en el estado de Arizona. Es uno de los destinos turísticos más visitados de los Estados Unidos.',
+                   103       'ubicacion': 'Arizona, Estados Unidos',
+                   104       'fecha_lanzamiento': 'Siglo XVIII',
+                   105       'generacion': 'Antiguo'
+                   106     },
+                   107     {
+                   108       'nombre': 'Gran Barrera de Coral',
+                   109       'pais': 'Australia',
+                   110       'descripcion':
+                   111           'La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo. Se encuentra frente a la costa de Queensland, Australia, y es uno de los destinos de buceo más populares del mundo.',
+                   112       'ubicacion': 'Queensland, Australia',
+                   113       'fecha_lanzamiento': 'Siglo XVII',
+                   114       'generacion': 'Antiguo'
+                   115     },
+                   116     {
+                   117       'nombre': 'Ciudad Prohibida',
+                   118       'pais': 'China',
+                   119       'descripcion':
+                   120           'La Ciudad Prohibida es un complejo de palacios imperiales ubicado en el centro de Pekín. Fue la residencia oficial de los emperadores chinos durante casi 500 años.',
+                   121       'ubicacion': 'Pekín, China',
+                   122       'fecha_lanzamiento': '1406',
+                   123       'generacion': 'Antiguo'
+                   124     },
+                   125     {
+                   126       'nombre': 'Parque Nacional Yellowstone',
+                   127       'pais': 'Estados Unidos',
+                   128       'descripcion':
+                   129           'El Parque Nacional Yellowstone es el primer parque nacional del mundo y es famoso por sus geiseres, géiseres de lodo, aguas termales y vida silvestre.',
+                   130       'ubicacion': 'Wyoming, Estados Unidos',
+                   131       'fecha_lanzamiento': '1 de marzo de 1872',
+                   132       'generacion': 'Moderno'
+                   133     },
+                   134     {
+                   135       'nombre': 'Isla de Pascua',
+                   136       'pais': 'Chile',
+                   137       'descripcion':
+                   138           'La Isla de Pascua es famosa por sus misteriosas estatuas de piedra llamadas moai, que fueron talladas por los antiguos habitantes de la isla. Es un destino turístico único en medio del Pacífico Sur.',
+                   139       'ubicacion': 'Chile',
+                   140       'fecha_lanzamiento': 'Siglo XIII',
+                   141       'generacion': 'Antiguo'
+                   142     },
+                   143     {
+                   144       'nombre': 'Monte Everest',
+                   145       'pais': 'Nepal/Tíbet',
+                   146       'descripcion':
+                   147           'El Monte Everest es la montaña más alta del mundo y representa uno de los mayores desafíos para los alpinistas. Es parte de la cordillera del Himalaya, en la frontera entre Nepal y el Tíbet.',
+                   148       'ubicacion': 'Himalaya',
+                   149       'fecha_lanzamiento': '29 de mayo de 1953',
+                   150       'generacion': 'Contemporáneo'
+                   151     },
+                   152     {
+                   153       'nombre': 'Alhambra',
+                   154       'pais': 'España',
+                   155       'descripcion':
+                   156           'La Alhambra es un complejo palaciego y fortaleza ubicado en Granada, España. Es un ejemplo excepcional de la arquitectura islámica y uno de los lugares más visitados de España.',
+                   157       'ubicacion': 'Granada, España',
+                   158       'fecha_lanzamiento': 'Siglo IX',
+                   159       'generacion': 'Antiguo'
+                   160     }
+                   161   ];
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----- 09.  CircleAvatar(), NetworkImage(), onTap: () {}, showModalBottomSheet(),  List<Map<String, dynamic>> sitiosTuristicos = [Colors, foto] -----|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 09.01.  Crear el proyecto 'app09': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app09' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 09.02.  Modificar el archivo 'app09/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(Principal());
+                    04   }
+                    05   class Principal extends StatelessWidget {
+                    06     const Principal({super.key});
+                    07     @override
+                    08     Widget build(BuildContext context) {
+                    09       return MaterialApp(
+                    10         debugShowCheckedModeBanner: false,
+                    11         title: "SENA | CEET",
+                    12         home: HomePrincipal(),
+                    13       );
+                    14     }
+                    15   }
+                    16   class HomePrincipal extends StatefulWidget {
+                    17     const HomePrincipal({super.key});
+                    18     @override
+                    19     State<HomePrincipal> createState() => _HomePrincipalState();
+                    20   }
+                    21   class _HomePrincipalState extends State<HomePrincipal> {
+                    22     @override
+                    23     Widget build(BuildContext context) {
+                    24       return Scaffold(
+                    25         appBar: AppBar(
+                    26           backgroundColor: Colors.green,
+                    27           foregroundColor: Colors.white,
+                    28           title: Text("SENA | CEET"),
+                    29         ),
+                    30         body: ListView.builder(
+                    31           itemCount: sitiosTuristicos.length,
+                    32           itemBuilder: (BuildContext context, int index) {
+                    33             return ListTile(
+                    34               trailing: Icon(Icons.arrow_circle_right_outlined),
+                    35               leading: CircleAvatar(
+                    36                 backgroundImage:
+                    36                     NetworkImage(sitiosTuristicos[index]["foto_monumento"]),
+                    38               ),
+                    39               title: Text(sitiosTuristicos[index]["nombre"]),
+                    40               subtitle: Text(sitiosTuristicos[index]["ubicacion"] +
+                    41                   " " +
+                    42                   sitiosTuristicos[index]["fecha_lanzamiento"]),
+                    43               onTap: () {
+                    44                 showModalBottomSheet(
+                    45                   isScrollControlled: true,
+                    46                   context: context,
+                    47                   builder: (context) {
+                    48                     return Scaffold(
+                    49                       appBar: AppBar(
+                    50                         backgroundColor: sitiosTuristicos[index]
+                    51                             ["color_distintivo"],
+                    52                         title: Text(sitiosTuristicos[index]["nombre"]),
+                    53                       ),
+                    54                       body: Padding(
+                    55                         padding: const EdgeInsets.all(10.0),
+                    56                         child: ListView(
+                    57                           children: [
+                    58                             CircleAvatar(
+                    59                               radius: 100,
+                    60                               backgroundImage: NetworkImage(
+                    61                                   sitiosTuristicos[index]["foto_monumento"]),
+                    62                             ),
+                    63                             Text(sitiosTuristicos[index]["descripcion"]),
+                    64                             Divider(),
+                    65                             Text(sitiosTuristicos[index]["ubicacion"]),
+                    66                             Divider(),
+                    67                             Text(sitiosTuristicos[index]["fecha_lanzamiento"]),
+                    68                           ],
+                    69                         ),
+                    70                       ),
+                    71                     );
+                    72                   },
+                    73                 );
+                    74               },
+                    75             );
+                    76           },
+                    77         ),
+                    78       );
+                    79     }
+                    80   }
+                    81   List<Map<String, dynamic>> sitiosTuristicos = [
+                    82     {
+                    83       'nombre': 'La Gran Muralla China',
+                    84       'descripcion':
+                    85           'La Gran Muralla China es una antigua fortificación china construida para proteger el imperio chino de las invasiones de los pueblos nómadas del norte.',
+                    86       'ubicacion': 'China',
+                    87       'fecha_lanzamiento': 'Siglo VII a.C.',
+                    88       'generacion': 'Antiguo',
+                    89       'color_distintivo': Colors.red,
+                    90       'foto_monumento':
+                    91           'https://source.unsplash.com/featured/?Great%20Wall%20of%20China'
+                    92     },
+                    93     {
+                    94       'nombre': 'Torre Eiffel',
+                    95       'descripcion':
+                    96           'La Torre Eiffel es una torre de hierro ubicada en el Campo de Marte, en París. Es uno de los símbolos más reconocidos de Francia y del mundo.',
+                    97       'ubicacion': 'París, Francia',
+                    98       'fecha_lanzamiento': '31 de marzo de 1889',
+                    99       'generacion': 'Moderno',
+                   100       'color_distintivo': Colors.blue,
+                   101       'foto_monumento': 'https://source.unsplash.com/featured/?Eiffel%20Tower'
+                   102     },
+                   103     {
+                   104       'nombre': 'Machu Picchu',
+                   105       'descripcion':
+                   106           'Machu Picchu es una antigua ciudad inca ubicada en los Andes peruanos. Es uno de los destinos turísticos más populares del mundo debido a su impresionante arquitectura y paisajes.',
+                   107       'ubicacion': 'Cuzco, Perú',
+                   108       'fecha_lanzamiento': 'Siglo XV',
+                   109       'generacion': 'Antiguo',
+                   110       'color_distintivo': Colors.green,
+                   111       'foto_monumento': 'https://source.unsplash.com/featured/?Machu%20Picchu'
+                   112     },
+                   113     {
+                   114       'nombre': 'Pirámides de Giza',
+                   115       'descripcion':
+                   116           'Las Pirámides de Giza son una de las siete maravillas del mundo antiguo y uno de los sitios turísticos más famosos del planeta. Están ubicadas en las afueras de El Cairo, Egipto.',
+                   117       'ubicacion': 'El Cairo, Egipto',
+                   118       'fecha_lanzamiento': 'Siglo XXVI a.C.',
+                   119       'generacion': 'Antiguo',
+                   120       'color_distintivo': Colors.yellow,
+                   121       'foto_monumento':
+                   122           'https://source.unsplash.com/featured/?Pyramids%20of%20Giza'
+                   123     },
+                   124     {
+                   125       'nombre': 'Gran Cañón',
+                   126       'descripcion':
+                   127           'El Gran Cañón es un impresionante cañón tallado por el río Colorado en el estado de Arizona. Es uno de los destinos turísticos más visitados de los Estados Unidos.',
+                   128       'ubicacion': 'Arizona, Estados Unidos',
+                   129       'fecha_lanzamiento': 'Siglo XVIII',
+                   130       'generacion': 'Antiguo',
+                   131       'color_distintivo': Colors.orange,
+                   132       'foto_monumento': 'https://source.unsplash.com/featured/?Grand%20Canyon'
+                   133     },
+                   134     {
+                   135       'nombre': 'Gran Barrera de Coral',
+                   136       'descripcion':
+                   137           'La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo. Se encuentra frente a la costa de Queensland, Australia, y es uno de los destinos de buceo más populares del mundo.',
+                   138       'ubicacion': 'Queensland, Australia',
+                   139       'fecha_lanzamiento': 'Siglo XVII',
+                   140       'generacion': 'Antiguo',
+                   141       'color_distintivo': Colors.cyan,
+                   142       'foto_monumento':
+                   143           'https://source.unsplash.com/featured/?Great%20Barrier%20Reef'
+                   144     },
+                   145     {
+                   146       'nombre': 'Ciudad Prohibida',
+                   147       'descripcion':
+                   148           'La Ciudad Prohibida es un complejo de palacios imperiales ubicado en el centro de Pekín. Fue la residencia oficial de los emperadores chinos durante casi 500 años.',
+                   149       'ubicacion': 'Pekín, China',
+                   150       'fecha_lanzamiento': '1406',
+                   151       'generacion': 'Antiguo',
+                   152       'color_distintivo': Colors.purple,
+                   153       'foto_monumento': 'https://source.unsplash.com/featured/?Forbidden%20City'
+                   154     },
+                   155     {
+                   156       'nombre': 'Parque Nacional Yellowstone',
+                   157       'descripcion':
+                   158           'El Parque Nacional Yellowstone es el primer parque nacional del mundo y es famoso por sus geiseres, géiseres de lodo, aguas termales y vida silvestre.',
+                   159       'ubicacion': 'Wyoming, Estados Unidos',
+                   160       'fecha_lanzamiento': '1 de marzo de 1872',
+                   161       'generacion': 'Moderno',
+                   162       'color_distintivo': Colors.brown,
+                   163       'foto_monumento':
+                   164           'https://source.unsplash.com/featured/?Yellowstone%20National%20Park'
+                   165     },
+                   166     {
+                   167       'nombre': 'Isla de Pascua',
+                   168       'descripcion':
+                   169           'La Isla de Pascua es famosa por sus misteriosas estatuas de piedra llamadas moai, que fueron talladas por los antiguos habitantes de la isla. Es un destino turístico único en medio del Pacífico Sur.',
+                   170       'ubicacion': 'Chile',
+                   171       'fecha_lanzamiento': 'Siglo XIII',
+                   172       'generacion': 'Antiguo',
+                   173       'color_distintivo': Colors.teal,
+                   174       'foto_monumento': 'https://source.unsplash.com/featured/?Easter%20Island'
+                   175     },
+                   176     {
+                   177       'nombre': 'Monte Everest',
+                   178       'descripcion':
+                   179           'El Monte Everest es la montaña más alta del mundo y representa uno de los mayores desafíos para los alpinistas. Es parte de la cordillera del Himalaya, en la frontera entre Nepal y el Tíbet.',
+                   180       'ubicacion': 'Himalaya',
+                   181       'fecha_lanzamiento': '29 de mayo de 1953',
+                   182       'generacion': 'Contemporáneo',
+                   183       'color_distintivo': Colors.deepOrange,
+                   184       'foto_monumento': 'https://source.unsplash.com/featured/?Mount%20Everest'
+                   185     }
+                   186   ];
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------- 10.  FloatingActionButton(), TextFormField(), TextEditingController() ---------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 10.01.  Crear el proyecto 'app10': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app10' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 10.02.  Modificar el archivo 'app10/lib/main.dart': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:flutter/material.dart';
+                    02   void main(List<String> args) {
+                    03     runApp(const Principal());
+                    04   }
+                    05   final txtNombre = TextEditingController();
+                    06   final txtDescripcion = TextEditingController();
+                    07   final txtFechaLanz = TextEditingController();
+                    08   final txtUbicacion = TextEditingController();
+                    09   final txtFotografia = TextEditingController();
+                    10   final txtColor = TextEditingController();
+                    11   class Principal extends StatelessWidget {
+                    12     const Principal({super.key});
+                    13     @override
+                    14     Widget build(BuildContext context) {
+                    15       return MaterialApp(
+                    16         debugShowCheckedModeBanner: false,
+                    17         title: "SENA | CEET",
+                    18         home: HomePrincipal(),
+                    19       );
+                    20     }
+                    21   }
+                    22   class HomePrincipal extends StatefulWidget {
+                    23     const HomePrincipal({super.key});
+                    24     @override
+                    25     State<HomePrincipal> createState() => _HomePrincipalState();
+                    26   }
+                    27   class _HomePrincipalState extends State<HomePrincipal> {
+                    28     @override
+                    29     Widget build(BuildContext context) {
+                    30       return Scaffold(
+                    31         appBar: AppBar(
+                    32           title: Text("Sitios Turísticos"),
+                    33           backgroundColor: Colors.green,
+                    34           foregroundColor: Colors.white,
+                    35         ),
+                    36         body: ListView.builder(
+                    37           itemCount: sitiosTuristicos.length,
+                    38           itemBuilder: (BuildContext context, int index) {
+                    39             return ListTile(
+                    40               leading: CircleAvatar(
+                    41                 backgroundImage:
+                    42                     NetworkImage(sitiosTuristicos[index]["foto_monumento"]),
+                    43               ),
+                    44               title: Text(sitiosTuristicos[index]["nombre"]),
+                    45               subtitle: Text(sitiosTuristicos[index]["ubicacion"]),
+                    46               trailing: Icon(Icons.arrow_circle_right_sharp),
+                    47               onTap: () {
+                    48                 showModalBottomSheet(
+                    49                   context: context,
+                    50                   builder: (context) {
+                    51                     return Scaffold(
+                    52                       appBar: AppBar(
+                    53                         title: Text(sitiosTuristicos[index]["nombre"]),
+                    54                       ),
+                    55                       body: ListView(
+                    56                         children: [
+                    57                           CircleAvatar(
+                    58                             radius: 100,
+                    59                             backgroundImage: NetworkImage(
+                    60                                 sitiosTuristicos[index]["foto_monumento"]),
+                    61                           ),
+                    62                           Text(sitiosTuristicos[index]["descripcion"]),
+                    63                         ],
+                    64                       ),
+                    65                     );
+                    66                   },
+                    67                 );
+                    68               },
+                    69             );
+                    70           },
+                    71         ),
+                    72         floatingActionButton: FloatingActionButton(
+                    73           foregroundColor: Colors.white,
+                    74           backgroundColor: Colors.purple,
+                    75           onPressed: () {
+                    76             showModalBottomSheet(
+                    77               isScrollControlled: true,
+                    78               context: context,
+                    79               builder: (context) {
+                    80                 return Scaffold(
+                    81                   appBar: AppBar(
+                    82                     foregroundColor: Colors.white,
+                    83                     backgroundColor: Colors.purple,
+                    84                     title: Text("Nuevo Sitio Turístico"),
+                    85                   ),
+                    86                   body: Padding(
+                    87                     padding: const EdgeInsets.all(10.0),
+                    88                     child: Column(
+                    89                       children: [
+                    90                         TextFormField(
+                    91                           controller: txtNombre,
+                    92                           decoration: InputDecoration(
+                    93                               labelText: "Nombre",
+                    94                               hintText: "Nombre del sitio turístico",
+                    95                               icon: Icon(Icons.file_copy)),
+                    96                         ),
+                    97                         TextFormField(
+                    98                           controller: txtDescripcion,
+                    99                           decoration: InputDecoration(
+                   100                               labelText: "Descripción",
+                   101                               hintText: "Descripción del sitio turístico",
+                   102                               icon: Icon(Icons.file_copy)),
+                   103                         ),
+                   104                         TextFormField(
+                   105                           controller: txtFechaLanz,
+                   106                           decoration: InputDecoration(
+                   107                               labelText: "Fecha de lanzamiento",
+                   108                               hintText:
+                   109                                   "Fecha de lanzamiento del sitio turístico",
+                   110                               icon: Icon(Icons.file_copy)),
+                   111                         ),
+                   112                         TextFormField(
+                   113                           controller: txtFotografia,
+                   114                           decoration: InputDecoration(
+                   115                               labelText: "Ubicación",
+                   116                               hintText: "Ubicación del sitio turístico",
+                   117                               icon: Icon(Icons.file_copy)),
+                   118                         ),
+                   119                         TextFormField(
+                   120                           controller: txtColor,
+                   121                           decoration: InputDecoration(
+                   122                               labelText: "Fotografía",
+                   123                               hintText: "Fotografía del sitio turístico",
+                   124                               icon: Icon(Icons.file_copy)),
+                   125                         ),
+                   126                         TextFormField(
+                   127                           decoration: InputDecoration(
+                   128                               labelText: "Color",
+                   129                               hintText: "Color que identifica el sitio turístico",
+                   130                               icon: Icon(Icons.file_copy)),
+                   131                         ),
+                   132                       ],
+                   133                     ),
+                   134                   ),
+                   135                   floatingActionButton: FloatingActionButton(
+                   136                     foregroundColor: Colors.white,
+                   137                     backgroundColor: Colors.green,
+                   138                     onPressed: () {
+                   139                       if (txtNombre.text == "") {
+                   140                         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                   141                             backgroundColor: Colors.red,
+                   142                             content: Text(
+                   143                                 "ERROR! El nombre del sitio turístico está vacío")));
+                   144                       } else {
+                   145                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                   146                             backgroundColor: Colors.green,
+                   147                             content: Text(
+                   148                                 "Se ha guardado satisfactoriamente el sitio turístico: ${txtNombre.text}")));
+                   149                       }
+                   150                     },
+                   151                     child: Icon(Icons.save),
+                   152                   ),
+                   153                 );
+                   154               },
+                   155             );
+                   156           },
+                   157           child: Icon(Icons.account_circle),
+                   158         ),
+                   159       );
+                   160     }
+                   161   }
+                   162   List<Map<String, dynamic>> sitiosTuristicos = [
+                   163     {
+                   164       'nombre': 'La Gran Muralla China',
+                   165       'descripcion':
+                   166           'La Gran Muralla China es una antigua fortificación china construida para proteger el imperio chino de las invasiones de los pueblos nómadas del norte.',
+                   167       'ubicacion': 'China',
+                   168       'fecha_lanzamiento': 'Siglo VII a.C.',
+                   169       'generacion': 'Antiguo',
+                   170       'color_distintivo': Colors.red,
+                   171       'foto_monumento':
+                   172           'https://source.unsplash.com/featured/?Great%20Wall%20of%20China'
+                   173     },
+                   174     {
+                   175       'nombre': 'Torre Eiffel',
+                   176       'descripcion':
+                   177           'La Torre Eiffel es una torre de hierro ubicada en el Campo de Marte, en París. Es uno de los símbolos más reconocidos de Francia y del mundo.',
+                   178       'ubicacion': 'París, Francia',
+                   179       'fecha_lanzamiento': '31 de marzo de 1889',
+                   180       'generacion': 'Moderno',
+                   181       'color_distintivo': Colors.blue,
+                   182       'foto_monumento': 'https://source.unsplash.com/featured/?Eiffel%20Tower'
+                   183     },
+                   184     {
+                   185       'nombre': 'Machu Picchu',
+                   186       'descripcion':
+                   187           'Machu Picchu es una antigua ciudad inca ubicada en los Andes peruanos. Es uno de los destinos turísticos más populares del mundo debido a su impresionante arquitectura y paisajes.',
+                   188       'ubicacion': 'Cuzco, Perú',
+                   189       'fecha_lanzamiento': 'Siglo XV',
+                   190       'generacion': 'Antiguo',
+                   191       'color_distintivo': Colors.green,
+                   192       'foto_monumento': 'https://source.unsplash.com/featured/?Machu%20Picchu'
+                   193     },
+                   194     {
+                   195       'nombre': 'Pirámides de Giza',
+                   196       'descripcion':
+                   197           'Las Pirámides de Giza son una de las siete maravillas del mundo antiguo y uno de los sitios turísticos más famosos del planeta. Están ubicadas en las afueras de El Cairo, Egipto.',
+                   198       'ubicacion': 'El Cairo, Egipto',
+                   199       'fecha_lanzamiento': 'Siglo XXVI a.C.',
+                   200       'generacion': 'Antiguo',
+                   201       'color_distintivo': Colors.yellow,
+                   202       'foto_monumento':
+                   203           'https://source.unsplash.com/featured/?Pyramids%20of%20Giza'
+                   204     },
+                   205     {
+                   206       'nombre': 'Gran Cañón',
+                   207       'descripcion':
+                   208           'El Gran Cañón es un impresionante cañón tallado por el río Colorado en el estado de Arizona. Es uno de los destinos turísticos más visitados de los Estados Unidos.',
+                   209       'ubicacion': 'Arizona, Estados Unidos',
+                   210       'fecha_lanzamiento': 'Siglo XVIII',
+                   211       'generacion': 'Antiguo',
+                   212       'color_distintivo': Colors.orange,
+                   213       'foto_monumento': 'https://source.unsplash.com/featured/?Grand%20Canyon'
+                   214     },
+                   215     {
+                   216       'nombre': 'Gran Barrera de Coral',
+                   217       'descripcion':
+                   218           'La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo. Se encuentra frente a la costa de Queensland, Australia, y es uno de los destinos de buceo más populares del mundo.',
+                   219       'ubicacion': 'Queensland, Australia',
+                   220       'fecha_lanzamiento': 'Siglo XVII',
+                   221       'generacion': 'Antiguo',
+                   222       'color_distintivo': Colors.cyan,
+                   223       'foto_monumento':
+                   224           'https://source.unsplash.com/featured/?Great%20Barrier%20Reef'
+                   225     },
+                   226     {
+                   227       'nombre': 'Ciudad Prohibida',
+                   228       'descripcion':
+                   229           'La Ciudad Prohibida es un complejo de palacios imperiales ubicado en el centro de Pekín. Fue la residencia oficial de los emperadores chinos durante casi 500 años.',
+                   230       'ubicacion': 'Pekín, China',
+                   231       'fecha_lanzamiento': '1406',
+                   232       'generacion': 'Antiguo',
+                   233       'color_distintivo': Colors.purple,
+                   234       'foto_monumento': 'https://source.unsplash.com/featured/?Forbidden%20City'
+                   235     },
+                   236     {
+                   237       'nombre': 'Parque Nacional Yellowstone',
+                   238       'descripcion':
+                   239           'El Parque Nacional Yellowstone es el primer parque nacional del mundo y es famoso por sus geiseres, géiseres de lodo, aguas termales y vida silvestre.',
+                   240       'ubicacion': 'Wyoming, Estados Unidos',
+                   241       'fecha_lanzamiento': '1 de marzo de 1872',
+                   242       'generacion': 'Moderno',
+                   243       'color_distintivo': Colors.brown,
+                   244       'foto_monumento':
+                   245           'https://source.unsplash.com/featured/?Yellowstone%20National%20Park'
+                   246     },
+                   247     {
+                   248       'nombre': 'Isla de Pascua',
+                   249       'descripcion':
+                   250           'La Isla de Pascua es famosa por sus misteriosas estatuas de piedra llamadas moai, que fueron talladas por los antiguos habitantes de la isla. Es un destino turístico único en medio del Pacífico Sur.',
+                   251       'ubicacion': 'Chile',
+                   252       'fecha_lanzamiento': 'Siglo XIII',
+                   253       'generacion': 'Antiguo',
+                   254       'color_distintivo': Colors.teal,
+                   255       'foto_monumento': 'https://source.unsplash.com/featured/?Easter%20Island'
+                   256     },
+                   257     {
+                   258       'nombre': 'Monte Everest',
+                   259       'descripcion':
+                   260           'El Monte Everest es la montaña más alta del mundo y representa uno de los mayores desafíos para los alpinistas. Es parte de la cordillera del Himalaya, en la frontera entre Nepal y el Tíbet.',
+                   261       'ubicacion': 'Himalaya',
+                   262       'fecha_lanzamiento': '29 de mayo de 1953',
+                   263       'generacion': 'Contemporáneo',
+                   264       'color_distintivo': Colors.deepOrange,
+                   265       'foto_monumento': 'https://source.unsplash.com/featured/?Mount%20Everest'
+                   266     }
+                   267   ];
+                   
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------- 11.  Consumir API Externa. post, comments, albums y photos --------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.01.  Crear el proyecto 'app11': ------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Crear una carpeta de flutter para los proyectos, por ejemplo en 'C:\..\..\Desktop\flutter'.
+
+            02. Ir a 'view / command palette (Ctrl + shift + p) / Flutter: New Project / Application'.
+            
+            03. Nombrar el proyecto, ejemplo 'app11' / Enter.
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.02.  Crear la siguiente estructura de carpetas y archivos: ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                                                                                                                                        # C = Carpetas
+                                                                                                                                        # A = Archivos
+
+                app11/                                                      # C. .
+                └── lib/                                                    # C. .
+                    └── api/                                                # C. .
+                        ├── ConsultarAlbum.dart                             # A. .
+                        ├── ConsultarFotos.dart                             # A. .
+                        └── ConsultarNoticias.dart                          # A. .
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.03.  Crear API's de consumo: ---------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+            
+            01. Escribir en el archivo 'app11/lib/api/ConsultarAlbum.dart' el siguiente código:
+
+                    01   import 'dart:convert';
+                    02   import 'package:flutter/foundation.dart';
+                    03   import 'package:http/http.dart' as http;
+                    04   Future<List<Album>> ConsultarAlbum() async {
+                    05     var url = Uri.parse("https://jsonplaceholder.typicode.com/albums");
+                    06     final response = await http.get(url);
+                    07     return compute(pasaraListaAlbums, response.body);
+                    08   }
+                    09   List<Album> pasaraListaAlbums(String respuestaBody) {
+                    10     final pasar = json.decode(respuestaBody).cast<Map<String, dynamic>>();
+                    11     return pasar.map<Album>((json) => Album.fromJson(json)).toList();
+                    12   }
+                    13   class Album {
+                    14     final id;
+                    15     final title;
+                    16     Album({this.id, this.title});
+                    17     factory Album.fromJson(Map<String, dynamic> json) {
+                    18       return Album(
+                    19         id: json['id'],
+                    20         title: json['title'],
+                    21       );
+                    22     }
+                    23   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+            02. Escribir en el archivo 'app11/lib/api/ConsultarFotos.dart' el siguiente código:
+
+                    01   import 'dart:convert';
+                    02   import 'package:flutter/foundation.dart';
+                    03   import 'package:http/http.dart' as http;
+                    04   Future<List<Fotos>> ConsultarFotos() async {
+                    05     var url = Uri.parse("https://jsonplaceholder.typicode.com/photos");
+                    06     final response = await http.get(url);
+                    07     return compute(pasaraListaFotos, response.body);
+                    08   }
+                    09   List<Fotos> pasaraListaFotos(String respuestaBody) {
+                    10     final pasar = json.decode(respuestaBody).cast<Map<String, dynamic>>();
+                    11     return pasar.map<Fotos>((json) => Fotos.fromJson(json)).toList();
+                    12   }
+                    13   class Fotos {
+                    14     final id;
+                    15     final title;
+                    16     final albumId;
+                    17     final thumbnailUrl;
+                    18     Fotos({this.id, this.title, this.albumId, this.thumbnailUrl});
+                    19     factory Fotos.fromJson(Map<String, dynamic> json) {
+                    20       return Fotos(
+                    21         id: json['id'],
+                    22         title: json['title'],
+                    23         albumId: json['albumId'],
+                    24         thumbnailUrl: json['thumbnailUrl'],
+                    25       );
+                    26     }
+                    27   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+            03. Escribir en el archivo 'app11/lib/api/ConsultarNoticias.dart' el siguiente código:
+
+                    01   import 'dart:convert';
+                    02   import 'package:flutter/foundation.dart';
+                    03   import 'package:http/http.dart' as http;
+                    04   Future<List<Noticias>> ConsultarNoticias() async {
+                    05     var url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
+                    06     final response = await http.get(url);
+                    07     return compute(pasaraListarNoticias, response.body);
+                    08   }
+                    09   List<Noticias> pasaraListarNoticias(String respuestaBody) {
+                    10     final pasar = json.decode(respuestaBody).cast<Map<String, dynamic>>();
+                    11     return pasar.map<Noticias>((json) => Noticias.fromJson(json)).toList();
+                    12   }
+                    13   class Noticias {
+                    14     final userId;
+                    15     final id;
+                    16     final title;
+                    17     final body;
+                    18     Noticias({this.userId, this.id, this.title, this.body});
+                    19     factory Noticias.fromJson(Map<String, dynamic> json) {
+                    20       return Noticias(
+                    21         userId: json['userId'],
+                    22         id: json['id'],
+                    23         title: json['title'],
+                    24         body: json['body'],
+                    25       );
+                    26     }
+                    27   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.04.  Modificar el archivo 'app11/lib/main.dart':  ------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import 'package:app11/api/ConsultarAlbum.dart';
+                    02   import 'package:app11/api/ConsultarFotos.dart';
+                    03   import 'package:app11/api/ConsultarNoticias.dart';
+                    04   import 'package:flutter/material.dart';
+                    05   void main(List<String> args) {
+                    06     runApp(const Principal());
+                    07   }
+                    08   class Principal extends StatelessWidget {
+                    09     const Principal({super.key});
+                    10     @override
+                    11     Widget build(BuildContext context) {
+                    12       return const MaterialApp(
+                    13         debugShowCheckedModeBanner: false,
+                    14         title: "SENA | CEET",
+                    15         home: HomePrincipal(),
+                    16       );
+                    17     }
+                    18   }
+                    19   class HomePrincipal extends StatefulWidget {
+                    20     const HomePrincipal({super.key});
+                    21     @override
+                    22     State<HomePrincipal> createState() => _HomePrincipalState();
+                    23   }
+                    24   class _HomePrincipalState extends State<HomePrincipal> {
+                    25     @override
+                    26     Widget build(BuildContext context) {
+                    27       return Scaffold(
+                    28         appBar: AppBar(
+                    29           title: const Text("Ejemplo app01 - APIS"),
+                    30           backgroundColor: Colors.green,
+                    31           foregroundColor: Colors.white,
+                    32         ),
+                    33         body: Padding(
+                    34           padding: const EdgeInsets.all(8.0),
+                    35           child: Column(
+                    36             children: [
+                    37               Card(
+                    38                 child: ListTile(
+                    39                   leading: Icon(Icons.newspaper),
+                    40                   title: Text("Noticias"),
+                    41                   trailing: Icon(Icons.arrow_circle_right_outlined),
+                    42                   onTap: () {
+                    43                     ConsultarNoticias().then((resp) {
+                    44                       showModalBottomSheet(
+                    45                         isScrollControlled: true,
+                    46                         context: context,
+                    47                         builder: (context) {
+                    48                           return Scaffold(
+                    49                             appBar: AppBar(
+                    50                               title: Text("Noticias"),
+                    51                               foregroundColor: Colors.white,
+                    52                               backgroundColor: Colors.green,
+                    53                             ),
+                    54                             body: ListView.builder(
+                    55                               itemCount: resp.length,
+                    56                               itemBuilder: (BuildContext context, int index) {
+                    57                                 return Card(
+                    58                                     child: ListTile(
+                    59                                         title: Text(resp[index].title),
+                    60                                         subtitle: Text(resp[index].body)));
+                    61                               },
+                    62                             ),
+                    63                           );
+                    64                         },
+                    65                       );
+                    66                     });
+                    67                   },
+                    68                 ),
+                    69               ),
+                    70               Card(
+                    71                 child: ListTile(
+                    72                   leading: Icon(Icons.comment),
+                    73                   title: Text("Comentarios"),
+                    74                   trailing: Icon(Icons.arrow_circle_right_outlined),
+                    75                   onTap: () {},
+                    76                 ),
+                    77               ),
+                    78               Card(
+                    79                 child: ListTile(
+                    80                   leading: Icon(Icons.album),
+                    81                   title: Text("Albums"),
+                    82                   trailing: Icon(Icons.arrow_circle_right_outlined),
+                    83                   onTap: () {
+                    84                     ConsultarAlbum().then((resp) {
+                    85                       showModalBottomSheet(
+                    86                         isScrollControlled: true,
+                    87                         context: context,
+                    88                         builder: (context) {
+                    89                           return Scaffold(
+                    90                             appBar: AppBar(
+                    91                               title: Text("Album"),
+                    92                               foregroundColor: Colors.white,
+                    93                               backgroundColor: Colors.green,
+                    94                             ),
+                    95                             body: ListView.builder(
+                    96                               itemCount: resp.length,
+                    97                               itemBuilder: (BuildContext context, int index) {
+                    98                                 return Card(
+                    99                                     child:
+                   100                                         ListTile(title: Text(resp[index].title)));
+                   101                               },
+                   102                             ),
+                   103                           );
+                   104                         },
+                   105                       );
+                   106                     });
+                   107                   },
+                   108                 ),
+                   109               ),
+                   110               Card(
+                   111                 child: ListTile(
+                   112                   leading: Icon(Icons.photo),
+                   113                   title: Text("Fotos"),
+                   114                   trailing: Icon(Icons.arrow_circle_right_outlined),
+                   115                   onTap: () {
+                   116                     ConsultarFotos().then((resp) {
+                   117                       showModalBottomSheet(
+                   118                         isScrollControlled: true,
+                   119                         context: context,
+                   120                         builder: (context) {
+                   121                           return Scaffold(
+                   122                             appBar: AppBar(
+                   123                               title: Text("Fotos"),
+                   124                               foregroundColor: Colors.white,
+                   125                               backgroundColor: Colors.green,
+                   126                             ),
+                   127                             body: ListView.builder(
+                   128                               itemCount: resp.length,
+                   129                               itemBuilder: (BuildContext context, int index) {
+                   130                                 return Card(
+                   131                                     child: ListTile(
+                   132                                         leading: CircleAvatar(
+                   133                                           backgroundImage: NetworkImage(
+                   134                                               resp[index].thumbnailUrl),
+                   135                                         ),
+                   136                                         title: Text(resp[index].title)));
+                   137                               },
+                   138                             ),
+                   139                           );
+                   140                         },
+                   141                       );
+                   142                     });
+                   143                   },
+                   144                 ),
+                   145               ),
+                   146             ],
+                   147           ),
+                   148         ),
+                   149       );
+                   150     }
+                   151   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
