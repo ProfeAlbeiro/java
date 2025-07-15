@@ -34,12 +34,12 @@
 |-- ------  Instalar JDK: -------------------------------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-            01. Descargar 'Netbeans': .
+            01. Descargar 'JDK': .
 
-                    ⦿   
-                    ⦿   
+                    ⦿   Ir a: https://www.oracle.com/co/java/technologies/downloads/.
+                    ⦿   Descargar la versión compatible con la versión de Netbeans más estable dando click a 'Windows / x64 Installer'
 
-            02.             
+            02. Ejecutar el instalador 'x64 Installer' y seguir los pasos de instalación
 
             
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,10 +48,15 @@
 
             01. Descargar 'Netbeans': .
 
-                    ⦿   
-                    ⦿   
+                    ⦿   Ir a: https://netbeans.apache.org/front/main/download/.
+                    ⦿   Descargar la versión más estable de Netbeans dando click a 'Download / Binary (Platform Independent)'
 
-            02.             
+            02. Descomprimir el '.zip' descargado en 'C:\'
+            
+            03. Eliminar el archivo '.zip'
+            
+            04. Crear un acceso directo del ejecutable que se encuentra en 'C:\netbeans\bin\netbeans64.exe' dando 'click derecho / Crear acceso 
+                directo'. Se cambia el nombre y se envía al 'Escritorio' de Windows.
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -106,8 +111,8 @@
 
             07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
             
-            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -168,8 +173,8 @@
 
             07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -249,8 +254,8 @@
 
             07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -273,6 +278,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02   import java.util.Scanner;
                     03 
@@ -335,10 +342,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            06. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            07. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -361,6 +368,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -409,10 +418,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -435,6 +444,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -478,10 +489,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -498,6 +509,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -542,10 +555,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |-- 01.03.  Crear el proyecto 'ex07_condicional_anidado': -----------------------------------------------------------------------------------------------|
@@ -561,6 +574,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -610,10 +625,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -630,6 +645,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -684,10 +701,10 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -704,6 +721,8 @@
             
             05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
             
+            06. Escribir el siguiente código:
+
                     01   package paquete;
                     02 
                     03   public class Clase {
@@ -766,8 +785,8 @@
                 |                                                                                                                                      |
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
-            02. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
-            03. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Compiling ' y en 
-                'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8' :
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
 
