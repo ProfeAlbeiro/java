@@ -1056,7 +1056,111 @@
             06. Escribir el siguiente código:
 
                     01   package paquete;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class Clase {
+                    06 
+                    07     public static void main(String[] args) {
+                    08       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema
+                    09       // [Entradas, Proceso y Salidas]
+                    10       System.out.println("Arreglo en una dimensión. Vector");
+                    11
+                    12       // Declarar variables, constantes, arreglos u objetos.
+                    13       int vector[];
+                    14       Scanner ent = new Scanner(System.in);
+                    15 
+                    16       // Dimensionar arreglos.
+                    17       vector = new int[4];
+                    18 
+                    19       // Iniciar variables, constantes, arreglos u objetos.
+                    20 
+                    21       // Proceso:
+                    22       for (int i = 0; i < vector.length; i++) {
+                    23         // Entrada de Datos
+                    24         System.out.print("Ingrese el valor [" + (i + 1) + " de " + vector.length + "]: ");
+                    25         vector[i] = ent.nextInt();
+                    26       }
+                    27 
+                    28       // Proceso:
+                    29       for (int i = 0; i < vector.length; i++) {
+                    30         // Salida de Datos
+                    31         System.out.println("Posición: " + (i + 1) + ". Índice: " + i + ". Valor: " + vector[i]);
+                    32       }
+                    33     }
+                    34   }
 
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da clic  k a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'  
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.02.  Crear el proyecto 'ex15_matriz': ------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex15_matriz'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class Clase {
+                    06 
+                    07     public static void main(String[] args) {
+                    08       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema
+                    09       // [Entradas, Proceso y Salidas]
+                    10       System.out.println("Arreglo en dos dimensiones. Matriz");
+                    11 
+                    12       // Declarar variables, constantes, arreglos u objetos.
+                    13       int matriz[][];
+                    14       Scanner ent = new Scanner(System.in);
+                    15 
+                    16       // Dimensionar arreglos.
+                    17       matriz = new int[3][3];
+                    18 
+                    19       // Iniciar variables, constantes, arreglos u objetos.
+                    20 
+                    21       // Proceso:                    
+                    22       for (int i = 0; i < 3; i++) {
+                    23          for (int j = 0; j < 3; j++) {
+                    24              // Entrada de Datos
+                    25              System.out.print("Ingrese el valor de [ i = " + i + " | j =  " + j + "] : ");
+                    26              matriz[i][j] = ent.nextInt();
+                    27          }
+                    28       }
+                    29 
+                    30       // Proceso:
+                    31       for (int i = 0; i < 3; i++) {
+                    32           for (int j = 0; j < 3; j++) {
+                    33               // Salida de Datos
+                    34               System.out.println("En: [ i = " + i + " | j = " + j + "] : " + matriz[i][j]);            
+                    35           }
+                    36       }
+                    37     }
+                    38   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
@@ -1073,4 +1177,5 @@
             07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
 
             08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
-                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'  
+
