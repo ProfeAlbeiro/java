@@ -1,0 +1,1254 @@
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------- PROGRAMACIÓN ESTRUCTURADA CON JAVA --------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||                                                                                                                                                    |||
+||| --  --. CONFIGURACIÓN DEL ENTORNO                                                                                                                  |||
+||| --  01. CREAR UN PROYECTO                                                                                                                          |||
+||| --  02. ESTRUCTURA DE UN ALGORITMO                                                                                                                 |||
+||| --  03. VARIABLES, CONSTANTES Y TIPOS DE DATOS                                                                                                     |||
+||| --  04. ENTRADA DE DATOS                                                                                                                           |||
+||| --  05. OPERADORES                                                                                                                                 |||
+||| --  06. ESTRUCTURA DE CONTROL. CONDICIONALES                                                                                                       |||
+||| --  07. ESTRUCTURA DE CONTROL. BUCLES                                                                                                              |||
+||| --  08. ESTRUCTURA DE DATOS. ARREGLOS                                                                                                              |||
+||| --  09. FUNCIONES                                                                                                                                  |||
+|||                                                                                                                                                    |||
+||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
+|||                                                                                                                                                    |||
+||| --  Bibliografía  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                    |||
+|||                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                         |||
+|||                                                                                                                                                    |||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||------------------------------------------------------------ CONFIGURACIÓN DEL ENTORNO -------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Instalar JDK: -------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Descargar 'JDK':
+
+                    ⦿   Ir a: https://www.oracle.com/co/java/technologies/downloads/.
+                    ⦿   Descargar la versión compatible con la versión de Netbeans más estable dando click a 'Windows / x64 Installer'
+
+            02. Ejecutar el instalador 'x64 Installer' y seguir los pasos de instalación
+
+            
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  Instalar Netbeans: --------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Descargar 'Netbeans':
+
+                    ⦿   Ir a: https://netbeans.apache.org/front/main/download/.
+                    ⦿   Descargar la versión más estable de Netbeans dando click a 'Download / Binary (Platform Independent)'
+
+            02. Descomprimir el '.zip' descargado en 'C:\'
+            
+            03. Eliminar el archivo '.zip'
+            
+            04. Crear un acceso directo del ejecutable que se encuentra en 'C:\netbeans\bin\netbeans64.exe' dando 'click derecho / Crear acceso 
+                directo'. Se cambia el nombre y se envía al 'Escritorio' de Windows.
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------------- 01. CREAR UN PROYECTO ---------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 01.01.  Crear el proyecto 'ex01_proyecto': ----------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex01_proyecto'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.            
+            
+            06. Escribir el siguiente código:
+                    
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           System.out.println("Hola Mundo");
+                    07       }
+                    08       
+                    09   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   Este código representa la estructura general de un proyecto en 'Java Application'.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   En la línea 01 se muestra el 'paquete' al que pertenece.
+                    
+                    B.   Desde la línea 03 hasta la 09 se codifica la 'Clase'.
+                    
+                    C.   Desde la línea 05 hasta la 07 se codifica el método principal 'main' por donde arranca la aplicación y se ejectua el código.
+                    
+                    D.   En la línea 06 se usa el método 'sout' para mostrar información por consola, por ejemplo, 'Hola Mundo'.
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+            
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||---------------------------------------------------------- 02. ESTRUCTURA DE UN ALGORITMO ----------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 02.01.  Crear el proyecto 'ex02_estructura_algoritmo': ----------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex02_estructura_algoritmo'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.            
+                    
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Describir el Algoritmo: Entender el Objetivo o Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07     
+                    08           // Declarar: variables, constantes, arreglos u objetos.
+                    09     
+                    10           // Dimensionar arreglos.
+                    11     
+                    12           // Iniciar variables, constantes, arreglos u objetos.
+                    13     
+                    14           // Entrada de Datos: Pueden ser solicitados o no.
+                    15     
+                    16           // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    17     
+                    18           // Salida de Datos. Resultado(s).	
+                    19       }
+                    20       
+                    21   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||---------------------------------------------------- 03. VARIABLES, CONSTANTES Y TIPOS DE DATOS ----------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.01.  Crear el proyecto 'ex03_variables_constantes_tiposdatos': -----------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex03_variables_constantes_tiposdatos'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04   
+                    05       public static void main(String[] args) {
+                    06           
+                    07           // Describir el Algoritmo: Entender el Objetivo o Problema como un Sistema [Entradas, Proceso y Salidas]
+                    08     
+                    09           // Declarar: variables, constantes, arreglos u objetos.                    
+                    10           int numero;
+                    11           String nombre;
+                    12           char letra;
+                    13           double temperatura;
+                    14           boolean estado;
+                    15           long numeroLargo;
+                    16           
+                    17           // Dimensionar arreglos.
+                    18           
+                    19           // Iniciar variables, constantes, arreglos u objetos.
+                    20           numero = 5;
+                    21           nombre = "Albeiro";
+                    22           letra = '1';
+                    23           temperatura = 38.5;
+                    24           estado = false;
+                    25           numeroLargo = 123456789;
+                    26           
+                    27           // Entrada de Datos: Pueden ser solicitados o no.
+                    28           
+                    29           // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    30           
+                    31           // Salida de Datos. Resultado(s).
+                    32           System.out.println(numero);
+                    33           System.out.println(nombre);
+                    34           System.out.println(letra);
+                    35           System.out.println(temperatura);
+                    36           System.out.println(estado);
+                    37           System.out.println(numeroLargo);
+                    38       }
+                    39       
+                    40   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||--------------------------------------------------------------- 04. ENTRADA DE DATOS ---------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.01.  Crear el proyecto 'ex04_entrada_datos': -----------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex04_entrada_datos'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02   import java.util.Scanner;
+                    03 
+                    04   public class Clase {
+                    05 
+                    06       public static void main(String[] args) {
+                    07           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    08           System.out.println("Ingresar Datos:\n");
+                    09           
+                    10           // Declarar variables, constantes, arreglos u objetos.
+                    11           int numero;
+                    12           String nombre;
+                    13           char letra;
+                    14           double temperatura;
+                    15           boolean estado;
+                    16           long numeroLargo;
+                    17           Scanner in = new Scanner(System.in);
+                    18           
+                    19           // Dimensionar: arreglos.
+                    20           
+                    21           // Iniciar: variables, constantes y/o arreglos        
+                    22           
+                    23           // Entrada de Datos: Pueden ser solicitados o no        
+                    24           System.out.print("Ingrese un número: ");
+                    25           numero = in.nextInt();
+                    26           System.out.print("Ingrese un nombre: ");
+                    27           nombre = in.next();
+                    28           System.out.print("Ingrese una letra: ");
+                    29           letra = in.next().charAt(0);
+                    30           System.out.print("Ingrese un valor de temperatura: ");
+                    31           temperatura = in.nextDouble();
+                    32           System.out.print("Ingrese un estado (Verdadero = true, Falso = false): ");
+                    33           estado = in.nextBoolean();
+                    34           System.out.print("Ingrese un número Largo: ");
+                    35           numeroLargo = in.nextLong();
+                    36           
+                    37           // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    38           
+                    39           // Salida de Datos: Resultado(s).
+                    40           System.out.println("\nEl número ingresado fue: " + numero);        
+                    41           System.out.println("El nombre ingresado fue: " + nombre);        
+                    42           System.out.println("La letra ingresada fue: " + letra);
+                    43           System.out.println("La temperatura ingresada fue: " + temperatura);
+                    44           System.out.println("El estado ingresado fue: " + estado);
+                    45           System.out.println("El número largo ingresado fue: " + numeroLargo);
+                    46       }
+                    47       
+                    48   }
+
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||------------------------------------------------------------------ 05. OPERADORES ------------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.01.  Crear el proyecto 'ex04_operadores_aritmeticos': --------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex04_operadores_aritmeticos'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04   
+                    05       public static void main(String[] args) {        
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Operar Dos Números");
+                    08           
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           double num01, num02, suma, resta, multiplicacion, division;
+                    11                         
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 4;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           suma = num01 + num02;
+                    23           resta = num01 - num02;
+                    24           multiplicacion = num01 * num02;
+                    25           division = num01 / num02;
+                    26                 
+                    27           // Salida de Datos. Resultado(s).
+                    28                 System.out.println("El resultado de la suma es: " + suma);
+                    29                 System.out.println("El resultado de la resta es: " + resta);
+                    30                 System.out.println("El resultado de la multiplicación es: " + multiplicacion);
+                    31                 System.out.println("El resultado de la división es: " + division);
+                    32           
+                    33       }
+                    34       
+                    35   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------- 06. ESTRUCTURA DE CONTROL. CONDICIONALES -----------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.01.  Crear el proyecto 'ex05_condicional_simple': ------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex05_condicional_simple'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Número Mayor");
+                    08                 
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           int num01, num02;
+                    11                 
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 10;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           if (num01 > num02) {
+                    23              // Salida de Datos. Resultado(s).	        
+                    24              System.out.println("El Número Uno es mayor al Número Dos");
+                    25           }
+                    26                 
+                    27       }
+                    28       
+                    29   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.02.  Crear el proyecto 'ex06_condicional_doble': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex06_condicional_doble'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Número Mayor o Menor");
+                    08                 
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           int num01, num02;
+                    11                 
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 10;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           if (num01 > num02) {
+                    23              // Salida de Datos. Resultado(s).	        
+                    24              System.out.println("El Número Uno es mayor al Número Dos");
+                    25           } else {
+                    26             // Salida de Datos. Resultado(s).	        
+                    27             System.out.println("El Número Dos es mayor al Número Uno");
+                    28           }
+                    29       }
+                    30           
+                    31   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.03.  Crear el proyecto 'ex07_condicional_anidado': -----------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex07_condicional_anidado'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Número Mayor, Menor o igual");
+                    08                 
+                    09           // Declarar variables, constantes y/o arreglos.
+                    10           int num01, num02;
+                    11                 
+                    12           // Dimensionar arreglos.
+                    13           
+                    14           // Iniciar variables, constantes y/o arreglos
+                    15           num01 = 5;
+                    16           num02 = 5;
+                    17                 
+                    18           // Entrada de Datos: Pueden ser solicitados o no
+                    19           
+                    20           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    21           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    22           if (num01 > num02) {
+                    23               // Salida de Datos. Resultado(s).	        
+                    24               System.out.println("El Número Uno es mayor al Número Dos");
+                    25           } else {
+                    26               if (num01 == num02) {
+                    27                   // Salida de Datos. Resultado(s).	        
+                    28                   System.out.println("Los números son iguales");
+                    29               } else {
+                    30                   // Salida de Datos. Resultado(s).	        
+                    31                   System.out.println("El Número Dos es mayor al Número Uno");
+                    32               }
+                    33           }
+                    34       }
+                    35       
+                    36   }                   
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.04.  Crear el proyecto 'ex08_condicional_multiple_elseif': ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex08_condicional_multiple_elseif'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Día de la Semana");
+                    08           
+                    09           // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10           int dia = 1;
+                    11                 String nombreDia = "";
+                    12           
+                    13           // Dimensionar arreglos.	
+                    14             
+                    15           // Entrada de Datos: Pueden ser solicitados o no
+                    16           
+                    17           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    18           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    19           if (dia == 1) {
+                    20               nombreDia = "Lunes";
+                    21           } else if (dia == 2) {
+                    22               nombreDia = "Martes";            
+                    23           } else if (dia == 3) {
+                    24               nombreDia = "Miércoles";            
+                    25           } else if (dia == 4) {
+                    26               nombreDia = "Jueves";
+                    27           } else if (dia == 5) {
+                    28               nombreDia = "Viernes";
+                    29           } else if (dia == 6) {
+                    30               nombreDia = "Sábado";
+                    31           } else if (dia == 7) {
+                    32               nombreDia = "Domingo";
+                    33           } else {
+                    34              nombreDia = "No es un día de la Semana";
+                    35           }
+                    36           
+                    37           // Salida de Datos. Resultado(s).
+                    38           System.out.println("El día seleccionado de la semana es: " + nombreDia);
+                    39       }
+                    40       
+                    41   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.05.  Crear el proyecto 'ex09_condicional_multiple_switch': ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex09_condicional_multiple_switch'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04 
+                    05       public static void main(String[] args) {
+                    06           // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07           System.out.println("Día de la Semana");
+                    08           
+                    09           // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10           int dia = 3;
+                    11                 String nombreDia = "";
+                    12           
+                    13           // Dimensionar arreglos.	
+                    14             
+                    15           // Entrada de Datos: Pueden ser solicitados o no
+                    16           
+                    17           // Proceso: Determinar los requerimientos y validaciones. Generalmente,	
+                    18           //          se usan las estructuras de control: Secuencial, condicional, repetición.
+                    19           switch (dia) {
+                    20               case 1:
+                    21                   nombreDia = "Lunes";
+                    22                   break;
+                    23               case 2:                
+                    24                   nombreDia = "Martes";            
+                    25                   break;
+                    26               case 3:
+                    27                   nombreDia = "Miércoles";
+                    28                   break;
+                    29               case 4:
+                    30                   nombreDia = "Jueves";
+                    31                   break;
+                    32               case 5:
+                    33                   nombreDia = "Viernes";
+                    34                   break;
+                    35               case 6:
+                    36                   nombreDia = "Sábado";
+                    37                   break;
+                    38               case 7:
+                    39                   nombreDia = "Domingo";
+                    40                   break;
+                    41               default:
+                    42                   nombreDia = "No es un día de la Semana";;
+                    43           }	
+                    44           
+                    45           // Salida de Datos. Resultado(s).
+                    46           System.out.println("El día seleccionado de la semana es: " + nombreDia);
+                    47       }
+                    48       
+                    49   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.06.  Crear el proyecto 'ex10_operador_terniario': ------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex10_operador_terniario'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04   
+                    05     public static void main(String[] args) {
+                    06       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07       System.out.println("Operador terniario");
+                    08       
+                    09       // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10       double promedio = 6;
+                    11       String condicionFinal;
+                    12       
+                    13       // Dimensionar arreglos.	
+                    14         
+                    15       // Entrada de Datos: Pueden ser solicitados o no
+                    16       
+                    17       // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    18       condicionFinal = promedio>=6 ? "Aprobado" : "Desaprobado"	;
+                    19       
+                    20       // Salida de Datos. Resultado(s).
+                    21       System.out.println("La condición final del alumno es: " + condicionFinal);
+                    22       }
+                    23       
+                    24   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------- 07. ESTRUCTURA DE CONTROL. BUCLES ---------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.01.  Crear el proyecto 'ex11_while': -------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex11_while'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04
+                    05       public static void main(String[] args) {
+                    06         // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07         System.out.println("Contador de vueltas");
+                    08         
+                    09         // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10         int cont = 0;        
+                    11         
+                    12         // Dimensionar arreglos.	
+                    13           
+                    14         // Entrada de Datos: Pueden ser solicitados o no
+                    15         
+                    16         // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    17         while (cont <= 10) {
+                    18             // Salida de Datos. Resultado(s).
+                    19             System.out.println("Estoy en la vuelta: " + cont);
+                    20             cont = cont + 1;
+                    21         }
+                    22           
+                    23       }
+                    24       
+                    25   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.02.  Crear el proyecto 'ex12_do_while': ----------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex12_do_while'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04   
+                    05       public static void main(String[] args) {
+                    06         // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07         System.out.println("Contador de vueltas");
+                    08         
+                    09         // Declarar variables, constantes y/o arreglos e iniciarlos.
+                    10         int cont = 0;        
+                    11         
+                    12         // Dimensionar arreglos.	
+                    13           
+                    14         // Entrada de Datos: Pueden ser solicitados o no
+                    15         
+                    16         // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    17         do {
+                    18             // Salida de Datos. Resultado(s).
+                    19             System.out.println("Estoy en la vuelta: " + cont);
+                    20             cont = cont + 1;
+                    21         } while (cont <= 10);
+                    22           
+                    23       }
+                    24       
+                    25   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.03.  Crear el proyecto 'ex13_for': ---------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex13_for'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   public class Clase {
+                    04
+                    05     public static void main(String[] args) {
+                    06       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema [Entradas, Proceso y Salidas]
+                    07       System.out.println("Contador de vueltas");
+                    08      
+                    09       // Declarar variables, constantes y/o arreglos e iniciarlos.        
+                    10       
+                    11       // Dimensionar arreglos.	
+                    12         
+                    13       // Entrada de Datos: Pueden ser solicitados o no
+                    14       
+                    15       // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
+                    16       for (int i = 0; i <= 10; i++) {
+                    17           // Salida de Datos. Resultado(s).
+                    18           System.out.println("Estoy en la vuelta: " + i);
+                    19       }
+                    20         
+                    21     }
+                    22       
+                    23   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------- 08. ESTRUCTURA DE DATOS. ARREGLOS ---------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.01.  Crear el proyecto 'ex14_vector': ------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex14_vector'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class Clase {
+                    06 
+                    07     public static void main(String[] args) {
+                    08       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema
+                    09       // [Entradas, Proceso y Salidas]
+                    10       System.out.println("Arreglo en una dimensión. Vector");
+                    11
+                    12       // Declarar variables, constantes, arreglos u objetos.
+                    13       int vector[];
+                    14       Scanner ent = new Scanner(System.in);
+                    15 
+                    16       // Dimensionar arreglos.
+                    17       vector = new int[4];
+                    18 
+                    19       // Iniciar variables, constantes, arreglos u objetos.
+                    20 
+                    21       // Proceso:
+                    22       for (int i = 0; i < vector.length; i++) {
+                    23         // Entrada de Datos
+                    24         System.out.print("Ingrese el valor [" + (i + 1) + " de " + vector.length + "]: ");
+                    25         vector[i] = ent.nextInt();
+                    26       }
+                    27 
+                    28       // Proceso:
+                    29       for (int i = 0; i < vector.length; i++) {
+                    30         // Salida de Datos
+                    31         System.out.println("Posición: " + (i + 1) + ". Índice: " + i + ". Valor: " + vector[i]);
+                    32       }
+                    33     }
+                    34   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da clic  k a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'  
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.02.  Crear el proyecto 'ex15_matriz': ------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex15_matriz'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class Clase {
+                    06 
+                    07     public static void main(String[] args) {
+                    08       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema
+                    09       // [Entradas, Proceso y Salidas]
+                    10       System.out.println("Arreglo en dos dimensiones. Matriz");
+                    11 
+                    12       // Declarar variables, constantes, arreglos u objetos.
+                    13       int matriz[][];
+                    14       Scanner ent = new Scanner(System.in);
+                    15 
+                    16       // Dimensionar arreglos.
+                    17       matriz = new int[3][3];
+                    18 
+                    19       // Iniciar variables, constantes, arreglos u objetos.
+                    20 
+                    21       // Proceso:                    
+                    22       for (int i = 0; i < 3; i++) {
+                    23          for (int j = 0; j < 3; j++) {
+                    24              // Entrada de Datos
+                    25              System.out.print("Ingrese el valor de [ i = " + i + " | j =  " + j + "] : ");
+                    26              matriz[i][j] = ent.nextInt();
+                    27          }
+                    28       }
+                    29 
+                    30       // Proceso:
+                    31       for (int i = 0; i < 3; i++) {
+                    32           for (int j = 0; j < 3; j++) {
+                    33               // Salida de Datos
+                    34               System.out.println("En: [ i = " + i + " | j = " + j + "] : " + matriz[i][j]);            
+                    35           }
+                    36       }
+                    37     }
+                    38   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'  
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||------------------------------------------------------------------ 09. FUNCIONES -------------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.01.  Crear el proyecto 'ex16_': ------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Abrir 'Netbeans'.
+
+            02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
+            
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            
+            04. En 'Project Name: ex16_'.
+            
+            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.
+            
+            06. Escribir el siguiente código:
+
+                    01   package paquete;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class Clase {
+                    06 
+                    07     public static void main(String[] args) {
+                    08       // Objetivo del Algoritmo: Analizar el Objetivo / Problema como un Sistema
+                    09       // [Entradas, Proceso y Salidas]
+                    10       System.out.println("Arreglo en una dimensión. Vector");
+                    11
+                    12       // Declarar variables, constantes, arreglos u objetos.
+                    13       int vector[];
+                    14       Scanner ent = new Scanner(System.in);
+                    15 
+                    16       // Dimensionar arreglos.
+                    17       vector = new int[4];
+                    18 
+                    19       // Iniciar variables, constantes, arreglos u objetos.
+                    20 
+                    21       // Proceso:
+                    22       for (int i = 0; i < vector.length; i++) {
+                    23         // Entrada de Datos
+                    24         System.out.print("Ingrese el valor [" + (i + 1) + " de " + vector.length + "]: ");
+                    25         vector[i] = ent.nextInt();
+                    26       }
+                    27 
+                    28       // Proceso:
+                    29       for (int i = 0; i < vector.length; i++) {
+                    30         // Salida de Datos
+                    31         System.out.println("Posición: " + (i + 1) + ". Índice: " + i + ". Valor: " + vector[i]);
+                    32       }
+                    33     }
+                    34   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+            07. Para ejecutar el código se da clic  k a la opción 'Run / Run Project' o se presiona la tecla 'F6':
+
+            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8'  
+
