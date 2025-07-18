@@ -9,16 +9,7 @@ public class UserController {
     // Listas los Roles y Usuarios
     private ArrayList<Rol> roles = new ArrayList<>();
     private ArrayList<User> users = new ArrayList<>();
-    
-    // Usuarios: Ingreso por contraseña
-    public User authenticateUser(String email, String password){
-        for (User u : users) {
-            if (u.getUserEmail().equalsIgnoreCase(email) && u.getUserPass().equals(password) ) {
-                return u;
-            }
-        }
-        return null;
-    }    
+        
     // Roles: Registrar
     public void addRol(Rol rol){
         roles.add(rol);
@@ -84,5 +75,13 @@ public class UserController {
     public boolean deleteUser(int id) {
         return users.removeIf(u -> u.getUserId() == id);
     }
-    
+    // Usuarios: Ingreso por contraseña
+    public User authenticateUser(String email, String password){
+        for (User u : users) {
+            if (u.getUserEmail().equalsIgnoreCase(email) && u.getUserPass().equals(password) ) {
+                return u;
+            }
+        }
+        return null;
+    }
 }
