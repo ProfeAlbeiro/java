@@ -85,8 +85,8 @@ public class User {
     
     @Override
     public String toString(){
-        return userId + " - " + getFullName() + userEmail + " - Estado: " +
-                (userState ? "Activo" : "Inactivo") + " - Rol: " + rol.getRolName();
+        return userId + " - " + getFullName() + " - " + userEmail + " - " +
+                (userState ? "Activo" : "Inactivo") + " - " + rol.getRolName();
     }
     
 }
