@@ -6,17 +6,18 @@ import java.util.ArrayList;
 
 public class Users {
     
+    // Lista de Usuarios
     private ArrayList<User> users = new ArrayList<>();        
     
-    // Usuarios: Registrar    
+    // Registrar Usuario 
     public void addUser(User user){
         users.add(user);
     }
-    // Usuarios: Obtener todos
+    // Obtener todos los usuarios
     public ArrayList<User> getUsers(){
         return users;
     }
-    // Usuarios: Obtener uno
+    // Obtener usuario
     public User searchUserById(int id){
         for (User u : users) {
             if (u.getUserId() == id) {
@@ -25,7 +26,7 @@ public class Users {
         }        
         return null;
     }
-    // Usuarios: Actualizar
+    // Actualizar usuario
     public boolean updateUser(int id, String newName, String newLastName, String newEmail, String newPass, boolean newState, Rol newRol) {
         User user = searchUserById(id);
         if (user != null) {
@@ -39,7 +40,7 @@ public class Users {
         }
         return false;
     }
-    // Usuarios: Eliminar
+    // Eliminar usuario
     public boolean deleteUser(int id) {
         return users.removeIf(u -> u.getUserId() == id);
     }    

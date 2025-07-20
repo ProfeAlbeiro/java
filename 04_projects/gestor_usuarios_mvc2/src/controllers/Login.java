@@ -5,27 +5,33 @@ import models.User;
 import views.LoginView;
 
 public class Login {
+    
+    private LoginView loginView;
 
-    public void iniciarSesion() {
-        LoginView loginView = new LoginView();
-        Roles rolesAdd = new Roles();
-        Users usersAdd = new Users();
+    public Login() {
+        
+        // Crear objetos: Vista, roles y usuarios
+        loginView = new LoginView();
+        Roles roles = new Roles();
+        Users users = new Users();
+        
+        // Crear rol y usuario de prueba para autenticación
+        Rol rolAdmin = new Rol(1, "admin");
+        roles.addRol(rolAdmin);
+        User admin = new User(1,"Albeiro","Ramos","admin@correo.com","12345",true,rolAdmin);
+        users.addUser(admin);
 
         // Solicita credenciales desde la vista
         String email = loginView.pedirEmail();
         String password = loginView.pedirContrasena();
-
-        // Crear roles y usuarios de prueba para autenticación
-        Rol adminRol = new Rol(1, "admin");
-        rolesAdd.addRol(adminRol);
-        User admin = new User(1,"Albeiro","Ramos","admin@correo.com","12345",true,adminRol);
-        usersAdd.addUser(admin);
+        System.out.println("|-------------------------------------|\n"); 
 
         // Validación básica (en proyecto real sería con base de datos)
         if (email.equals(admin.getUserEmail()) && password.equals(admin.getUserPass())) {
-            System.out.println("\n? ¡Bienvenido " + admin.getUserName() + " " + admin.getUserLastName() + "!");
+            System.out.println("¡Bienvenido " + admin.getFullName() + "!");
+            Dashboard dashboard = new Dashboard();            
         } else {
-            System.out.println("\n? Credenciales incorrectas. Intenta nuevamente.");
+            System.out.println("Credenciales incorrectas\n");
         }
     }
 }

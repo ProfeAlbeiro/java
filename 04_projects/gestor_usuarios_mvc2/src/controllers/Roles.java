@@ -6,18 +6,18 @@ import java.util.ArrayList;
 
 public class Roles {
     
-    // Listas los Roles y Usuarios
+    // Lista de Roles
     private ArrayList<Rol> roles = new ArrayList<>();
         
-    // Roles: Registrar
+    // Registrar Rol
     public void addRol(Rol rol){
         roles.add(rol);
     }    
-    // Roles: Obtener todos
+    // Obtener todos lo roles
     public ArrayList<Rol> getRoles(){
         return roles;
     }
-    // Roles: Obtener uno
+    // Obtener un rol
     public Rol searchRolById(int id){
         for (Rol r : roles) {
             if (r.getRolId() == id) {
@@ -26,7 +26,7 @@ public class Roles {
         }
         return null;
     }    
-    // Roles: Actualizar
+    // Actualizar rol
     public boolean updateRol(int id, String newName){
         Rol rol = searchRolById(id);
         if (rol != null) {
@@ -35,7 +35,7 @@ public class Roles {
         }
         return false;
     }
-    // Roles: Eliminar
+    // Eliminar rol
     public boolean deleteRol(int id){
         return roles.removeIf(r -> r.getRolId() == id);
     }    

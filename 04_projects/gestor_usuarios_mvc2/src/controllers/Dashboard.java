@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controllers;
 
-/**
- *
- * @author ADMIN
- */
-public class Dashboard {
-    
+import views.DashboardView;
+
+public class Dashboard {    
+
+    private DashboardView dashboardView;
+
+    public Dashboard() {
+        dashboardView = new DashboardView();
+        dashboardView.menuDashboard();
+    }
 }
