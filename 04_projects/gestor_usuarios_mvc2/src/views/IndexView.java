@@ -7,8 +7,9 @@ import java.util.Scanner;
 
 public class IndexView {
     public void menuEmpresa(){
+        
         // Variable para la opción y objeto para ingreso de datos
-        int option; 
+        int menuEmp; 
         Scanner sc = new Scanner(System.in);
         
         // Muestra el Menú para iniciar sesión o registrarse
@@ -20,12 +21,12 @@ public class IndexView {
         System.out.println("| 3. Salir");
         System.out.println("|-------------------------------------|");
         System.out.print("| Seleccione una opción: ");
-        option = sc.nextInt();
+        menuEmp = sc.nextInt();
         sc.nextLine();        
         System.out.println("|-------------------------------------|\n"); 
         
         // Según la opción, crea un objeto a partir del controlador
-        switch (option) {
+        switch (menuEmp) {
             case 1:                    
                 Login login = new Login();                
                 break;
@@ -38,7 +39,8 @@ public class IndexView {
                 break;
             default:
                 System.out.println("Opción No Válida\n");
-                option = 0;
+                menuEmp = 0;
         }
+        
     }
 }

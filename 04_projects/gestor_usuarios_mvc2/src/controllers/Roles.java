@@ -1,13 +1,30 @@
 package controllers;
 
 import models.Rol;
-
+import views.RolesView;
 import java.util.ArrayList;
 
 public class Roles {
     
-    // Lista de Roles
+    // Mostrar la Vista y Lista de Roles        
+    private RolesView rolesView;
     private ArrayList<Rol> roles = new ArrayList<>();
+    
+    public Roles(){
+        
+    }
+    
+    public Roles(ArrayList<Rol> roles){
+        Rol adminRol = new Rol(1, "admin");
+        this.roles = roles;
+        this.roles.add(adminRol);
+    }
+    
+    // Vista de Roles
+    public void indexRoles(){
+        rolesView = new RolesView();        
+        rolesView.menuRoles();        
+    }
         
     // Registrar Rol
     public void addRol(Rol rol){

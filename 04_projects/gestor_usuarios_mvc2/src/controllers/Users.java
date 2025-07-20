@@ -2,12 +2,20 @@ package controllers;
 
 import models.Rol;
 import models.User;
+import views.UsersView;
 import java.util.ArrayList;
 
 public class Users {
     
-    // Lista de Usuarios
-    private ArrayList<User> users = new ArrayList<>();        
+    // Mostrar la Vista y Lista de Usuarios
+    private UsersView usersView;
+    private ArrayList<User> users = new ArrayList<>();    
+    
+    // Vista de Usuarios
+    public void indexUsers(){
+        usersView = new UsersView();
+        usersView.menuUsuarios();
+    }
     
     // Registrar Usuario 
     public void addUser(User user){
