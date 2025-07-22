@@ -10,19 +10,9 @@ public class Roles {
     private RolesView rolesView;
     private ArrayList<Rol> roles = new ArrayList<>();
     
-    public Roles(){
-        
-    }
-    
-    public Roles(ArrayList<Rol> roles){
-        Rol adminRol = new Rol(1, "admin");
-        this.roles = roles;
-        this.roles.add(adminRol);
-    }
-    
     // Vista de Roles
-    public void indexRoles(){
-        rolesView = new RolesView();        
+    public void indexRoles(){        
+        rolesView = new RolesView();
         rolesView.menuRoles();        
     }
         

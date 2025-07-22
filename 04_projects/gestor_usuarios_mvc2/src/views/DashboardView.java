@@ -4,7 +4,6 @@ import java.util.Scanner;
 import controllers.Users;
 import controllers.Roles;
 import controllers.Logout;
-import models.Rol;
 
 public class DashboardView {
     
@@ -15,15 +14,16 @@ public class DashboardView {
         int menuDash;
         
         do {
-            System.out.println("|-------------------------------------|");
-            System.out.println("|------------- DASHBOARD -------------|");
-            System.out.println("|-------------------------------------|");            
+            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|---------------------- DASHBOARD ----------------------|");
+            System.out.println("|-------------------------------------------------------|");
             System.out.println("|- 1. Gestión de Roles");
             System.out.println("|- 2. Gestión de Usuarios");
             System.out.println("|- 0. Cerrar Sesión");
+            System.out.println("|-------------------------------------------------------|");
             System.out.print("|- Seleccione una opción: ");
             menuDash = sc.nextInt();
-            System.out.println("|-------------------------------------|\n");            
+            System.out.println("|-------------------------------------------------------|\n");
 
             switch (menuDash) {
                 case 1:                    
@@ -38,7 +38,7 @@ public class DashboardView {
                     Logout logout = new Logout();                    
                     break;
                 default:
-                    System.out.println("Opción NO Válida.");
+                    System.out.println("|- ¡Opción NO Válida!");
             }
         } while (menuDash != 0);
     }

@@ -2,7 +2,7 @@ package views;
 
 import models.Rol;
 import controllers.Roles;
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class RolesView {
@@ -12,67 +12,68 @@ public class RolesView {
     public RolesView(){        
     }
     
-//    public RolesView(Roles roles) {
-//        this.roles = roles;
-//    }
+    public RolesView(Roles roles) {
+        this.roles = roles;
+    }
 
     public void menuRoles() {
-        int rolId, userId;
-        String name, lastname, email, pass;
-        boolean state;
-        int menuRol;
+        
+        int menuRol, rolId;
+        String name, newName;
+        
         do {
-            System.out.println("|-------------------------------------|");
-            System.out.println("|--------- GESTIÓN DE ROLES ----------|");
-            System.out.println("|-------------------------------------|");            
+            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|------------------ GESTIÓN DE ROLES -------------------|");
+            System.out.println("|-------------------------------------------------------|");
             System.out.println("|- 1. Registrar Rol");
             System.out.println("|- 2. Listar Roles");
-            System.out.println("|- 3. Eliminar Rol");
-            System.out.println("|- 4. Actualizar Rol");
+            System.out.println("|- 3. Actualizar Rol");
+            System.out.println("|- 4. Eliminar Rol");
             System.out.println("|- 0. Volver");
+            System.out.println("|-------------------------------------------------------|");
             System.out.print("|- Seleccione una opción: ");
             menuRol = sc.nextInt();
             sc.nextLine();
-            System.out.println("|-------------------------------------|\n");            
+            System.out.println("|-------------------------------------------------------|");
 
             switch (menuRol) {
                 case 1:
-                    System.out.print("ID: ");
+                    System.out.print("|- ID: ");
                     rolId = sc.nextInt();
                     sc.nextLine();
-                    System.out.print("Nombre: ");
+                    System.out.print("|- Nombre: ");
                     name = sc.nextLine();
                     roles.addRol(new Rol(rolId,name));
-                    System.out.println("\nRol creado");
+                    System.out.println("|- ¡Rol creado!");                    
                     break;
                 case 2:
                     for (Rol r : roles.getRoles()) {
-                        System.out.println(r);
+                        System.out.println("|- " + r);
                     }
                     break;
                 case 3:
-                    System.out.print("ID del rol a eliminar: ");
-                    int deletId = sc.nextInt();
+                    System.out.print("|- ID del Rol a Actualizar: ");
+                    rolId = sc.nextInt();
                     sc.nextLine();
-                    if (roles.deleteRol(deletId)) {
-                        System.out.println("Rol eliminado");
+                    System.out.print("|- Nuevo Nombre: ");
+                    newName = sc.nextLine();
+                    if (roles.updateRol(rolId, newName)) {
+                        System.out.println("|- ¡Rol Actualizado!");
                     } else {
-                        System.out.println("Rol no encontrado");
+                        System.out.println("|- ¡Rol No Encontrado!");
                     }
                     break;
                 case 4:
-                    System.out.print("ID del rol a actualizar: ");
-                    int updId = sc.nextInt();
-                    sc.nextLine();
-                    System.out.print("Nuevo nombre: ");
-                    String newName = sc.nextLine();
-                    if (roles.updateRol(updId, newName)) {
-                        System.out.println("Rol actualizado");
+                    System.out.print("|- ID del Rol a Eliminar: ");
+                    rolId = sc.nextInt();
+                    if (roles.deleteRol(rolId)) {
+                        System.out.println("|- ¡Rol Eliminado!");
                     } else {
-                        System.out.println("Rol no encontrado");
+                        System.out.println("|- ¡Rol No Encontrado!");
                     }
-                    break;
+                    break;                
             }
+            System.out.println("|-------------------------------------------------------|\n");
         } while (menuRol != 0);
     }
 }

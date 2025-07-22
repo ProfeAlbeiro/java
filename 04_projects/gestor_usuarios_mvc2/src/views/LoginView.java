@@ -7,9 +7,9 @@ public class LoginView {
     private Scanner sc = new Scanner(System.in);
 
     public String pedirEmail() {
-        System.out.println("|-------------------------------------|");
-        System.out.println("|--------------- LOGIN ---------------|");
-        System.out.println("|-------------------------------------|");
+        System.out.println("|-------------------------------------------------------|");
+        System.out.println("|------------------------ LOGIN ------------------------|");
+        System.out.println("|-------------------------------------------------------|");
         System.out.print("|- Usuario: ");
         return sc.nextLine();
     }

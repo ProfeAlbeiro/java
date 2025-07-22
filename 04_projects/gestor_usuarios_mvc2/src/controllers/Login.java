@@ -24,11 +24,11 @@ public class Login {
         // Solicita credenciales desde la vista
         String email = loginView.pedirEmail();
         String password = loginView.pedirContrasena();
-        System.out.println("|-------------------------------------|\n"); 
+        System.out.println("|-------------------------------------------------------|\n");
 
         // Validación básica (en proyecto real sería con base de datos)
         if (email.equals(admin.getUserEmail()) && password.equals(admin.getUserPass())) {
-            System.out.println("¡Bienvenido " + admin.getFullName() + "!");
+//            System.out.println("¡Bienvenido " + admin.getFullName() + "!");
             Dashboard dashboard = new Dashboard();            
         } else {
             System.out.println("Credenciales incorrectas\n");
