@@ -22,19 +22,19 @@ public class RolesView {
         String name, newName;
         
         do {
-            System.out.println("|-------------------------------------------------------|");
-            System.out.println("|------------------ GESTIÓN DE ROLES -------------------|");
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("\n|-------------------------------------------------------------------|");
+            System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|- 1. Registrar Rol");
             System.out.println("|- 2. Listar Roles");
             System.out.println("|- 3. Actualizar Rol");
             System.out.println("|- 4. Eliminar Rol");
             System.out.println("|- 0. Volver");
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|- Seleccione una opción: ");
             menuRol = sc.nextInt();
             sc.nextLine();
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
 
             switch (menuRol) {
                 case 1:
@@ -44,7 +44,7 @@ public class RolesView {
                     System.out.print("|- Nombre: ");
                     name = sc.nextLine();
                     roles.addRol(new Rol(rolId,name));
-                    System.out.println("|-------------------------------------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
                     System.out.println("|- ¡Rol creado!");                    
                     break;
                 case 2:
@@ -74,7 +74,7 @@ public class RolesView {
                     }
                     break;                
             }
-            System.out.println("|-------------------------------------------------------|\n");
+            System.out.println("|-------------------------------------------------------------------|");
         } while (menuRol != 0);
     }
 }

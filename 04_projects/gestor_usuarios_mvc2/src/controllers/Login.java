@@ -27,12 +27,12 @@ public class Login {
 
         // Validación básica (en proyecto real sería con base de datos)
         if (email.equals(admin.getUserEmail()) && password.equals(admin.getUserPass())) {
-            System.out.println("|-------------------------------------------------------|\n");
+            System.out.println("|-------------------------------------------------------------------|");
             Dashboard dashboard = new Dashboard(roles,users);            
         } else {
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|- Credenciales incorrectas");            
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
         }
     }
 }

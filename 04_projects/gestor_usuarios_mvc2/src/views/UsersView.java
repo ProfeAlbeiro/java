@@ -25,19 +25,19 @@ public class UsersView {
         String name, lastname, email, pass;
         boolean state;
         do {
-            System.out.println("|-------------------------------------------------------|");
-            System.out.println("|---------------- GESTIÓN DE USUARIOS ------------------|");
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("\n|-------------------------------------------------------------------|");
+            System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|- 1. Agregar Usuario");
             System.out.println("|- 2. Listar Usuarios");
             System.out.println("|- 3. Actualizar Usuario");
             System.out.println("|- 4. Eliminar Usuario");
             System.out.println("|- 0. Volver");
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|- Seleccione una opción: ");
             menuUs = sc.nextInt();
             sc.nextLine();
-            System.out.println("|-------------------------------------------------------|");
+            System.out.println("|-------------------------------------------------------------------|");
 
             switch (menuUs) {
                 case 1:
@@ -57,7 +57,7 @@ public class UsersView {
                     System.out.print("|- ID Rol: ");
                     rolId = sc.nextInt();
                     sc.nextLine();
-                    System.out.println("|-------------------------------------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
                     Rol rol = roles.searchRolById(rolId);
                     if (rol != null) {
                         User newUser = new User(userId,name,lastname,email,pass,state,rol);
@@ -91,7 +91,7 @@ public class UsersView {
                     rolId = sc.nextInt();
                     sc.nextLine();
                     Rol rolUpdate = roles.searchRolById(rolId);
-                    System.out.println("|-------------------------------------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
                     if (rolUpdate != null) {
                         if (users.updateUser(rolId, name, lastname, email, pass, state, rolUpdate)) {
                             System.out.println("|- ¡Usuario Actualizado!");
@@ -112,7 +112,7 @@ public class UsersView {
                     }
                     break;
             }
-            System.out.println("|-------------------------------------------------------|\n");
+            System.out.println("|-------------------------------------------------------------------|");
         } while (menuUs != 0);
     }
 }
