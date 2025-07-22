@@ -12,8 +12,8 @@ public class Users {
     private ArrayList<User> users = new ArrayList<>();    
     
     // Vista de Usuarios
-    public void indexUsers(){
-        usersView = new UsersView();
+    public void indexUsers(Roles roles, Users users){
+        usersView = new UsersView(roles, users);
         usersView.menuUsuarios();
     }
     

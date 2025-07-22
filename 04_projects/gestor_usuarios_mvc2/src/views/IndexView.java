@@ -20,7 +20,7 @@ public class IndexView {
         System.out.println("| 2. Registrarse");
         System.out.println("| 3. Salir");
         System.out.println("|-------------------------------------------------------|");
-        System.out.print("| Seleccione una opción: ");
+        System.out.print("|- Seleccione una opción: ");
         menuEmp = sc.nextInt();
         sc.nextLine();        
         System.out.println("|-------------------------------------------------------|\n");

@@ -11,8 +11,8 @@ public class Roles {
     private ArrayList<Rol> roles = new ArrayList<>();
     
     // Vista de Roles
-    public void indexRoles(){        
-        rolesView = new RolesView();
+    public void indexRoles(Roles roles){        
+        rolesView = new RolesView(roles);
         rolesView.menuRoles();        
     }
         

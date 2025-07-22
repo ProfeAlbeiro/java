@@ -4,16 +4,18 @@ import java.util.Scanner;
 import controllers.Users;
 import controllers.Roles;
 import controllers.Logout;
+import models.Rol;
 
 public class DashboardView {
     
-    private Scanner sc = new Scanner(System.in);
-     
-    public void menuDashboard(){
+    private Scanner sc = new Scanner(System.in);    
     
+    public void menuDashboard(Roles roles, Users users){
+        
         int menuDash;
         
         do {
+            System.out.println("¡Bienvenido " + users.searchUserById(1).getFullName()+ "!");
             System.out.println("|-------------------------------------------------------|");
             System.out.println("|---------------------- DASHBOARD ----------------------|");
             System.out.println("|-------------------------------------------------------|");
@@ -28,16 +30,17 @@ public class DashboardView {
             switch (menuDash) {
                 case 1:                    
                     Roles rolesManage = new Roles();
-                    rolesManage.indexRoles();
+                    rolesManage.indexRoles(roles);
                     break;
                 case 2:
                     Users usersManage = new Users();
-                    usersManage.indexUsers();                    
+                    usersManage.indexUsers(roles, users);
                     break;
                 case 0:
                     Logout logout = new Logout();                    
                     break;
                 default:
+                    System.out.println("|-------------------------------------------------------|");
                     System.out.println("|- ¡Opción NO Válida!");
             }
         } while (menuDash != 0);

@@ -14,7 +14,7 @@ public class UsersView {
     public UsersView(){        
     }
     
-    public UsersView(Users users, Roles roles) {
+    public UsersView(Roles roles, Users users) {
         this.users = users;        
         this.roles = roles;
     }
@@ -57,6 +57,7 @@ public class UsersView {
                     System.out.print("|- ID Rol: ");
                     rolId = sc.nextInt();
                     sc.nextLine();
+                    System.out.println("|-------------------------------------------------------|");
                     Rol rol = roles.searchRolById(rolId);
                     if (rol != null) {
                         User newUser = new User(userId,name,lastname,email,pass,state,rol);
@@ -69,7 +70,7 @@ public class UsersView {
                 case 2:
                     System.out.println("|- Lista de Usuarios: ");
                     for (User u : users.getUsers()) {
-                        System.out.println(u);
+                        System.out.println("|- " + u);
                     }
                     break;
                 case 3:
@@ -90,6 +91,7 @@ public class UsersView {
                     rolId = sc.nextInt();
                     sc.nextLine();
                     Rol rolUpdate = roles.searchRolById(rolId);
+                    System.out.println("|-------------------------------------------------------|");
                     if (rolUpdate != null) {
                         if (users.updateUser(rolId, name, lastname, email, pass, state, rolUpdate)) {
                             System.out.println("|- ¡Usuario Actualizado!");
