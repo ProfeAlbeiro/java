@@ -1,4 +1,4 @@
-package views;
+package views.modules.users;
 
 import controllers.Users;
 import controllers.Roles;

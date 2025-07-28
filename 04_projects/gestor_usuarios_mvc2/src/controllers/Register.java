@@ -2,7 +2,7 @@ package controllers;
 
 import models.Rol;
 import models.User;
-import views.RegisterView;
+import views.company.RegisterView;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,7 +2,7 @@ package controllers;
 
 import models.Rol;
 import models.User;
-import views.UsersView;
+import views.modules.users.UsersView;
 import java.util.ArrayList;
 
 public class Users {

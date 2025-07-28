@@ -2,18 +2,21 @@ package controllers;
 
 import models.Rol;
 import models.User;
-import views.LoginView;
+import routes.Router;
+import views.company.LoginView;
 
 public class Login {
     
+    private Router router;
     private LoginView loginView;
+    private Roles roles;
+    private Users users;
 
     public Login() {
         
-        // Crear objetos: Vista, roles y usuarios
-        loginView = new LoginView();
-        Roles roles = new Roles();
-        Users users = new Users();
+        loginView = new LoginView(); 
+        roles = new Roles();
+        users = new Users();
         
         // Crear rol y usuario de prueba para autenticación
         Rol rolAdmin = new Rol(1, "admin");
@@ -28,11 +31,12 @@ public class Login {
         // Validación básica (en proyecto real sería con base de datos)
         if (email.equals(admin.getUserEmail()) && password.equals(admin.getUserPass())) {
             System.out.println("|-------------------------------------------------------------------|");
-            Dashboard dashboard = new Dashboard(roles,users);            
+            router = new Router("Dashboard", roles, users);
         } else {
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|- Credenciales incorrectas");            
             System.out.println("|-------------------------------------------------------------------|");
         }
     }
+    
 }

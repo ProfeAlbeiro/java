@@ -1,12 +1,14 @@
 package controllers;
 
-import views.IndexView;
+import views.company.IndexView;
 
 public class Landing {    
     
-    public static void main(String[] args) {
-        // Crear objeto para cargar la vista inicial (Empresa)
-        IndexView vistaInicial = new IndexView();
-        vistaInicial.menuEmpresa();
+    private IndexView landingView;
+    
+    public Landing(){
+        landingView = new IndexView();
+        landingView.menuEmpresa();
     }
+    
 }

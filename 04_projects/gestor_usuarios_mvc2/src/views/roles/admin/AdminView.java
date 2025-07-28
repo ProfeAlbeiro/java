@@ -1,16 +1,25 @@
-package views;
+package views.roles.admin;
 
 import java.util.Scanner;
 import controllers.Users;
 import controllers.Roles;
 import controllers.Logout;
-import models.Rol;
 
-public class DashboardView {
+public class AdminView {
     
     private Scanner sc = new Scanner(System.in);    
+    private Roles roles = new Roles();
+    private Users users = new Users();
     
-    public void menuDashboard(Roles roles, Users users){
+    public AdminView(){        
+    }
+    
+    public AdminView(Roles roles, Users users){
+        this.roles = roles;
+        this.users = users;        
+    }
+    
+    public void menuDashboard(){
         
         int menuDash;
         

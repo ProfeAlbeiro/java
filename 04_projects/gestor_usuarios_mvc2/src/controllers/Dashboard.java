@@ -1,13 +1,16 @@
 package controllers;
 
-import views.DashboardView;
+import views.roles.admin.AdminView;
 
 public class Dashboard {    
     
-    private DashboardView dashboardView;    
+    private AdminView dashboardView;
+    
+    public Dashboard(){        
+    }
 
     public Dashboard(Roles roles, Users users) {        
-        dashboardView = new DashboardView();
-        dashboardView.menuDashboard(roles,users);
+        dashboardView = new AdminView(roles,users);
+        dashboardView.menuDashboard();
     }
 }

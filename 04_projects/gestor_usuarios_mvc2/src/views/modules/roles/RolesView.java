@@ -1,4 +1,4 @@
-package views;
+package views.modules.roles;
 
 import models.Rol;
 import controllers.Roles;

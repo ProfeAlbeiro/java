@@ -1,15 +1,17 @@
-package views;
+package views.company;
 
-import controllers.Login;
-import controllers.Register;
+import routes.Router;
 
 import java.util.Scanner;
 
 public class IndexView {
+    
+    private Router router;
+    
     public void menuEmpresa(){
         
-        // Variable para la opción y objeto para ingreso de datos
-        int menuEmp; 
+        int menuEmp;
+        String controller = "";
         Scanner sc = new Scanner(System.in);
         
         do {
@@ -29,12 +31,11 @@ public class IndexView {
 
             // Según la opción, crea un objeto a partir del controlador
             switch (menuEmp) {
-                case 1:                
-                    Login login = new Login();                
+                case 1:
+                    router = new Router("Login");
                     break;
                 case 2:
-                    Register register = new Register();
-                    register.registrarUsuario();
+                    router = new Router("Register");
                     break;
                 case 3:
                     System.out.println("|- ¡Hasta Pronto! ...");
@@ -43,7 +44,7 @@ public class IndexView {
                 default:
                     System.out.println("|- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");                    
-            }
+            }            
         } while (menuEmp != 3);
     }
 }

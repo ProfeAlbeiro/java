@@ -1,7 +1,7 @@
 package controllers;
 
 import models.Rol;
-import views.RolesView;
+import views.modules.roles.RolesView;
 import java.util.ArrayList;
 
 public class Roles {
