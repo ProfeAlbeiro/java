@@ -22,7 +22,7 @@ public class IndexView {
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("| 1. Iniciar Sesión");
             System.out.println("| 2. Registrarse");
-            System.out.println("| 3. Salir");
+            System.out.println("| 0. Salir");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|- Seleccione una opción: ");
             menuEmp = sc.nextInt();
@@ -37,7 +37,7 @@ public class IndexView {
                 case 2:
                     router = new Router("Register");
                     break;
-                case 3:
+                case 0:
                     System.out.println("|- ¡Hasta Pronto! ...");
                     System.out.println("|-------------------------------------------------------------------|");        
                     break;
@@ -45,6 +45,6 @@ public class IndexView {
                     System.out.println("|- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");                    
             }            
-        } while (menuEmp != 3);
+        } while (menuEmp != 0);
     }
 }
