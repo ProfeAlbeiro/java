@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controllers;
 
-/**
- *
- * @author ADMIN
- */
-public class LoginController {
+import views.landing.LoginView;
+
+public class LoginController {    
+    
+    private LoginView loginView;
+    private String email, pass;
+    
+    public LoginController() {
+
+        loginView = new LoginView();
+        
+        email = loginView.getEmail();
+        pass = loginView.getPass();
+        
+        System.out.println("|-------------------------------------------------------------------|");
+        if (email.equals("admin@correo.com") && pass.equals("12345")) {
+            System.out.println("Voy al Dashboard");
+        } else {
+            System.out.println("Me devuelvo al Landing");
+        }
+        
+    }
     
 }

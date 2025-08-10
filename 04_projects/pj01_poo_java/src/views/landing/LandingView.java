@@ -1,5 +1,6 @@
 package views.landing;
 
+import controllers.LoginController;
 import java.util.Scanner;
 
 public class LandingView {
@@ -17,15 +18,13 @@ public class LandingView {
             System.out.println("    2. Registrarse");
             System.out.println("    0. Salir");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|----- Seleccione una opción: ");
+            System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();            
             System.out.println("|-------------------------------------------------------------------|");
             
             switch (menu) {
                 case 1:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
+                    LoginController login = new LoginController();
                     break;
                 case 2:                    
                     System.out.println("\n|-------------------------------------------------------------------|");
