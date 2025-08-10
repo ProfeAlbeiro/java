@@ -15,6 +15,7 @@
 ||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                   |||
 ||| --      03.04. Crear las 'Clases' del proyecto                                                                                                     |||
 ||| --  04. CONFIGURACIÓN INICIAL DEL PROYECTO                                                                                                         |||
+||| --      04.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
 |||                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
 |||                                                                                                                                                    |||
@@ -68,7 +69,6 @@
             
             04. Crear un acceso directo del ejecutable que se encuentra en 'C:\netbeans\bin\netbeans64.exe' dando 'click derecho / Crear acceso 
                 directo'. Se cambia el nombre y se envía al 'Escritorio' de Windows.
-
 
 
 
@@ -210,7 +210,52 @@
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 04.01.  Codificar el archivo 'views/company/LandingView.java': --------------------------------------------------------------------------------------|
+|-- 04.01.  Codificar la Clase 'models/RolModel.java': --------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package models;
+                    02 
+                    03   public class RolModel {
+                    04       
+                    05       private int rolId;
+                    06       private int rolName;
+                    07 
+                    08       public RolModel() {
+                    09       }
+                    10       
+                    11       public RolModel(int rolId, int rolName) {
+                    12           this.rolId = rolId;
+                    13           this.rolName = rolName;
+                    14       }
+                    15 
+                    16       public int getRolId() {
+                    17           return rolId;
+                    18       }
+                    19 
+                    20       public void setRolId(int rolId) {
+                    21           this.rolId = rolId;
+                    22       }
+                    23 
+                    24       public int getRolName() {
+                    25           return rolName;
+                    26       }
+                    27 
+                    28       public void setRolName(int rolName) {
+                    29           this.rolName = rolName;
+                    30       }
+                    31       
+                    32   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
 
