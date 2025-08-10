@@ -29,4 +29,9 @@ public class RolModel {
         this.rolName = rolName;
     }
     
+    @Override
+    public String toString(){
+        return rolId + " - " + rolName;
+    }
+    
 }

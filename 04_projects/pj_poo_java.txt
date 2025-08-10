@@ -15,7 +15,10 @@
 ||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                   |||
 ||| --      03.04. Crear las 'Clases' del proyecto                                                                                                     |||
 ||| --  04. CONFIGURACIÓN INICIAL DEL PROYECTO                                                                                                         |||
+||| --  05. MODELOS                                                                                                                                    |||
 ||| --      04.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
+||| --      04.02. Codificar la Clase 'models/UserModel.java'                                                                                          |||
+||| --  06. CONTROLADORES                                                                                                                              |||
 |||                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
 |||                                                                                                                                                    |||
@@ -121,25 +124,26 @@
                 │   ├── RolModel.java
                 │   └── UserModel.java
                 ├── routes/
-                │   └── Router.java
-                └── views/
-                    ├── dashboard/
-                    │   └── DashboardView.java
-                    ├── landing/
-                    │   ├── LandingView.java
-                    │   ├── LogingView.java
-                    │   └── RegisterView.java
-                    └── modules/
-                        ├── roles/
-                        │   ├── RolCreateView.java
-                        │   ├── RolReadView.java
-                        │   ├── RolUpdateView.java
-                        │   └── RolesView.java
-                        └── users/
-                            ├── UserCreateView.java
-                            ├── UserReadView.java
-                            ├── UserUpdateView.java
-                            └── UsersView.java
+                │   └── RouterControllers.java
+                ├── views/
+                │   ├── dashboard/
+                │   │   └── DashboardView.java
+                │   ├── landing/
+                │   │   ├── LandingView.java
+                │   │   ├── LogingView.java
+                │   │   └── RegisterView.java
+                │   └── modules/
+                │       ├── roles/
+                │       │   ├── RolCreateView.java
+                │       │   ├── RolReadView.java
+                │       │   ├── RolUpdateView.java
+                │       │   └── RolesView.java
+                │       └── users/
+                │           ├── UserCreateView.java
+                │           ├── UserReadView.java
+                │           ├── UserUpdateView.java
+                │           └── UsersView.java
+                └── Main.java
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -163,7 +167,7 @@
 
             01. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...'.
             
-            02. Escribir en 'Package Name:' escribir 'models'.
+            02. En 'Package Name:' escribir 'models'.
             
             03. Repetir el paso 01 y 02 con los siguientes nombres para los 'paqutes': views, controllers y routes.
             
@@ -178,28 +182,32 @@
 |-- 03.04.  Crear las 'Clases' del proyecto: ------------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-            01. Dar click derecho sobre el paquete 'models' y seleccionar 'New / Java Class...'.           
+            01. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Class...'.
+            
+            02. En 'Class Name:' escribir 'Main'.
 
-            02. Escribir en 'Class Name:' escribir 'RolModel'.
+            03. Dar click derecho sobre el paquete 'models' y seleccionar 'New / Java Class...'.           
 
-            03. Repetir el paso 01 y 02 con el siguiente nombre para la 'Clase': UserModel.
+            04. En 'Class Name:' escribir 'RolModel'.
 
-            04. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
+            05. Repetir el paso 03 y 04 con el siguiente nombre para la 'Clase': UserModel.
+
+            06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
                 DashboardController, LandingController, LoginController, LogoutController, RegisterController, RolController y UserContrller
 
-            05. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': 
+            07. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': 
                 DashboardView
             
-            06. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
+            08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
                 LandingView, LogingView y RegisterView
             
-            07. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
+            09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
                 RolCreateView, RolReadView, RolUpdateView y RolesView
                 
-            08. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
+            10. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
                 UserCreateView, UserReadView, UserUpdateView y UsersView
 
-            09. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': Router 
+            11. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': Router 
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -243,8 +251,308 @@
                     28       public void setRolName(int rolName) {
                     29           this.rolName = rolName;
                     30       }
-                    31       
-                    32   }
+                    31   
+                    32       @Override
+                    33       public String toString(){
+                    34           return rolId + " - " + rolName;
+                    35       }
+                    36
+                    37   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.02.  Codificar la Clase 'models/UserModel.java': --------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package models;
+                    02 
+                    03   public class UserModel {
+                    04       
+                    05       private RolModel rol;
+                    06       private int userId;
+                    07       private String userName;
+                    08       private String userLastName;
+                    09       private String userEmail;
+                    10       private String userPass;
+                    11       private boolean userState;
+                    12 
+                    13       public UserModel() {
+                    14       }
+                    15 
+                    16       public UserModel(RolModel rol, int userId, String userName, String userLastName, String userEmail, 
+                    17               String userPass, boolean userState) {
+                    18           this.rol = rol;
+                    19           this.userId = userId;
+                    20           this.userName = userName;
+                    21           this.userLastName = userLastName;
+                    22           this.userEmail = userEmail;
+                    23           this.userPass = userPass;
+                    24           this.userState = userState;
+                    25       }
+                    26 
+                    27       public RolModel getRol() {
+                    28           return rol;
+                    29       }
+                    30 
+                    31       public void setRol(RolModel rol) {
+                    32           this.rol = rol;
+                    33       }
+                    34 
+                    35       public int getUserId() {
+                    36           return userId;
+                    37       }
+                    38 
+                    39       public void setUserId(int userId) {
+                    40           this.userId = userId;
+                    41       }
+                    42 
+                    43       public String getUserName() {
+                    44           return userName;
+                    45       }
+                    46 
+                    47       public void setUserName(String userName) {
+                    48           this.userName = userName;
+                    49       }
+                    50 
+                    51       public String getUserLastName() {
+                    52           return userLastName;
+                    53       }
+                    54 
+                    55       public void setUserLastName(String userLastName) {
+                    56           this.userLastName = userLastName;
+                    57       }
+                    58 
+                    59       public String getUserEmail() {
+                    60           return userEmail;
+                    61       }
+                    62 
+                    63       public void setUserEmail(String userEmail) {
+                    64           this.userEmail = userEmail;
+                    65       }
+                    66   
+                    67       public String getUserPass() {
+                    68           return userPass;
+                    69       }
+                    70 
+                    71       public void setUserPass(String userPass) {
+                    72           this.userPass = userPass;
+                    73       }
+                    74 
+                    75       public boolean isUserState() {
+                    76           return userState;
+                    77       }
+                    78 
+                    79       public void setUserState(boolean userState) {
+                    80           this.userState = userState;
+                    81       }
+                    82       
+                    83       public String getFullName() {
+                    84           return userName + " " + userLastName;
+                    85       }
+                    86       
+                    87       @Override
+                    88       public String toString(){
+                    89           return rol.getRolName() + userId + " - " + getFullName() + " - " + userEmail + " - " +
+                    90                   (userState ? "Activo" : "Inactivo");
+                    91       }
+                    92       
+                    93   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.XX.  Ejectuar el proyecto : ----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+            02. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
+                'Compiling' y en 'Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8'.
+
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------------------- 05. MODELOS -------------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.01.  Codificar la Clase 'models/RolModel.java': --------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package models;
+                    02 
+                    03   public class RolModel {
+                    04       
+                    05       private int rolId;
+                    06       private int rolName;
+                    07 
+                    08       public RolModel() {
+                    09       }
+                    10       
+                    11       public RolModel(int rolId, int rolName) {
+                    12           this.rolId = rolId;
+                    13           this.rolName = rolName;
+                    14       }
+                    15 
+                    16       public int getRolId() {
+                    17           return rolId;
+                    18       }
+                    19 
+                    20       public void setRolId(int rolId) {
+                    21           this.rolId = rolId;
+                    22       }
+                    23 
+                    24       public int getRolName() {
+                    25           return rolName;
+                    26       }
+                    27 
+                    28       public void setRolName(int rolName) {
+                    29           this.rolName = rolName;
+                    30       }
+                    31   
+                    32       @Override
+                    33       public String toString(){
+                    34           return rolId + " - " + rolName;
+                    35       }
+                    36
+                    37   }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.02.  Codificar la Clase 'models/UserModel.java': -------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package models;
+                    02 
+                    03   public class UserModel {
+                    04       
+                    05       private RolModel rol;
+                    06       private int userId;
+                    07       private String userName;
+                    08       private String userLastName;
+                    09       private String userEmail;
+                    10       private String userPass;
+                    11       private boolean userState;
+                    12 
+                    13       public UserModel() {
+                    14       }
+                    15 
+                    16       public UserModel(RolModel rol, int userId, String userName, String userLastName, String userEmail, 
+                    17               String userPass, boolean userState) {
+                    18           this.rol = rol;
+                    19           this.userId = userId;
+                    20           this.userName = userName;
+                    21           this.userLastName = userLastName;
+                    22           this.userEmail = userEmail;
+                    23           this.userPass = userPass;
+                    24           this.userState = userState;
+                    25       }
+                    26 
+                    27       public RolModel getRol() {
+                    28           return rol;
+                    29       }
+                    30 
+                    31       public void setRol(RolModel rol) {
+                    32           this.rol = rol;
+                    33       }
+                    34 
+                    35       public int getUserId() {
+                    36           return userId;
+                    37       }
+                    38 
+                    39       public void setUserId(int userId) {
+                    40           this.userId = userId;
+                    41       }
+                    42 
+                    43       public String getUserName() {
+                    44           return userName;
+                    45       }
+                    46 
+                    47       public void setUserName(String userName) {
+                    48           this.userName = userName;
+                    49       }
+                    50 
+                    51       public String getUserLastName() {
+                    52           return userLastName;
+                    53       }
+                    54 
+                    55       public void setUserLastName(String userLastName) {
+                    56           this.userLastName = userLastName;
+                    57       }
+                    58 
+                    59       public String getUserEmail() {
+                    60           return userEmail;
+                    61       }
+                    62 
+                    63       public void setUserEmail(String userEmail) {
+                    64           this.userEmail = userEmail;
+                    65       }
+                    66   
+                    67       public String getUserPass() {
+                    68           return userPass;
+                    69       }
+                    70 
+                    71       public void setUserPass(String userPass) {
+                    72           this.userPass = userPass;
+                    73       }
+                    74 
+                    75       public boolean isUserState() {
+                    76           return userState;
+                    77       }
+                    78 
+                    79       public void setUserState(boolean userState) {
+                    80           this.userState = userState;
+                    81       }
+                    82       
+                    83       public String getFullName() {
+                    84           return userName + " " + userLastName;
+                    85       }
+                    86       
+                    87       @Override
+                    88       public String toString(){
+                    89           return rol.getRolName() + userId + " - " + getFullName() + " - " + userEmail + " - " +
+                    90                   (userState ? "Activo" : "Inactivo");
+                    91       }
+                    92       
+                    93   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
