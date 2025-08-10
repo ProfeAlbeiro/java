@@ -8,6 +8,7 @@ public class LandingView {
     private Scanner sc = new Scanner(System.in);
     
     public LandingView() {
+        
         do {
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|----------------------------- EMPRESA -----------------------------|");
@@ -32,11 +33,11 @@ public class LandingView {
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:
-                    System.out.println("|- ¡Hasta Pronto! ...");
+                    System.out.println("|----- ¡Hasta Pronto! ...");
                     System.out.println("|-------------------------------------------------------------------|");        
                     break;
                 default:
-                    System.out.println("|- ¡Opción No Válida!");
+                    System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");                    
             }
             
