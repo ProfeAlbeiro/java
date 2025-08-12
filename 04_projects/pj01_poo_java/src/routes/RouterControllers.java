@@ -1,14 +1,14 @@
 package routes;
 
-import controllers.LandingController;
+import controllers.DashboardController;
 
 public class RouterControllers {
 
-    private LandingController landing;
+    private DashboardController dashboard;
     
     public RouterControllers() {
         
-        landing = new LandingController();
+        dashboard = new DashboardController();
         
     }
     

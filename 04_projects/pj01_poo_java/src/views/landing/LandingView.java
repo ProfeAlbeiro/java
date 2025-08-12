@@ -9,7 +9,8 @@ public class LandingView {
     
     public LandingView() {
         
-        do {
+        do {            
+            
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|----------------------------- EMPRESA -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
@@ -22,6 +23,7 @@ public class LandingView {
             System.out.println("|-------------------------------------------------------------------|");
             
             switch (menu) {
+                
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
@@ -38,7 +40,8 @@ public class LandingView {
                     break;
                 default:
                     System.out.println("|----- ¡Opción No Válida!");
-                    System.out.println("|-------------------------------------------------------------------|");                    
+                    System.out.println("|-------------------------------------------------------------------|");
+                    
             }
             
         } while (menu != 0);

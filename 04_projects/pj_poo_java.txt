@@ -21,6 +21,7 @@
 ||| --      04.04. Codificar la Clase 'Main.java'                                                                                                      |||
 ||| --      04.05. Ejectuar el proyecto                                                                                                                |||
 ||| --  05. MENÚ DASHBOARD                                                                                                                             |||
+||| --      05.01. Codificar la Clase 'views.landing/DashboardView.java'                                                                                 |||
 ||| --  06. MENÚ ROLES                                                                                                                                 |||
 ||| --      06.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
 ||| --  07. MENÚ USERS                                                                                                                                 |||
@@ -221,7 +222,7 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||-------------------------------------------------------- 04. EJECUCIÓN INICIAL DEL PROYECTO --------------------------------------------------------|||
+|||----------------------------------------------------------------- 04. MENÚ LANDING -----------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -242,41 +243,44 @@
                     10       public LandingView() {
                     11           
                     12           do {
-                    13               System.out.println("\n|-------------------------------------------------------------------|");
-                    14               System.out.println("|----------------------------- EMPRESA -----------------------------|");
-                    15               System.out.println("|-------------------------------------------------------------------|");
-                    16               System.out.println("    1. Iniciar Sesión");
-                    17               System.out.println("    2. Registrarse");
-                    18               System.out.println("    0. Salir");
-                    19               System.out.println("|-------------------------------------------------------------------|");
-                    20               System.out.print("|----- Seleccione una opción: ");
-                    21               menu = sc.nextInt();            
-                    22               System.out.println("|-------------------------------------------------------------------|");
-                    23               
-                    24               switch (menu) {
-                    25                   case 1:
-                    26                       System.out.println("\n|-------------------------------------------------------------------|");
-                    27                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
-                    28                       System.out.println("|-------------------------------------------------------------------|");
-                    29                       break;
-                    30                   case 2:                    
-                    31                       System.out.println("\n|-------------------------------------------------------------------|");
-                    32                       System.out.println("|--------------------------- REGISTRARSE ---------------------------|");
-                    33                       System.out.println("|-------------------------------------------------------------------|");
-                    34                       break;
-                    35                   case 0:
-                    36                       System.out.println("|----- ¡Hasta Pronto! ...");
-                    37                       System.out.println("|-------------------------------------------------------------------|");        
-                    38                       break;
-                    39                   default:
-                    40                       System.out.println("|----- ¡Opción No Válida!");
-                    41                       System.out.println("|-------------------------------------------------------------------|");                    
-                    42               }
-                    43               
-                    44           } while (menu != 0);
-                    45       }
-                    46       
-                    47   }
+                    13
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|----------------------------- EMPRESA -----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Iniciar Sesión");
+                    18               System.out.println("    2. Registrarse");
+                    19               System.out.println("    0. Salir");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.print("|----- Seleccione una opción: ");
+                    22               menu = sc.nextInt();            
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               
+                    25               switch (menu) {
+                    26
+                    27                   case 1:
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:                    
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|--------------------------- REGISTRARSE ---------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    36                       break;
+                    37                   case 0:
+                    38                       System.out.println("|----- ¡Hasta Pronto! ...");
+                    39                       System.out.println("|-------------------------------------------------------------------|");        
+                    40                       break;
+                    41                   default:
+                    42                       System.out.println("|----- ¡Opción No Válida!");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44
+                    45               }
+                    46               
+                    47           } while (menu != 0);
+                    48       }
+                    49       
+                    50   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
@@ -397,52 +401,65 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||-------------------------------------------------------------------- 05. MODELOS -------------------------------------------------------------------|||
+|||---------------------------------------------------------------- 05. MENÚ DASHBOARD ----------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 04.01.  Codificar la Clase 'models/RolModel.java': --------------------------------------------------------------------------------------------------|
+|-- 05.01.  Codificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package models;
+                    01   package views.dashboard;
                     02 
-                    03   public class RolModel {
-                    04       
-                    05       private int rolId;
-                    06       private int rolName;
-                    07 
-                    08       public RolModel() {
-                    09       }
-                    10       
-                    11       public RolModel(int rolId, int rolName) {
-                    12           this.rolId = rolId;
-                    13           this.rolName = rolName;
-                    14       }
-                    15 
-                    16       public int getRolId() {
-                    17           return rolId;
-                    18       }
-                    19 
-                    20       public void setRolId(int rolId) {
-                    21           this.rolId = rolId;
-                    22       }
-                    23 
-                    24       public int getRolName() {
-                    25           return rolName;
-                    26       }
-                    27 
-                    28       public void setRolName(int rolName) {
-                    29           this.rolName = rolName;
-                    30       }
-                    31   
-                    32       @Override
-                    33       public String toString(){
-                    34           return rolId + " - " + rolName;
-                    35       }
-                    36
-                    37   }
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class DashboardView {
+                    06       
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public DashboardView() {
+                    11           
+                    12           do {            
+                    13               
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Gestión de Roles");
+                    18               System.out.println("    2. Gestión de Usuarios");
+                    19               System.out.println("    0. Cerrar Sesión");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.print("|----- Seleccione una opción : ");
+                    22               menu = sc.nextInt();            
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               
+                    25               switch (menu) {
+                    26                   
+                    27                   case 1:
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    36                       break;
+                    37                   case 0:
+                    38                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    39                       System.out.println("|-------------------------------------------------------------------|");        
+                    40                       break;
+                    41                   default:
+                    42                       System.out.println("|----- ¡Opción No Válida!");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44               }
+                    45               
+                    46           } while (menu != 0);
+                    47           
+                    48       }
+                    49       
+                    50   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
@@ -458,102 +475,24 @@
 
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 04.02.  Codificar la Clase 'models/UserModel.java': -------------------------------------------------------------------------------------------------|
+|-- 05.02.  Codificar la Clase 'controllers/DashboardController.java': ------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package models;
+                    01   package controllers;
                     02 
-                    03   public class UserModel {
-                    04       
-                    05       private RolModel rol;
-                    06       private int userId;
-                    07       private String userName;
-                    08       private String userLastName;
-                    09       private String userEmail;
-                    10       private String userPass;
-                    11       private boolean userState;
-                    12 
-                    13       public UserModel() {
-                    14       }
-                    15 
-                    16       public UserModel(RolModel rol, int userId, String userName, String userLastName, String userEmail, 
-                    17               String userPass, boolean userState) {
-                    18           this.rol = rol;
-                    19           this.userId = userId;
-                    20           this.userName = userName;
-                    21           this.userLastName = userLastName;
-                    22           this.userEmail = userEmail;
-                    23           this.userPass = userPass;
-                    24           this.userState = userState;
-                    25       }
-                    26 
-                    27       public RolModel getRol() {
-                    28           return rol;
-                    29       }
-                    30 
-                    31       public void setRol(RolModel rol) {
-                    32           this.rol = rol;
-                    33       }
-                    34 
-                    35       public int getUserId() {
-                    36           return userId;
-                    37       }
-                    38 
-                    39       public void setUserId(int userId) {
-                    40           this.userId = userId;
-                    41       }
-                    42 
-                    43       public String getUserName() {
-                    44           return userName;
-                    45       }
-                    46 
-                    47       public void setUserName(String userName) {
-                    48           this.userName = userName;
-                    49       }
-                    50 
-                    51       public String getUserLastName() {
-                    52           return userLastName;
-                    53       }
-                    54 
-                    55       public void setUserLastName(String userLastName) {
-                    56           this.userLastName = userLastName;
-                    57       }
-                    58 
-                    59       public String getUserEmail() {
-                    60           return userEmail;
-                    61       }
-                    62 
-                    63       public void setUserEmail(String userEmail) {
-                    64           this.userEmail = userEmail;
-                    65       }
-                    66   
-                    67       public String getUserPass() {
-                    68           return userPass;
-                    69       }
-                    70 
-                    71       public void setUserPass(String userPass) {
-                    72           this.userPass = userPass;
-                    73       }
-                    74 
-                    75       public boolean isUserState() {
-                    76           return userState;
-                    77       }
-                    78 
-                    79       public void setUserState(boolean userState) {
-                    80           this.userState = userState;
-                    81       }
-                    82       
-                    83       public String getFullName() {
-                    84           return userName + " " + userLastName;
-                    85       }
-                    86       
-                    87       @Override
-                    88       public String toString(){
-                    89           return rol.getRolName() + userId + " - " + getFullName() + " - " + userEmail + " - " +
-                    90                   (userState ? "Activo" : "Inactivo");
-                    91       }
-                    92       
-                    93   }
+                    03   import views.dashboard.DashboardView;
+                    04 
+                    05   public class DashboardController {
+                    06       
+                    07       private DashboardView dashboardView;
+                    08 
+                    09       public DashboardController() {
+                    10           
+                    11           dashboardView = new DashboardView();
+                    12           
+                    13       }
+                    14       
+                    15   }
 
                 ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
                 |                                                                                                                                      |
@@ -568,3 +507,34 @@
                 └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.03.  Modificar la Clase 'routes/RouterControllers.java': -----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+
+                      import controllers.DashboardController;
+
+                      public class RouterControllers {
+
+                          private DashboardController dashboard;
+                          
+                          public RouterControllers() {
+                              
+                              dashboard = new DashboardController();
+                              
+                          }
+                          
+                      }
+
+                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
+                |                                                                                                                                      |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------------------|
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
+                |                                                                                                                                      |
+                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
