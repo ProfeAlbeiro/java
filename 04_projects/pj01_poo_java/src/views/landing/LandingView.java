@@ -1,6 +1,5 @@
 package views.landing;
 
-import controllers.LoginController;
 import java.util.Scanner;
 
 public class LandingView {
@@ -24,7 +23,9 @@ public class LandingView {
             
             switch (menu) {
                 case 1:
-                    LoginController login = new LoginController();
+                    System.out.println("\n|-------------------------------------------------------------------|");
+                    System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:                    
                     System.out.println("\n|-------------------------------------------------------------------|");
