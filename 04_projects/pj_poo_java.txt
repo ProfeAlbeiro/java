@@ -38,7 +38,9 @@
 ||| --  08. REQUISITOS ROLES                                                                                                                           |||
 ||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
 ||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                               |||
-||| --      08.03. Codificar la Clase 'controllers/RolesController.java'                                                                               |||
+||| --      08.03. Codificar la Clase 'views.modules.roles/RolCreateView.java'                                                                         |||
+||| --      08.04. Modificar la Clase 'views.modules.roles/RolesView.java'                                                                             |||
+||| --      08.05. Ejectuar el proyecto                                                                                                                |||
 ||| --  09. REQUISITOS USERS                                                                                                                           |||
 ||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                          |||
 ||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
