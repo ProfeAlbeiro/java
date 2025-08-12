@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controllers;
 
-/**
- *
- * @author ADMIN
- */
+import views.modules.users.UsersView;
+
 public class UsersController {
+    
+    private UsersView usersView;
+    
+    public UsersController() {
+        
+        usersView = new UsersView();
+        
+    }
     
 }

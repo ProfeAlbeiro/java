@@ -33,7 +33,7 @@ public class RolesView {
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------ CONSULTAR ROLES --------------------------|");
+                    System.out.println("|------------------------- LISTAR ROLES ----------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 3:
