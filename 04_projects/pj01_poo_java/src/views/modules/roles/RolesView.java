@@ -1,11 +1,14 @@
 package views.modules.roles;
 
+import models.RolModel;
+import controllers.RolesController;
 import java.util.Scanner;
 
 public class RolesView {
     
     private int menu;
     private Scanner sc = new Scanner(System.in);
+    private RolesController roles;
 
     public RolesView() {
         
@@ -31,8 +34,12 @@ public class RolesView {
                     System.out.println("|------------------------- REGISTRAR ROL ---------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     RolCreateView rol = new RolCreateView();
-                    String rolId = rol.getRolId();
-                    String rolName = rol.getRolName();                    
+                    int rolId = rol.getRolId();
+                    String rolName = rol.getRolName();
+                    roles.addRol(new RolModel(rolId, rolName));
+                    for (RolModel r : roles.getRoles()) {
+                        System.out.println("|- " + r);
+                    }
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");

@@ -9,6 +9,7 @@ public class RouterControllers {
     public RouterControllers() {
         
         rolesController = new RolesController();
+        rolesController.rolesMenu();
         
     }
     

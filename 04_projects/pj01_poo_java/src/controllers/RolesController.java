@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class RolesController {
     
     private RolesView rolesView;
-    private ArrayList<RolModel> roles = new ArrayList<>();
-
-    public RolesController() {        
+    private ArrayList<RolModel> roles = new ArrayList<>();    
+    
+    public void rolesMenu(){
         rolesView = new RolesView();        
     }
     

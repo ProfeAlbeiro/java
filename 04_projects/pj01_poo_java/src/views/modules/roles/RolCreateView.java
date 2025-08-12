@@ -6,9 +6,9 @@ public class RolCreateView {
     
     private Scanner sc = new Scanner(System.in);
     
-    public String getRolId() {        
+    public int getRolId() {        
         System.out.print("|----- Id  : ");
-        return sc.nextLine();
+        return sc.nextInt();
     }
 
     public String getRolName() {
