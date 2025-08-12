@@ -1,14 +1,14 @@
 package routes;
 
-import controllers.DashboardController;
+import controllers.RolesController;
 
 public class RouterControllers {
 
-    private DashboardController dashboard;
+    private RolesController roles;
     
     public RouterControllers() {
         
-        dashboard = new DashboardController();
+        roles = new RolesController();
         
     }
     
