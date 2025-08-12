@@ -30,6 +30,9 @@ public class RolesView {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------- REGISTRAR ROL ---------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
+                    RolCreateView rol = new RolCreateView();
+                    String rolId = rol.getRolId();
+                    String rolName = rol.getRolName();                    
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");

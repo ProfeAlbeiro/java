@@ -3,12 +3,12 @@ package models;
 public class RolModel {
     
     private int rolId;
-    private int rolName;
+    private String rolName;
 
     public RolModel() {
     }
     
-    public RolModel(int rolId, int rolName) {
+    public RolModel(int rolId, String rolName) {
         this.rolId = rolId;
         this.rolName = rolName;
     }
@@ -21,11 +21,11 @@ public class RolModel {
         this.rolId = rolId;
     }
 
-    public int getRolName() {
+    public String getRolName() {
         return rolName;
     }
 
-    public void setRolName(int rolName) {
+    public void setRolName(String rolName) {
         this.rolName = rolName;
     }
     

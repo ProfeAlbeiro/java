@@ -1,14 +1,14 @@
 package routes;
 
-import controllers.UsersController;
+import controllers.RolesController;
 
 public class RouterControllers {
 
-    private UsersController users;
+    private RolesController rolesController;
     
     public RouterControllers() {
         
-        users = new UsersController();
+        rolesController = new RolesController();
         
     }
     

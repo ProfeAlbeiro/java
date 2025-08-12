@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package views.modules.roles;
 
-/**
- *
- * @author ADMIN
- */
+import java.util.Scanner;
+
 public class RolCreateView {
+    
+    private Scanner sc = new Scanner(System.in);
+    
+    public String getRolId() {        
+        System.out.print("|----- Id  : ");
+        return sc.nextLine();
+    }
+
+    public String getRolName() {
+        System.out.print("|----- Rol : ");
+        return sc.nextLine();
+    }
     
 }
