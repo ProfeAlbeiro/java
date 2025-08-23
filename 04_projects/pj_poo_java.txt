@@ -148,6 +148,7 @@
                 │   ├── RolesController.java
                 │   └── UsersContrller.java
                 ├── models/
+                │   ├── CustomerModel.java
                 │   ├── RolModel.java
                 │   └── UserModel.java
                 ├── routes/
@@ -166,10 +167,16 @@
                 │       │   ├── RolUpdateView.java
                 │       │   └── RolesView.java
                 │       └── users/
-                │           ├── UserCreateView.java
-                │           ├── UserReadView.java
-                │           ├── UserUpdateView.java
-                │           └── UsersView.java
+                │           ├── customers/
+                │           │   ├── CustomerCreateView.java
+                │           │   ├── CustomerReadView.java
+                │           │   ├── CustomerUpdateView.java
+                │           │   └── CustomersView.java
+                │           └── users/
+                │               ├── UserCreateView.java
+                │               ├── UserReadView.java
+                │               ├── UserUpdateView.java
+                │               └── UsersView.java
                 └── Main.java
 
 
@@ -196,13 +203,16 @@
             
             02. En 'Package Name:' escribir 'models'.
             
-            03. Repetir el paso 01 y 02 con los siguientes nombres para los 'paqutes': views, controllers y routes.
+            03. Repetir el paso 01 y 02 con los siguientes nombres para los paqutes: 'views', 'controllers' y 'routes'.
             
-            04. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes 'paquetes': 
-                views.dashboard, views.landing y views.modules.
+            04. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.dashboard', 'views.landing' y 'views.modules'.
             
-            05. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes 'paquetes: 
-                views.modules.roles y views.modules.users.
+            05. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.modules.roles' y 'views.modules.users'.
+            
+            06. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.modules.users.users' y 'views.modules.users.customers'.
 
             
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -217,24 +227,28 @@
 
             04. En 'Class Name:' escribir 'RolModel'.
 
-            05. Repetir el paso 03 y 04 con el siguiente nombre para la 'Clase': UserModel.
+            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel' y 'CustomerModel'.
 
-            06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
-                DashboardController, LandingController, LoginController, LogoutController, RegisterController, RolController y UserContrller
+            06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'DashboardController', 'LandingController', 'LoginController', 'LogoutController', 'RegisterController', 'RolesController' y 
+                'UsersController'
 
-            07. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': 
-                DashboardView
+            07. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 
+                'DashboardView'
             
-            08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
-                LandingView, LogingView y RegisterView
+            08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'LandingView', 'LogingView' y 'RegisterView'
             
-            09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
-                RolCreateView, RolReadView, RolUpdateView y RolesView
+            09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'RolCreateView', 'RolReadView', 'RolUpdateView' y 'RolesView'
                 
-            10. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes 'Clases': 
-                UserCreateView, UserReadView, UserUpdateView y UsersView
+            10. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'CustomerCreateView', 'CustomerReadView', 'CustomerUpdateView' y 'CustomersView'
+            
+            11. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'UserCreateView', 'UserReadView', 'UserUpdateView' y 'UsersView'
 
-            11. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente 'Clase': Router 
+            12. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'Router' 
 
 
 
