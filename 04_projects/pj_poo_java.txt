@@ -248,7 +248,7 @@
             11. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'UserCreateView', 'UserReadView', 'UserUpdateView' y 'UsersView'
 
-            12. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'Router' 
+            12. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers' 
 
 
 
