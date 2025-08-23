@@ -158,7 +158,7 @@
                 │   │   └── DashboardView.java
                 │   ├── landing/
                 │   │   ├── LandingView.java
-                │   │   ├── LogingView.java
+                │   │   ├── LoginView.java
                 │   │   └── RegisterView.java
                 │   └── modules/
                 │       ├── roles/
@@ -237,7 +237,7 @@
                 'DashboardView'
             
             08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'LandingView', 'LogingView' y 'RegisterView'
+                'LandingView', 'LoginView' y 'RegisterView'
             
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'RolCreateView', 'RolReadView', 'RolUpdateView' y 'RolesView'
