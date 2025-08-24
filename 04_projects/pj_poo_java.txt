@@ -190,7 +190,7 @@
             
             03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo, en el 'Escritorio de Windows'.
             
-            04. En 'Project Name: pj01_poo_java'.
+            04. En 'Project Name:' escribir 'pj01_poo_java'.
             
             05. Deshabilitar la opción '☐ Create Main Class' y dar click a 'Finish'.
 
@@ -241,12 +241,12 @@
             
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'RolCreateView', 'RolReadView', 'RolUpdateView' y 'RolesView'
-                
-            10. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'CustomerCreateView', 'CustomerReadView', 'CustomerUpdateView' y 'CustomersView'
             
-            11. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+            10. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'UserCreateView', 'UserReadView', 'UserUpdateView' y 'UsersView'
+
+            11. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'CustomerCreateView', 'CustomerReadView', 'CustomerUpdateView' y 'CustomersView'
 
             12. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers' 
 
