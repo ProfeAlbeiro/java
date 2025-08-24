@@ -45,8 +45,12 @@
 ||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
 ||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                               |||
 ||| --      08.03. Codificar la Clase 'views.modules.roles/RolCreateView.java'                                                                         |||
-||| --      08.04. Modificar la Clase 'views.modules.roles/RolesView.java'                                                                             |||
-||| --      08.05. Ejectuar el proyecto                                                                                                                |||
+||| --      08.04. Codificar la Clase 'views.modules.roles/RolReadView.java'                                                                           |||
+||| --      08.05. Codificar la Clase 'views.modules.roles/RolByIdView.java'                                                                           |||
+||| --      08.06. Codificar la Clase 'views.modules.roles/RolReadView.java'                                                                           |||
+||| --      08.07. Codificar la Clase 'views.modules.roles/RolUpdateView.java'                                                                         |||
+||| --      08.08. Codificar la Clase 'views.modules.roles/RolesView.java'                                                                             |||
+||| --      08.09. Ejectuar el proyecto                                                                                                                |||
 ||| --  09. REQUISITOS USERS                                                                                                                           |||
 ||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                          |||
 ||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
@@ -170,17 +174,20 @@
                 │       ├── roles/
                 │       │   ├── RolCreateView.java
                 │       │   ├── RolReadView.java
+                │       │   ├── RolByIdView.java
                 │       │   ├── RolUpdateView.java
                 │       │   └── RolesView.java
                 │       └── users/
                 │           ├── customers/
                 │           │   ├── CustomerCreateView.java
                 │           │   ├── CustomerReadView.java
+                │           │   ├── CustomerByIdView.java
                 │           │   ├── CustomerUpdateView.java
                 │           │   └── CustomersView.java
                 │           ├── users/
                 │           │   ├── UserCreateView.java
                 │           │   ├── UserReadView.java
+                │           │   ├── UserByIdView.java
                 │           │   ├── UserUpdateView.java
                 │           │   └── UsersView.java
                 │           └── UsersMainView.java
@@ -247,16 +254,16 @@
                 'LandingView', 'LoginView' y 'RegisterView'.
             
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'RolCreateView', 'RolReadView', 'RolUpdateView' y 'RolesView'.
+                'RolCreateView', 'RolReadView', 'RolByIdView', 'RolUpdateView' y 'RolesView'.
             
             10. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...'; pero en 'Package:' eliminar el 
                 último 'users' quedando 'views.modules.users' y crear la siguiente Clase: 'UsersMainView'.
 
             11. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'UserCreateView', 'UserReadView', 'UserUpdateView' y 'UsersView'.
+                'UserCreateView', 'UserReadView', 'UserByIdView', 'UserUpdateView' y 'UsersView'.
 
             12. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'CustomerCreateView', 'CustomerReadView', 'CustomerUpdateView' y 'CustomersView'.
+                'CustomerCreateView', 'CustomerReadView', 'CustomerByIdView', 'CustomerUpdateView' y 'CustomersView'.
 
             13. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
 
