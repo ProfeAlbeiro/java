@@ -4,9 +4,58 @@
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||                                                                                                                                                    |||
-||| --  --. CONFIGURACIÓN DEL ENTORNO                                                                                                                  |||
-||| --  01. CREAR UN DIAGRAMA DE CLASES - UML                                                                                                          |||
-||| --  02. CREAR EL CÓDIGO EN JAVA DEL DIAGRAMA DE CLASES                                                                                             |||
+||| --  01. ENTORNO DE DESARROLLO                                                                                                                      |||
+||| --      01.01. Instalar StarUml                                                                                                                    |||
+||| --      01.02. Instalar JDK                                                                                                                        |||
+||| --      01.03. Instalar Netbeans                                                                                                                   |||
+||| --  02. DIAGRAMA DE CLASES                                                                                                                         |||
+||| --  03. ESTRUCTURA DEL PROYECTO                                                                                                                    |||
+||| --      03.01. Estructura del proyecto                                                                                                             |||
+||| --      03.02. Crear la 'Carpeta Raíz' del proyecto                                                                                                |||
+||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                   |||
+||| --      03.04. Crear las 'Clases' del proyecto                                                                                                     |||
+||| --  04. MENÚ LANDING                                                                                                                               |||
+||| --      04.01. Codificar la Clase 'views.landing/LandingView.java'                                                                                 |||
+||| --      04.02. Codificar la Clase 'controllers/LandingController.java'                                                                             |||
+||| --      04.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                  |||
+||| --      04.04. Codificar la Clase 'Main.java'                                                                                                      |||
+||| --      04.05. Ejectuar el proyecto                                                                                                                |||
+||| --  05. MENÚ DASHBOARD                                                                                                                             |||
+||| --      05.01. Codificar la Clase 'views.dashboard/DashboardView.java'                                                                             |||
+||| --      05.02. Codificar la Clase 'controllers/DashboardController.java'                                                                           |||
+||| --      05.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
+||| --      05.04. Ejectuar el proyecto                                                                                                                |||
+||| --  06. MENÚ ROLES                                                                                                                                 |||
+||| --      06.01. Codificar la Clase 'views.modules.roles/RolesView.java'                                                                             |||
+||| --      06.02. Codificar la Clase 'controllers/RolesController.java'                                                                               |||
+||| --      06.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
+||| --      06.04. Ejectuar el proyecto                                                                                                                |||
+||| --  07. MENÚ USERS                                                                                                                                 |||
+||| --      07.01. Codificar la Clase 'views.modules.users/UsersMainView.java'                                                                         |||
+||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                               |||
+||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
+||| --      07.04. Ejectuar el proyecto                                                                                                                |||
+||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersView.java'                                                                       |||
+||| --      07.06. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
+||| --      07.07. Ejectuar el proyecto                                                                                                                |||
+||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersView.java'                                                               |||
+||| --      07.09. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
+||| --      07.10. Ejectuar el proyecto                                                                                                                |||
+||| --  08. REQUISITOS ROLES                                                                                                                           |||
+||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
+||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                               |||
+||| --      08.03. Codificar la Clase 'views.modules.roles/RolCreateView.java'                                                                         |||
+||| --      08.04. Codificar la Clase 'views.modules.roles/RolReadView.java'                                                                           |||
+||| --      08.05. Codificar la Clase 'views.modules.roles/RolByIdView.java'                                                                           |||
+||| --      08.06. Codificar la Clase 'views.modules.roles/RolReadView.java'                                                                           |||
+||| --      08.07. Codificar la Clase 'views.modules.roles/RolUpdateView.java'                                                                         |||
+||| --      08.08. Codificar la Clase 'views.modules.roles/RolesView.java'                                                                             |||
+||| --      08.09. Ejectuar el proyecto                                                                                                                |||
+||| --  09. REQUISITOS USERS                                                                                                                           |||
+||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                          |||
+||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
+||| --  10. REGISTER                                                                                                                                   |||
+||| --  11. LOGIN Y LOGOUT                                                                                                                             |||
 |||                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
 |||                                                                                                                                                    |||
@@ -18,12 +67,23 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||------------------------------------------------------------ CONFIGURACIÓN DEL ENTORNO -------------------------------------------------------------|||
+|||------------------------------------------------------------ 01. ENTORNO DE DESARROLLO -------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- ------  Instalar JDK: -------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  01.01. Instalar StarUml: --------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Descargar 'StarUml': .
+
+                    ⦿   Ir a: https://staruml.io/download/.
+                    ⦿   Descargar el ejecutable que corresponda a la Arquitectura del Computador, por ejemplo. 'Windows (x86)'
+
+            02. Ejecutar el instalador 'StarUML Setup 7.0.0.exe' y seguir los pasos de instalación            
+            
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- ------  01.02. Instalar JDK: ------------------------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Descargar 'JDK': .
@@ -35,7 +95,7 @@
 
             
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- ------  Instalar Netbeans: --------------------------------------------------------------------------------------------------------------------------|
+|-- ------  01.03. Instalar Netbeans: -------------------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Descargar 'Netbeans': .
@@ -51,27 +111,15 @@
                 directo'. Se cambia el nombre y se envía al 'Escritorio' de Windows.
 
 
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- ------  Instalar StarUml: ---------------------------------------------------------------------------------------------------------------------------|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-            01. Descargar 'StarUml': .
-
-                    ⦿   Ir a: https://staruml.io/download/.
-                    ⦿   Descargar el ejecutable que corresponda a la Arquitectura del Computador, por ejemplo. 'Windows (x86)'
-
-            02. Ejecutar el instalador 'StarUML Setup 7.0.0.exe' y seguir los pasos de instalación            
-            
-
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||------------------------------------------------------ 01. CREAR UN DIAGRAMA DE CLASES - UML -------------------------------------------------------|||
+|||-------------------------------------------------------------- 02. DIAGRAMA DE CLASES --------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 01.01.  Crear un Diagrama de Clases - UML: ----------------------------------------------------------------------------------------------------------|
+|-- 02.01.  Crear un Diagrama de Clases - UML: ----------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Abrir 'StarUml'.
@@ -91,397 +139,1279 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||---------------------------------------------------------- 02. ESTRUCTURA DE UN ALGORITMO ----------------------------------------------------------|||
+|||----------------------------------------------------------- 03. ESTRUCTURA DEL PROYECTO ------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 02.01.  Crear el proyecto 'ex02_estructura_algoritmo': ----------------------------------------------------------------------------------------------|
+|-- 03.01.  Estructura del Proyecto: --------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            pj01_poo_java/
+            └── src/
+                ├── controllers/
+                │   ├── DashboardController.java
+                │   ├── LandingController.java
+                │   ├── LoginController.java
+                │   ├── LogoutController.java
+                │   ├── RegisterController.java
+                │   ├── RolesController.java
+                │   └── UsersContrller.java
+                ├── models/
+                │   ├── CustomerModel.java
+                │   ├── RolModel.java
+                │   └── UserModel.java
+                ├── routes/
+                │   └── RouterControllers.java
+                ├── views/
+                │   ├── dashboard/
+                │   │   └── DashboardView.java
+                │   ├── landing/
+                │   │   ├── LandingView.java
+                │   │   ├── LoginView.java
+                │   │   └── RegisterView.java
+                │   └── modules/
+                │       ├── roles/
+                │       │   ├── RolCreateView.java
+                │       │   ├── RolReadView.java
+                │       │   ├── RolByIdView.java
+                │       │   ├── RolUpdateView.java
+                │       │   └── RolesView.java
+                │       └── users/
+                │           ├── customers/
+                │           │   ├── CustomerCreateView.java
+                │           │   ├── CustomerReadView.java
+                │           │   ├── CustomerByIdView.java
+                │           │   ├── CustomerUpdateView.java
+                │           │   └── CustomersView.java
+                │           ├── users/
+                │           │   ├── UserCreateView.java
+                │           │   ├── UserReadView.java
+                │           │   ├── UserByIdView.java
+                │           │   ├── UserUpdateView.java
+                │           │   └── UsersView.java
+                │           └── UsersMainView.java
+                └── Main.java
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.02.  Crear la 'Carpeta Raíz' del proyecto: -------------------------------------------------------------------------------------------------------|
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Abrir 'Netbeans'.
 
             02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
             
-            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo: 'C:\...\java\sources\02_examples' y dar click a 'Open'.
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo, en el 'Escritorio de Windows' y 'Open'.
             
-            04. En 'Project Name: ex02_estructura_algoritmo'.
+            04. En 'Project Name:' escribir 'pj01_poo_java'.
             
-            05. En '☑ Create Main Class: paquete.Clase' y dar click a 'Finish'.            
-                    
-            06. Escribir el siguiente código:
+            05. Deshabilitar la opción '☐ Create Main Class' y dar click a 'Finish'.
 
-                    01   package paquete;
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.03.  Crear los 'paquetes' del proyecto: ----------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...'.
+            
+            02. En 'Package Name:' escribir 'models'.
+            
+            03. Repetir el paso 01 y 02 con los siguientes nombres para los paqutes: 'views', 'controllers' y 'routes'.
+            
+            04. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.dashboard', 'views.landing' y 'views.modules'.
+            
+            05. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.modules.roles' y 'views.modules.users'.
+            
+            06. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
+                'views.modules.users.users' y 'views.modules.users.customers'.
+
+            
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 03.04.  Crear las 'Clases' del proyecto: ------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Class...'.
+            
+            02. En 'Class Name:' escribir 'Main'.
+
+            03. Dar click derecho sobre el paquete 'models' y seleccionar 'New / Java Class...'.           
+
+            04. En 'Class Name:' escribir 'RolModel'.
+
+            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel' y 'CustomerModel'.
+
+            06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'DashboardController', 'LandingController', 'LoginController', 'LogoutController', 'RegisterController', 'RolesController' y 
+                'UsersController'.
+
+            07. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 
+                'DashboardView'.
+            
+            08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'LandingView', 'LoginView' y 'RegisterView'.
+            
+            09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'RolCreateView', 'RolReadView', 'RolByIdView', 'RolUpdateView' y 'RolesView'.
+            
+            10. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...'; pero en 'Package:' eliminar el 
+                último 'users' quedando 'views.modules.users' y crear la siguiente Clase: 'UsersMainView'.
+
+            11. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'UserCreateView', 'UserReadView', 'UserByIdView', 'UserUpdateView' y 'UsersView'.
+
+            12. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'CustomerCreateView', 'CustomerReadView', 'CustomerByIdView', 'CustomerUpdateView' y 'CustomersView'.
+
+            13. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------------------- 04. MENÚ LANDING -----------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.01.  Codificar la Clase 'views.landing/LandingView.java': ----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.landing;
                     02 
-                    03   public class Clase {
+                    03   import java.util.Scanner;
                     04 
-                    05       public static void main(String[] args) {
-                    06           // Describir el Algoritmo: Entender el Objetivo o Problema como un Sistema [Entradas, Proceso y Salidas]
-                    07     
-                    08           // Declarar: variables, constantes, arreglos u objetos.
-                    09     
-                    10           // Dimensionar arreglos.
-                    11     
-                    12           // Iniciar variables, constantes, arreglos u objetos.
-                    13     
-                    14           // Entrada de Datos: Pueden ser solicitados o no.
-                    15     
-                    16           // Proceso: Generalmente, se usan las estructuras de control: Secuencial, condicional, repetición.
-                    17     
-                    18           // Salida de Datos. Resultado(s).	
-                    19       }
-                    20       
-                    21   }
+                    05   public class LandingView {
+                    06       
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09       
+                    10       public LandingView() {
+                    11           
+                    12           do {
+                    13
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|----------------------------- EMPRESA -----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Iniciar Sesión");
+                    18               System.out.println("    2. Registrarse");
+                    19               System.out.println("    0. Salir");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.print("|----- Seleccione una opción: ");
+                    22               menu = sc.nextInt();            
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               
+                    25               switch (menu) {
+                    26
+                    27                   case 1:
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:                    
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|--------------------------- REGISTRARSE ---------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    36                       break;
+                    37                   case 0:
+                    38                       System.out.println("|----- ¡Hasta Pronto! ...");
+                    39                       System.out.println("|-------------------------------------------------------------------|");        
+                    40                       break;
+                    41                   default:
+                    42                       System.out.println("|----- ¡Opción No Válida!");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44
+                    45               }
+                    46               
+                    47           } while (menu != 0);
+                    48
+                    49       }
+                    50       
+                    51   }
 
-                ┌ ------------------------------------------------------------------------------------------------------------------------------------ ┐
-                |                                                                                                                                      |
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
                   EXPLICACIÓN:   
                     
                     ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
 
-                |--------------------------------------------------------------------------------------------------------------------------------------|
+                |--------------------------------------------------------------------------------------------------------------------------- |
 
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.                    
-                |                                                                                                                                      |
-                └ ------------------------------------------------------------------------------------------------------------------------------------ ┘
-
-            07. Para ejecutar el código se da click a la opción 'Run / Run Project' o se presiona la tecla 'F6':
-
-            08. Para mostrar las tíldes en la consola, 'Dar click derecho sobre el proyecto / Properties / Encoding: ISO-8859-1'. También dar click en
-                'Properties / Compiling' y en 'Additional Compiler Options: -Dsun.stdout.encoding=UTF-8
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.02.  Codificar la Clase 'controllers/LandingController.java': ------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.landing.LandingView;
+                    04 
+                    05   public class LandingController {
+                    06       
+                    07       private LandingView landingView;
+                    08      
+                    09       public void landingMenu(){        
+                    10           
+                    11           landingView = new LandingView();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.03.  Codificar la Clase 'routes/RouterControllers.java': -----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.LandingController;
+                    04 
+                    05   public class RouterControllers {
+                    06 
+                    07       private LandingController landingController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           landingController = new LandingController();
+                    12           landingController.landingMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.04.  Codificar la Clase 'Main.java': -------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import routes.RouterControllers;
+                    02 
+                    03   public class Main {
+                    04       
+                    05       public static void main(String[] args) {
+                    06           
+                    07           RouterControllers router = new RouterControllers();
+                    08           
+                    09       }
+                    10       
+                    11   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.05.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
 
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||---------------------------------------------------------- XX. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ------------------------------------------------|||
+|||---------------------------------------------------------------- 05. MENÚ DASHBOARD ----------------------------------------------------------------|||
 |||----------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
-// Estructura de carpetas y archivos
-GestorUsuariosMVC/
-├── src/
-│   ├── model/
-│   │   ├── Rol.java
-│   │   └── User.java
-│   ├── controller/
-│   │   └── UserController.java
-│   ├── view/
-│   │   └── MainView.java
-│   └── app/
-│       └── MainApp.java
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.01.  Codificar la Clase 'views.dashboard/DashboardView.java': ------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-// ==========================
-// Rol.java
-package model;
+                    01   package views.dashboard;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class DashboardView {
+                    06       
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public DashboardView() {
+                    11           
+                    12           do {            
+                    13               
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Gestión de Roles");
+                    18               System.out.println("    2. Gestión de Usuarios");
+                    19               System.out.println("    0. Cerrar Sesión");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.print("|----- Seleccione una opción : ");
+                    22               menu = sc.nextInt();            
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               
+                    25               switch (menu) {
+                    26                   
+                    27                   case 1:
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    36                       break;
+                    37                   case 0:
+                    38                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    39                       System.out.println("|-------------------------------------------------------------------|");        
+                    40                       break;
+                    41                   default:
+                    42                       System.out.println("|----- ¡Opción No Válida!");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44               }
+                    45               
+                    46           } while (menu != 0);
+                    47           
+                    48       }
+                    49       
+                    50   }
 
-/**
- * Clase que representa un Rol de usuario
- */
-public class Rol {
-    private int rolId;
-    private String rolName;
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
 
-    public Rol() {}
+                |--------------------------------------------------------------------------------------------------------------------------- |
 
-    public Rol(int rolId, String rolName) {
-        this.rolId = rolId;
-        this.rolName = rolName;
-    }
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+                
 
-    public int getRolId() { return rolId; }
-    public String getRolName() { return rolName; }
-    public void setRolId(int rolId) { this.rolId = rolId; }
-    public void setRolName(String rolName) { this.rolName = rolName; }
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.02.  Codificar la Clase 'controllers/DashboardController.java': ----------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-    @Override
-    public String toString() {
-        return rolId + " - " + rolName;
-    }
-}
+                    01   package controllers;
+                    02 
+                    03   import views.dashboard.DashboardView;
+                    04 
+                    05   public class DashboardController {
+                    06       
+                    07       private DashboardView dashboardView;
+                    08 
+                    09       public DashboardController() {
+                    10           
+                    11           dashboardView = new DashboardView();
+                    12           
+                    13       }
+                    14       
+                    15   }
 
-// ==========================
-// User.java
-package model;
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
 
-/**
- * Clase que representa un Usuario
- */
-public class User {
-    private int userId;
-    private String userName;
-    private String userLastName;
-    private String userEmail;
-    private String userPass;
-    private boolean userState;
-    private Rol rol; // Relación con Rol
+                |--------------------------------------------------------------------------------------------------------------------------- |
 
-    public User() {}
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
-    public User(int userId, String userName, String userLastName, String userEmail, String userPass, boolean userState, Rol rol) {
-        this.userId = userId;
-        this.userName = userName;
-        this.userLastName = userLastName;
-        this.userEmail = userEmail;
-        this.userPass = userPass;
-        this.userState = userState;
-        this.rol = rol;
-    }
 
-    // Getters y setters
-    public int getUserId() { return userId; }
-    public String getUserName() { return userName; }
-    public String getUserLastName() { return userLastName; }
-    public String getUserEmail() { return userEmail; }
-    public String getUserPass() { return userPass; }
-    public boolean isUserState() { return userState; }
-    public Rol getRol() { return rol; }
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.03.  Modificar la Clase 'routes/RouterControllers.java': -----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-    public void setUserId(int userId) { this.userId = userId; }
-    public void setUserName(String userName) { this.userName = userName; }
-    public void setUserLastName(String userLastName) { this.userLastName = userLastName; }
-    public void setUserEmail(String userEmail) { this.userEmail = userEmail; }
-    public void setUserPass(String userPass) { this.userPass = userPass; }
-    public void setUserState(boolean userState) { this.userState = userState; }
-    public void setRol(Rol rol) { this.rol = rol; }
+                    01   package routes;
+                    02 
+                    03   import controllers.DashboardController;
+                    04 
+                    05   public class RouterControllers {
+                    06   
+                    07       private DashboardController dashboardController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           dashboardController = new DashboardController();
+                    12           
+                    13       }
+                    14       
+                    15   }
 
-    public String getFullName() {
-        return userName + " " + userLastName;
-    }
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
 
-    @Override
-    public String toString() {
-        return userId + " - " + getFullName() + " - " + userEmail + " - Estado: " +
-                (userState ? "Activo" : "Inactivo") + " - Rol: " + rol.getRolName();
-    }
-}
+                |--------------------------------------------------------------------------------------------------------------------------- |
 
-// ==========================
-// UserController.java
-package controller;
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
-import model.User;
-import model.Rol;
-import java.util.ArrayList;
 
-/**
- * Controlador que gestiona los usuarios y roles
- */
-public class UserController {
-    private ArrayList<User> users = new ArrayList<>();
-    private ArrayList<Rol> roles = new ArrayList<>();
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.04.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-    public void addRol(Rol rol) { roles.add(rol); }
-    public void addUser(User user) { users.add(user); }
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
-    public ArrayList<User> getUsers() { return users; }
-    public ArrayList<Rol> getRoles() { return roles; }
 
-    public User autenticarUsuario(String email, String password) {
-        for (User u : users) {
-            if (u.getUserEmail().equalsIgnoreCase(email) && u.getUserPass().equals(password)) {
-                return u;
-            }
-        }
-        return null;
-    }
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
 
-    public Rol buscarRolPorId(int id) {
-        for (Rol r : roles) {
-            if (r.getRolId() == id) return r;
-        }
-        return null;
-    }
+                |--------------------------------------------------------------------------------------------------------------------------- |
 
-    public boolean eliminarUsuarioPorId(int id) {
-        return users.removeIf(u -> u.getUserId() == id);
-    }
-
-    public boolean eliminarRolPorId(int id) {
-        return roles.removeIf(r -> r.getRolId() == id);
-    }
-}
-
-// ==========================
-// MainView.java
-package view;
-
-import controller.UserController;
-import model.Rol;
-import model.User;
-
-import java.util.Scanner;
-
-/**
- * Vista que interactúa con el usuario por consola
- */
-public class MainView {
-    private Scanner sc = new Scanner(System.in);
-
-    public void iniciarAplicacion(UserController uc) {
-        System.out.println("=== INICIO DE SESIÓN ===");
-        System.out.print("Correo: ");
-        String email = sc.nextLine();
-        System.out.print("Contraseña: ");
-        String pass = sc.nextLine();
-
-        User user = uc.autenticarUsuario(email, pass);
-        if (user != null) {
-            System.out.println("\nBienvenido/a, " + user.getFullName() + " (" + user.getRol().getRolName() + ")");
-            mostrarMenu(uc);
-        } else {
-            System.out.println("❌ Credenciales incorrectas.");
-        }
-    }
-
-    public void mostrarMenu(UserController uc) {
-        int opcion;
-        do {
-            System.out.println("\n=== MENÚ PRINCIPAL ===");
-            System.out.println("1. Listar usuarios");
-            System.out.println("2. Crear usuario");
-            System.out.println("3. Eliminar usuario");
-            System.out.println("4. Listar roles");
-            System.out.println("5. Crear rol");
-            System.out.println("6. Eliminar rol");
-            System.out.println("0. Salir");
-            System.out.print("Seleccione una opción: ");
-            opcion = Integer.parseInt(sc.nextLine());
-
-            switch (opcion) {
-                case 1 -> listarUsuarios(uc);
-                case 2 -> crearUsuario(uc);
-                case 3 -> eliminarUsuario(uc);
-                case 4 -> listarRoles(uc);
-                case 5 -> crearRol(uc);
-                case 6 -> eliminarRol(uc);
-                case 0 -> System.out.println("Saliendo del sistema...");
-                default -> System.out.println("❌ Opción no válida.");
-            }
-        } while (opcion != 0);
-    }
-
-    private void listarUsuarios(UserController uc) {
-        System.out.println("\n--- Lista de Usuarios ---");
-        for (User u : uc.getUsers()) {
-            System.out.println(u);
-        }
-    }
-
-    private void crearUsuario(UserController uc) {
-        System.out.println("\n--- Crear Usuario ---");
-        System.out.print("ID: ");
-        int id = Integer.parseInt(sc.nextLine());
-        System.out.print("Nombre: ");
-        String name = sc.nextLine();
-        System.out.print("Apellido: ");
-        String lastName = sc.nextLine();
-        System.out.print("Correo: ");
-        String email = sc.nextLine();
-        System.out.print("Contraseña: ");
-        String pass = sc.nextLine();
-        System.out.print("Estado (true/false): ");
-        boolean estado = Boolean.parseBoolean(sc.nextLine());
-
-        listarRoles(uc);
-        System.out.print("ID del rol: ");
-        int idRol = Integer.parseInt(sc.nextLine());
-        Rol rol = uc.buscarRolPorId(idRol);
-
-        if (rol != null) {
-            User user = new User(id, name, lastName, email, pass, estado, rol);
-            uc.addUser(user);
-            System.out.println("✅ Usuario creado.");
-        } else {
-            System.out.println("❌ Rol no encontrado.");
-        }
-    }
-
-    private void eliminarUsuario(UserController uc) {
-        System.out.print("ID del usuario a eliminar: ");
-        int id = Integer.parseInt(sc.nextLine());
-        boolean eliminado = uc.eliminarUsuarioPorId(id);
-        System.out.println(eliminado ? "✅ Usuario eliminado." : "❌ Usuario no encontrado.");
-    }
-
-    private void listarRoles(UserController uc) {
-        System.out.println("\n--- Lista de Roles ---");
-        for (Rol r : uc.getRoles()) {
-            System.out.println(r);
-        }
-    }
-
-    private void crearRol(UserController uc) {
-        System.out.print("ID: ");
-        int id = Integer.parseInt(sc.nextLine());
-        System.out.print("Nombre del rol: ");
-        String name = sc.nextLine();
-        Rol rol = new Rol(id, name);
-        uc.addRol(rol);
-        System.out.println("✅ Rol creado.");
-    }
-
-    private void eliminarRol(UserController uc) {
-        System.out.print("ID del rol a eliminar: ");
-        int id = Integer.parseInt(sc.nextLine());
-        boolean eliminado = uc.eliminarRolPorId(id);
-        System.out.println(eliminado ? "✅ Rol eliminado." : "❌ Rol no encontrado.");
-    }
-}
-
-// ==========================
-// MainApp.java
-package app;
-
-import controller.UserController;
-import model.Rol;
-import model.User;
-import view.MainView;
-
-/**
- * Clase principal del proyecto
- */
-public class MainApp {
-    public static void main(String[] args) {
-        UserController uc = new UserController();
-
-        // Roles predefinidos
-        Rol admin = new Rol(1, "Administrador");
-        Rol user = new Rol(2, "Usuario");
-        uc.addRol(admin);
-        uc.addRol(user);
-
-        // Usuarios predefinidos
-        uc.addUser(new User(1, "Laura", "Gómez", "laura@example.com", "1234", true, admin));
-        uc.addUser(new User(2, "Carlos", "Pérez", "carlos@example.com", "abcd", true, user));
-
-        MainView view = new MainView();
-        view.iniciarAplicacion(uc);
-    }
-}
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||------------------------------------------------------------------ 06. MENÚ ROLES ------------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.01.  Codificar la Clase 'views.modules.roles/RolesView.java': ------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.roles;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class RolesView {
+                    06       
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public RolesView() {
+                    11           
+                    12           do {
+                    13               
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Registrar Rol");
+                    18               System.out.println("    2. Listar Roles");
+                    19               System.out.println("    3. Actualizar Rol");
+                    20               System.out.println("    4. Eliminar Rol");
+                    21               System.out.println("    0. Cerrar Sesión");
+                    22               System.out.println("|-------------------------------------------------------------------|");
+                    23               System.out.print("|----- Seleccione una opción : ");
+                    24               menu = sc.nextInt();            
+                    25               System.out.println("|-------------------------------------------------------------------|");
+                    26               
+                    27               switch (menu) {
+                    28   
+                    29                   case 1:
+                    30                       System.out.println("\n|-------------------------------------------------------------------|");
+                    31                       System.out.println("|------------------------- REGISTRAR ROL ---------------------------|");
+                    32                       System.out.println("|-------------------------------------------------------------------|");
+                    33                       break;
+                    34                   case 2:
+                    35                       System.out.println("\n|-------------------------------------------------------------------|");
+                    36                       System.out.println("|------------------------- LISTAR ROLES ----------------------------|");
+                    37                       System.out.println("|-------------------------------------------------------------------|");
+                    38                       break;
+                    39                   case 3:
+                    40                       System.out.println("\n|-------------------------------------------------------------------|");
+                    41                       System.out.println("|------------------------- ACTUALIZAR ROL --------------------------|");
+                    42                       System.out.println("|-------------------------------------------------------------------|");
+                    43                       break;
+                    44                   case 4:
+                    45                       System.out.println("\n|-------------------------------------------------------------------|");
+                    46                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                    47                       System.out.println("|-------------------------------------------------------------------|");
+                    48                       break;
+                    49                   case 0:
+                    50                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    51                       System.out.println("|-------------------------------------------------------------------|");        
+                    52                       break;
+                    53                   default:
+                    54                       System.out.println("|----- ¡Opción No Válida!");
+                    55                       System.out.println("|-------------------------------------------------------------------|");
+                    56                       
+                    57               }
+                    58               
+                    59           } while (menu != 0);
+                    60           
+                    61       }
+                    62       
+                    63   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.02.  Codificar la Clase 'controllers/RolesController.java': --------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.modules.roles.RolesView;
+                    04 
+                    05   public class RolesController {
+                    06       
+                    07       private RolesView rolesView;
+                    08 
+                    09       public RolesController() {
+                    10           
+                    11           rolesView = new RolesView();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.03.  Modificar la Clase 'routes/RouterControllers.java': -----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.RolesController;
+                    04 
+                    05   public class RouterControllers {
+                    06   
+                    07       private RolesController rolesController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           rolesController = new RolesController();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 06.04.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||---------------------------------------------------------------- 07. MENÚ USUARIOS -----------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.01.  Codificar la Clase 'views.modules.users/UsersMainView.java': --------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.users;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class UsersMainView {
+                    06       
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public UsersMainView() {
+                    11 
+                    12           do {
+                    13    
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Usuarios");
+                    18               System.out.println("    2. Clientes");            
+                    19               System.out.println("    0. Cerrar Sesión");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.print("|----- Seleccione una opción : ");
+                    22               menu = sc.nextInt();
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24 
+                    25               switch (menu) {
+                    26   
+                    27                   case 1:
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|---------------------------- USUARIOS -----------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|---------------------------- CLIENTES -----------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    36                       break;
+                    37                   case 0:
+                    38                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    39                       System.out.println("|-------------------------------------------------------------------|");
+                    40                       break;
+                    41                   default:
+                    42                       System.out.println("|----- ¡Opción No Válida!");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44 
+                    45               }
+                    46 
+                    47           } while (menu != 0);
+                    48 
+                    49       }
+                    50       
+                    51   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.02.  Codificar la Clase 'controllers/UsersController.java': --------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.modules.users.UsersMainView;
+                    04 
+                    05   public class UsersController {
+                    06       
+                    07       private UsersMainView usersMainView;
+                    08       
+                    09       public UsersController() {
+                    10           
+                    11           usersMainView = new UsersMainView();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.03.  Modificar la Clase 'routes/RouterControllers.java': -----------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.UsersController;
+                    04 
+                    05   public class RouterControllers {
+                    06 
+                    07       private UsersController usersController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           usersController = new UsersController();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.04.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.05.  Codificar la Clase 'views.modules.users.users/UsersView.java': ------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.users.users;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class UsersView {
+                    06 
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public UsersView() {
+                    11 
+                    12           do {
+                    13 
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|---------------------------- USUARIOS -----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Registrar Usuario");
+                    18               System.out.println("    2. Listar Usuarios");
+                    19               System.out.println("    3. Consultar Usuario");
+                    20               System.out.println("    4. Actualizar Usuario");
+                    21               System.out.println("    5. Eliminar Usuario");
+                    22               System.out.println("    0. Cerrar Sesión");
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               System.out.print("|----- Seleccione una opción : ");
+                    25               menu = sc.nextInt();
+                    26               System.out.println("|-------------------------------------------------------------------|");
+                    27 
+                    28               switch (menu) {
+                    29 
+                    30                   case 1:
+                    31                       System.out.println("\n|-------------------------------------------------------------------|");
+                    32                       System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
+                    33                       System.out.println("|-------------------------------------------------------------------|");
+                    34                       break;
+                    35                   case 2:
+                    36                       System.out.println("\n|-------------------------------------------------------------------|");
+                    37                       System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
+                    38                       System.out.println("|-------------------------------------------------------------------|");
+                    39                       break;
+                    40                   case 3:
+                    41                       System.out.println("\n|-------------------------------------------------------------------|");
+                    42                       System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44                       break;
+                    45                   case 4:
+                    46                       System.out.println("\n|-------------------------------------------------------------------|");
+                    47                       System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
+                    48                       System.out.println("|-------------------------------------------------------------------|");
+                    49                       break;
+                    50                   case 5:
+                    51                       System.out.println("\n|-------------------------------------------------------------------|");
+                    52                       System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       break;
+                    55                   case 0:
+                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    57                       System.out.println("|-------------------------------------------------------------------|");
+                    58                       break;
+                    59                   default:
+                    60                       System.out.println("|----- ¡Opción No Válida!");
+                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    62 
+                    63               }
+                    64 
+                    65           } while (menu != 0);
+                    66
+                    67       }
+                    68 
+                    69   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.06.  Modificar la Clase 'controllers/UsersController.java': --------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.modules.users.users.UsersView;
+                    04 
+                    05   public class UsersController {
+                    06       
+                    07       private UsersView usersView;
+                    08       
+                    09       public UsersController() {
+                    10           
+                    11           usersView = new UsersView();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.07.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.08.  Codificar la Clase 'views.modules.users.customers/CustomersView.java': ----------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.users.customers;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class CustomersView {
+                    06 
+                    07       private int menu;
+                    08       private Scanner sc = new Scanner(System.in);
+                    09 
+                    10       public CustomersView() {
+                    11
+                    12           do {
+                    13 
+                    14               System.out.println("\n|-------------------------------------------------------------------|");
+                    15               System.out.println("|---------------------------- CLIENTES -----------------------------|");
+                    16               System.out.println("|-------------------------------------------------------------------|");
+                    17               System.out.println("    1. Registrar Cliente");
+                    18               System.out.println("    2. Listar Clientes");
+                    19               System.out.println("    3. Consultar Cliente");
+                    20               System.out.println("    4. Actualizar Cliente");
+                    21               System.out.println("    5. Eliminar Cliente");
+                    22               System.out.println("    0. Cerrar Sesión");
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               System.out.print("|----- Seleccione una opción : ");
+                    25               menu = sc.nextInt();
+                    26               System.out.println("|-------------------------------------------------------------------|");
+                    27 
+                    28               switch (menu) {
+                    29 
+                    30                   case 1:
+                    31                       System.out.println("\n|-------------------------------------------------------------------|");
+                    32                       System.out.println("|----------------------- REGISTRAR CLIENTE -------------------------|");
+                    33                       System.out.println("|-------------------------------------------------------------------|");
+                    34                       break;
+                    35                   case 2:
+                    36                       System.out.println("\n|-------------------------------------------------------------------|");
+                    37                       System.out.println("|------------------------ LISTAR CLIENTES --------------------------|");
+                    38                       System.out.println("|-------------------------------------------------------------------|");
+                    39                       break;
+                    40                   case 3:
+                    41                       System.out.println("\n|-------------------------------------------------------------------|");
+                    42                       System.out.println("|----------------------- CONSULTAR CLIENTE -------------------------|");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44                       break;
+                    45                   case 4:
+                    46                       System.out.println("\n|-------------------------------------------------------------------|");
+                    47                       System.out.println("|----------------------- ACTUALIZAR CLIENTE ------------------------|");
+                    48                       System.out.println("|-------------------------------------------------------------------|");
+                    49                       break;
+                    50                   case 5:
+                    51                       System.out.println("\n|-------------------------------------------------------------------|");
+                    52                       System.out.println("|------------------------ ELIMINAR CLIENTE -------------------------|");
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       break;
+                    55                   case 0:
+                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    57                       System.out.println("|-------------------------------------------------------------------|");
+                    58                       break;
+                    59                   default:
+                    60                       System.out.println("|----- ¡Opción No Válida!");
+                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    62 
+                    63               }
+                    64 
+                    65           } while (menu != 0);
+                    66 
+                    67       }
+                    68 
+                    69   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.09.  Modificar la Clase 'controllers/UsersController.java': --------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.modules.users.customers.CustomersView;
+                    04 
+                    05   public class UsersController {
+                    06       
+                    07       private CustomersView customersView;
+                    08       
+                    09       public UsersController() {
+                    10           
+                    11           customersView = new CustomersView();
+                    12           
+                    13       }
+                    14       
+                    15   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 07.10.  Ejectuar el proyecto: -----------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||--------------------------------------------------------------- 08. REQUISITOS ROLES ---------------------------------------------------------------|||
+|||----------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.01.  Codificar la Clase 'models/RolModel.java': --------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 
+                    01   package models;
+                    02 
+                    03   public class RolModel {
+                    04       
+                    05       private int rolId;
+                    06       private String rolName;
+                    07 
+                    08       public RolModel() {
+                    09       }
+                    10       
+                    11       public RolModel(int rolId, String rolName) {
+                    12           this.rolId = rolId;
+                    13           this.rolName = rolName;
+                    14       }
+                    15 
+                    16       public int getRolId() {
+                    17           return rolId;
+                    18       }
+                    19 
+                    20       public void setRolId(int rolId) {
+                    21           this.rolId = rolId;
+                    22       }
+                    23 
+                    24       public String getRolName() {
+                    25           return rolName;
+                    26       }
+                    27 
+                    28       public void setRolName(String rolName) {
+                    29           this.rolName = rolName;
+                    30       }
+                    31       
+                    32       @Override
+                    33       public String toString(){
+                    34           return rolId + " - " + rolName;
+                    35       }
+                    36       
+                    37   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.02. Modificar la Clase 'controllers/RolesController.java': ---------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import models.RolModel;
+                    04   import views.modules.roles.RolesView;
+                    05   import java.util.ArrayList;
+                    06 
+                    07   public class RolesController {
+                    08       
+                    09       private RolesView rolesView;
+                    10       private ArrayList<RolModel> roles = new ArrayList<>();
+                    11 
+                    12       public RolesController() {        
+                    13           rolesView = new RolesView();        
+                    14       }
+                    15       
+                    16       public void addRol(RolModel rol){
+                    17           roles.add(rol);
+                    18       }    
+                    19       
+                    20       public ArrayList<RolModel> getRoles(){
+                    21           return roles;
+                    22       }
+                    23       
+                    24       public RolModel searchRolById(int id){
+                    25           for (RolModel rol : roles) {
+                    26               if (rol.getRolId() == id) {
+                    27                   return rol;
+                    28               }
+                    29           }
+                    30           return null;
+                    31       }    
+                    32       
+                    33       public boolean updateRol(int id, String newName){
+                    34           RolModel rol = searchRolById(id);
+                    35           if (rol != null) {
+                    36               rol.setRolName(newName);
+                    37               return true;
+                    38           }
+                    39           return false;
+                    40       }
+                    41       
+                    42       public boolean deleteRol(int id){
+                    43           return roles.removeIf(r -> r.getRolId() == id);
+                    44       }
+                    45       
+                    46   }
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.03. Codificar la Clase 'views.modules.roles/RolCreateView.java': ---------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+
+
+                ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                            |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |--------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                            |
+                └ -------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 
