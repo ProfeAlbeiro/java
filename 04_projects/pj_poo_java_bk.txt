@@ -586,16 +586,17 @@
                     03   import controllers.DashboardController;
                     04 
                     05   public class RouterControllers {
-                    06   
+                    06 
                     07       private DashboardController dashboardController;
                     08       
                     09       public RouterControllers() {
                     10           
                     11           dashboardController = new DashboardController();
-                    12           
-                    13       }
-                    14       
-                    15   }
+                    12           dashboardController.dashboardMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
 
                 ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                            |
@@ -662,51 +663,57 @@
                     16               System.out.println("|-------------------------------------------------------------------|");
                     17               System.out.println("    1. Registrar Rol");
                     18               System.out.println("    2. Listar Roles");
-                    19               System.out.println("    3. Actualizar Rol");
-                    20               System.out.println("    4. Eliminar Rol");
-                    21               System.out.println("    0. Cerrar Sesión");
-                    22               System.out.println("|-------------------------------------------------------------------|");
-                    23               System.out.print("|----- Seleccione una opción : ");
-                    24               menu = sc.nextInt();            
-                    25               System.out.println("|-------------------------------------------------------------------|");
-                    26               
-                    27               switch (menu) {
-                    28   
-                    29                   case 1:
-                    30                       System.out.println("\n|-------------------------------------------------------------------|");
-                    31                       System.out.println("|------------------------- REGISTRAR ROL ---------------------------|");
-                    32                       System.out.println("|-------------------------------------------------------------------|");
-                    33                       break;
-                    34                   case 2:
-                    35                       System.out.println("\n|-------------------------------------------------------------------|");
-                    36                       System.out.println("|------------------------- LISTAR ROLES ----------------------------|");
-                    37                       System.out.println("|-------------------------------------------------------------------|");
-                    38                       break;
-                    39                   case 3:
-                    40                       System.out.println("\n|-------------------------------------------------------------------|");
-                    41                       System.out.println("|------------------------- ACTUALIZAR ROL --------------------------|");
-                    42                       System.out.println("|-------------------------------------------------------------------|");
-                    43                       break;
-                    44                   case 4:
-                    45                       System.out.println("\n|-------------------------------------------------------------------|");
-                    46                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
-                    47                       System.out.println("|-------------------------------------------------------------------|");
-                    48                       break;
-                    49                   case 0:
-                    50                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    51                       System.out.println("|-------------------------------------------------------------------|");        
-                    52                       break;
-                    53                   default:
-                    54                       System.out.println("|----- ¡Opción No Válida!");
-                    55                       System.out.println("|-------------------------------------------------------------------|");
-                    56                       
-                    57               }
-                    58               
-                    59           } while (menu != 0);
-                    60           
-                    61       }
-                    62       
-                    63   }
+                    19               System.out.println("    3. Consultar Rol");
+                    20               System.out.println("    4. Actualizar Rol");
+                    21               System.out.println("    5. Eliminar Rol");
+                    22               System.out.println("    0. Cerrar Sesión");
+                    23               System.out.println("|-------------------------------------------------------------------|");
+                    24               System.out.print("|----- Seleccione una opción : ");
+                    25               menu = sc.nextInt();            
+                    26               System.out.println("|-------------------------------------------------------------------|");
+                    27               
+                    28               switch (menu) {
+                    29 
+                    30                   case 1:
+                    31                       System.out.println("\n|-------------------------------------------------------------------|");
+                    32                       System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
+                    33                       System.out.println("|-------------------------------------------------------------------|");
+                    34                       break;
+                    35                   case 2:
+                    36                       System.out.println("\n|-------------------------------------------------------------------|");
+                    37                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
+                    38                       System.out.println("|-------------------------------------------------------------------|");
+                    39                       break;
+                    40                   case 3:
+                    41                       System.out.println("\n|-------------------------------------------------------------------|");
+                    42                       System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
+                    43                       System.out.println("|-------------------------------------------------------------------|");
+                    44                       break;
+                    45                   case 4:
+                    46                       System.out.println("\n|-------------------------------------------------------------------|");
+                    47                       System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
+                    48                       System.out.println("|-------------------------------------------------------------------|");
+                    49                       break;
+                    50                   case 5:
+                    51                       System.out.println("\n|-------------------------------------------------------------------|");
+                    52                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       break;
+                    55                   case 0:
+                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    57                       System.out.println("|-------------------------------------------------------------------|");        
+                    58                       break;
+                    59                   default:
+                    60                       System.out.println("|----- ¡Opción No Válida!");
+                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    62                       
+                    63               }
+                    64               
+                    65           } while (menu != 0);
+                    66           
+                    67       }
+                    68       
+                    69   }
 
                 ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                            |
@@ -734,7 +741,7 @@
                     06       
                     07       private RolesView rolesView;
                     08 
-                    09       public RolesController() {
+                    09       public void rolesMenu() {
                     10           
                     11           rolesView = new RolesView();
                     12           
@@ -765,16 +772,17 @@
                     03   import controllers.RolesController;
                     04 
                     05   public class RouterControllers {
-                    06   
+                    06 
                     07       private RolesController rolesController;
                     08       
                     09       public RouterControllers() {
                     10           
                     11           rolesController = new RolesController();
-                    12           
-                    13       }
-                    14       
-                    15   }
+                    12           rolesController.rolesMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
 
                 ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                            |
@@ -901,7 +909,7 @@
                     06       
                     07       private UsersMainView usersMainView;
                     08       
-                    09       public UsersController() {
+                    09       public void usersMenu() {
                     10           
                     11           usersMainView = new UsersMainView();
                     12           
@@ -938,10 +946,11 @@
                     09       public RouterControllers() {
                     10           
                     11           usersController = new UsersController();
-                    12           
-                    13       }
-                    14       
-                    15   }
+                    12           usersController.usersMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
 
                 ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                            |
@@ -1078,7 +1087,7 @@
                     06       
                     07       private UsersView usersView;
                     08       
-                    09       public UsersController() {
+                    09       public void usersMenu() {
                     10           
                     11           usersView = new UsersView();
                     12           
@@ -1221,7 +1230,7 @@
                     06       
                     07       private CustomersView customersView;
                     08       
-                    09       public UsersController() {
+                    09       public void usersMenu() {
                     10           
                     11           customersView = new CustomersView();
                     12           
@@ -1342,42 +1351,45 @@
                     08       
                     09       private RolesView rolesView;
                     10       private ArrayList<RolModel> roles = new ArrayList<>();
-                    11 
-                    12       public RolesController() {        
-                    13           rolesView = new RolesView();        
-                    14       }
-                    15       
-                    16       public void addRol(RolModel rol){
-                    17           roles.add(rol);
-                    18       }    
-                    19       
-                    20       public ArrayList<RolModel> getRoles(){
-                    21           return roles;
-                    22       }
-                    23       
-                    24       public RolModel searchRolById(int id){
-                    25           for (RolModel rol : roles) {
-                    26               if (rol.getRolId() == id) {
-                    27                   return rol;
-                    28               }
-                    29           }
-                    30           return null;
-                    31       }    
-                    32       
-                    33       public boolean updateRol(int id, String newName){
-                    34           RolModel rol = searchRolById(id);
-                    35           if (rol != null) {
-                    36               rol.setRolName(newName);
-                    37               return true;
-                    38           }
-                    39           return false;
-                    40       }
-                    41       
-                    42       public boolean deleteRol(int id){
-                    43           return roles.removeIf(r -> r.getRolId() == id);
-                    44       }
-                    45       
-                    46   }
+                    11       
+                    12       public RolesController() {
+                    13       }
+                    14       
+                    15       public void rolesMenu() {        
+                    16           rolesView = new RolesView();        
+                    17       }
+                    18       
+                    19       public void addRol(RolModel rol){
+                    20           roles.add(rol);
+                    21       }    
+                    22       
+                    23       public ArrayList<RolModel> getRoles(){
+                    24           return roles;
+                    25       }
+                    26       
+                    27       public RolModel searchRolById(int id){
+                    28           for (RolModel rol : roles) {
+                    29               if (rol.getRolId() == id) {
+                    30                   return rol;
+                    31               }
+                    32           }
+                    33           return null;
+                    34       }    
+                    35       
+                    36       public boolean updateRol(int id, String newName){
+                    37           RolModel rol = searchRolById(id);
+                    38           if (rol != null) {
+                    39               rol.setRolName(newName);
+                    40               return true;
+                    41           }
+                    42           return false;
+                    43       }
+                    44       
+                    45       public boolean deleteRol(int id){
+                    46           return roles.removeIf(r -> r.getRolId() == id);
+                    47       }
+                    48       
+                    49   }
 
                 ┌ -------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                            |
