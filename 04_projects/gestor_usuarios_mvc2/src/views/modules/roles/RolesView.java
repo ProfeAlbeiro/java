@@ -46,6 +46,7 @@ public class RolesView {
                     roles.addRol(new Rol(rolId,name));
                     System.out.println("|-------------------------------------------------------------------|");
                     System.out.println("|- ¡Rol creado!");
+                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:
                     for (Rol r : roles.getRoles()) {
