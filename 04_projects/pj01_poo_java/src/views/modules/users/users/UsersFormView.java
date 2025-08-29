@@ -1,5 +1,9 @@
 package views.modules.users.users;
 
-public class UserCreateView {
+import java.util.Scanner;
+
+public class UsersFormView {
+    
+    Scanner sc = new Scanner(System.in);
     
 }

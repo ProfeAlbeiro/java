@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 public class RolesController {
     
-    private RolesMenuView rolesView;
+    private RolesMenuView rolesMenuView;
     private ArrayList<RolModel> roles = new ArrayList<>();
     
     public RolesController() {
     }
     
     public void rolesMenu() {        
-        rolesView = new RolesMenuView();        
+        rolesMenuView = new RolesMenuView();        
     }
     
     public void addRol(RolModel rol){

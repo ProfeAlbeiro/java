@@ -1,5 +1,5 @@
 package views.modules.users.customers;
 
-public class CustomerCreateView {
+public class CustomersFormView {
     
 }

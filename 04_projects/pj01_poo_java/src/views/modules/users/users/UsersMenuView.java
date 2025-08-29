@@ -2,12 +2,12 @@ package views.modules.users.users;
 
 import java.util.Scanner;
 
-public class UsersView {
+public class UsersMenuView {
 
     private int menu;
     private Scanner sc = new Scanner(System.in);
 
-    public UsersView() {
+    public UsersMenuView() {
 
         do {
 
