@@ -3,75 +3,75 @@
 |||------------------------------------------------------------ PROGRAMACIÓN ORIENTADA A OBJETOS CON JAVA -------------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
-|||                                                                                                                                                    |||
-||| --  01. ENTORNO DE DESARROLLO                                                                                                                      |||
-||| --      01.01. Instalar StarUml                                                                                                                    |||
-||| --      01.02. Instalar JDK                                                                                                                        |||
-||| --      01.03. Instalar Netbeans                                                                                                                   |||
-||| --  02. DIAGRAMA DE CLASES                                                                                                                         |||
-||| --  03. ESTRUCTURA DEL PROYECTO                                                                                                                    |||
-||| --      03.01. Estructura del proyecto                                                                                                             |||
-||| --      03.02. Crear la 'Carpeta Raíz' del proyecto                                                                                                |||
-||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                   |||
-||| --      03.04. Crear las 'Clases' del proyecto                                                                                                     |||
-||| --  04. MENÚ LANDING                                                                                                                               |||
-||| --      04.01. Codificar la Clase 'views.landing/LandingView.java'                                                                                 |||
-||| --      04.02. Codificar la Clase 'controllers/LandingController.java'                                                                             |||
-||| --      04.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      04.04. Codificar la Clase 'Main.java'                                                                                                      |||
-||| --      04.05. Ejectuar el proyecto                                                                                                                |||
-||| --  05. MENÚ DASHBOARD                                                                                                                             |||
-||| --      05.01. Codificar la Clase 'views.dashboard/DashboardView.java'                                                                             |||
-||| --      05.02. Codificar la Clase 'controllers/DashboardController.java'                                                                           |||
-||| --      05.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      05.04. Ejectuar el proyecto                                                                                                                |||
-||| --  06. MENÚ ROLES                                                                                                                                 |||
-||| --      06.01. Codificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                         |||
-||| --      06.02. Codificar la Clase 'controllers/RolesController.java'                                                                               |||
-||| --      06.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      06.04. Ejectuar el proyecto                                                                                                                |||
-||| --  07. MENÚ USERS                                                                                                                                 |||
-||| --      07.01. Codificar la Clase 'views.modules.users/UsersMainView.java'                                                                         |||
-||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                               |||
-||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      07.04. Ejectuar el proyecto                                                                                                                |||
-||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersView.java'                                                                       |||
-||| --      07.06. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
-||| --      07.07. Ejectuar el proyecto                                                                                                                |||
-||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersView.java'                                                               |||
-||| --      07.09. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
-||| --      07.10. Ejectuar el proyecto                                                                                                                |||
-||| --  08. REQUISITOS ROLES                                                                                                                           |||
-||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                           |||
-||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                               |||
-||| --      08.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      08.04. Ejectuar el proyecto                                                                                                                |||
-||| --      08.05. Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                         |||
-||| --      08.06. Modificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                         |||
-||| --      08.07. Ejectuar el proyecto                                                                                                                |||
-||| --  09. REQUISITOS USERS                                                                                                                           |||
-||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                          |||
-||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
-||| --      09.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                  |||
-||| --      09.04. Modificar la Clase 'views.modules.users/UsersMainView.java'                                                                         |||
-||| --      09.05. Ejectuar el proyecto                                                                                                                |||
-||| --      09.06. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                   |||
-||| --      09.07. Modificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                   |||
-||| --      09.08. Ejectuar el proyecto                                                                                                                |||
-||| --      09.09. Codificar la Clase 'models/CustomerModel.java'                                                                                      |||
-||| --      09.10. Modificar la Clase 'controllers/UsersController.java'                                                                               |||
-||| --      09.11. Codificar la Clase 'views.modules.users.customers/CustomersFormView.java'                                                           |||
-||| --      09.12. Modificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                           |||
-||| --      09.13. Ejectuar el proyecto                                                                                                                |||
-||| --  10. REGISTER                                                                                                                                   |||
-||| --  11. ENRUTADOR                                                                                                                                  |||
-||| --  11. LOGIN Y LOGOUT                                                                                                                             |||
-|||                                                                                                                                                    |||
-||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                   |||
-|||                                                                                                                                                    |||
-||| --  Bibliografía  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                    |||
-|||                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                         |||
-|||                                                                                                                                                    |||
+|||                                                                                                                                                                    |||
+||| --  01. ENTORNO DE DESARROLLO                                                                                                                                      |||
+||| --      01.01. Instalar StarUml                                                                                                                                    |||
+||| --      01.02. Instalar JDK                                                                                                                                        |||
+||| --      01.03. Instalar Netbeans                                                                                                                                   |||
+||| --  02. DIAGRAMA DE CLASES                                                                                                                                         |||
+||| --  03. ESTRUCTURA DEL PROYECTO                                                                                                                                    |||
+||| --      03.01. Estructura del proyecto                                                                                                                             |||
+||| --      03.02. Crear la 'Carpeta Raíz' del proyecto                                                                                                                |||
+||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                                   |||
+||| --      03.04. Crear las 'Clases' del proyecto                                                                                                                     |||
+||| --  04. MENÚ LANDING                                                                                                                                               |||
+||| --      04.01. Codificar la Clase 'views.landing/LandingView.java'                                                                                                 |||
+||| --      04.02. Codificar la Clase 'controllers/LandingController.java'                                                                                             |||
+||| --      04.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      04.04. Codificar la Clase 'Main.java'                                                                                                                      |||
+||| --      04.05. Ejectuar el proyecto                                                                                                                                |||
+||| --  05. MENÚ DASHBOARD                                                                                                                                             |||
+||| --      05.01. Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
+||| --      05.02. Codificar la Clase 'controllers/DashboardController.java'                                                                                           |||
+||| --      05.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      05.04. Ejectuar el proyecto                                                                                                                                |||
+||| --  06. MENÚ ROLES                                                                                                                                                 |||
+||| --      06.01. Codificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                                         |||
+||| --      06.02. Codificar la Clase 'controllers/RolesController.java'                                                                                               |||
+||| --      06.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      06.04. Ejectuar el proyecto                                                                                                                                |||
+||| --  07. MENÚ USERS                                                                                                                                                 |||
+||| --      07.01. Codificar la Clase 'views.modules.users/UsersMainView.java'                                                                                         |||
+||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      07.04. Ejectuar el proyecto                                                                                                                                |||
+||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersView.java'                                                                                       |||
+||| --      07.06. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      07.07. Ejectuar el proyecto                                                                                                                                |||
+||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersView.java'                                                                               |||
+||| --      07.09. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      07.10. Ejectuar el proyecto                                                                                                                                |||
+||| --  08. REQUISITOS ROLES                                                                                                                                           |||
+||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                                           |||
+||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                                               |||
+||| --      08.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      08.04. Ejectuar el proyecto                                                                                                                                |||
+||| --      08.05. Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                         |||
+||| --      08.06. Modificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                                         |||
+||| --      08.07. Ejectuar el proyecto                                                                                                                                |||
+||| --  09. REQUISITOS USERS                                                                                                                                           |||
+||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
+||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      09.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      09.04. Modificar la Clase 'views.modules.users/UsersMainView.java'                                                                                         |||
+||| --      09.05. Ejectuar el proyecto                                                                                                                                |||
+||| --      09.06. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
+||| --      09.07. Modificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                                   |||
+||| --      09.08. Ejectuar el proyecto                                                                                                                                |||
+||| --      09.09. Codificar la Clase 'models/CustomerModel.java'                                                                                                      |||
+||| --      09.10. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      09.11. Codificar la Clase 'views.modules.users.customers/CustomersFormView.java'                                                                           |||
+||| --      09.12. Modificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
+||| --      09.13. Ejectuar el proyecto                                                                                                                                |||
+||| --  10. REGISTER                                                                                                                                                   |||
+||| --  11. ENRUTADOR                                                                                                                                                  |||
+||| --  11. LOGIN Y LOGOUT                                                                                                                                             |||
+|||                                                                                                                                                                    |||
+||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                                   |||
+|||                                                                                                                                                                    |||
+||| --  Bibliografía  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                                    |||
+|||                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                         |||
+|||                                                                                                                                                                    |||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
