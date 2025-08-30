@@ -35,12 +35,15 @@
 ||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      07.04. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersView.java'                                                                                       |||
+||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                                   |||
 ||| --      07.06. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.07. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersView.java'                                                                               |||
+||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
 ||| --      07.09. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.10. Ejectuar el proyecto                                                                                                                                |||
+||| --      07.11. Codificar la Clase 'views.modules.users.sellers/SellersMenuView.java'                                                                               |||
+||| --      07.12. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      07.13. Ejectuar el proyecto                                                                                                                                |||
 ||| --  08. REQUISITOS ROLES                                                                                                                                           |||
 ||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                                           |||
 ||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                                               |||
@@ -692,20 +695,18 @@
                     53                       System.out.println("|-------------------------------------------------------------------|");
                     54                       break;
                     55                   case 0:
-                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    57                       System.out.println("|-------------------------------------------------------------------|");        
-                    58                       break;
-                    59                   default:
-                    60                       System.out.println("|----- ¡Opción No Válida!");
-                    61                       System.out.println("|-------------------------------------------------------------------|");
-                    62                       
-                    63               }
-                    64               
-                    65           } while (menu != 0);
-                    66           
-                    67       }
-                    68       
-                    69   }
+                    56                       break;
+                    57                   default:
+                    58                       System.out.println("|----- ¡Opción No Válida!");
+                    59                       System.out.println("|-------------------------------------------------------------------|");
+                    60                       
+                    61               }
+                    62               
+                    63           } while (menu != 0);
+                    64           
+                    65       }
+                    66       
+                    67   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -852,20 +853,18 @@
                     41                       System.out.println("|-------------------------------------------------------------------|");
                     42                       break;
                     43                   case 0:
-                    44                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    45                       System.out.println("|-------------------------------------------------------------------|");
-                    46                       break;
-                    47                   default:
-                    48                       System.out.println("|----- ¡Opción No Válida!");
-                    49                       System.out.println("|-------------------------------------------------------------------|");
+                    44                       break;
+                    45                   default:
+                    46                       System.out.println("|----- ¡Opción No Válida!");
+                    47                       System.out.println("|-------------------------------------------------------------------|");
+                    48 
+                    49               }
                     50 
-                    51               }
+                    51           } while (menu != 0);
                     52 
-                    53           } while (menu != 0);
-                    54 
-                    55       }
-                    56       
-                    57   }
+                    53       }
+                    54       
+                    55   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -957,20 +956,6 @@
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
 
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |-- 07.05.  Codificar la Clase 'views.modules.users.users/UsersMenuView.java': ------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -996,7 +981,7 @@
                     19               System.out.println("    3. Consultar Usuario");
                     20               System.out.println("    4. Actualizar Usuario");
                     21               System.out.println("    5. Eliminar Usuario");
-                    22               System.out.println("    0. Cerrar Sesión");
+                    22               System.out.println("    0. Volver");
                     23               System.out.println("|-------------------------------------------------------------------|");
                     24               System.out.print("|----- Seleccione una opción : ");
                     25               menu = sc.nextInt();
@@ -1030,20 +1015,18 @@
                     53                       System.out.println("|-------------------------------------------------------------------|");
                     54                       break;
                     55                   case 0:
-                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    57                       System.out.println("|-------------------------------------------------------------------|");
-                    58                       break;
-                    59                   default:
-                    60                       System.out.println("|----- ¡Opción No Válida!");
-                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    56                       break;
+                    57                   default:
+                    58                       System.out.println("|----- ¡Opción No Válida!");
+                    59                       System.out.println("|-------------------------------------------------------------------|");
+                    60 
+                    61               }
                     62 
-                    63               }
-                    64 
-                    65           } while (menu != 0);
-                    66
-                    67       }
-                    68 
-                    69   }
+                    63           } while (menu != 0);
+                    64
+                    65       }
+                    66 
+                    67   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -1100,20 +1083,6 @@
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
 
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |-- 07.08.  Codificar la Clase 'views.modules.users.customers/CustomersMenuView.java': ----------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1139,7 +1108,7 @@
                     19               System.out.println("    3. Consultar Cliente");
                     20               System.out.println("    4. Actualizar Cliente");
                     21               System.out.println("    5. Eliminar Cliente");
-                    22               System.out.println("    0. Cerrar Sesión");
+                    22               System.out.println("    0. Volver");
                     23               System.out.println("|-------------------------------------------------------------------|");
                     24               System.out.print("|----- Seleccione una opción : ");
                     25               menu = sc.nextInt();
@@ -1173,20 +1142,18 @@
                     53                       System.out.println("|-------------------------------------------------------------------|");
                     54                       break;
                     55                   case 0:
-                    56                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    57                       System.out.println("|-------------------------------------------------------------------|");
-                    58                       break;
-                    59                   default:
-                    60                       System.out.println("|----- ¡Opción No Válida!");
-                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    56                       break;
+                    57                   default:
+                    58                       System.out.println("|----- ¡Opción No Válida!");
+                    59                       System.out.println("|-------------------------------------------------------------------|");
+                    60 
+                    61               }
                     62 
-                    63               }
+                    63           } while (menu != 0);
                     64 
-                    65           } while (menu != 0);
+                    65       }
                     66 
-                    67       }
-                    68 
-                    69   }
+                    67   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
