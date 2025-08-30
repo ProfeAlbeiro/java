@@ -188,6 +188,9 @@
                 │           ├── customers/
                 │           │   ├── CustomersFormView.java
                 │           │   └── CustomersMenuView.java
+                │           ├── sellers/
+                │           │   ├── SellersFormView.java
+                │           │   └── SellersMenuView.java
                 │           ├── users/
                 │           │   ├── UsersFormView.java
                 │           │   └── UsersMenuView.java
@@ -203,11 +206,24 @@
 
             02. Dar click a 'New Project / Java with Ant / Java Application / Next'.
             
-            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo, en el 'Escritorio de Windows' y 'Open'.
+            03. Dar click a 'Browse...' y seleccionar la ruta de guardado, por ejemplo, en el 'Escritorio de Windows' / 'Open'.
             
             04. En 'Project Name:' escribir 'pj01_poo_java'.
             
             05. Deshabilitar la opción '☐ Create Main Class' y dar click a 'Finish'.
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  NOTA:   
+                    
+                    ⦿   Para mostrar tíldes en la consola:
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   Dar click derecho sobre 'pj01_poo_java / Properties / Sources / Encoding: ISO-8859-1'.                    
+                    B.   Dar click en 'Build / Compiling / Additional Compiler Options:' escribir '-Dsun.stdout.encoding=UTF-8' y 'OK'.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -227,7 +243,7 @@
                 'views.modules.roles' y 'views.modules.users'.
             
             06. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
-                'views.modules.users.users' y 'views.modules.users.customers'.
+                'views.modules.users.users', 'views.modules.users.sellers' y 'views.modules.users.customers'.
 
             
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -242,7 +258,7 @@
 
             04. En 'Class Name:' escribir 'RolModel'.
 
-            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel' y 'CustomerModel'.
+            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel', 'CustomerModel' y 'SellerModel'.
 
             06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'DashboardController', 'LandingController', 'LoginController', 'LogoutController', 'RegisterController', 'RolesController' y 
@@ -265,8 +281,11 @@
 
             12. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'CustomersMenuView' y 'CustomersFormView'.
+            
+            13. Dar click derecho sobre el paquete 'views.modules.users.sellers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+                'SellersMenuView' y 'SellersFormView'.
 
-            13. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
+            14. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
 
 
 
@@ -451,21 +470,6 @@
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
-
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
