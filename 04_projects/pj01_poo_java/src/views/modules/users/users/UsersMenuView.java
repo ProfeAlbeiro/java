@@ -1,18 +1,10 @@
 package views.modules.users.users;
 
-import models.RolModel;
-import models.UserModel;
-import controllers.UsersController;
 import java.util.Scanner;
 
 public class UsersMenuView {
 
-    private int menu, rolId, userId;
-    private String userName, userLastName, userEmail, userPass, userState;
-    private UsersFormView usersFormView = new UsersFormView();
-    private UsersController users = new UsersController();
-    private RolModel rol = new RolModel();
-    private UserModel user = new UserModel();
+    private int menu;
     private Scanner sc = new Scanner(System.in);
 
     public UsersMenuView() {
@@ -27,7 +19,7 @@ public class UsersMenuView {
             System.out.println("    3. Consultar Usuario");
             System.out.println("    4. Actualizar Usuario");
             System.out.println("    5. Eliminar Usuario");
-            System.out.println("    0. Cerrar Sesión");
+            System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();
@@ -39,11 +31,6 @@ public class UsersMenuView {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    userId = users.getUsers().size() + 1;
-                    userName = usersFormView.getUserName();
-                    userLastName = usersFormView.getUserLastName();
-                    userEmail = usersFormView.getUserEmail();
-                    userPass = usersFormView.getUserPass();
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");
@@ -66,8 +53,6 @@ public class UsersMenuView {
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:
-                    System.out.println("|----- ¡Sesión Cerrada! ...");
-                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 default:
                     System.out.println("|----- ¡Opción No Válida!");

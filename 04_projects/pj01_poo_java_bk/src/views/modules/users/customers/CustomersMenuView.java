@@ -1,67 +1,69 @@
-package views.modules.roles;
+package views.modules.users.customers;
 
 import java.util.Scanner;
 
-public class RolesMenuView {
-    
+public class CustomersMenuView {
+
     private int menu;
     private Scanner sc = new Scanner(System.in);
 
-    public RolesMenuView() {
-        
+    public CustomersMenuView() {
+
         do {
-            
+
             System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+            System.out.println("|---------------------------- CLIENTES -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Registrar Rol");
-            System.out.println("    2. Listar Roles");
-            System.out.println("    3. Consultar Rol");
-            System.out.println("    4. Actualizar Rol");
-            System.out.println("    5. Eliminar Rol");
-            System.out.println("    0. Volver");
+            System.out.println("    1. Registrar Cliente");
+            System.out.println("    2. Listar Clientes");
+            System.out.println("    3. Consultar Cliente");
+            System.out.println("    4. Actualizar Cliente");
+            System.out.println("    5. Eliminar Cliente");
+            System.out.println("    0. Cerrar Sesión");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
-            menu = sc.nextInt();            
+            menu = sc.nextInt();
             System.out.println("|-------------------------------------------------------------------|");
-            
+
             switch (menu) {
 
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
+                    System.out.println("|----------------------- REGISTRAR CLIENTE -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
+                    System.out.println("|------------------------ LISTAR CLIENTES --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 3:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
+                    System.out.println("|----------------------- CONSULTAR CLIENTE -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 4:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
+                    System.out.println("|----------------------- ACTUALIZAR CLIENTE ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 5:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                    System.out.println("|------------------------ ELIMINAR CLIENTE -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:
+                    System.out.println("|----- ¡Sesión Cerrada! ...");
+                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 default:
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
-                    
+
             }
-            
+
         } while (menu != 0);
-        
+
     }
-    
+
 }

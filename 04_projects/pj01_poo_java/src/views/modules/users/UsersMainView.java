@@ -2,6 +2,7 @@ package views.modules.users;
 
 import views.modules.users.users.UsersMenuView;
 import views.modules.users.customers.CustomersMenuView;
+import views.modules.users.sellers.SellersMenuView;
 import java.util.Scanner;
 
 public class UsersMainView {
@@ -9,6 +10,7 @@ public class UsersMainView {
     private int menu;
     private UsersMenuView usersMenuView;
     private CustomersMenuView customersMenuView;
+    private SellersMenuView sellersMenuView;
     private Scanner sc = new Scanner(System.in);
 
     public UsersMainView() {
@@ -19,8 +21,9 @@ public class UsersMainView {
             System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("    1. Usuarios");
-            System.out.println("    2. Clientes");            
-            System.out.println("    0. Cerrar Sesión");
+            System.out.println("    2. Clientes");
+            System.out.println("    3. Vendedores");
+            System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();
@@ -30,10 +33,8 @@ public class UsersMainView {
 
                 case 1 -> usersMenuView = new UsersMenuView();
                 case 2 -> customersMenuView = new CustomersMenuView();
-                case 0 -> {
-                    System.out.println("|----- ¡Sesión Cerrada! ...");
-                    System.out.println("|-------------------------------------------------------------------|");
-                }
+                case 3 -> sellersMenuView = new SellersMenuView();
+                case 0 -> {}
                 default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");

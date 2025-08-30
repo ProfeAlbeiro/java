@@ -1,35 +1,35 @@
-package views.dashboard;
+package views.modules.users;
 
-import views.modules.roles.RolesMenuView;
-import views.modules.users.UsersMainView;
+import views.modules.users.users.UsersMenuView;
+import views.modules.users.customers.CustomersMenuView;
 import java.util.Scanner;
 
-public class DashboardView {
+public class UsersMainView {
     
     private int menu;
-    private RolesMenuView rolesMenuView;
-    private UsersMainView usersMainMenu;
+    private UsersMenuView usersMenuView;
+    private CustomersMenuView customersMenuView;
     private Scanner sc = new Scanner(System.in);
 
-    public DashboardView() {
-        
-        do {            
-            
+    public UsersMainView() {
+
+        do {
+
             System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|---------------------------- DASHBOARD ----------------------------|");
+            System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Gestión de Roles");
-            System.out.println("    2. Gestión de Usuarios");
+            System.out.println("    1. Usuarios");
+            System.out.println("    2. Clientes");            
             System.out.println("    0. Cerrar Sesión");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
-            menu = sc.nextInt();            
+            menu = sc.nextInt();
             System.out.println("|-------------------------------------------------------------------|");
-            
+
             switch (menu) {
-                
-                case 1 -> rolesMenuView = new RolesMenuView();
-                case 2 -> usersMainMenu = new UsersMainView();
+
+                case 1 -> usersMenuView = new UsersMenuView();
+                case 2 -> customersMenuView = new CustomersMenuView();
                 case 0 -> {
                     System.out.println("|----- ¡Sesión Cerrada! ...");
                     System.out.println("|-------------------------------------------------------------------|");
@@ -38,10 +38,11 @@ public class DashboardView {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
                 }
+
             }
-            
+
         } while (menu != 0);
-        
+
     }
     
 }

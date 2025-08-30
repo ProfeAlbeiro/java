@@ -43,7 +43,7 @@ public class LandingView {
                     System.out.println("|-------------------------------------------------------------------|");
 
             }
-
+            
         } while (menu != 0);
 
     }

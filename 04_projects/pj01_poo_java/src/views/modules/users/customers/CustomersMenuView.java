@@ -19,7 +19,7 @@ public class CustomersMenuView {
             System.out.println("    3. Consultar Cliente");
             System.out.println("    4. Actualizar Cliente");
             System.out.println("    5. Eliminar Cliente");
-            System.out.println("    0. Cerrar Sesión");
+            System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();
@@ -53,8 +53,6 @@ public class CustomersMenuView {
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:
-                    System.out.println("|----- ¡Sesión Cerrada! ...");
-                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 default:
                     System.out.println("|----- ¡Opción No Válida!");
