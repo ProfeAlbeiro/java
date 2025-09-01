@@ -1,11 +1,19 @@
 package views.modules.users;
 
 import models.RolModel;
+import models.UserModel;
+import controllers.UsersController;
 import java.util.Scanner;
 
 public class UsersMenuView {
 
-    private int menu;
+    private int menu, rolId, userId;
+    private String userName, userLastName, userEmail, userPass;
+    private boolean userState;
+    private UsersFormView usersFormView = new UsersFormView();
+    private UsersController users = new UsersController();
+    private RolModel rol = new RolModel();
+    private UserModel user = new UserModel();
     private Scanner sc = new Scanner(System.in);
 
     public UsersMenuView() {
@@ -28,36 +36,43 @@ public class UsersMenuView {
 
             switch (menu) {
 
-                case 1:
+                case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 2:
+                    userId = users.getUsers().size() + 1;
+                    userName = usersFormView.getUserName();
+                    userLastName = usersFormView.getUserLastName();
+                    userEmail = usersFormView.getUserEmail();
+                    userPass = usersFormView.getUserPass();
+                    userState = usersFormView.getUserState();
+                }
+                case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
-                    break;
-                default:
+                }
+                case 0 -> {
+                }
+                default -> {
                     System.out.println("|----- ¡Opción No válida!");
                     System.out.println("|-------------------------------------------------------------------|");
+                }
 
             }
 
