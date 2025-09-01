@@ -1751,7 +1751,7 @@
                     25               System.out.println("    3. Consultar Rol");
                     26               System.out.println("    4. Actualizar Rol");
                     27               System.out.println("    5. Eliminar Rol");
-                    28               System.out.println("    0. Cerrar Sesión");
+                    28               System.out.println("    0. Volver");
                     29               System.out.println("|-------------------------------------------------------------------|");
                     30               System.out.print("|----- Seleccione una opción : ");
                     31               menu = sc.nextInt();            

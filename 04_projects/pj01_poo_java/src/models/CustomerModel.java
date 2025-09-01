@@ -1,5 +1,7 @@
 package models;
 
-public class CustomerModel {
+public class CustomerModel extends UserModel{
+    
+    
     
 }

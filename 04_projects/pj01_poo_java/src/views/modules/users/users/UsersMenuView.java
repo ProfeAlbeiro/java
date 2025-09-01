@@ -1,10 +1,21 @@
 package views.modules.users.users;
 
+import models.RolModel;
+import models.UserModel;
+import models.CustomerModel;
+import models.SellerModel;
+import views.modules.users.users.UsersFormView;
+import controllers.UsersController;
 import java.util.Scanner;
 
 public class UsersMenuView {
 
-    private int menu;
+    private int menu, userId;
+    private String userName, userLastName, userEmail, userPass;
+    private boolean userState;
+    private UsersFormView usersFormView = new UsersFormView();
+    private RolModel rol = new RolModel();
+    private UserModel user = new UserModel();
     private Scanner sc = new Scanner(System.in);
 
     public UsersMenuView() {
@@ -30,7 +41,7 @@ public class UsersMenuView {
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");                    
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");

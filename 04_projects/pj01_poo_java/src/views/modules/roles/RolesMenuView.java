@@ -25,7 +25,7 @@ public class RolesMenuView {
             System.out.println("    3. Consultar Rol");
             System.out.println("    4. Actualizar Rol");
             System.out.println("    5. Eliminar Rol");
-            System.out.println("    0. Cerrar Sesión");
+            System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();            
@@ -96,10 +96,7 @@ public class RolesMenuView {
                     }
                     System.out.println("|-------------------------------------------------------------------|");
                 }
-                case 0 -> {
-                    System.out.println("|----- ¡Sesión Cerrada! ...");
-                    System.out.println("|-------------------------------------------------------------------|");
-                }
+                case 0 -> {}
                 default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
