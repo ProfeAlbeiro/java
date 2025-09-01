@@ -1,35 +1,24 @@
-package views.modules.users.users;
+package views.modules.users;
 
-import models.RolModel;
-import models.UserModel;
-import models.CustomerModel;
-import models.SellerModel;
-import views.modules.users.users.UsersFormView;
-import controllers.UsersController;
 import java.util.Scanner;
 
-public class UsersMenuView {
+public class SellersMenuView {
 
-    private int menu, userId;
-    private String userName, userLastName, userEmail, userPass;
-    private boolean userState;
-    private UsersFormView usersFormView = new UsersFormView();
-    private RolModel rol = new RolModel();
-    private UserModel user = new UserModel();
+    private int menu;
     private Scanner sc = new Scanner(System.in);
 
-    public UsersMenuView() {
+    public SellersMenuView() {
 
         do {
 
             System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|---------------------------- USUARIOS -----------------------------|");
+            System.out.println("|--------------------------- VENDEDORES ----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Registrar Usuario");
-            System.out.println("    2. Listar Usuarios");
-            System.out.println("    3. Consultar Usuario");
-            System.out.println("    4. Actualizar Usuario");
-            System.out.println("    5. Eliminar Usuario");
+            System.out.println("    1. Registrar Vendedor");
+            System.out.println("    2. Listar Vendedores");
+            System.out.println("    3. Consultar Vendedor");
+            System.out.println("    4. Actualizar Vendedor");
+            System.out.println("    5. Eliminar Vendedor");
             System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción : ");
@@ -40,27 +29,27 @@ public class UsersMenuView {
 
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");                    
+                    System.out.println("|---------------------- REGISTRAR VENDEDOR -------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
+                    System.out.println("|----------------------- LISTAR VENDEDORES -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 3:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
+                    System.out.println("|---------------------- CONSULTAR VENDEDOR -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 4:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
+                    System.out.println("|---------------------- ACTUALIZAR VENDEDOR ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 5:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
+                    System.out.println("|----------------------- ELIMINAR VENDEDOR -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:

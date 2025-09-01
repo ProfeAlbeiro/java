@@ -35,43 +35,44 @@
 ||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      07.04. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.05. Codificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                                   |||
+||| --      07.05. Codificar la Clase 'views.modules.users/UsersMenuView.java'                                                                                         |||
 ||| --      07.06. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.07. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.08. Codificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
+||| --      07.08. Codificar la Clase 'views.modules.users/CustomersMenuView.java'                                                                                     |||
 ||| --      07.09. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.10. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.11. Codificar la Clase 'views.modules.users.sellers/SellersMenuView.java'                                                                               |||
+||| --      07.11. Codificar la Clase 'views.modules.users/SellersMenuView.java'                                                                                       |||
 ||| --      07.12. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.13. Ejectuar el proyecto                                                                                                                                |||
-||| --      07.14. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      07.15. Modificar la Clase 'views.modules.users/UsersMainView.java'                                                                                         |||
-||| --      07.16. Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
-||| --      07.17. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
-||| --      07.18. Ejectuar el proyecto                                                                                                                                |||
-||| --  08. REQUISITOS ROLES                                                                                                                                           |||
-||| --      08.01. Codificar la Clase 'models/RolModel.java'                                                                                                           |||
-||| --      08.02. Modificar la Clase 'controllers/RolesController.java'                                                                                               |||
-||| --      08.03. Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                         |||
-||| --      08.04. Modificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                                         |||
+||| --  08. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS                                                                                                                |||
+||| --      08.01. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      08.02. Modificar la Clase 'views.modules.users/UsersMainView.java'                                                                                         |||
+||| --      08.03. Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
+||| --      08.04. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      08.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  09. REQUISITOS USERS                                                                                                                                           |||
-||| --      09.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
-||| --      09.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      09.03. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
-||| --      09.04. Modificar la Clase 'views.modules.users.users/UsersMainView.java'                                                                                   |||
+||| --  09. REQUISITOS ROLES                                                                                                                                           |||
+||| --      09.01. Codificar la Clase 'models/RolModel.java'                                                                                                           |||
+||| --      09.02. Modificar la Clase 'controllers/RolesController.java'                                                                                               |||
+||| --      09.03. Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                         |||
+||| --      09.04. Modificar la Clase 'views.modules.roles/RolesMenuView.java'                                                                                         |||
 ||| --      09.05. Ejectuar el proyecto                                                                                                                                |||
-||| --      09.06. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
-||| --      09.07. Modificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                                   |||
-||| --      09.08. Ejectuar el proyecto                                                                                                                                |||
-||| --      09.09. Codificar la Clase 'models/CustomerModel.java'                                                                                                      |||
-||| --      09.10. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      09.11. Codificar la Clase 'views.modules.users.customers/CustomersFormView.java'                                                                           |||
-||| --      09.12. Modificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
-||| --      09.13. Ejectuar el proyecto                                                                                                                                |||
-||| --  10. REGISTER                                                                                                                                                   |||
-||| --  11. ENRUTADOR                                                                                                                                                  |||
-||| --  11. LOGIN Y LOGOUT                                                                                                                                             |||
+||| --  10. REQUISITOS USERS                                                                                                                                           |||
+||| --      10.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
+||| --      10.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      10.03. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
+||| --      10.04. Modificar la Clase 'views.modules.users.users/UsersMainView.java'                                                                                   |||
+||| --      10.05. Ejectuar el proyecto                                                                                                                                |||
+||| --      10.06. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
+||| --      10.07. Modificar la Clase 'views.modules.users.users/UsersMenuView.java'                                                                                   |||
+||| --      10.08. Ejectuar el proyecto                                                                                                                                |||
+||| --      10.09. Codificar la Clase 'models/CustomerModel.java'                                                                                                      |||
+||| --      10.10. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
+||| --      10.11. Codificar la Clase 'views.modules.users.customers/CustomersFormView.java'                                                                           |||
+||| --      10.12. Modificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
+||| --      10.13. Ejectuar el proyecto                                                                                                                                |||
+||| --  11. REGISTER                                                                                                                                                   |||
+||| --  12. ENRUTADOR                                                                                                                                                  |||
+||| --  13. LOGIN Y LOGOUT                                                                                                                                             |||
 |||                                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                                   |||
 |||                                                                                                                                                                    |||
@@ -271,19 +272,10 @@
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'RolesMenuView' y 'RolesFormView'.
             
-            10. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...'; pero en 'Package:' eliminar el 
-                último 'users' quedando 'views.modules.users' y crear la siguiente Clase: 'UsersMainView'.
+            10. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...'; para crear las siguientes Clases: 
+                'UsersMainView', 'UsersFormView', 'UsersMenuView', 'CustomersMenuView' y 'SellersMenuView'.
 
-            11. Dar click derecho sobre el paquete 'views.modules.users.users' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'UsersMenuView' y 'UsersFormView'.
-
-            12. Dar click derecho sobre el paquete 'views.modules.users.customers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'CustomersMenuView' y 'CustomersFormView'.
-            
-            13. Dar click derecho sobre el paquete 'views.modules.users.sellers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'SellersMenuView' y 'SellersFormView'.
-
-            14. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
+            11. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
 
 
 
@@ -952,10 +944,10 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.05.  Codificar la Clase 'views.modules.users.users/UsersMenuView.java': ------------------------------------------------------------------------------------------|
+|-- 07.05.  Codificar la Clase 'views.modules.users/UsersMenuView.java': ------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.modules.users.users;
+                    01   package views.modules.users;
                     02 
                     03   import java.util.Scanner;
                     04 
@@ -1043,7 +1035,7 @@
 
                     01   package controllers;
                     02 
-                    03   import views.modules.users.users.UsersMenuView;
+                    03   import views.modules.users.UsersMenuView;
                     04 
                     05   public class UsersController {
                     06       
@@ -1079,10 +1071,10 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.08.  Codificar la Clase 'views.modules.users.customers/CustomersMenuView.java': ----------------------------------------------------------------------------------|
+|-- 07.08.  Codificar la Clase 'views.modules.users/CustomersMenuView.java': --------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.modules.users.customers;
+                    01   package views.modules.users;
                     02 
                     03   import java.util.Scanner;
                     04 
@@ -1170,7 +1162,7 @@
 
                     01   package controllers;
                     02 
-                    03   import views.modules.users.customers.CustomersMenuView;
+                    03   import views.modules.users.CustomersMenuView;
                     04 
                     05   public class UsersController {
                     06       
@@ -1206,10 +1198,10 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.11.  Codificar la Clase 'views.modules.users.sellers/SellersMenuView.java': ----------------------------------------------------------------------------------|
+|-- 07.11.  Codificar la Clase 'views.modules.users/SellersMenuView.java': ----------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.modules.users.sellers;
+                    01   package views.modules.users;
                     02 
                     03   import java.util.Scanner;
                     04 
@@ -1275,7 +1267,7 @@
                     64 
                     65       }
                     66 
-                    67   }                    
+                    67   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -1297,7 +1289,7 @@
 
                     01   package controllers;
                     02 
-                    03   import views.modules.users.sellers.SellersMenuView;
+                    03   import views.modules.users.SellersMenuView;
                     04 
                     05   public class UsersController {
                     06       
@@ -1332,8 +1324,15 @@
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
 
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||--------------------------------------------------------- 08. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS ----------------------------------------------------------|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.14.  Modificar la Clase 'controllers/UsersController.java': ------------------------------------------------------------------------------------------------------|
+|-- 08.01.  Modificar la Clase 'controllers/UsersController.java': ------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package controllers;
@@ -1367,7 +1366,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.15.  Modificar la Clase 'views.modules.users/UsersMainView.java': ------------------------------------------------------------------------------------------------|
+|-- 08.02.  Modificar la Clase 'views.modules.users/UsersMainView.java': ------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.users;
@@ -1435,7 +1434,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.16.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
+|-- 08.03.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.dashboard;
@@ -1501,7 +1500,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.17.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|-- 08.04.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package routes;
@@ -1536,7 +1535,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 07.18.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
@@ -1545,13 +1544,13 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||----------------------------------------------------------------------- 08. REQUISITOS ROLES -----------------------------------------------------------------------|||
+|||----------------------------------------------------------------------- 09. REQUISITOS ROLES -----------------------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.01.  Codificar la Clase 'models/RolModel.java': ------------------------------------------------------------------------------------------------------------------|
+|-- 09.01.  Codificar la Clase 'models/RolModel.java': ------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package models;
@@ -1607,7 +1606,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.02. Modificar la Clase 'controllers/RolesController.java': -------------------------------------------------------------------------------------------------------|
+|-- 09.02. Modificar la Clase 'controllers/RolesController.java': -------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package controllers;
@@ -1675,7 +1674,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.03. Codificar la Clase 'views.modules.roles/RolesFormView.java': -------------------------------------------------------------------------------------------------|
+|-- 09.03. Codificar la Clase 'views.modules.roles/RolesFormView.java': -------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.roles;
@@ -1692,7 +1691,7 @@
                     12       }
                     13       
                     14       public String getRolName() {
-                    15           System.out.print("|----- Rol: ");                    
+                    15           System.out.print("|----- Rol: ");
                     16           return sc.next();
                     17       }
                     18       
@@ -1713,7 +1712,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.04. Modificar la Clase 'views.modules.roles/RolesMenuView.java': -------------------------------------------------------------------------------------------------|
+|-- 09.04. Modificar la Clase 'views.modules.roles/RolesMenuView.java': -------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.roles;
@@ -1843,7 +1842,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 09.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
@@ -1852,13 +1851,13 @@
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||---------------------------------------------------------------------- 09. REQUISITOS USUARIOS ---------------------------------------------------------------------|||
+|||---------------------------------------------------------------------- 10. REQUISITOS USUARIOS ---------------------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.01.  Codificar la Clase 'models/UserModel.java': -----------------------------------------------------------------------------------------------------------------|
+|-- 10.01.  Codificar la Clase 'models/UserModel.java': -----------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package models;
@@ -1969,7 +1968,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.02. Modificar la Clase 'controllers/UsersController.java': -------------------------------------------------------------------------------------------------------|
+|-- 10.02. Modificar la Clase 'controllers/UsersController.java': -------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package controllers;
@@ -2041,10 +2040,10 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.03. Codificar la Clase 'views.modules.users.users/UsersFormView.java': -------------------------------------------------------------------------------------------|
+|-- 10.03. Codificar la Clase 'views.modules.users/UsersFormView.java': -------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.modules.users.users;
+                    01   package views.modules.users;
                     02 
                     03   import java.util.Scanner;
                     04 
@@ -2099,88 +2098,11 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.04.  Modificar la Clase 'views.modules.users/UsersMenuView.java': ------------------------------------------------------------------------------------------------|
+|-- 10.04.  Modificar la Clase 'views.modules.users/UsersMenuView.java': ------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.users;
-package views.modules.users.users;
 
-import models.RolModel;
-import models.UserModel;
-import models.CustomerModel;
-import models.SellerModel;
-import views.modules.users.users.UsersFormView;
-import controllers.UsersController;
-import java.util.Scanner;
-
-public class UsersMenuView {
-
-    private int menu, userId;
-    private String userName, userLastName, userEmail, userPass;
-    private boolean userState;
-    private UsersFormView usersFormView = new UsersFormView();
-    private RolModel rol = new RolModel();
-    private UserModel user = new UserModel();
-    private Scanner sc = new Scanner(System.in);
-
-    public UsersMenuView() {
-
-        do {
-
-            System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|---------------------------- USUARIOS -----------------------------|");
-            System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Registrar Usuario");
-            System.out.println("    2. Listar Usuarios");
-            System.out.println("    3. Consultar Usuario");
-            System.out.println("    4. Actualizar Usuario");
-            System.out.println("    5. Eliminar Usuario");
-            System.out.println("    0. Volver");
-            System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|----- Seleccione una opción : ");
-            menu = sc.nextInt();
-            System.out.println("|-------------------------------------------------------------------|");
-
-            switch (menu) {
-
-                case 1:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");                    
-                    break;
-                case 2:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 3:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 4:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 5:
-                    System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
-                    break;
-                default:
-                    System.out.println("|----- ¡Opción No Válida!");
-                    System.out.println("|-------------------------------------------------------------------|");
-
-            }
-
-        } while (menu != 0);
-
-    }
-
-}
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -2197,7 +2119,7 @@ public class UsersMenuView {
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 10.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.

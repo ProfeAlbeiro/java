@@ -1,4 +1,4 @@
-package views.modules.users.users;
+package views.modules.users;
 
 import java.util.Scanner;
 

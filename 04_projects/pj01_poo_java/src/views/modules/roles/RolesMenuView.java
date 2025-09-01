@@ -30,7 +30,7 @@ public class RolesMenuView {
             System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();            
             System.out.println("|-------------------------------------------------------------------|");
-          
+            
             switch (menu) {
 
                 case 1 -> {
@@ -97,7 +97,7 @@ public class RolesMenuView {
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 0 -> {}
-                default -> {
+                default -> {    
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
                 }

@@ -14,11 +14,11 @@ public class LandingView {
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|----------------------------- EMPRESA -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Iniciar Sesión");
+            System.out.println("    1. Iniciar SesiÃ³n");
             System.out.println("    2. Registrarse");
             System.out.println("    0. Salir");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|----- Seleccione una opción: ");
+            System.out.print("|----- Seleccione una opciÃ³n: ");
             menu = sc.nextInt();            
             System.out.println("|-------------------------------------------------------------------|");
             
@@ -26,7 +26,7 @@ public class LandingView {
 
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    System.out.println("|------------------------- INICIAR SESIÃ“N --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:                    
@@ -35,11 +35,11 @@ public class LandingView {
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:
-                    System.out.println("|----- ¡Hasta Pronto! ...");
+                    System.out.println("|----- Â¡Hasta Pronto! ...");
                     System.out.println("|-------------------------------------------------------------------|");        
                     break;
                 default:
-                    System.out.println("|----- ¡Opción No Válida!");
+                    System.out.println("|----- Â¡OpciÃ³n No VÃ¡lida!");
                     System.out.println("|-------------------------------------------------------------------|");
 
             }

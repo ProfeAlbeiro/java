@@ -1,8 +1,5 @@
 package views.modules.users;
 
-import views.modules.users.users.UsersMenuView;
-import views.modules.users.customers.CustomersMenuView;
-import views.modules.users.sellers.SellersMenuView;
 import java.util.Scanner;
 
 public class UsersMainView {
