@@ -241,11 +241,8 @@
                 'views.dashboard', 'views.landing' y 'views.modules'.
             
             05. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
-                'views.modules.roles' y 'views.modules.users'.
+                'views.modules.roles' y 'views.modules.users'.            
             
-            06. Dar click derecho sobre la carpeta 'Source Packages' y seleccionar 'New / Java Package...' para crear los siguientes paquetes: 
-                'views.modules.users.users', 'views.modules.users.sellers' y 'views.modules.users.customers'.
-
             
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |-- 03.04.  Crear las 'Clases' del proyecto: ----------------------------------------------------------------------------------------------------------------------------|
