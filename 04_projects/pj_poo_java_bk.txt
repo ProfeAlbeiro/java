@@ -192,7 +192,10 @@
                 │       │   ├── RolesFormView.java
                 │       │   └── RolesMenuView.java
                 │       └── users/
+                │           ├── CustomersMenuView.java
+                │           ├── SellersMenuView.java
                 │           ├── UsersFormView.java
+                │           ├── UsersMainView.java
                 │           └── UsersMenuView.java
                 └── Main.java
 
@@ -270,7 +273,7 @@
                 'RolesMenuView' y 'RolesFormView'.
             
             10. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...'; para crear las siguientes Clases: 
-                'UsersMenuView' y 'UsersFormView'.
+                'UsersMainView', 'UsersFormView', 'UsersMenuView', 'CustomersMenuView' y 'SellersMenuView'.
 
             11. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
 
