@@ -48,17 +48,9 @@
 ||| --  10. REQUISITOS USERS                                                                                                                                           |||
 ||| --      10.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
 ||| --      10.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      10.03. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
-||| --      10.04. Modificar la Clase 'views.modules.users.users/UsersView.java'                                                                                       |||
+||| --      10.03. Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                   |||
+||| --      10.04. Modificar la Clase 'views.modules.users/UsersView.java'                                                                                       |||
 ||| --      10.05. Ejectuar el proyecto                                                                                                                                |||
-||| --      10.06. Codificar la Clase 'views.modules.users.users/UsersFormView.java'                                                                                   |||
-||| --      10.07. Modificar la Clase 'views.modules.users.users/UsersView.java'                                                                                       |||
-||| --      10.08. Ejectuar el proyecto                                                                                                                                |||
-||| --      10.09. Codificar la Clase 'models/CustomerModel.java'                                                                                                      |||
-||| --      10.10. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      10.11. Codificar la Clase 'views.modules.users.customers/CustomersFormView.java'                                                                           |||
-||| --      10.12. Modificar la Clase 'views.modules.users.customers/CustomersMenuView.java'                                                                           |||
-||| --      10.13. Ejectuar el proyecto                                                                                                                                |||
 ||| --  11. REGISTER                                                                                                                                                   |||
 ||| --  12. ENRUTADOR                                                                                                                                                  |||
 ||| --  13. LOGIN Y LOGOUT                                                                                                                                             |||
