@@ -36,7 +36,6 @@
 ||| --      07.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      07.04. Ejectuar el proyecto                                                                                                                                |||
 ||| --  08. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS                                                                                                                |||
-||| --      08.01. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      08.02. Modificar la Clase 'views.modules.users/UsersView.java'                                                                                             |||
 ||| --      08.03. Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
 ||| --      08.04. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
@@ -955,158 +954,11 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.01.  Modificar la Clase 'controllers/UsersController.java': ------------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package controllers;
-                    02 
-                    03   import views.modules.users.UsersView;
-                    04 
-                    05   public class UsersController {
-                    06       
-                    07       private UsersView usersView;
-                    08       
-                    09       public void usersMenu() {
-                    10           
-                    11           usersView = new UsersView();
-                    12           
-                    13       }
-                    14       
-                    15   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.02.  Modificar la Clase 'views.modules.users/UsersView.java': ------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package views.modules.users;
-                    02 
-                    03   import views.modules.users.users.UsersView;
-                    04   import views.modules.users.customers.CustomersMenuView;
-                    05   import views.modules.users.sellers.SellersMenuView;
-                    06   import java.util.Scanner;
-                    07 
-                    08   public class UsersView {
-                    09       
-                    10       private int menu;
-                    11       private UsersView usersView;
-                    12       private CustomersMenuView customersMenuView;
-                    13       private SellersMenuView sellersMenuView;
-                    14       private Scanner sc = new Scanner(System.in);
-                    15 
-                    16       public UsersView() {
-                    17 
-                    18           do {
-                    19 
-                    20               System.out.println("\n|-------------------------------------------------------------------|");
-                    21               System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
-                    22               System.out.println("|-------------------------------------------------------------------|");
-                    23               System.out.println("    1. Usuarios");
-                    24               System.out.println("    2. Clientes");
-                    25               System.out.println("    3. Vendedores");
-                    26               System.out.println("    0. Volver");
-                    27               System.out.println("|-------------------------------------------------------------------|");
-                    28               System.out.print("|----- Seleccione una opción : ");
-                    29               menu = sc.nextInt();
-                    30               System.out.println("|-------------------------------------------------------------------|");
-                    31 
-                    32               switch (menu) {
-                    33 
-                    34                   case 1 -> usersView = new UsersView();
-                    35                   case 2 -> customersMenuView = new CustomersMenuView();
-                    36                   case 3 -> sellersMenuView = new SellersMenuView();
-                    37                   case 0 -> {}
-                    38                   default -> {
-                    39                       System.out.println("|----- ¡Opción No Válida!");
-                    40                       System.out.println("|-------------------------------------------------------------------|");
-                    41                   }
-                    42 
-                    43               }
-                    44 
-                    45           } while (menu != 0);
-                    46 
-                    47       }
-                    48       
-                    49   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.03.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
+|-- 08.01.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.dashboard;
-                    02 
-                    03   import views.modules.roles.RolesView;
-                    04   import views.modules.users.UsersView;
-                    05   import java.util.Scanner;
-                    06 
-                    07   public class DashboardView {
-                    08       
-                    09       private int menu;
-                    10       private RolesView rolesView;
-                    11       private UsersView usersMainMenu;
-                    12       private Scanner sc = new Scanner(System.in);
-                    13 
-                    14       public DashboardView() {
-                    15           
-                    16           do {            
-                    17               
-                    18               System.out.println("\n|-------------------------------------------------------------------|");
-                    19               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
-                    20               System.out.println("|-------------------------------------------------------------------|");
-                    21               System.out.println("    1. Gestión de Roles");
-                    22               System.out.println("    2. Gestión de Usuarios");
-                    23               System.out.println("    0. Cerrar Sesión");
-                    24               System.out.println("|-------------------------------------------------------------------|");
-                    25               System.out.print("|----- Seleccione una opción : ");
-                    26               menu = sc.nextInt();            
-                    27               System.out.println("|-------------------------------------------------------------------|");
-                    28               
-                    29               switch (menu) {
-                    30                   
-                    31                   case 1 -> rolesView = new RolesView();
-                    32                   case 2 -> usersMainMenu = new UsersView();
-                    33                   case 0 -> {
-                    34                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    35                       System.out.println("|-------------------------------------------------------------------|");
-                    36                   }
-                    37                   default -> {
-                    38                       System.out.println("|----- ¡Opción No Válida!");
-                    39                       System.out.println("|-------------------------------------------------------------------|");
-                    40                   }
-                    41               }
-                    42               
-                    43           } while (menu != 0);
-                    44           
-                    45       }
-                    46       
-                    47   }
+
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
