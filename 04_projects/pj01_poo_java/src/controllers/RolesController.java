@@ -9,11 +9,9 @@ public class RolesController {
     private RolesView rolesView;
     private ArrayList<RolModel> roles = new ArrayList<>();
     
-    public RolesController() {
-    }
-    
-    public void rolesMenu() {        
-        rolesView = new RolesView();        
+    public void rolesMenu(RolesController roles) {        
+        rolesView = new RolesView(roles);
+        rolesView.rolesMenuView();
     }
     
     public void addRol(RolModel rol){
