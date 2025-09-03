@@ -951,57 +951,61 @@
 
                     01   package views.dashboard;
                     02 
-                    03   import views.modules.roles.RolesView;
-                    04   import views.modules.users.UsersView;
-                    05   import java.util.Scanner;
-                    06 
-                    07   public class DashboardView {
-                    08       
-                    09       private int menu;
-                    10       private RolesView rolesView;
-                    11       private UsersView usersView;
-                    12       private Scanner sc = new Scanner(System.in);
-                    13 
-                    14       public void dashboardMenuView() {
-                    15           
-                    16           do {            
-                    17              
-                    18               System.out.println("\n|-------------------------------------------------------------------|");
-                    19               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
-                    20               System.out.println("|-------------------------------------------------------------------|");
-                    21               System.out.println("    1. Gestión de Roles");
-                    22               System.out.println("    2. Gestión de Usuarios");
-                    23               System.out.println("    0. Cerrar Sesión");
+                    03   import controllers.RolesController;
+                    04   import controllers.UsersController;
+                    05   import views.modules.roles.RolesView;
+                    06   import views.modules.users.UsersView;
+                    07   import java.util.Scanner;
+                    08 
+                    09   public class DashboardView {
+                    10       
+                    11       private int menu;
+                    12       private RolesController roles = new RolesController();
+                    13       private UsersController users = new UsersController();
+                    14       private RolesView rolesView;
+                    15       private UsersView usersView;
+                    16       private Scanner sc = new Scanner(System.in);
+                    17 
+                    18       public void dashboardMenuView() {
+                    19           
+                    20           do {            
+                    21               
+                    22               System.out.println("\n|-------------------------------------------------------------------|");
+                    23               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
                     24               System.out.println("|-------------------------------------------------------------------|");
-                    25               System.out.print("|----- Seleccione una opción : ");
-                    26               menu = sc.nextInt();            
-                    27               System.out.println("|-------------------------------------------------------------------|");
-                    28               
-                    29               switch (menu) {
-                    30                   
-                    31                   case 1 -> {
-                    32                       rolesView = new RolesView();
-                    33                       rolesView.rolesMenuView();
-                    34                   }
-                    35                   case 2 -> {
-                    36                       usersView = new UsersView();
-                    37                       usersView.usersMenuView();
+                    25               System.out.println("    1. Gestión de Roles");
+                    26               System.out.println("    2. Gestión de Usuarios");
+                    27               System.out.println("    0. Cerrar Sesión");
+                    28               System.out.println("|-------------------------------------------------------------------|");
+                    29               System.out.print("|----- Seleccione una opción : ");
+                    30               menu = sc.nextInt();            
+                    31               System.out.println("|-------------------------------------------------------------------|");
+                    32               
+                    33               switch (menu) {
+                    34                   
+                    35                   case 1 -> {
+                    36                       rolesView = new RolesView(roles);
+                    37                       rolesView.rolesMenuView();
                     38                   }
-                    39                   case 0 -> {
-                    40                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    41                       System.out.println("|-------------------------------------------------------------------|");
+                    39                   case 2 -> {
+                    40                       usersView = new UsersView(roles, users);
+                    41                       usersView.usersMenuView();
                     42                   }
-                    43                   default -> {
-                    44                       System.out.println("|----- ¡Opción No Válida!");
+                    43                   case 0 -> {
+                    44                       System.out.println("|----- ¡Sesión Cerrada! ...");
                     45                       System.out.println("|-------------------------------------------------------------------|");
                     46                   }
-                    47               }
-                    48               
-                    49           } while (menu != 0);
-                    50           
-                    51       }
-                    52       
-                    53   }
+                    47                   default -> {
+                    48                       System.out.println("|----- ¡Opción No Válida!");
+                    49                       System.out.println("|-------------------------------------------------------------------|");
+                    50                   }
+                    51               }
+                    52               
+                    53           } while (menu != 0);
+                    54           
+                    55       }
+                    56       
+                    57   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
