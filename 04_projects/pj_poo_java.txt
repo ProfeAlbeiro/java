@@ -48,12 +48,13 @@
 ||| --  10. REQUISITOS USERS                                                                                                                                           |||
 ||| --      10.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
 ||| --      10.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
-||| --      10.03. Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                   |||
-||| --      10.04. Modificar la Clase 'views.modules.users/UsersView.java'                                                                                       |||
+||| --      10.03. Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                         |||
+||| --      10.04. Modificar la Clase 'views.modules.users/UsersView.java'                                                                                             |||
 ||| --      10.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  11. REGISTER                                                                                                                                                   |||
-||| --  12. ENRUTADOR                                                                                                                                                  |||
-||| --  13. LOGIN Y LOGOUT                                                                                                                                             |||
+||| --  11. HERENCIA Y POLIMORFISMO EN CLIENTES Y EMPLEADOS                                                                                                                                         |||
+||| --  12. REGISTER                                                                                                                                                   |||
+||| --  13. ENRUTADOR                                                                                                                                                  |||
+||| --  14. LOGIN Y LOGOUT                                                                                                                                             |||
 |||                                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                                   |||
 |||                                                                                                                                                                    |||
@@ -1203,12 +1204,12 @@
                     07       Scanner sc = new Scanner(System.in);    
                     08 
                     09       public int getRolId() {
-                    10           System.out.print("|----- Id:  ");
+                    10           System.out.print("|----- Rol Id: ");
                     11           return sc.nextInt();
                     12       }
                     13       
                     14       public String getRolName() {
-                    15           System.out.print("|----- Rol: ");
+                    15           System.out.print("|----- Nombre: ");
                     16           return sc.next();
                     17       }
                     18       
@@ -1229,7 +1230,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.04. Modificar la Clase 'views.modules.roles/RolesView.java': -------------------------------------------------------------------------------------------------|
+|-- 09.04. Modificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.roles;
@@ -1297,7 +1298,7 @@
                     63                           rol = roles.searchRolById(rolId);
                     64                           System.out.println("|-----      " + rol);                                            
                     65                       } else {
-                    66                           System.out.println("|---- ¡Rol No Encontrado!");
+                    66                           System.out.println("|----- ¡Rol No Encontrado!");
                     67                       }                    
                     68                       System.out.println("|-------------------------------------------------------------------|");
                     69                   }
@@ -1310,10 +1311,10 @@
                     76                           rolName = rolesFormView.getRolName();
                     77                           System.out.println("|-------------------------------------------------------------------|");
                     78                           roles.updateRol(rolId, rolName);
-                    79                           System.out.println("|---- ¡Rol Actualizado!");
+                    79                           System.out.println("|----- ¡Rol Actualizado!");
                     80                       } else {
                     81                           System.out.println("|-------------------------------------------------------------------|");
-                    82                           System.out.println("|---- ¡Rol No Encontrado!");
+                    82                           System.out.println("|----- ¡Rol No Encontrado!");
                     83                       }
                     84                       System.out.println("|-------------------------------------------------------------------|");
                     85                   }
@@ -1324,9 +1325,9 @@
                     90                       rolId = rolesFormView.getRolId();
                     91                       System.out.println("|-------------------------------------------------------------------|");
                     92                       if (roles.deleteRol(rolId)) {
-                    93                           System.out.println("|---- ¡Rol Eliminado!");
+                    93                           System.out.println("|----- ¡Rol Eliminado!");
                     94                       } else {
-                    95                           System.out.println("|---- ¡Rol No Encontrado!");
+                    95                           System.out.println("|----- ¡Rol No Encontrado!");
                     96                       }
                     97                       System.out.println("|-------------------------------------------------------------------|");
                     98                   }
@@ -1557,7 +1558,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 10.03. Codificar la Clase 'views.modules.users/UsersFormView.java': -------------------------------------------------------------------------------------------|
+|-- 10.03. Codificar la Clase 'views.modules.users/UsersFormView.java': -------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.users;
@@ -1569,7 +1570,7 @@
                     07       Scanner sc = new Scanner(System.in);
                     08      
                     09       public int getUserId(){
-                    10           System.out.print("|----- Id: ");
+                    10           System.out.print("|----- Usuario Id: ");
                     11           return sc.nextInt();
                     12       }
                     13       
@@ -1615,7 +1616,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 10.04.  Modificar la Clase 'views.modules.users/UsersView.java': ------------------------------------------------------------------------------------------------|
+|-- 10.04.  Modificar la Clase 'views.modules.users/UsersView.java': ----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.modules.users;

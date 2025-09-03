@@ -12,7 +12,14 @@ public class RolesView {
     private RolesController roles = new RolesController();
     private RolModel rol = new RolModel();
     private Scanner sc = new Scanner(System.in);
-
+    
+    public RolesView(){        
+    }
+    
+    public RolesView(RolesController roles){
+        this.roles = roles;
+    }
+    
     public void rolesMenuView() {
         
         do {

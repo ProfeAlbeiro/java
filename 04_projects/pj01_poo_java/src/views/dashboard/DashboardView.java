@@ -1,5 +1,7 @@
 package views.dashboard;
 
+import controllers.RolesController;
+import controllers.UsersController;
 import views.modules.roles.RolesView;
 import views.modules.users.UsersView;
 import java.util.Scanner;
@@ -7,6 +9,8 @@ import java.util.Scanner;
 public class DashboardView {
     
     private int menu;
+    private RolesController roles = new RolesController();
+    private UsersController users = new UsersController();
     private RolesView rolesView;
     private UsersView usersView;
     private Scanner sc = new Scanner(System.in);
@@ -29,11 +33,11 @@ public class DashboardView {
             switch (menu) {
                 
                 case 1 -> {
-                    rolesView = new RolesView();
+                    rolesView = new RolesView(roles);
                     rolesView.rolesMenuView();
                 }
                 case 2 -> {
-                    usersView = new UsersView();
+                    usersView = new UsersView(roles, users);
                     usersView.usersMenuView();
                 }
                 case 0 -> {
