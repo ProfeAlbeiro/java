@@ -56,7 +56,7 @@ public class RolesView {
                     System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     for (RolModel getRol : roles.getRoles()) {
-                        System.out.println("|-- " + getRol);
+                        System.out.println("|----- " + getRol);
                     }
                     System.out.println("|-------------------------------------------------------------------|");
                 }
@@ -68,9 +68,9 @@ public class RolesView {
                     System.out.println("|-------------------------------------------------------------------|");
                     if (roles.searchRolById(rolId) != null) {
                         rol = roles.searchRolById(rolId);
-                        System.out.println("|-----      " + rol);                                            
+                        System.out.println("|----- " + rol);
                     } else {
-                        System.out.println("|---- ¡Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }                    
                     System.out.println("|-------------------------------------------------------------------|");
                 }
@@ -83,10 +83,10 @@ public class RolesView {
                         rolName = rolesFormView.getRolName();
                         System.out.println("|-------------------------------------------------------------------|");
                         roles.updateRol(rolId, rolName);
-                        System.out.println("|---- ¡Rol Actualizado!");
+                        System.out.println("|----- ¡Rol Actualizado!");
                     } else {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|---- ¡Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }
                     System.out.println("|-------------------------------------------------------------------|");
                 }
@@ -97,9 +97,9 @@ public class RolesView {
                     rolId = rolesFormView.getRolId();
                     System.out.println("|-------------------------------------------------------------------|");
                     if (roles.deleteRol(rolId)) {
-                        System.out.println("|---- ¡Rol Eliminado!");
+                        System.out.println("|----- ¡Rol Eliminado!");
                     } else {
-                        System.out.println("|---- ¡Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }
                     System.out.println("|-------------------------------------------------------------------|");
                 }

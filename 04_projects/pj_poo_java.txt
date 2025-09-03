@@ -1134,52 +1134,43 @@
                     01   package controllers;
                     02 
                     03   import models.RolModel;
-                    04   import views.modules.roles.RolesView;
-                    05   import java.util.ArrayList;
-                    06 
-                    07   public class RolesController {
-                    08       
-                    09       private RolesView rolesView;
-                    10       private ArrayList<RolModel> roles = new ArrayList<>();
-                    11       
-                    12       public RolesController() {
-                    13       }
-                    14       
-                    15       public void rolesMenu() {        
-                    16           rolesView = new RolesView();        
-                    17       }
-                    18       
-                    19       public void addRol(RolModel rol){
-                    20           roles.add(rol);
-                    21       }    
-                    22       
-                    23       public ArrayList<RolModel> getRoles(){
-                    24           return roles;
-                    25       }
+                    04   import java.util.ArrayList;
+                    05 
+                    06   public class RolesController {
+                    07       
+                    08       private ArrayList<RolModel> roles = new ArrayList<>();
+                    09       
+                    10       public void addRol(RolModel rol){
+                    11           roles.add(rol);
+                    12       }    
+                    13       
+                    14       public ArrayList<RolModel> getRoles(){
+                    15           return roles;
+                    16       }
+                    17       
+                    18       public RolModel searchRolById(int id){
+                    19           for (RolModel rol : roles) {
+                    20               if (rol.getRolId() == id) {
+                    21                   return rol;
+                    22               }
+                    23           }
+                    24           return null;
+                    25       }    
                     26       
-                    27       public RolModel searchRolById(int id){
-                    28           for (RolModel rol : roles) {
-                    29               if (rol.getRolId() == id) {
-                    30                   return rol;
-                    31               }
+                    27       public boolean updateRol(int id, String newName){
+                    28           RolModel rol = searchRolById(id);
+                    29           if (rol != null) {
+                    30               rol.setRolName(newName);
+                    31               return true;
                     32           }
-                    33           return null;
-                    34       }    
+                    33           return false;
+                    34       }
                     35       
-                    36       public boolean updateRol(int id, String newName){
-                    37           RolModel rol = searchRolById(id);
-                    38           if (rol != null) {
-                    39               rol.setRolName(newName);
-                    40               return true;
-                    41           }
-                    42           return false;
-                    43       }
-                    44       
-                    45       public boolean deleteRol(int id){
-                    46           return roles.removeIf(r -> r.getRolId() == id);
-                    47       }
-                    48       
-                    49   }
+                    36       public boolean deleteRol(int id){
+                    37           return roles.removeIf(r -> r.getRolId() == id);
+                    38       }
+                    39       
+                    40   }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -1288,7 +1279,7 @@
                     49                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
                     50                       System.out.println("|-------------------------------------------------------------------|");
                     51                       for (RolModel getRol : roles.getRoles()) {
-                    52                           System.out.println("|-- " + getRol);
+                    52                           System.out.println("|----- " + getRol);
                     53                       }
                     54                       System.out.println("|-------------------------------------------------------------------|");
                     55                   }

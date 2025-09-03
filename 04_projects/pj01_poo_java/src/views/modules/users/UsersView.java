@@ -2,7 +2,6 @@ package views.modules.users;
 
 import controllers.RolesController;
 import controllers.UsersController;
-import views.modules.roles.RolesFormView;
 import models.RolModel;
 import models.UserModel;
 import java.util.Scanner;
@@ -11,8 +10,7 @@ public class UsersView {
 
     private int menu, rolId, userId;
     private String userName, userLastName, userEmail, userPass;
-    private boolean userState;
-    private RolesFormView rolesFormView = new RolesFormView();
+    private boolean userState;    
     private UsersFormView usersFormView = new UsersFormView();
     private RolesController roles = new RolesController();
     private UsersController users = new UsersController();
@@ -59,7 +57,7 @@ public class UsersView {
                     userEmail = usersFormView.getUserEmail();
                     userPass = usersFormView.getUserPass();
                     userState = usersFormView.getUserState();
-                    rolId = rolesFormView.getRolId();
+                    rolId = usersFormView.getUserRolId();
                     rol = roles.searchRolById(rolId);
                     System.out.println("|-------------------------------------------------------------------|");
                     if (rol != null) {
@@ -75,10 +73,23 @@ public class UsersView {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
+                    for (UserModel getUser : users.getUsers()){
+                        System.out.println("|----- " + getUser);
+                    }
+                    System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 3 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
+                    userId = usersFormView.getUserId();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    if (users.searchUserById(userId) != null) {
+                        user = users.searchUserById(userId);
+                        System.out.println("|----- " + user);
+                    } else {
+                        System.out.println("|----- ¡Usuario No Encontrado!");
+                    }
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 4 -> {

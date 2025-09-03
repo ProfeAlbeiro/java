@@ -36,4 +36,9 @@ public class UsersFormView {
         return sc.nextBoolean();
     }
     
+    public int getUserRolId(){
+        System.out.print("|----- Rol Id: ");
+        return sc.nextInt();
+    }
+    
 }

@@ -1,18 +1,11 @@
 package controllers;
 
 import models.RolModel;
-import views.modules.roles.RolesView;
 import java.util.ArrayList;
 
 public class RolesController {
     
-    private RolesView rolesView;
     private ArrayList<RolModel> roles = new ArrayList<>();
-    
-    public void rolesMenu(RolesController roles) {        
-        rolesView = new RolesView(roles);
-        rolesView.rolesMenuView();
-    }
     
     public void addRol(RolModel rol){
         roles.add(rol);

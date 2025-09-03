@@ -33,8 +33,8 @@ public class DashboardView {
             switch (menu) {
                 
                 case 1 -> {
-                    RolesController rolesManage = new RolesController();
-                    rolesManage.rolesMenu(roles);
+                    rolesView = new RolesView(roles);
+                    rolesView.rolesMenuView();
                 }
                 case 2 -> {
                     usersView = new UsersView(roles, users);
