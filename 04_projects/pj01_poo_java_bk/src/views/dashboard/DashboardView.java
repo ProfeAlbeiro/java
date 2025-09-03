@@ -22,11 +22,11 @@ public class DashboardView {
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|---------------------------- DASHBOARD ----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Gestión de Roles");
-            System.out.println("    2. Gestión de Usuarios");
-            System.out.println("    0. Cerrar Sesión");
+            System.out.println("    1. Gestiï¿½n de Roles");
+            System.out.println("    2. Gestiï¿½n de Usuarios");
+            System.out.println("    0. Cerrar Sesiï¿½n");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|----- Seleccione una opción : ");
+            System.out.print("|----- Seleccione una opciï¿½n : ");
             menu = sc.nextInt();            
             System.out.println("|-------------------------------------------------------------------|");
             
@@ -41,11 +41,11 @@ public class DashboardView {
                     usersView.usersMenuView();
                 }
                 case 0 -> {
-                    System.out.println("|----- ¡Sesión Cerrada! ...");
+                    System.out.println("|----- ï¿½Sesiï¿½n Cerrada! ...");
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 default -> {
-                    System.out.println("|----- ¡Opción No Válida!");
+                    System.out.println("|----- ï¿½Opciï¿½n No Vï¿½lida!");
                     System.out.println("|-------------------------------------------------------------------|");
                 }
             }
