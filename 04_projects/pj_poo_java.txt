@@ -159,6 +159,7 @@
                 ├── models/
                 │   ├── CustomerModel.java
                 │   ├── RolModel.java
+                │   ├── SellerModel.java
                 │   └── UserModel.java
                 ├── routes/
                 │   └── RouterControllers.java
@@ -232,11 +233,11 @@
             
             02. En 'Class Name:' escribir 'Main'.
 
-            03. Dar click derecho sobre el paquete 'models' y seleccionar 'New / Java Class...'.           
+            03. Dar click derecho sobre el paquete 'models' y seleccionar 'New / Java Class...'.
 
             04. En 'Class Name:' escribir 'RolModel'.
 
-            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel', 'CustomerModel' y 'SellerModel'.
+            05. Repetir el paso 03 y 04 con el siguiente nombre para las Clases: 'UserModel', 'SellerModel' y 'CustomerModel'.
 
             06. Dar click derecho sobre el paquete 'controllers' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'DashboardController', 'LandingController', 'LoginController', 'LogoutController', 'RegisterController', 'RolesController' y 

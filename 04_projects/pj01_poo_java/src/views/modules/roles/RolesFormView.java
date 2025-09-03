@@ -1,5 +1,5 @@
 package views.modules.roles;
 
-public class RolesView {
+public class RolesFormView {
     
 }

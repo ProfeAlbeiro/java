@@ -1,5 +1,5 @@
 package views.landing;
 
-public class LandingView {
+public class LoginView {
     
 }
