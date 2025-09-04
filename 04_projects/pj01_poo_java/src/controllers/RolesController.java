@@ -19,11 +19,12 @@ public class RolesController {
         rolesView.rolesMenuView();
     }
     
-    public void addRol(){
+    public String addRol(){
         rolId = roles.size() + 1;
         rolName = rolesFormView.getRolName();
         rol = new RolModel(rolId, rolName);
         roles.add(rol);        
+        return "|----- ¡Rol Creado!";
     }
 
     public void getRoles(){

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class RolesView {
     
     private int menu;
-    String rolFound;
+    String rolMessage;
     private RolesController roles = new RolesController();
     private Scanner sc = new Scanner(System.in);
 
@@ -33,10 +33,10 @@ public class RolesView {
                 case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");                    
-                    roles.addRol();
+                    System.out.println("|-------------------------------------------------------------------|");                                        
+                    rolMessage = roles.addRol();
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println("|----- ¡Rol Creado!");
+                    System.out.println(rolMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 2 -> {
@@ -50,27 +50,27 @@ public class RolesView {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    rolFound = roles.searchRolById();
+                    rolMessage = roles.searchRolById();
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println(rolFound);
+                    System.out.println(rolMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 4 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");                    
-                    rolFound = roles.updateRol();                    
+                    rolMessage = roles.updateRol();                    
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println(rolFound);
+                    System.out.println(rolMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 5 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    rolFound = roles.deleteRol();
+                    rolMessage = roles.deleteRol();
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println(rolFound);
+                    System.out.println(rolMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 0 -> {
