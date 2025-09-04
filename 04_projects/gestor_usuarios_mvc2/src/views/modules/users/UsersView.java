@@ -26,7 +26,7 @@ public class UsersView {
         boolean state;
         do {
             System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+            System.out.println("|---------------------- GESTIï¿½N DE USUARIOS ------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|- 1. Agregar Usuario");
             System.out.println("|- 2. Listar Usuarios");
@@ -34,7 +34,7 @@ public class UsersView {
             System.out.println("|- 4. Eliminar Usuario");
             System.out.println("|- 0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|- Seleccione una opción: ");
+            System.out.print("|- Seleccione una opciï¿½n: ");
             menuUs = sc.nextInt();
             sc.nextLine();
             System.out.println("|-------------------------------------------------------------------|");
@@ -50,7 +50,7 @@ public class UsersView {
                     lastname = sc.nextLine();
                     System.out.print("|- Email: ");
                     email = sc.nextLine();
-                    System.out.print("|- Contraseña: ");
+                    System.out.print("|- Contraseï¿½a: ");
                     pass = sc.nextLine();                    
                     System.out.print("|- Estado (true = activo / false = inactivo): ");
                     state = sc.nextBoolean();
@@ -62,9 +62,9 @@ public class UsersView {
                     if (rol != null) {
                         User newUser = new User(userId,name,lastname,email,pass,state,rol);
                         users.addUser(newUser);
-                        System.out.println("|- ¡Usuario Creado!");
+                        System.out.println("|- ï¿½Usuario Creado!");
                     } else {
-                        System.out.println("|- ¡Rol No Encontrado!");
+                        System.out.println("|- ï¿½Rol No Encontrado!");
                     }
                     break;
                 case 2:
@@ -83,7 +83,7 @@ public class UsersView {
                     lastname = sc.nextLine();
                     System.out.print("|- Nuevo Email: ");
                     email = sc.nextLine();
-                    System.out.print("|- Nuevo Contraseña: ");
+                    System.out.print("|- Nuevo Contraseï¿½a: ");
                     pass = sc.nextLine();                    
                     System.out.print("|- Nuevo Estado (true = activo / false = inactivo): ");
                     state = sc.nextBoolean();
@@ -94,21 +94,21 @@ public class UsersView {
                     System.out.println("|-------------------------------------------------------------------|");
                     if (rolUpdate != null) {
                         if (users.updateUser(rolId, name, lastname, email, pass, state, rolUpdate)) {
-                            System.out.println("|- ¡Usuario Actualizado!");
+                            System.out.println("|- ï¿½Usuario Actualizado!");
                         } else {
-                            System.out.println("|- ¡Usuario No Encontrado!");
+                            System.out.println("|- ï¿½Usuario No Encontrado!");
                         }
                     } else {
-                        System.out.println("|- ¡Rol No Encontrado!");
+                        System.out.println("|- ï¿½Rol No Encontrado!");
                     }
                     break;
                 case 4:
                     System.out.print("|- ID del Usuario a Eliminar: ");
                     userId = sc.nextInt();
                     if (users.deleteUser(userId)) {
-                        System.out.println("|- ¡Usuario Eliminado!");
+                        System.out.println("|- ï¿½Usuario Eliminado!");
                     } else {
-                        System.out.println("|- ¡Usuario No Encontrado!");
+                        System.out.println("|- ï¿½Usuario No Encontrado!");
                     }
                     break;
             }

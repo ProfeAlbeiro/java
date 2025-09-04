@@ -14,9 +14,11 @@ public class DashboardView {
     public DashboardView(){        
     }
     
-    public DashboardView(RolesController roles){
+    public DashboardView(RolesController roles, UsersController users){
         this.roles = roles;
+        this.users = users;
     }
+    
     public void dashboardMenuView() {
         
         do {            
@@ -45,7 +47,8 @@ public class DashboardView {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");                    
-                    users.usersMenu();
+                    UsersController usersManage = new UsersController();
+                    usersManage.usersMenu(roles, users);
                 }
                 case 0 -> {
                     System.out.println("|----- ¡Sesión Cerrada! ...");

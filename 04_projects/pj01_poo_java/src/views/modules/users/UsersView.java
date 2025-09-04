@@ -1,12 +1,23 @@
 package views.modules.users;
 
+import controllers.RolesController;
+import controllers.UsersController;
 import java.util.Scanner;
 
 public class UsersView {
 
     private int menu;
+    private String userMessage;
+    private RolesController roles = new RolesController();
+    private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
-
+    
+    public UsersView(){        
+    }
+    
+    public UsersView(RolesController roles, UsersController users){        
+    }
+    
     public void usersMenuView() {
 
         do {

@@ -1,6 +1,5 @@
 package views.modules.roles;
 
-import views.dashboard.DashboardView;
 import controllers.RolesController;
 import java.util.Scanner;
 
@@ -8,8 +7,7 @@ public class RolesView {
     
     private int menu;
     String rolMessage;
-    private RolesController roles = new RolesController();
-    private DashboardView dashboardView;
+    private RolesController roles = new RolesController();    
     private Scanner sc = new Scanner(System.in);
     
     public RolesView(){        

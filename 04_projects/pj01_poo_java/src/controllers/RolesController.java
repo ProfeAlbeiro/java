@@ -9,10 +9,10 @@ public class RolesController {
     
     private int rolId;
     private String rolName;
-    private ArrayList<RolModel> rolesList = new ArrayList<>();    
     private RolModel rol;
     private RolesView rolesView;
     private RolesFormView rolesFormView = new RolesFormView();
+    private ArrayList<RolModel> roles = new ArrayList<>();    
     
     public void rolesMenu(RolesController roles) {
         rolesView = new RolesView(roles);
@@ -20,22 +20,22 @@ public class RolesController {
     }
     
     public String addRol(){
-        rolId = rolesList.size() + 1;
+        rolId = roles.size() + 1;
         rolName = rolesFormView.getRolName();
         rol = new RolModel(rolId, rolName);
-        rolesList.add(rol);        
+        roles.add(rol);        
         return "|----- ¡Rol Creado!";
     }
 
     public void getRoles(){
-        for(RolModel getRol : rolesList){
+        for(RolModel getRol : roles){
             System.out.println("|----- " + getRol);
         }        
     }
 
     public String searchRolById(){
         rolId = rolesFormView.getRolId();
-        for (RolModel getRol : rolesList) {
+        for (RolModel getRol : roles) {
             if (getRol.getRolId() == rolId) {
                 return "|----- " + getRol.toString();
             }
@@ -45,7 +45,7 @@ public class RolesController {
     
     public String updateRol(){
         rolId = rolesFormView.getRolId();
-        for (RolModel getRol : rolesList){
+        for (RolModel getRol : roles){
             if (getRol.getRolId() == rolId) {
                 rolName = rolesFormView.getRolName();
                 getRol.setRolName(rolName);
@@ -57,7 +57,7 @@ public class RolesController {
 
     public String deleteRol(){
         rolId = rolesFormView.getRolId();
-        if (rolesList.removeIf(getRol -> getRol.getRolId() == rolId)) {
+        if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
             return "|----- ¡Rol Eliminado!";            
         } else {
             return "|----- ¡Rol No Encontrado!";
