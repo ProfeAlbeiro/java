@@ -4,7 +4,6 @@ import views.dashboard.DashboardView;
 
 public class DashboardController {
     
-    private RolesController roles = new RolesController();
     private DashboardView dashboardView;
     
     public void dashboardMenu() {

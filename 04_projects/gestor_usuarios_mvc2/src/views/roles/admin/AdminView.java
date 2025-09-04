@@ -24,15 +24,15 @@ public class AdminView {
         int menuDash;
         
         do {
-            System.out.println("\n¡Bienvenido " + users.searchUserById(1).getFullName()+ "!");
+            System.out.println("\nï¿½Bienvenido " + users.searchUserById(1).getFullName()+ "!");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("|---------------------------- DASHBOARD ----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("|- 1. Gestión de Roles");
-            System.out.println("|- 2. Gestión de Usuarios");
-            System.out.println("|- 0. Cerrar Sesión");
+            System.out.println("|- 1. Gestiï¿½n de Roles");
+            System.out.println("|- 2. Gestiï¿½n de Usuarios");
+            System.out.println("|- 0. Cerrar Sesiï¿½n");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|- Seleccione una opción: ");
+            System.out.print("|- Seleccione una opciï¿½n: ");
             menuDash = sc.nextInt();
             System.out.println("|-------------------------------------------------------------------|");
 
@@ -49,7 +49,7 @@ public class AdminView {
                     Logout logout = new Logout();                    
                     break;
                 default:                    
-                    System.out.println("|- ¡Opción NO Válida!");
+                    System.out.println("|- ï¿½Opciï¿½n NO Vï¿½lida!");
                     System.out.println("|-------------------------------------------------------------------|");
             }
         } while (menuDash != 0);

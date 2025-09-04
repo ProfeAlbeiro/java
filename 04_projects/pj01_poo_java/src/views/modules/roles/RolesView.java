@@ -12,6 +12,13 @@ public class RolesView {
     private DashboardView dashboardView;
     private Scanner sc = new Scanner(System.in);
     
+    public RolesView(){        
+    }
+    
+    public RolesView(RolesController roles){
+        this.roles = roles;
+    }
+    
     public void rolesMenuView() {
         
         do {
@@ -75,8 +82,7 @@ public class RolesView {
                     System.out.println(rolMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                 }
-                case 0 -> {                    
-                }
+                case 0 -> {}
                 default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");

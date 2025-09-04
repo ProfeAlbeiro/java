@@ -11,6 +11,12 @@ public class DashboardView {
     private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
     
+    public DashboardView(){        
+    }
+    
+    public DashboardView(RolesController roles){
+        this.roles = roles;
+    }
     public void dashboardMenuView() {
         
         do {            
@@ -31,8 +37,9 @@ public class DashboardView {
                 case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");                    
-                    roles.rolesMenu();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    RolesController rolesManage = new RolesController();
+                    rolesManage.rolesMenu(roles);
                 }
                 case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");

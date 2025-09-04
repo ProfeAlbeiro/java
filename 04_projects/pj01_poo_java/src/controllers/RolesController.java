@@ -14,8 +14,8 @@ public class RolesController {
     private RolesView rolesView;
     private RolesFormView rolesFormView = new RolesFormView();
     
-    public void rolesMenu() {
-        rolesView = new RolesView();
+    public void rolesMenu(RolesController roles) {
+        rolesView = new RolesView(roles);
         rolesView.rolesMenuView();
     }
     
