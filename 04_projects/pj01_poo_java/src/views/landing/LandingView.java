@@ -14,8 +14,8 @@ public class LandingView {
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|----------------------------- EMPRESA -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.println("    1. Iniciar Sesión");
-            System.out.println("    2. Registrarse");
+            System.out.println("    1. Registrarse");
+            System.out.println("    2. Iniciar Sesión");
             System.out.println("    0. Salir");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.print("|----- Seleccione una opción: ");
@@ -26,12 +26,12 @@ public class LandingView {
 
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    System.out.println("|-------------------------- REGISTRARSE ----------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:                    
                     System.out.println("\n|-------------------------------------------------------------------|");
-                    System.out.println("|--------------------------- REGISTRARSE ---------------------------|");
+                    System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 0:

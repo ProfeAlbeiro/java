@@ -1,5 +1,5 @@
 package views.dashboard;
 
-public class DashboardView {    
+public class DashboardView {
     
 }

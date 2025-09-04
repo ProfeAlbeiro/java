@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Register {
 
-    // Lista para usuarios registrados (¡¡¡OJO!!! Contrastar con controlador Users)
+    // Lista para usuarios registrados (ï¿½ï¿½ï¿½OJO!!! Contrastar con controlador Users)
     private static List<User> users = new ArrayList<>();
 
     public void registrarUsuario() {
@@ -36,7 +36,7 @@ public class Register {
         System.out.println("Correo: " + correo);
     }
 
-//    // Método útil para listar usuarios registrados (opcional)
+//    // Mï¿½todo ï¿½til para listar usuarios registrados (opcional)
 //    public void listarUsuarios() {
 //        System.out.println("Usuarios registrados:");
 //        for (User user : users) {
@@ -44,7 +44,7 @@ public class Register {
 //        }
 //    }
 //
-//    // Método útil para validar login (usado más adelante si deseas)
+//    // Mï¿½todo ï¿½til para validar login (usado mï¿½s adelante si deseas)
 //    public static List<User> getUsuariosRegistrados() {
 //        return users;
 //    }

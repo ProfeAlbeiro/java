@@ -18,7 +18,7 @@ public class Login {
         roles = new Roles();
         users = new Users();
         
-        // Crear rol y usuario de prueba para autenticación
+        // Crear rol y usuario de prueba para autenticaciï¿½n
         Rol rolAdmin = new Rol(1, "admin");
         roles.addRol(rolAdmin);
         User admin = new User(1,"Albeiro","Ramos","admin@correo.com","12345",true,rolAdmin);
@@ -28,7 +28,7 @@ public class Login {
         String email = loginView.pedirEmail();
         String password = loginView.pedirContrasena();        
 
-        // Validación básica (en proyecto real sería con base de datos)
+        // Validaciï¿½n bï¿½sica (en proyecto real serï¿½a con base de datos)
         if (email.equals(admin.getUserEmail()) && password.equals(admin.getUserPass())) {
             System.out.println("|-------------------------------------------------------------------|");
             router = new Router("Dashboard", roles, users);

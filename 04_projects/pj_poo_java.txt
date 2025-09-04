@@ -14,45 +14,55 @@
 ||| --      03.02. Crear la 'Carpeta Raíz' del proyecto                                                                                                                |||
 ||| --      03.03. Crear los 'paquetes' del proyecto                                                                                                                   |||
 ||| --      03.04. Crear las 'Clases' del proyecto                                                                                                                     |||
-||| --  04. MENÚ LANDING                                                                                                                                               |||
+||| --  04. MENU LANDING                                                                                                                                               |||
 ||| --      04.01. Codificar la Clase 'views.landing/LandingView.java'                                                                                                 |||
 ||| --      04.02. Codificar la Clase 'controllers/LandingController.java'                                                                                             |||
 ||| --      04.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      04.04. Codificar la Clase 'Main.java'                                                                                                                      |||
 ||| --      04.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  05. MENÚS ROLES, USUARIOS Y DASHBOARD                                                                                                                          |||
-||| --      05.01. Codificar la Clase 'views.modules.roles/RolesView.java'                                                                                             |||
-||| --      05.02. Codificar la Clase 'views.modules.users/UsersView.java'                                                                                             |||
-||| --      05.03. Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
-||| --      05.04. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
-||| --      05.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  06. MENÚ USERS                                                                                                                                                 |||
+||| --  05. FORMULARIO DE REGISTRO                                                                                                                                     |||
+||| --      05.01. Codificar la Clase 'views.landing/RegisterView.java'                                                                                                |||
+||| --      05.02. Codificar la Clase 'controllers/RegisterController.java'                                                                                            |||
+||| --      05.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      05.04. Ejectuar el proyecto                                                                                                                                |||
+||| --  06. FORMULARIO INICIO DE SESIÓN                                                                                                                                |||
+||| --      06.01. Codificar la Clase 'views.landing/LoginView.java'                                                                                                   |||
+||| --      06.02. Codificar la Clase 'controllers/LoginController.java'                                                                                               |||
+||| --      06.03. Codificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      06.04. Ejectuar el proyecto                                                                                                                                |||
+||| --  07. VISTAS DASHBOARD: ROLES Y USUARIOS                                                                                                                         |||
+||| --      07.01. Codificar la Clase 'views.modules.roles/RolesView.java'                                                                                             |||
+||| --      07.02. Codificar la Clase 'views.modules.users/UsersView.java'                                                                                             |||
+||| --      07.03. Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
+||| --      07.02. Codificar la Clase 'controllers/DashboardController.java'                                                                                           |||
+||| --      07.04. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
+||| --      07.05. Ejectuar el proyecto                                                                                                                                |||
+||| --  08. MENÚ USERS                                                                                                                                                 |||
 ||| --      07.02. Codificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      07.04. Ejectuar el proyecto                                                                                                                                |||
-||| --  07. MENÚ DASHBOARD                                                                                                                                             |||
-||| --      05.02. Codificar la Clase 'controllers/DashboardController.java'                                                                                           |||
+||| --  09. MENÚ DASHBOARD                                                                                                                                             |||
 ||| --      05.03. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      05.04. Ejectuar el proyecto                                                                                                                                |||
-||| --  08. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS                                                                                                                |||
+||| --  10. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS                                                                                                                |||
 ||| --      08.01. Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                             |||
 ||| --      08.02. Modificar la Clase 'routes/RouterControllers.java'                                                                                                  |||
 ||| --      08.03. Ejectuar el proyecto                                                                                                                                |||
-||| --  09. REQUISITOS ROLES                                                                                                                                           |||
+||| --  11. REQUISITOS ROLES                                                                                                                                           |||
 ||| --      09.01. Codificar la Clase 'models/RolModel.java'                                                                                                           |||
 ||| --      09.02. Modificar la Clase 'controllers/RolesController.java'                                                                                               |||
 ||| --      09.03. Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                         |||
 ||| --      09.04. Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                             |||
 ||| --      09.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  10. REQUISITOS USERS                                                                                                                                           |||
+||| --  12. REQUISITOS USERS                                                                                                                                           |||
 ||| --      10.01. Codificar la Clase 'models/UserModel.java'                                                                                                          |||
 ||| --      10.02. Modificar la Clase 'controllers/UsersController.java'                                                                                               |||
 ||| --      10.03. Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                         |||
 ||| --      10.04. Modificar la Clase 'views.modules.users/UsersView.java'                                                                                             |||
 ||| --      10.05. Ejectuar el proyecto                                                                                                                                |||
-||| --  11. HERENCIA Y POLIMORFISMO EN CLIENTES Y EMPLEADOS                                                                                                            |||
-||| --  12. REGISTER                                                                                                                                                   |||
-||| --  13. ENRUTADOR                                                                                                                                                  |||
-||| --  14. LOGIN Y LOGOUT                                                                                                                                             |||
+||| --  13. HERENCIA Y POLIMORFISMO EN CLIENTES Y EMPLEADOS                                                                                                            |||
+||| --  14. REGISTER                                                                                                                                                   |||
+||| --  15. ENRUTADOR                                                                                                                                                  |||
+||| --  16. LOGIN Y LOGOUT                                                                                                                                             |||
 |||                                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                                   |||
 |||                                                                                                                                                                    |||
@@ -241,11 +251,11 @@
                 'DashboardController', 'LandingController', 'LoginController', 'LogoutController', 'RegisterController', 'RolesController' y 
                 'UsersController'.
 
-            07. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 
-                'DashboardView'.
-            
-            08. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
+            07. Dar click derecho sobre el paquete 'views.landing' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'LandingView', 'LoginView' y 'RegisterView'.
+
+            08. Dar click derecho sobre el paquete 'views.dashboard' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 
+                'DashboardView'.
             
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
                 'RolesView' y 'RolesFormView'.
@@ -284,8 +294,8 @@
                     14               System.out.println("\n|-------------------------------------------------------------------|");
                     15               System.out.println("|----------------------------- EMPRESA -----------------------------|");
                     16               System.out.println("|-------------------------------------------------------------------|");
-                    17               System.out.println("    1. Iniciar Sesión");
-                    18               System.out.println("    2. Registrarse");
+                    18               System.out.println("    1. Registrarse");
+                    17               System.out.println("    2. Iniciar Sesión");
                     19               System.out.println("    0. Salir");
                     20               System.out.println("|-------------------------------------------------------------------|");
                     21               System.out.print("|----- Seleccione una opción: ");
@@ -295,14 +305,14 @@
                     25               switch (menu) {
                     26 
                     27                   case 1:
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|-------------------------- REGISTRARSE ----------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    31                       break;
+                    32                   case 2:                    
                     28                       System.out.println("\n|-------------------------------------------------------------------|");
                     29                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
                     30                       System.out.println("|-------------------------------------------------------------------|");
-                    31                       break;
-                    32                   case 2:                    
-                    33                       System.out.println("\n|-------------------------------------------------------------------|");
-                    34                       System.out.println("|--------------------------- REGISTRARSE ---------------------------|");
-                    35                       System.out.println("|-------------------------------------------------------------------|");
                     36                       break;
                     37                   case 0:
                     38                       System.out.println("|----- ¡Hasta Pronto! ...");
@@ -439,6 +449,391 @@
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||-------------------------------------------------------------------- 05. FORMULARIO DE REGISTRO --------------------------------------------------------------------|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.01.  Codificar la Clase 'views.landing/RegisterView.java': --------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.landing;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class RegisterView {
+                    06       
+                    07       Scanner sc = new Scanner(System.in);
+                    08       
+                    09       
+                    10       public String getUserName(){
+                    11           System.out.print("|----- Nombre: ");
+                    12           return sc.next();
+                    13       }
+                    14       
+                    15       public String getUserLastName(){
+                    16           System.out.print("|----- Apellido: ");
+                    17           return sc.next();
+                    18       }
+                    19       
+                    20       public String getUserEmail(){
+                    21           System.out.print("|----- Correo: ");
+                    22           return sc.next();
+                    23       }
+                    24       
+                    25       public String getUserPass(){
+                    26           System.out.print("|----- Contraseña: ");
+                    27           return sc.next();
+                    28       }
+                    29       
+                    30       public String getUserPassConfirm(){
+                    31           System.out.print("|----- Confirmación: ");
+                    32           return sc.next();
+                    33       }
+                    34       
+                    35   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.02.  Codificar la Clase 'controllers/RegisterController.java': ---------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.landing.RegisterView;
+                    04 
+                    05   public class RegisterController {
+                    06       
+                    07       private String name, lastname, email, pass, passConfirm;
+                    08       private RegisterView registerView;
+                    09       
+                    10       public void registerMenu(){        
+                    11           
+                    12           registerView = new RegisterView();
+                    13           
+                    14           name = registerView.getUserName();
+                    15           lastname = registerView.getUserLastName();
+                    16           email = registerView.getUserEmail();
+                    17           System.out.println("|-------------------------------------------------------------------|");
+                    18           do {            
+                    19               pass = registerView.getUserPass();
+                    20               passConfirm = registerView.getUserPassConfirm();
+                    21               if (!pass.equals(passConfirm)) {
+                    22                   System.out.println("|-------------------------------------------------------------------|");
+                    23                   System.out.println("|----- Las contraseñas no coinciden. ¡Digítalas nuevamente!");                
+                    24                   System.out.println("|-------------------------------------------------------------------|");
+                    25               }
+                    26           } while (!pass.equals(passConfirm));
+                    27           System.out.println("|-------------------------------------------------------------------|");
+                    28           System.out.println("|----- ¡Usuario Registrado Exitósamente");
+                    29           System.out.println("|-------------------------------------------------------------------|");
+                    30           
+                    31       }
+                    32       
+                    33  }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.03.  Codificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.RegisterController;
+                    04 
+                    05   public class RouterControllers {
+                    06 
+                    07       private RegisterController registerController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           registerController = new RegisterController();
+                    12           registerController.registerMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.04.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------------------------- 05. FORMULARIO LOGIN -----------------------------------------------------------------------|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.01.  Codificar la Clase 'views.landing/LoginView.java': ----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.landing;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class LoginView {
+                    06       
+                    07       Scanner sc = new Scanner(System.in);    
+                    08 
+                    09       public String getUserEmail() {
+                    10           System.out.print("|----- Email: ");
+                    11           return sc.next();
+                    12       }
+                    13       
+                    14       public String getUserPass() {
+                    15           System.out.print("|----- Contraseña: ");
+                    16           return sc.next();
+                    17       }
+                    18       
+                    19   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 05.02.  Codificar la Clase 'controllers/LoginController.java': ------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import views.landing.LoginView;
+                    04 
+                    05   public class LoginController {
+                    06       
+                    07       private String email, pass;
+                    08       private LoginView loginView;    
+                    09       
+                    10       public void landingMenu(){        
+                    11           
+                    12           loginView = new LoginView();
+                    13           
+                    14           email = loginView.getUserEmail();
+                    15           pass = loginView.getUserPass();
+                    16           
+                    17       }
+                    18       
+                    19   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.03.  Codificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.LandingController;
+                    04 
+                    05   public class RouterControllers {
+                    06 
+                    07       private LandingController landingController;
+                    08       
+                    09       public RouterControllers() {
+                    10           
+                    11           landingController = new LandingController();
+                    12           landingController.landingMenu();
+                    13           
+                    14       }
+                    15       
+                    16   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.04.  Codificar la Clase 'Main.java': -----------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   import routes.RouterControllers;
+                    02 
+                    03   public class Main {
+                    04       
+                    05       public static void main(String[] args) {
+                    06           
+                    07           RouterControllers router = new RouterControllers();
+                    08           
+                    09       }
+                    10       
+                    11   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 04.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
