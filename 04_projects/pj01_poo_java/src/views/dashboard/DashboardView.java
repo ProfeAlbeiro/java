@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class DashboardView {
     
     private int menu;
-    private RolesController roles;
-    private UsersController users;
+    private RolesController roles = new RolesController();
+    private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
-
+    
     public void dashboardMenuView() {
         
         do {            
@@ -31,15 +31,13 @@ public class DashboardView {
                 case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    roles = new RolesController();
+                    System.out.println("|-------------------------------------------------------------------|");                    
                     roles.rolesMenu();
                 }
                 case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    users = new UsersController();
+                    System.out.println("|-------------------------------------------------------------------|");                    
                     users.usersMenu();
                 }
                 case 0 -> {

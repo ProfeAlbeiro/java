@@ -9,33 +9,33 @@ public class RolesController {
     
     private int rolId;
     private String rolName;
-    private ArrayList<RolModel> roles = new ArrayList<>();
+    private ArrayList<RolModel> rolesList = new ArrayList<>();    
     private RolModel rol;
     private RolesView rolesView;
     private RolesFormView rolesFormView = new RolesFormView();
-
-    public void rolesMenu() {        
+    
+    public void rolesMenu() {
         rolesView = new RolesView();
         rolesView.rolesMenuView();
     }
     
     public String addRol(){
-        rolId = roles.size() + 1;
+        rolId = rolesList.size() + 1;
         rolName = rolesFormView.getRolName();
         rol = new RolModel(rolId, rolName);
-        roles.add(rol);        
+        rolesList.add(rol);        
         return "|----- ¡Rol Creado!";
     }
 
     public void getRoles(){
-        for(RolModel getRol : roles){
+        for(RolModel getRol : rolesList){
             System.out.println("|----- " + getRol);
         }        
     }
 
     public String searchRolById(){
         rolId = rolesFormView.getRolId();
-        for (RolModel getRol : roles) {
+        for (RolModel getRol : rolesList) {
             if (getRol.getRolId() == rolId) {
                 return "|----- " + getRol.toString();
             }
@@ -45,7 +45,7 @@ public class RolesController {
     
     public String updateRol(){
         rolId = rolesFormView.getRolId();
-        for (RolModel getRol : roles){
+        for (RolModel getRol : rolesList){
             if (getRol.getRolId() == rolId) {
                 rolName = rolesFormView.getRolName();
                 getRol.setRolName(rolName);
@@ -57,7 +57,7 @@ public class RolesController {
 
     public String deleteRol(){
         rolId = rolesFormView.getRolId();
-        if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
+        if (rolesList.removeIf(getRol -> getRol.getRolId() == rolId)) {
             return "|----- ¡Rol Eliminado!";            
         } else {
             return "|----- ¡Rol No Encontrado!";
