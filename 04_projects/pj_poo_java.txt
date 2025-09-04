@@ -14,7 +14,7 @@
 ||| --      03.02.  Crear la 'Carpeta Raíz' del proyecto                                                                                                               |||
 ||| --      03.03.  Crear los 'paquetes' del proyecto                                                                                                                  |||
 ||| --      03.04.  Crear las 'Clases' del proyecto                                                                                                                    |||
-||| --  04. MENU LANDING                                                                                                                                               |||
+||| --  04. MENÚ LANDING                                                                                                                                               |||
 ||| --      04.01.  Codificar la Clase 'views.landing/LandingView.java'                                                                                                |||
 ||| --      04.02.  Codificar la Clase 'controllers/LandingController.java'                                                                                            |||
 ||| --      04.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
@@ -34,16 +34,21 @@
 ||| --      07.01.  Modificar la Clase 'views.landing/LandingView.java'                                                                                                |||
 ||| --      07.02.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      07.03.  Ejectuar el proyecto                                                                                                                               |||
-||| --  08. VISTAS DASHBOARD: ROLES Y USUARIOS                                                                                                                         |||
-||| --      08.01.  Codificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
-||| --      08.02.  Codificar la Clase 'views.modules.users/UsersView.java'                                                                                            |||
-||| --      08.03.  Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
-||| --      08.04.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
-||| --      08.05.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
-||| --      08.06.  Ejectuar el proyecto                                                                                                                               |||
-||| --  09. MENÚ USERS                                                                                                                                                 |||
-||| --      09.01.  Codificar la Clase 'controllers/UsersController.java'                                                                                              |||
-||| --      09.02.  Ejectuar el proyecto                                                                                                                               |||
+||| --  08. MENU DASHBOARD                                                                                                                                             |||
+||| --      08.01.  Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
+||| --      08.02.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
+||| --      08.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      08.04.  Ejectuar el proyecto                                                                                                                               |||
+||| --  09. MENÚ ROLES                                                                                                                                                 |||
+||| --      09.01.  Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
+||| --      09.02.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
+||| --      09.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      09.04.  Ejectuar el proyecto                                                                                                                               |||
+||| --  10. MENÚ USERS                                                                                                                                                 |||
+||| --      10.01.  Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
+||| --      10.02.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
+||| --      10.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      10.04.  Ejectuar el proyecto                                                                                                                               |||
 ||| --  10. MENÚ DASHBOARD                                                                                                                                             |||
 ||| --      10.01.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      10.02.  Ejectuar el proyecto                                                                                                                               |||
@@ -747,45 +752,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||-------------------------------------------------------- 07. SECUENCIA LANDING, REGISTRO E INICIO DE SESIÓN --------------------------------------------------------|||
@@ -915,7 +881,6 @@
 
 
 
-
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||------------------------------------------------------------------------ 08. MENÚ DASHBOARD ------------------------------------------------------------------------|||
@@ -924,7 +889,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 05.01.  Codificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
+|-- 08.01.  Codificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package views.dashboard;
@@ -993,7 +958,7 @@
                 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 05.02.  Codificar la Clase 'controllers/DashboardController.java': --------------------------------------------------------------------------------------------------|
+|-- 08.02.  Codificar la Clase 'controllers/DashboardController.java': --------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package controllers;
@@ -1028,7 +993,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 05.03.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|-- 08.03.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package routes;
@@ -1063,7 +1028,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 05.04.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 08.04.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
@@ -1071,74 +1036,127 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||--------------------------------------------------------- 08. INTERACCIÓN MENÚS: DASHBOARD, ROLES Y USERS ----------------------------------------------------------|||
+|||-------------------------------------------------------------------------- 09. MENÚ ROLES --------------------------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 08.01.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
+|-- 09.01. Modificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.dashboard;
-                    02 
-                    03   import controllers.RolesController;
-                    04   import controllers.UsersController;
-                    05   import views.modules.roles.RolesView;
-                    06   import views.modules.users.UsersView;
-                    07   import java.util.Scanner;
-                    08 
-                    09   public class DashboardView {
-                    10       
-                    11       private int menu;
-                    12       private RolesController roles = new RolesController();
-                    13       private UsersController users = new UsersController();
-                    14       private RolesView rolesView;
-                    15       private UsersView usersView;
-                    16       private Scanner sc = new Scanner(System.in);
-                    17 
-                    18       public void dashboardMenuView() {
-                    19           
-                    20           do {            
-                    21               
-                    22               System.out.println("\n|-------------------------------------------------------------------|");
-                    23               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
-                    24               System.out.println("|-------------------------------------------------------------------|");
-                    25               System.out.println("    1. Gestión de Roles");
-                    26               System.out.println("    2. Gestión de Usuarios");
-                    27               System.out.println("    0. Cerrar Sesión");
-                    28               System.out.println("|-------------------------------------------------------------------|");
-                    29               System.out.print("|----- Seleccione una opción : ");
-                    30               menu = sc.nextInt();            
-                    31               System.out.println("|-------------------------------------------------------------------|");
-                    32               
-                    33               switch (menu) {
-                    34                   
-                    35                   case 1 -> {
-                    36                       rolesView = new RolesView(roles);
-                    37                       rolesView.rolesMenuView();
-                    38                   }
-                    39                   case 2 -> {
-                    40                       usersView = new UsersView(roles, users);
-                    41                       usersView.usersMenuView();
-                    42                   }
-                    43                   case 0 -> {
-                    44                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    45                       System.out.println("|-------------------------------------------------------------------|");
-                    46                   }
-                    47                   default -> {
-                    48                       System.out.println("|----- ¡Opción No Válida!");
-                    49                       System.out.println("|-------------------------------------------------------------------|");
-                    50                   }
-                    51               }
-                    52               
-                    53           } while (menu != 0);
-                    54           
-                    55       }
-                    56       
-                    57   }
+                    01   package views.modules.roles;
+
+                      import java.util.Scanner;
+
+                      public class RolesMenuView {
+                          
+                          private int menu;
+                          private Scanner sc = new Scanner(System.in);
+
+                          public RolesMenuView() {
+                              
+                              do {
+                                  
+                                  System.out.println("\n|-------------------------------------------------------------------|");
+                                  System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                                  System.out.println("|-------------------------------------------------------------------|");
+                                  System.out.println("    1. Registrar Rol");
+                                  System.out.println("    2. Listar Roles");
+                                  System.out.println("    3. Consultar Rol");
+                                  System.out.println("    4. Actualizar Rol");
+                                  System.out.println("    5. Eliminar Rol");
+                                  System.out.println("    0. Volver");
+                                  System.out.println("|-------------------------------------------------------------------|");
+                                  System.out.print("|----- Seleccione una opción : ");
+                                  menu = sc.nextInt();            
+                                  System.out.println("|-------------------------------------------------------------------|");
+                                  
+                                  switch (menu) {
+
+                                      case 1:
+                                          System.out.println("\n|-------------------------------------------------------------------|");
+                                          System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          break;
+                                      case 2:
+                                          System.out.println("\n|-------------------------------------------------------------------|");
+                                          System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          break;
+                                      case 3:
+                                          System.out.println("\n|-------------------------------------------------------------------|");
+                                          System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          break;
+                                      case 4:
+                                          System.out.println("\n|-------------------------------------------------------------------|");
+                                          System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          break;
+                                      case 5:
+                                          System.out.println("\n|-------------------------------------------------------------------|");
+                                          System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          break;
+                                      case 0:
+                                          break;
+                                      default:
+                                          System.out.println("|----- ¡Opción No Válida!");
+                                          System.out.println("|-------------------------------------------------------------------|");
+                                          
+                                  }
+                                  
+                              } while (menu != 0);
+                              
+                          }
+                          
+                      }
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -1357,134 +1375,7 @@
                 └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
 
 
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 09.04. Modificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-                    01   package views.modules.roles;
-                    02 
-                    03   import models.RolModel;
-                    04   import controllers.RolesController;
-                    05   import java.util.Scanner;
-                    06 
-                    07   public class RolesView {
-                    08       
-                    09       private int menu, rolId;
-                    10       private String rolName;
-                    11       private RolesFormView rolesFormView = new RolesFormView();
-                    12       private RolesController roles = new RolesController();
-                    13       private RolModel rol = new RolModel();
-                    14       private Scanner sc = new Scanner(System.in);
-                    15 
-                    16       public void rolesMenuView() {
-                    17           
-                    18           do {
-                    19               
-                    20               System.out.println("\n|-------------------------------------------------------------------|");
-                    21               System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
-                    22               System.out.println("|-------------------------------------------------------------------|");
-                    23               System.out.println("    1. Registrar Rol");
-                    24               System.out.println("    2. Listar Roles");
-                    25               System.out.println("    3. Consultar Rol");
-                    26               System.out.println("    4. Actualizar Rol");
-                    27               System.out.println("    5. Eliminar Rol");
-                    28               System.out.println("    0. Volver");
-                    29               System.out.println("|-------------------------------------------------------------------|");
-                    30               System.out.print("|----- Seleccione una opción : ");
-                    31               menu = sc.nextInt();            
-                    32               System.out.println("|-------------------------------------------------------------------|");
-                    33              
-                    34               switch (menu) {
-                    35 
-                    36                   case 1 -> {
-                    37                       System.out.println("\n|-------------------------------------------------------------------|");
-                    38                       System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
-                    39                       System.out.println("|-------------------------------------------------------------------|");                    
-                    40                       rolId = roles.getRoles().size() + 1;
-                    41                       rolName = rolesFormView.getRolName();
-                    42                       roles.addRol(new RolModel(rolId, rolName));
-                    43                       System.out.println("|-------------------------------------------------------------------|");
-                    44                       System.out.println("|----- ¡Rol creado!");
-                    45                       System.out.println("|-------------------------------------------------------------------|");
-                    46                   }
-                    47                   case 2 -> {
-                    48                       System.out.println("\n|-------------------------------------------------------------------|");
-                    49                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
-                    50                       System.out.println("|-------------------------------------------------------------------|");
-                    51                       for (RolModel getRol : roles.getRoles()) {
-                    52                           System.out.println("|----- " + getRol);
-                    53                       }
-                    54                       System.out.println("|-------------------------------------------------------------------|");
-                    55                   }
-                    56                   case 3 -> {
-                    57                       System.out.println("\n|-------------------------------------------------------------------|");
-                    58                       System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
-                    59                       System.out.println("|-------------------------------------------------------------------|");
-                    60                       rolId = rolesFormView.getRolId();                    
-                    61                       System.out.println("|-------------------------------------------------------------------|");
-                    62                       if (roles.searchRolById(rolId) != null) {
-                    63                           rol = roles.searchRolById(rolId);
-                    64                           System.out.println("|-----      " + rol);                                            
-                    65                       } else {
-                    66                           System.out.println("|----- ¡Rol No Encontrado!");
-                    67                       }                    
-                    68                       System.out.println("|-------------------------------------------------------------------|");
-                    69                   }
-                    70                   case 4 -> {
-                    71                       System.out.println("\n|-------------------------------------------------------------------|");
-                    72                       System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
-                    73                       System.out.println("|-------------------------------------------------------------------|");
-                    74                       rolId = rolesFormView.getRolId();
-                    75                       if (roles.searchRolById(rolId) != null) {
-                    76                           rolName = rolesFormView.getRolName();
-                    77                           System.out.println("|-------------------------------------------------------------------|");
-                    78                           roles.updateRol(rolId, rolName);
-                    79                           System.out.println("|----- ¡Rol Actualizado!");
-                    80                       } else {
-                    81                           System.out.println("|-------------------------------------------------------------------|");
-                    82                           System.out.println("|----- ¡Rol No Encontrado!");
-                    83                       }
-                    84                       System.out.println("|-------------------------------------------------------------------|");
-                    85                   }
-                    86                   case 5 -> {
-                    87                       System.out.println("\n|-------------------------------------------------------------------|");
-                    88                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
-                    89                       System.out.println("|-------------------------------------------------------------------|");
-                    90                       rolId = rolesFormView.getRolId();
-                    91                       System.out.println("|-------------------------------------------------------------------|");
-                    92                       if (roles.deleteRol(rolId)) {
-                    93                           System.out.println("|----- ¡Rol Eliminado!");
-                    94                       } else {
-                    95                           System.out.println("|----- ¡Rol No Encontrado!");
-                    96                       }
-                    97                       System.out.println("|-------------------------------------------------------------------|");
-                    98                   }
-                    99                   case 0 -> {}
-                   100                   default -> {
-                   101                       System.out.println("|----- ¡Opción No Válida!");
-                   102                       System.out.println("|-------------------------------------------------------------------|");
-                   103                   }
-                   104                       
-                   105               }
-                   106               
-                   107           } while (menu != 0);
-                   108           
-                   109       }
-                   110       
-                   111   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
