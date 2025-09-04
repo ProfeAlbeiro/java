@@ -1,15 +1,15 @@
 package routes;
 
-import controllers.UsersController;
+import controllers.LandingController;
 
 public class RouterControllers {
 
-    private UsersController usersController;
+    private LandingController landingController;
     
     public RouterControllers() {
         
-        usersController = new UsersController();
-        usersController.usersMenu();
+        landingController = new LandingController();
+        landingController.landingMenu();
         
     }
     

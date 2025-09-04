@@ -5,7 +5,8 @@ import views.landing.LoginFormView;
 public class LoginController {
     
     private String email, pass;
-    private LoginFormView loginView;    
+    private LoginFormView loginView;
+    private DashboardController dashboard;
     
     public void loginForm(){        
         
@@ -16,7 +17,8 @@ public class LoginController {
         
         if (email.equals("admin@correo.com") && pass.equals("12345")) {
             System.out.println("|-------------------------------------------------------------------|");            
-            System.out.println("|----- ¡Bienvenido al Dashboard!");            
+            dashboard = new DashboardController();
+            dashboard.dashboardMenu();
             System.out.println("|-------------------------------------------------------------------|");            
         } else {
             System.out.println("|-------------------------------------------------------------------|");

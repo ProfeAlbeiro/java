@@ -25,7 +25,7 @@ public class RegisterController {
             }
         } while (!pass.equals(passConfirm));
         System.out.println("|-------------------------------------------------------------------|");
-        System.out.println("|----- ¡Usuario Registrado Exitósamente");
+        System.out.println("|----- ¡Usuario Registrado Exitósamente!");
         System.out.println("|-------------------------------------------------------------------|");
         
     }
