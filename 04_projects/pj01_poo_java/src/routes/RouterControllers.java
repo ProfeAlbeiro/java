@@ -1,15 +1,15 @@
 package routes;
 
-import controllers.DashboardController;
+import controllers.UsersController;
 
 public class RouterControllers {
 
-    private DashboardController dashboardController;
+    private UsersController usersController;
     
     public RouterControllers() {
         
-        dashboardController = new DashboardController();
-        dashboardController.dashboardMenu();
+        usersController = new UsersController();
+        usersController.usersMenu();
         
     }
     

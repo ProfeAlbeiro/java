@@ -2,12 +2,12 @@ package views.modules.roles;
 
 import java.util.Scanner;
 
-public class RolesMenuView {
+public class RolesView {
     
     private int menu;
     private Scanner sc = new Scanner(System.in);
 
-    public RolesMenuView() {
+    public void rolesMenuView() {
         
         do {
             
