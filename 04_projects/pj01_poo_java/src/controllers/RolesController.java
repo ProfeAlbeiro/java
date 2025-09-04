@@ -33,13 +33,34 @@ public class RolesController {
     }
 
     public String searchRolById(){
-        rolId = rolesFormView.getRolId();        
+        rolId = rolesFormView.getRolId();
         for (RolModel getRol : roles) {
             if (getRol.getRolId() == rolId) {
-                return "|----- " + getRol.toString();                
+                return "|----- " + getRol.toString();
             }
         }
         return "|----- ¡Rol No Encontrado!";
-    }    
+    }
+    
+    public String updateRol(){
+        rolId = rolesFormView.getRolId();
+        for (RolModel getRol : roles){
+            if (getRol.getRolId() == rolId) {
+                rolName = rolesFormView.getRolName();
+                getRol.setRolName(rolName);
+                return "|----- ¡Rol Actualizado!";
+            }
+        }
+        return "|----- ¡Rol No Encontrado!";
+    }
+
+    public String deleteRol(){
+        rolId = rolesFormView.getRolId();
+        if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
+            return "|----- ¡Rol Eliminado!";            
+        } else {
+            return "|----- ¡Rol No Encontrado!";
+        }
+    }
 
 }
