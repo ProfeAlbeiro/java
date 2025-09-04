@@ -2,7 +2,7 @@ package views.landing;
 
 import java.util.Scanner;
 
-public class LoginView {
+public class LoginFormView {
     
     Scanner sc = new Scanner(System.in);    
 

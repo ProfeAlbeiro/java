@@ -1,15 +1,15 @@
 package controllers;
 
-import views.landing.RegisterView;
+import views.landing.RegisterFormView;
 
 public class RegisterController {
     
     private String name, lastname, email, pass, passConfirm;
-    private RegisterView registerView;
+    private RegisterFormView registerView;
     
-    public void registerMenu(){        
+    public void registerForm(){        
         
-        registerView = new RegisterView();
+        registerView = new RegisterFormView();
         
         name = registerView.getUserName();
         lastname = registerView.getUserLastName();

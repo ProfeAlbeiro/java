@@ -2,10 +2,9 @@ package views.landing;
 
 import java.util.Scanner;
 
-public class RegisterView {
+public class RegisterFormView {
     
-    Scanner sc = new Scanner(System.in);
-    
+    Scanner sc = new Scanner(System.in);    
     
     public String getUserName(){
         System.out.print("|----- Nombre: ");

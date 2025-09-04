@@ -1,10 +1,14 @@
 package views.landing;
 
+import controllers.RegisterController;
+import controllers.LoginController;
 import java.util.Scanner;
 
 public class LandingView {
 
     private int menu;
+    private RegisterController register;
+    private LoginController login;
     private Scanner sc = new Scanner(System.in);
 
     public void landingMenuView() {
@@ -24,23 +28,28 @@ public class LandingView {
 
             switch (menu) {
 
-                case 1:
+                case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- REGISTRARSE ----------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 2:                    
+                    register = new RegisterController();
+                    register.registerForm();
+                }
+                case 2 -> {                    
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
+                    login = new LoginController();
+                    login.loginForm();
+                }
+                case 0 -> {
                     System.out.println("|----- ¡Hasta Pronto! ...");
-                    System.out.println("|-------------------------------------------------------------------|");        
-                    break;
-                default:
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
+                }
 
             }
 
