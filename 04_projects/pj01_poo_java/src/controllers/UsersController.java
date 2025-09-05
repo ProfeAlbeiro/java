@@ -15,6 +15,7 @@ public class UsersController {
     private boolean userState;
     private UsersView usersView;
     private UsersFormView usersFormView = new UsersFormView();
+    private RolesController roles = new RolesController();
     private ArrayList<UserModel> users = new ArrayList<>();    
 
     public void usersMenu(RolesController roles, UsersController users) {        
@@ -27,7 +28,8 @@ public class UsersController {
         userName = usersFormView.getUserName();
         userLastName = usersFormView.getUserLastName();
         userEmail = usersFormView.getUserEmail();
-        userPass = usersFormView.getUserPass();
+        userPass = usersFormView.getUserPass();        
+        System.out.println(roles.searchRolById());
         users.add(user);
         return "|----- ¡Usuario Creado!";
     }

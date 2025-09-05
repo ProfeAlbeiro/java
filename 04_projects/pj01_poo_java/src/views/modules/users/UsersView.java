@@ -15,7 +15,9 @@ public class UsersView {
     public UsersView(){        
     }
     
-    public UsersView(RolesController roles, UsersController users){        
+    public UsersView(RolesController roles, UsersController users){
+        this.roles = roles;
+        this.users = users;
     }
     
     public void usersMenuView() {
@@ -41,6 +43,10 @@ public class UsersView {
                 case 1:
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
+                    userMessage = users.addUser();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    System.out.println(userMessage);
                     System.out.println("|-------------------------------------------------------------------|");
                     break;
                 case 2:

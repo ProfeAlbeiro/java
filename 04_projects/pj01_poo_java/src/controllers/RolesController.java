@@ -12,19 +12,18 @@ public class RolesController {
     private RolModel rol;
     private RolesView rolesView;
     private RolesFormView rolesFormView = new RolesFormView();
-    private ArrayList<RolModel> roles = new ArrayList<>();    
+    private ArrayList<RolModel> roles = new ArrayList<>();
     
     public void rolesMenu(RolesController roles) {
         rolesView = new RolesView(roles);
         rolesView.rolesMenuView();
     }
     
-    public String addRol(){
+    public void addRol(){
         rolId = roles.size() + 1;
         rolName = rolesFormView.getRolName();
         rol = new RolModel(rolId, rolName);
-        roles.add(rol);        
-        return "|----- ¡Rol Creado!";
+        roles.add(rol);
     }
 
     public void getRoles(){
@@ -33,34 +32,34 @@ public class RolesController {
         }        
     }
 
-    public String searchRolById(){
+    public RolModel searchRolById(){
         rolId = rolesFormView.getRolId();
         for (RolModel getRol : roles) {
             if (getRol.getRolId() == rolId) {
-                return "|----- " + getRol.toString();
+                return getRol;
             }
         }
-        return "|----- ¡Rol No Encontrado!";
+        return null;
     }
     
-    public String updateRol(){
-        rolId = rolesFormView.getRolId();
+    public boolean updateRol(){        
+        rolId = rolesFormView.getRolId();        
         for (RolModel getRol : roles){
             if (getRol.getRolId() == rolId) {
                 rolName = rolesFormView.getRolName();
                 getRol.setRolName(rolName);
-                return "|----- ¡Rol Actualizado!";
+                return true;
             }
         }
-        return "|----- ¡Rol No Encontrado!";
+        return false;
     }
 
-    public String deleteRol(){
+    public boolean deleteRol(){
         rolId = rolesFormView.getRolId();
         if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
-            return "|----- ¡Rol Eliminado!";            
+            return true;
         } else {
-            return "|----- ¡Rol No Encontrado!";
+            return false;
         }
     }
 

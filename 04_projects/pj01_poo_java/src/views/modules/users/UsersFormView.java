@@ -27,7 +27,7 @@ public class UsersFormView {
     }
     
     public String getUserPass(){
-        System.out.print("|----- ContraseÃ±a: ");
+        System.out.print("|----- Contraseña: ");
         return sc.next();
     }
     

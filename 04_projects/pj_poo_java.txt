@@ -2050,10 +2050,10 @@
                     36           return sc.nextBoolean();
                     37       }
                     38 
-                    39   public int getUserRolId(){
-                    40       System.out.print("|----- Rol Id: ");
-                    41       return sc.nextInt();
-                    42   }
+                    39       public int getUserRolId(){
+                    40           System.out.print("|----- Rol Id: ");
+                    41           return sc.nextInt();
+                    42       }
                     43        
                     44   }
 
@@ -2076,58 +2076,7 @@
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package controllers;
-                    02 
-                    03   import models.RolModel;
-                    04   import models.UserModel;
-                    05   import views.modules.users.UsersView;
-                    06   import java.util.ArrayList;
-                    07 
-                    08   public class UsersController {
-                    09       
-                    10       private UsersView usersView;
-                    11       private ArrayList<UserModel> users = new ArrayList<>();
-                    12       
-                    13       public void usersMenu() {        
-                    14           usersView = new UsersView();        
-                    15       }
-                    16       
-                    17       public void addUser(UserModel user){
-                    18           users.add(user);
-                    19       }
-                    20       
-                    21       public ArrayList<UserModel> getUsers(){
-                    22           return users;
-                    23       }
-                    24       
-                    25       public UserModel searchUserById(int id){
-                    26           for(UserModel user : users){
-                    27               if (user.getUserId() == id) {
-                    28                   return user;
-                    29               }
-                    30           }
-                    31           return null;
-                    32       }
-                    33       
-                    34       public boolean updateUser(int id, String name, String lastName, String email, String pass, boolean state, RolModel rol){
-                    35           UserModel user = searchUserById(id);
-                    36           if (user != null) {
-                    37               user.setUserName(name);
-                    38               user.setUserLastName(lastName);
-                    39               user.setUserEmail(email);
-                    40               user.setUserPass(pass);
-                    41               user.setUserState(state);
-                    42               user.setUserState(state);
-                    43               user.setRolModel(rol);
-                    44               return true;
-                    45           }
-                    46           return false;
-                    47       }
-                    48       
-                    49       public boolean deleteUser(int id){
-                    50           return users.removeIf(user -> user.getUserId() == id);
-                    51       }
-                    52       
-                    53   }
+
 
                 ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
                 |                                                                                                                                         |
@@ -2166,7 +2115,7 @@
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 10.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
