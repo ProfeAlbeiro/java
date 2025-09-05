@@ -49,32 +49,29 @@
 ||| --      10.02.  Codificar la Clase 'controllers/UsersController.java'                                                                                              |||
 ||| --      10.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      10.04.  Ejectuar el proyecto                                                                                                                               |||
+||| --  11. REQUISITOS ROLES                                                                                                                                           |||
+||| --      11.01.  Codificar la Clase 'models/RolModel.java'                                                                                                          |||
+||| --      11.02.  Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                        |||
+||| --      11.03.  Modificar la Clase 'controllers/RolesController.java'                                                                                              |||
+||| --      11.04.  Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
+||| --      11.05.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      11.06.  Ejectuar el proyecto                                                                                                                               |||
 
 aquí
 
-||| --  11. REQUISITOS ROLES                                                                                                                                           |||
-||| --      11.01.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
-||| --      11.02.  Codificar la Clase 'models/RolModel.java'                                                                                                          |||
-||| --      11.03.  Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                        |||
-||| --      11.04.  Modificar la Clase 'controllers/RolesController.java'                                                                                              |||
-||| --      11.05.  Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
-||| --      11.06.  Ejectuar el proyecto                                                                                                                               |||
+NOTA: 01. Hacer requisitos Usuarios con controlador y cambiando la ruta
+      02. Hacer la secuencia landing, inicio de sesión, dashboard, roles y Usuarios
+      03. Hacer el paso de los 'roles' y 'usuarios'
+      04. Hacer el 'Register'
+      05. Hacer el 'Inicio de Sesión'
+      06. Hacer el enrutador a Controladores
 
 
-NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
-      02. Hacer requisitos Usuarios con controlador y cambiando la ruta
-      03. Hacer la secuencia landing, inicio de sesión, dashboard, roles y Usuarios
-      04. Hacer el paso de los 'roles' y 'usuarios'
-      05. Hacer el 'Register'
-      06. Hacer el 'Inicio de Sesión'
-      07. Hacer el enrutador a Controladores
-
-
-||| --  11. SECUENCIA LANDING, INICIO DE SESIÓN, DASHBOARD, ROLES Y USUARIOS                                                                                           |||
-||| --      11.01.  Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
-||| --      11.02.  Modificar la Clase 'controllers/LoginController.java'                                                                                              |||
-||| --      11.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
-||| --      11.04.  Ejectuar el proyecto                                                                                                                               |||
+||| --  xx. SECUENCIA LANDING, INICIO DE SESIÓN, DASHBOARD, ROLES Y USUARIOS                                                                                           |||
+||| --      xx.01.  Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
+||| --      xx.02.  Modificar la Clase 'controllers/LoginController.java'                                                                                              |||
+||| --      xx.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      xx.04.  Ejectuar el proyecto                                                                                                                               |||
 ||| --  13. REQUISITOS USERS                                                                                                                                           |||
 ||| --      13.01.  Codificar la Clase 'models/UserModel.java'                                                                                                         |||
 ||| --      13.02.  Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                        |||
@@ -1392,6 +1389,396 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||----------------------------------------------------------------------- 11. REQUISITOS ROLES -----------------------------------------------------------------------|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.01.  Codificar la Clase 'models/RolModel.java': ------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package models;
+                    02 
+                    03   public class RolModel {
+                    04       
+                    05       private int rolId;
+                    06       private String rolName;
+                    07 
+                    08       public RolModel() {
+                    09       }
+                    10       
+                    11       public RolModel(int rolId, String rolName) {
+                    12           this.rolId = rolId;
+                    13           this.rolName = rolName;
+                    14       }
+                    15 
+                    16       public int getRolId() {
+                    17           return rolId;
+                    18       }
+                    19 
+                    20       public void setRolId(int rolId) {
+                    21           this.rolId = rolId;
+                    22       }
+                    23 
+                    24       public String getRolName() {
+                    25           return rolName;
+                    26       }
+                    27 
+                    28       public void setRolName(String rolName) {
+                    29           this.rolName = rolName;
+                    30       }
+                    31       
+                    32       @Override
+                    33       public String toString(){
+                    34           return rolId + " - " + rolName;
+                    35       }
+                    36       
+                    37   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.02. Codificar la Clase 'views.modules.roles/RolesFormView.java': -------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.roles;
+                    02 
+                    03   import java.util.Scanner;
+                    04 
+                    05   public class RolesFormView {
+                    06 
+                    07       Scanner sc = new Scanner(System.in);    
+                    08 
+                    09       public int getRolId() {
+                    10           System.out.print("|----- Rol Id: ");
+                    11           return sc.nextInt();
+                    12       }
+                    13       
+                    14       public String getRolName() {
+                    15           System.out.print("|----- Nombre: ");
+                    16           return sc.next();
+                    17       }
+                    18       
+                    19   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.03. Modificar la Clase 'controllers/RolesController.java': -------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import models.RolModel;
+                    04   import views.modules.roles.RolesView;
+                    05   import views.modules.roles.RolesFormView;
+                    06   import java.util.ArrayList;
+                    07 
+                    08   public class RolesController {
+                    09       
+                    10       private int rolId;
+                    11       private String rolName;
+                    12       private RolModel rol;
+                    13       private RolesView rolesView;    
+                    14       private RolesFormView rolesFormView = new RolesFormView();
+                    15       private ArrayList<RolModel> roles = new ArrayList<>();
+                    16       
+                    17       public void rolesMenu() {
+                    18           rolesView = new RolesView();
+                    19           rolesView.rolesMenuView();
+                    20       }
+                    21       
+                    22       public void addRol(){
+                    23           rolId = roles.size() + 1;
+                    24           rolName = rolesFormView.getRolName();
+                    25           rol = new RolModel(rolId, rolName);
+                    26           roles.add(rol);
+                    27       }
+                    28 
+                    29       public void getRoles(){
+                    30           for(RolModel getRol : roles){
+                    31               System.out.println("|----- " + getRol);
+                    32           }        
+                    33       }
+                    34 
+                    35       public RolModel searchRolById(){
+                    36           rolId = rolesFormView.getRolId();
+                    37           for (RolModel getRol : roles) {
+                    38               if (getRol.getRolId() == rolId) {
+                    39                   return getRol;
+                    40               }
+                    41           }
+                    42           return null;
+                    43       }
+                    44       
+                    45       public boolean updateRol(){        
+                    46           rolId = rolesFormView.getRolId();        
+                    47           for (RolModel getRol : roles){
+                    48               if (getRol.getRolId() == rolId) {
+                    49                   rolName = rolesFormView.getRolName();
+                    50                   getRol.setRolName(rolName);
+                    51                   return true;
+                    52               }
+                    53           }
+                    54           return false;
+                    55       }
+                    56 
+                    57       public boolean deleteRol(){
+                    58           rolId = rolesFormView.getRolId();
+                    59           if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
+                    60               return true;
+                    61           } else {
+                    62               return false;
+                    63           }
+                    64       }
+                    65 
+                    66   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.04. Codificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.roles;
+                    02 
+                    03   import models.RolModel;
+                    04   import controllers.RolesController;
+                    05   import java.util.Scanner;
+                    06 
+                    07   public class RolesView {
+                    08       
+                    09       private int menu;    
+                    10       private RolModel rol = new RolModel();
+                    11       private RolesController roles = new RolesController();    
+                    12       private Scanner sc = new Scanner(System.in);
+                    13      
+                    14       public void rolesMenuView() {
+                    15           
+                    16           do {
+                    17               
+                    18               System.out.println("\n|-------------------------------------------------------------------|");
+                    19               System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    20               System.out.println("|-------------------------------------------------------------------|");
+                    21               System.out.println("    1. Registrar Rol");
+                    22               System.out.println("    2. Listar Roles");
+                    23               System.out.println("    3. Consultar Rol");
+                    24               System.out.println("    4. Actualizar Rol");
+                    25               System.out.println("    5. Eliminar Rol");
+                    26               System.out.println("    0. Volver");
+                    27               System.out.println("|-------------------------------------------------------------------|");
+                    28               System.out.print("|----- Seleccione una opción : ");
+                    29               menu = sc.nextInt();            
+                    30               System.out.println("|-------------------------------------------------------------------|");
+                    31               
+                    32               switch (menu) {
+                    33 
+                    34                   case 1 -> {
+                    35                       System.out.println("\n|-------------------------------------------------------------------|");
+                    36                       System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
+                    37                       System.out.println("|-------------------------------------------------------------------|");                                        
+                    38                       roles.addRol();
+                    39                       System.out.println("|-------------------------------------------------------------------|");
+                    40                       System.out.println("|----- ¡Rol Creado!");
+                    41                       System.out.println("|-------------------------------------------------------------------|");
+                    42                   }
+                    43                   case 2 -> {
+                    44                       System.out.println("\n|-------------------------------------------------------------------|");
+                    45                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
+                    46                       System.out.println("|-------------------------------------------------------------------|");
+                    47                       roles.getRoles();
+                    48                       System.out.println("|-------------------------------------------------------------------|");
+                    49                   }
+                    50                   case 3 -> {
+                    51                       System.out.println("\n|-------------------------------------------------------------------|");
+                    52                       System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       RolModel rolFound = roles.searchRolById();
+                    55                       System.out.println("|-------------------------------------------------------------------|");
+                    56                       if (rolFound != null) {
+                    57                           System.out.println("|----- " + rolFound.toString());
+                    58                       } else {
+                    59                           System.out.println("|----- ¡Rol No Encontrado!");
+                    60                       }
+                    61                       System.out.println("|-------------------------------------------------------------------|");
+                    62                       
+                    63                   }
+                    64                   case 4 -> {
+                    65                       System.out.println("\n|-------------------------------------------------------------------|");
+                    66                       System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
+                    67                       System.out.println("|-------------------------------------------------------------------|");
+                    68                       if (roles.updateRol()) {
+                    69                           System.out.println("|-------------------------------------------------------------------|");
+                    70                           System.out.println("|----- Rol Actualizado!");
+                    71                       } else {
+                    72                           System.out.println("|-------------------------------------------------------------------|");
+                    73                           System.out.println("|----- ¡Rol No Encontrado!");
+                    74                       }        
+                    75                       System.out.println("|-------------------------------------------------------------------|");
+                    76                   }
+                    77                   case 5 -> {
+                    78                       System.out.println("\n|-------------------------------------------------------------------|");
+                    79                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                    80                       System.out.println("|-------------------------------------------------------------------|");
+                    81                       if (roles.deleteRol()) {
+                    82                           System.out.println("|-------------------------------------------------------------------|");
+                    83                           System.out.println("|----- ¡Rol Eliminado!");
+                    84                       } else {
+                    85                           System.out.println("|-------------------------------------------------------------------|");
+                    86                           System.out.println("|----- ¡Rol No Encontrado!");
+                    87                       }        
+                    88                       System.out.println("|-------------------------------------------------------------------|");
+                    89                   }
+                    90                   case 0 -> {}
+                    91                   default -> {
+                    92                       System.out.println("|----- ¡Opción No Válida!");
+                    93                       System.out.println("|-------------------------------------------------------------------|");
+                    94                   }
+                    95                       
+                    96               }
+                    97               
+                    98           } while (menu != 0);
+                    99           
+                   100       }
+                   101       
+                   102   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.05.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package routes;
+                    02 
+                    03   import controllers.RolesController;
+                    04 
+                    05   public class RouterControllers {
+                    06 
+                    07       private RolesController rolesController;
+                    08       
+                    09       public RouterControllers() {
+                    10            
+                    11            rolesController = new RolesController();
+                    12            rolesController.rolesMenu();
+                    13            
+                    14        }
+                    15        
+                    16    }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 11.06.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
+|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||---------------------------------------------- 11. SECUENCIA LANDING, INICIO DE SESIÓN, DASHBOARD, ROLES Y USUARIOS  -----------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
@@ -1566,314 +1953,6 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
-
-
-|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
-|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||----------------------------------------------------------------------- 12. REQUISITOS ROLES -----------------------------------------------------------------------|||
-|||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 12.01.  Codificar la Clase 'models/RolModel.java': ------------------------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package models;
-                    02 
-                    03   public class RolModel {
-                    04       
-                    05       private int rolId;
-                    06       private String rolName;
-                    07 
-                    08       public RolModel() {
-                    09       }
-                    10       
-                    11       public RolModel(int rolId, String rolName) {
-                    12           this.rolId = rolId;
-                    13           this.rolName = rolName;
-                    14       }
-                    15 
-                    16       public int getRolId() {
-                    17           return rolId;
-                    18       }
-                    19 
-                    20       public void setRolId(int rolId) {
-                    21           this.rolId = rolId;
-                    22       }
-                    23 
-                    24       public String getRolName() {
-                    25           return rolName;
-                    26       }
-                    27 
-                    28       public void setRolName(String rolName) {
-                    29           this.rolName = rolName;
-                    30       }
-                    31       
-                    32       @Override
-                    33       public String toString(){
-                    34           return rolId + " - " + rolName;
-                    35       }
-                    36       
-                    37   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 12.02. Codificar la Clase 'views.modules.roles/RolesFormView.java': -------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package views.modules.roles;
-                    02 
-                    03   import java.util.Scanner;
-                    04 
-                    05   public class RolesFormView {
-                    06 
-                    07       Scanner sc = new Scanner(System.in);    
-                    08 
-                    09       public int getRolId() {
-                    10           System.out.print("|----- Rol Id: ");
-                    11           return sc.nextInt();
-                    12       }
-                    13       
-                    14       public String getRolName() {
-                    15           System.out.print("|----- Nombre: ");
-                    16           return sc.next();
-                    17       }
-                    18       
-                    19   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 12.03. Modificar la Clase 'controllers/RolesController.java': -------------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package controllers;
-                    02 
-                    03   import models.RolModel;
-                    04   import views.modules.roles.RolesView;
-                    05   import views.modules.roles.RolesFormView;
-                    06   import java.util.ArrayList;
-                    07 
-                    08   public class RolesController {
-                    09       
-                    10       private int rolId;
-                    11       private String rolName;
-                    12       private RolModel rol;
-                    13       private RolesView rolesView;
-                    14       private RolesFormView rolesFormView = new RolesFormView();
-                    15       private ArrayList<RolModel> roles = new ArrayList<>();    
-                    16       
-                    17       public void rolesMenu(RolesController roles) {
-                    18           rolesView = new RolesView(roles);
-                    19           rolesView.rolesMenuView();
-                    20       }
-                    21       
-                    22       public String addRol(){
-                    23           rolId = roles.size() + 1;
-                    24           rolName = rolesFormView.getRolName();
-                    25           rol = new RolModel(rolId, rolName);
-                    26           roles.add(rol);        
-                    27           return "|----- ¡Rol Creado!";
-                    28       }
-                    29  
-                    30       public void getRoles(){
-                    31           for(RolModel getRol : roles){
-                    32               System.out.println("|----- " + getRol);
-                    33           }        
-                    34       }
-                    35 
-                    36       public String searchRolById(){
-                    37           rolId = rolesFormView.getRolId();
-                    38           for (RolModel getRol : roles) {
-                    39               if (getRol.getRolId() == rolId) {
-                    40                   return "|----- " + getRol.toString();
-                    41               }
-                    42           }
-                    43           return "|----- ¡Rol No Encontrado!";
-                    44       }
-                    45       
-                    46       public String updateRol(){
-                    47           rolId = rolesFormView.getRolId();
-                    48           for (RolModel getRol : roles){
-                    49               if (getRol.getRolId() == rolId) {
-                    50                   rolName = rolesFormView.getRolName();
-                    51                   getRol.setRolName(rolName);
-                    52                   return "|----- ¡Rol Actualizado!";
-                    53               }
-                    54           }
-                    55           return "|----- ¡Rol No Encontrado!";
-                    56       }
-                    57 
-                    58       public String deleteRol(){
-                    59           rolId = rolesFormView.getRolId();
-                    60           if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
-                    61               return "|----- ¡Rol Eliminado!";            
-                    62           } else {
-                    63               return "|----- ¡Rol No Encontrado!";
-                    64           }
-                    65       }
-                    66 
-                    67   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 12.04. Codificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package views.modules.roles;
-                    02 
-                    03   import controllers.RolesController;
-                    04   import java.util.Scanner;
-                    05 
-                    06   public class RolesView {
-                    07       
-                    08       private int menu;
-                    09       String rolMessage;
-                    10       private RolesController roles = new RolesController();    
-                    11       private Scanner sc = new Scanner(System.in);
-                    12       
-                    13       public RolesView(){        
-                    14       }
-                    15       
-                    16       public RolesView(RolesController roles){
-                    17           this.roles = roles;
-                    18       }
-                    19       
-                    20       public void rolesMenuView() {
-                    21           
-                    22           do {
-                    23               
-                    24               System.out.println("\n|-------------------------------------------------------------------|");
-                    25               System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
-                    26               System.out.println("|-------------------------------------------------------------------|");
-                    27               System.out.println("    1. Registrar Rol");
-                    28               System.out.println("    2. Listar Roles");
-                    29               System.out.println("    3. Consultar Rol");
-                    30               System.out.println("    4. Actualizar Rol");
-                    31               System.out.println("    5. Eliminar Rol");
-                    32               System.out.println("    0. Volver");
-                    33               System.out.println("|-------------------------------------------------------------------|");
-                    34               System.out.print("|----- Seleccione una opción : ");
-                    35               menu = sc.nextInt();            
-                    36               System.out.println("|-------------------------------------------------------------------|");
-                    37               
-                    38               switch (menu) {
-                    39 
-                    40                   case 1 -> {
-                    41                       System.out.println("\n|-------------------------------------------------------------------|");
-                    42                       System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
-                    43                       System.out.println("|-------------------------------------------------------------------|");                                        
-                    44                       rolMessage = roles.addRol();
-                    45                       System.out.println("|-------------------------------------------------------------------|");
-                    46                       System.out.println(rolMessage);
-                    47                       System.out.println("|-------------------------------------------------------------------|");
-                    48                   }
-                    49                   case 2 -> {
-                    50                       System.out.println("\n|-------------------------------------------------------------------|");
-                    51                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
-                    52                       System.out.println("|-------------------------------------------------------------------|");
-                    53                       roles.getRoles();
-                    54                       System.out.println("|-------------------------------------------------------------------|");
-                    55                   }
-                    56                   case 3 -> {
-                    57                       System.out.println("\n|-------------------------------------------------------------------|");
-                    58                       System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
-                    59                       System.out.println("|-------------------------------------------------------------------|");
-                    60                       rolMessage = roles.searchRolById();
-                    61                       System.out.println("|-------------------------------------------------------------------|");
-                    62                       System.out.println(rolMessage);
-                    63                       System.out.println("|-------------------------------------------------------------------|");
-                    64                   }
-                    65                   case 4 -> {
-                    66                       System.out.println("\n|-------------------------------------------------------------------|");
-                    67                       System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
-                    68                       System.out.println("|-------------------------------------------------------------------|");                    
-                    69                       rolMessage = roles.updateRol();                    
-                    70                       System.out.println("|-------------------------------------------------------------------|");
-                    71                       System.out.println(rolMessage);
-                    72                       System.out.println("|-------------------------------------------------------------------|");
-                    73                   }
-                    74                   case 5 -> {
-                    75                       System.out.println("\n|-------------------------------------------------------------------|");
-                    76                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
-                    77                       System.out.println("|-------------------------------------------------------------------|");
-                    78                       rolMessage = roles.deleteRol();
-                    79                       System.out.println("|-------------------------------------------------------------------|");
-                    80                       System.out.println(rolMessage);
-                    81                       System.out.println("|-------------------------------------------------------------------|");
-                    82                   }
-                    83                   case 0 -> {}
-                    84                   default -> {
-                    85                       System.out.println("|----- ¡Opción No Válida!");
-                    86                       System.out.println("|-------------------------------------------------------------------|");
-                    87                   }
-                    88                       
-                    89               }
-                    90               
-                    91           } while (menu != 0);
-                    92           
-                    93       }
-                          
-}
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 12.05.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-            01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
 
 
 
