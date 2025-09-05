@@ -49,4 +49,29 @@ public class UsersController {
         }
         return null;
     }
+
+    public boolean updateUser(int userId, RolModel rol){        
+        for (UserModel getUser : users){
+            if (getUser.getUserId() == userId) {
+                getUser.setUserName(usersFormView.getUserName());                
+                getUser.setUserLastName(usersFormView.getUserLastName());
+                getUser.setUserEmail(usersFormView.getUserEmail());
+                getUser.setUserPass(usersFormView.getUserPass());
+                getUser.setUserState(usersFormView.getUserState());
+                getUser.setRolModel(rol);
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean deleteUser(){
+        userId = usersFormView.getUserId();
+        if (users.removeIf(getUser -> getUser.getUserId() == userId)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
 }
