@@ -45,10 +45,21 @@
 ||| --      09.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      09.04.  Ejectuar el proyecto                                                                                                                               |||
 ||| --  10. MENÚ USUARIOS                                                                                                                                              |||
-||| --      10.01.  Codificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
-||| --      10.02.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
+||| --      10.01.  Codificar la Clase 'views.modules.users/usersView.java'                                                                                            |||
+||| --      10.02.  Codificar la Clase 'controllers/UsersController.java'                                                                                              |||
 ||| --      10.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      10.04.  Ejectuar el proyecto                                                                                                                               |||
+
+aquí
+
+||| --  11. REQUISITOS ROLES                                                                                                                                           |||
+||| --      11.01.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      11.02.  Codificar la Clase 'models/RolModel.java'                                                                                                          |||
+||| --      11.03.  Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                        |||
+||| --      11.04.  Modificar la Clase 'controllers/RolesController.java'                                                                                              |||
+||| --      11.05.  Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
+||| --      11.06.  Ejectuar el proyecto                                                                                                                               |||
+
 
 NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
       02. Hacer requisitos Usuarios con controlador y cambiando la ruta
@@ -64,12 +75,6 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
 ||| --      11.02.  Modificar la Clase 'controllers/LoginController.java'                                                                                              |||
 ||| --      11.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      11.04.  Ejectuar el proyecto                                                                                                                               |||
-||| --  12. REQUISITOS ROLES                                                                                                                                           |||
-||| --      12.01.  Codificar la Clase 'models/RolModel.java'                                                                                                          |||
-||| --      12.02.  Codificar la Clase 'views.modules.roles/RolesFormView.java'                                                                                        |||
-||| --      12.03.  Modificar la Clase 'controllers/RolesController.java'                                                                                              |||
-||| --      12.04.  Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
-||| --      12.05.  Ejectuar el proyecto                                                                                                                               |||
 ||| --  13. REQUISITOS USERS                                                                                                                                           |||
 ||| --      13.01.  Codificar la Clase 'models/UserModel.java'                                                                                                         |||
 ||| --      13.02.  Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                        |||
@@ -198,10 +203,10 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
                 │   └── modules/
                 │       ├── roles/
                 │       │   ├── RolesFormView.java
-                │       │   └── RolesMenuView.java
+                │       │   └── RolesView.java
                 │       └── users/
                 │           ├── UsersFormView.java
-                │           └── UsersMenuView.java
+                │           └── UsersView.java
                 └── Main.java
 
 
@@ -275,10 +280,10 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
                 'DashboardView'.
             
             09. Dar click derecho sobre el paquete 'views.modules.roles' y seleccionar 'New / Java Class...' para crear las siguientes Clases: 
-                'RolesMenuView' y 'RolesFormView'.
+                'RolesView' y 'RolesFormView'.
             
             10. Dar click derecho sobre el paquete 'views.modules.users' y seleccionar 'New / Java Class...'; para crear las siguientes Clases: 
-                'UsersMenuView' y 'UsersFormView'.
+                'UsersView' y 'UsersFormView'.
 
             11. Dar click derecho sobre el paquete 'routes' y seleccionar 'New / Java Class...' para crear la siguiente Clase: 'RouterControllers'.
 
@@ -322,14 +327,14 @@ NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
                     25               switch (menu) {
                     26 
                     27                   case 1:
-                    33                       System.out.println("\n|-------------------------------------------------------------------|");
-                    34                       System.out.println("|-------------------------- REGISTRARSE ----------------------------|");
-                    35                       System.out.println("|-------------------------------------------------------------------|");
+                    28                       System.out.println("\n|-------------------------------------------------------------------|");
+                    29                       System.out.println("|-------------------------- REGISTRARSE ----------------------------|");
+                    30                       System.out.println("|-------------------------------------------------------------------|");
                     31                       break;
                     32                   case 2:                    
-                    28                       System.out.println("\n|-------------------------------------------------------------------|");
-                    29                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
-                    30                       System.out.println("|-------------------------------------------------------------------|");
+                    33                       System.out.println("\n|-------------------------------------------------------------------|");
+                    34                       System.out.println("|------------------------- INICIAR SESIÓN --------------------------|");
+                    35                       System.out.println("|-------------------------------------------------------------------|");
                     36                       break;
                     37                   case 0:
                     38                       System.out.println("|----- ¡Hasta Pronto! ...");
