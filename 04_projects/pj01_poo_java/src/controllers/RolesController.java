@@ -10,7 +10,7 @@ public class RolesController {
     private int rolId;
     private String rolName;
     private RolModel rol;
-    private RolesView rolesView;
+    private RolesView rolesView;    
     private RolesFormView rolesFormView = new RolesFormView();
     private ArrayList<RolModel> roles = new ArrayList<>();
     

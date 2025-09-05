@@ -49,6 +49,16 @@
 ||| --      10.02.  Codificar la Clase 'controllers/DashboardController.java'                                                                                          |||
 ||| --      10.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      10.04.  Ejectuar el proyecto                                                                                                                               |||
+
+NOTA: 01. Hacer requisitos Roles con controlador y cambiando la ruta
+      02. Hacer requisitos Usuarios con controlador y cambiando la ruta
+      03. Hacer la secuencia landing, inicio de sesión, dashboard, roles y Usuarios
+      04. Hacer el paso de los 'roles' y 'usuarios'
+      05. Hacer el 'Register'
+      06. Hacer el 'Inicio de Sesión'
+      07. Hacer el enrutador a Controladores
+
+
 ||| --  11. SECUENCIA LANDING, INICIO DE SESIÓN, DASHBOARD, ROLES Y USUARIOS                                                                                           |||
 ||| --      11.01.  Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
 ||| --      11.02.  Modificar la Clase 'controllers/LoginController.java'                                                                                              |||

@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class RolesView {
     
-    private int menu;
-    String rolMessage;
+    private int menu;    
     private RolModel rol = new RolModel();
     private RolesController roles = new RolesController();    
     private Scanner sc = new Scanner(System.in);

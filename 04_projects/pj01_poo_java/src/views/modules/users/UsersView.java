@@ -1,5 +1,6 @@
 package views.modules.users;
 
+import models.RolModel;
 import controllers.RolesController;
 import controllers.UsersController;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class UsersView {
 
     private int menu;
-    private String userMessage;
+    private RolModel rol = new RolModel();
     private RolesController roles = new RolesController();
     private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
@@ -40,40 +41,49 @@ public class UsersView {
 
             switch (menu) {
 
-                case 1:
+                case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    userMessage = users.addUser();
+                    RolModel rolFound = roles.searchRolById();
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println(userMessage);
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 2:
+                    if (rolFound != null) {
+                        users.addUser(rolFound);
+                        System.out.println("|-------------------------------------------------------------------|");
+                        System.out.println("|----- ¡Usuario Creado!");
+                    } else {
+                        System.out.println("|----- ¡Rol No Encontrado!");
+                    }
+                    System.out.println("|-------------------------------------------------------------------|");                    
+                }
+                case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 3:
+                    users.getUsers();
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                case 3 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
-                    break;
-                default:
+                }
+                case 0 -> {
+                }
+                default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
+                }
 
             }
 
