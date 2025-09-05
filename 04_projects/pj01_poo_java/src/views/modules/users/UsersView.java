@@ -1,6 +1,7 @@
 package views.modules.users;
 
 import models.RolModel;
+import models.UserModel;
 import controllers.RolesController;
 import controllers.UsersController;
 import java.util.Scanner;
@@ -9,6 +10,7 @@ public class UsersView {
 
     private int menu;
     private RolModel rol = new RolModel();
+    private UserModel user = new UserModel();
     private RolesController roles = new RolesController();
     private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
@@ -66,6 +68,14 @@ public class UsersView {
                 case 3 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
+                    System.out.println("|-------------------------------------------------------------------|");
+                    UserModel userFound = users.searchUserById();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    if (userFound != null) {
+                        System.out.println("|----- " + userFound.toString());
+                    } else {
+                        System.out.println("|----- ¡Usuario No Encontrado!");
+                    }
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 4 -> {

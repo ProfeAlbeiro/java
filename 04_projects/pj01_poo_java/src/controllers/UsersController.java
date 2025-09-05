@@ -39,4 +39,14 @@ public class UsersController {
             System.out.println("|----- " + getUser);
         }        
     }
+    
+    public UserModel searchUserById(){
+        userId = usersFormView.getUserId();
+        for (UserModel getUser : users) {
+            if (getUser.getUserId()== userId) {
+                return getUser;
+            }
+        }
+        return null;
+    }
 }
