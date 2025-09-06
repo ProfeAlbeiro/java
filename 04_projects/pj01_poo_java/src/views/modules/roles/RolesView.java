@@ -23,7 +23,7 @@ public class RolesView {
         do {
             
             System.out.println("\n|-------------------------------------------------------------------|");
-            System.out.println("|------------------------ GESTIï¿½N DE ROLES -------------------------|");
+            System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
             System.out.println("    1. Registrar Rol");
             System.out.println("    2. Listar Roles");
@@ -32,7 +32,7 @@ public class RolesView {
             System.out.println("    5. Eliminar Rol");
             System.out.println("    0. Volver");
             System.out.println("|-------------------------------------------------------------------|");
-            System.out.print("|----- Seleccione una opciï¿½n : ");
+            System.out.print("|----- Seleccione una opción : ");
             menu = sc.nextInt();            
             System.out.println("|-------------------------------------------------------------------|");
             
@@ -44,7 +44,7 @@ public class RolesView {
                     System.out.println("|-------------------------------------------------------------------|");
                     roles.addRol();
                     System.out.println("|-------------------------------------------------------------------|");
-                    System.out.println("|----- ï¿½Rol Creado!");
+                    System.out.println("|----- ¡Rol Creado!");
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 2 -> {
@@ -63,7 +63,7 @@ public class RolesView {
                     if (rolFound != null) {
                         System.out.println("|----- " + rolFound.toString());
                     } else {
-                        System.out.println("|----- ï¿½Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }
                     System.out.println("|-------------------------------------------------------------------|");
                     
@@ -74,10 +74,10 @@ public class RolesView {
                     System.out.println("|-------------------------------------------------------------------|");
                     if (roles.updateRol()) {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|----- ï¿½Rol Actualizado!");
+                        System.out.println("|----- ¡Rol Actualizado!");
                     } else {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|----- ï¿½Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }        
                     System.out.println("|-------------------------------------------------------------------|");
                 }
@@ -87,16 +87,16 @@ public class RolesView {
                     System.out.println("|-------------------------------------------------------------------|");
                     if (roles.deleteRol()) {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|----- ï¿½Rol Eliminado!");
+                        System.out.println("|----- ¡Rol Eliminado!");
                     } else {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|----- ï¿½Rol No Encontrado!");
+                        System.out.println("|----- ¡Rol No Encontrado!");
                     }        
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                 case 0 -> {}
                 default -> {
-                    System.out.println("|----- ï¿½Opciï¿½n No Vï¿½lida!");
+                    System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
                 }
                     

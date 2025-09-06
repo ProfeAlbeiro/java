@@ -11,6 +11,13 @@ public class RolesView {
     private RolesController roles = new RolesController();    
     private Scanner sc = new Scanner(System.in);
     
+    public RolesView(){        
+    }
+    
+    public RolesView(RolesController roles){
+        this.roles = roles;
+    }
+    
     public void rolesMenuView() {
         
         do {
@@ -34,7 +41,7 @@ public class RolesView {
                 case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");                                        
+                    System.out.println("|-------------------------------------------------------------------|");
                     roles.addRol();
                     System.out.println("|-------------------------------------------------------------------|");
                     System.out.println("|----- ¡Rol Creado!");
@@ -58,7 +65,8 @@ public class RolesView {
                     } else {
                         System.out.println("|----- ¡Rol No Encontrado!");
                     }
-                    System.out.println("|-------------------------------------------------------------------|");                    
+                    System.out.println("|-------------------------------------------------------------------|");
+                    
                 }
                 case 4 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
@@ -66,7 +74,7 @@ public class RolesView {
                     System.out.println("|-------------------------------------------------------------------|");
                     if (roles.updateRol()) {
                         System.out.println("|-------------------------------------------------------------------|");
-                        System.out.println("|----- Rol Actualizado!");
+                        System.out.println("|----- ¡Rol Actualizado!");
                     } else {
                         System.out.println("|-------------------------------------------------------------------|");
                         System.out.println("|----- ¡Rol No Encontrado!");

@@ -8,15 +8,15 @@
 ||| --  02. DIAGRAMA DE CLASES                                                                                                                                         |||
 ||| --  03. ESTRUCTURA DEL PROYECTO                                                                                                                                    |||
 ||| --  04. MENÚ LANDING                                                                                                                                               |||
-||| --  05. FORMULARIO DE REGISTRO                                                                                                                                     |||
+||| --  05. FORMULARIO DE AUTOREGISTRO                                                                                                                                 |||
 ||| --  06. FORMULARIO INICIO DE SESIÓN                                                                                                                                |||
-||| --  07. SECUENCIA LANDING, REGISTRO E INICIO DE SESIÓN                                                                                                             |||
+||| --  07. SECUENCIA LANDING, AUTOREGISTRO E INICIO DE SESIÓN                                                                                                         |||
 ||| --  08. MENU DASHBOARD                                                                                                                                             |||
 ||| --  09. MENÚ ROLES                                                                                                                                                 |||
 ||| --  10. MENÚ USUARIOS                                                                                                                                              |||
 ||| --  11. REQUISITOS ROLES                                                                                                                                           |||
 ||| --  12. REQUISITOS USERS                                                                                                                                           |||
-|||                                                                                                                                                                    |||
+||| --  13. SECUENCIA Y COMUNICACIÓN DASHBOARD, ROLES Y USUARIOS                                                                                                       |||
 |||                                                                                                                                                                    |||
 ||| --  AUTOR:  ALBEIRO RAMOS, 2025.                                                                                                                                   |||
 |||                                                                                                                                                                    |||
@@ -30,6 +30,7 @@
 ||| --      01.02.  Instalar JDK                                                                                                                                       |||
 ||| --      01.03.  Instalar Netbeans                                                                                                                                  |||
 ||| --  02. DIAGRAMA DE CLASES                                                                                                                                         |||
+||| --      02.01.  Crear un Diagrama de Clases - UML                                                                                                                  |||
 ||| --  03. ESTRUCTURA DEL PROYECTO                                                                                                                                    |||
 ||| --      03.01.  Estructura del proyecto                                                                                                                            |||
 ||| --      03.02.  Crear la 'Carpeta Raíz' del proyecto                                                                                                               |||
@@ -41,7 +42,7 @@
 ||| --      04.03.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      04.04.  Codificar la Clase 'Main.java'                                                                                                                     |||
 ||| --      04.05.  Ejectuar el proyecto                                                                                                                               |||
-||| --  05. FORMULARIO DE REGISTRO                                                                                                                                     |||
+||| --  05. FORMULARIO DE AUTOREGISTRO                                                                                                                                 |||
 ||| --      05.01.  Codificar la Clase 'views.landing/RegisterFormView.java'                                                                                           |||
 ||| --      05.02.  Codificar la Clase 'controllers/RegisterController.java'                                                                                           |||
 ||| --      05.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
@@ -51,7 +52,7 @@
 ||| --      06.02.  Codificar la Clase 'controllers/LoginController.java'                                                                                              |||
 ||| --      06.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      06.04.  Ejectuar el proyecto                                                                                                                               |||
-||| --  07. SECUENCIA LANDING, REGISTRO E INICIO DE SESIÓN                                                                                                             |||
+||| --  07. SECUENCIA LANDING, AUTOREGISTRO E INICIO DE SESIÓN                                                                                                         |||
 ||| --      07.01.  Modificar la Clase 'views.landing/LandingView.java'                                                                                                |||
 ||| --      07.02.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
 ||| --      07.03.  Ejectuar el proyecto                                                                                                                               |||
@@ -82,26 +83,28 @@
 ||| --      12.02.  Codificar la Clase 'views.modules.users/UsersFormView.java'                                                                                        |||
 ||| --      12.03.  Modificar la Clase 'controllers/UsersController.java'                                                                                              |||
 ||| --      12.04.  Modificar la Clase 'views.modules.users/UsersView.java'                                                                                            |||
-||| --      12.06.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
-||| --      12.05.  Ejectuar el proyecto                                                                                                                               |||
+||| --      12.05.  Codificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      12.06.  Ejectuar el proyecto                                                                                                                               |||
+||| --  13. SECUENCIA Y COMUNICACIÓN DASHBOARD, ROLES Y USUARIOS                                                                                                       |||
+||| --      13.01.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
+||| --      13.02.  Modificar la Clase 'views.modules.roles/RolesView.java'                                                                                            |||
+||| --      13.03.  Modificar la Clase 'views.modules.users/UsersView.java'                                                                                            |||
+||| --      13.04.  Modificar la Clase 'controllers/RolesController.java'                                                                                              |||
+||| --      13.05.  Modificar la Clase 'controllers/UsersController.java'                                                                                              |||
+||| --      13.06.  Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
+||| --      13.07.  Ejectuar el proyecto                                                                                                                               |||
 
 aquí
 
-NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
-      02. Hacer la secuencia entre el landing y el dashboard      
+NOTA: 01. Hacer Clientes y Empleados (Herencia y Polimorfismo)
+      02. Hacer el 'Inicio de Sesión'      
       03. Hacer el 'Register'
-      04. Hacer el 'Inicio de Sesión'
-      05. Hacer el enrutador a Controladores
+      04. Hacer el enrutador a Controladores
 
-||| --  13. SECUENCIA Y COMUNICACIÓN DASHBOARD, ROLES Y USUARIOS                                                                                                       |||
-||| --      13.01.  Modificar la Clase 'views.dashboard/DashboardView.java'                                                                                            |||
-||| --      13.02.  Modificar la Clase 'controllers/LoginController.java'                                                                                              |||
-||| --      13.03.  Modificar la Clase 'routes/RouterControllers.java'                                                                                                 |||
-||| --      13.04.  Ejectuar el proyecto                                                                                                                               |||
-||| --  14. HERENCIA Y POLIMORFISMO EN CLIENTES Y EMPLEADOS                                                                                                            |||
-||| --  15. REGISTER                                                                                                                                                   |||
+||| --  14. CLIENTES Y EMPLEADOS                                                                                                                                       |||
+||| --  17. INICIO DE SESIÓN                                                                                                                                           |||
+||| --  15. AUTOREGISTRO                                                                                                                                               |||
 ||| --  16. ENRUTADOR                                                                                                                                                  |||
-||| --  17. LOGIN Y LOGOUT                                                                                                                                             |||
 |||                                                                                                                                                                    |||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -488,7 +491,7 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||-------------------------------------------------------------------- 05. FORMULARIO DE REGISTRO --------------------------------------------------------------------|||
+|||------------------------------------------------------------------ 05. FORMULARIO DE AUTOREGISTRO ------------------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -779,7 +782,7 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
-|||-------------------------------------------------------- 07. SECUENCIA LANDING, REGISTRO E INICIO DE SESIÓN --------------------------------------------------------|||
+|||------------------------------------------------------ 07. SECUENCIA LANDING, AUTOREGISTRO E INICIO DE SESIÓN ------------------------------------------------------|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 
@@ -1752,23 +1755,6 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||---------------------------------------------------------------------- 12. REQUISITOS USUARIOS ---------------------------------------------------------------------|||
@@ -2040,7 +2026,6 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
                 └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
 
 
-
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |-- 12.04.  Modificar la Clase 'views.modules.users/UsersView.java': ----------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2229,32 +2214,6 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 |||\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|||
 |||--------------------------------------------------------------------------------------------------------------------------------------------------------------------|||
 |||---------------------------------------------------- 13. SECUENCIA Y COMUNICACIÓN DASHBOARD, ROLES Y USUARIOS  -----------------------------------------------------|||
@@ -2263,149 +2222,21 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 11.01.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package views.dashboard;
-                    02 
-                    03   import controllers.RolesController;
-                    04   import controllers.UsersController;
-                    05   import java.util.Scanner;
-                    06 
-                    07   public class DashboardView {
-                    08       
-                    09       private int menu;
-                    10       private RolesController roles;
-                    11       private UsersController users;
-                    12       private Scanner sc = new Scanner(System.in);
-                    13 
-                    14       public void dashboardMenuView() {
-                    15           
-                    16           do {            
-                    17               
-                    18               System.out.println("\n|-------------------------------------------------------------------|");
-                    19               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
-                    20               System.out.println("|-------------------------------------------------------------------|");
-                    21               System.out.println("    1. Gestión de Roles");
-                    22               System.out.println("    2. Gestión de Usuarios");
-                    23               System.out.println("    0. Cerrar Sesión");
-                    24               System.out.println("|-------------------------------------------------------------------|");
-                    25               System.out.print("|----- Seleccione una opción : ");
-                    26               menu = sc.nextInt();            
-                    27               System.out.println("|-------------------------------------------------------------------|");
-                    28               
-                    29               switch (menu) {
-                    30                   
-                    31                   case 1 -> {
-                    32                       System.out.println("\n|-------------------------------------------------------------------|");
-                    33                       System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
-                    34                       System.out.println("|-------------------------------------------------------------------|");
-                    35                       roles = new RolesController();
-                    36                       roles.rolesMenu();
-                    37                   }
-                    38                   case 2 -> {
-                    39                       System.out.println("\n|-------------------------------------------------------------------|");
-                    40                       System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
-                    41                       System.out.println("|-------------------------------------------------------------------|");
-                    42                       users = new UsersController();
-                    43                       users.usersMenu();
-                    44                   }
-                    45                   case 0 -> {
-                    46                       System.out.println("|----- ¡Sesión Cerrada! ...");
-                    47                       System.out.println("|-------------------------------------------------------------------|");
-                    48                   }
-                    49                   default -> {
-                    50                       System.out.println("|----- ¡Opción No Válida!");
-                    51                       System.out.println("|-------------------------------------------------------------------|");
-                    52                   }
-                    53               }
-                    54               
-                    55           } while (menu != 0);
-                    56           
-                    57       }
-                    58       
-                    59   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 11.02.  Modificar la Clase 'controllers/LoginController.java': ------------------------------------------------------------------------------------------------------|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-                    01   package controllers;
-                    02 
-                    03   import views.landing.LoginFormView;
-                    04 
-                    05   public class LoginController {
-                    06       
-                    07       private String email, pass;
-                    08       private LoginFormView loginView;
-                    09       private DashboardController dashboard;
-                    10       
-                    11       public void loginForm(){        
-                    12           
-                    13           loginView = new LoginFormView();
-                    14           
-                    15           email = loginView.getUserEmail();
-                    16           pass = loginView.getUserPass();
-                    17           
-                    18           if (email.equals("admin@correo.com") && pass.equals("12345")) {
-                    19               System.out.println("|-------------------------------------------------------------------|");            
-                    20               dashboard = new DashboardController();
-                    21               dashboard.dashboardMenu();
-                    22               System.out.println("|-------------------------------------------------------------------|");            
-                    23           } else {
-                    24               System.out.println("|-------------------------------------------------------------------|");
-                    25               System.out.println("|----- ¡Credenciales Incorrectas!");            
-                    26               System.out.println("|-------------------------------------------------------------------|");
-                    27           }       
-                    28           
-                    29       }
-                    30       
-                    31   }
-
-                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
-                |                                                                                                                                         |
-                  EXPLICACIÓN:   
-                    
-                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-
-                |---------------------------------------------------------------------------------------------------------------------------------------- |
-
-                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
-                |                                                                                                                                         |
-                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
-
-
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 11.03.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
+|-- 13.01.  Modificar la Clase 'routes/RouterControllers.java': ---------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
                     01   package routes;
                     02 
-                    03   import controllers.LandingController;
+                    03   import controllers.DashboardController;
                     04 
                     05   public class RouterControllers {
                     06 
-                    07       private LandingController landingController;
+                    07       private DashboardController dashboardController;
                     08       
                     09       public RouterControllers() {
                     10           
-                    11           landingController = new LandingController();
-                    12           landingController.landingMenu();
+                    11           dashboardController = new DashboardController();
+                    12           dashboardController.dashboardMenu();
                     13           
                     14       }
                     15       
@@ -2426,8 +2257,551 @@ NOTA: 01. Hacer la secuencia y comunicación dashboard, roles y Usuarios
 
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-- 11.04.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.02. Modificar la Clase 'views.modules.roles/RolesView.java': -----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.roles;
+                    02 
+                    03   import models.RolModel;
+                    04   import controllers.RolesController;
+                    05   import java.util.Scanner;
+                    06 
+                    07   public class RolesView {
+                    08       
+                    09       private int menu;    
+                    10       private RolModel rol = new RolModel();
+                    11       private RolesController roles = new RolesController();    
+                    12       private Scanner sc = new Scanner(System.in);
+                    13       
+                    14       public RolesView(){        
+                    15       }
+                    16       
+                    17       public RolesView(RolesController roles){
+                    18           this.roles = roles;
+                    19       }
+                    20       
+                    21       public void rolesMenuView() {
+                    22           
+                    23           do {
+                    24               
+                    25               System.out.println("\n|-------------------------------------------------------------------|");
+                    26               System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    27               System.out.println("|-------------------------------------------------------------------|");
+                    28               System.out.println("    1. Registrar Rol");
+                    29               System.out.println("    2. Listar Roles");
+                    30               System.out.println("    3. Consultar Rol");
+                    31               System.out.println("    4. Actualizar Rol");
+                    32               System.out.println("    5. Eliminar Rol");
+                    33               System.out.println("    0. Volver");
+                    34               System.out.println("|-------------------------------------------------------------------|");
+                    35               System.out.print("|----- Seleccione una opción : ");
+                    36               menu = sc.nextInt();            
+                    37               System.out.println("|-------------------------------------------------------------------|");
+                    38               
+                    39               switch (menu) {
+                    40 
+                    41                   case 1 -> {
+                    42                       System.out.println("\n|-------------------------------------------------------------------|");
+                    43                       System.out.println("|-------------------------- REGISTRAR ROL --------------------------|");
+                    44                       System.out.println("|-------------------------------------------------------------------|");
+                    45                       roles.addRol();
+                    46                       System.out.println("|-------------------------------------------------------------------|");
+                    47                       System.out.println("|----- ¡Rol Creado!");
+                    48                       System.out.println("|-------------------------------------------------------------------|");
+                    49                   }
+                    50                   case 2 -> {
+                    51                       System.out.println("\n|-------------------------------------------------------------------|");
+                    52                       System.out.println("|-------------------------- LISTAR ROLES ---------------------------|");
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       roles.getRoles();
+                    55                       System.out.println("|-------------------------------------------------------------------|");
+                    56                   }
+                    57                   case 3 -> {
+                    58                       System.out.println("\n|-------------------------------------------------------------------|");
+                    59                       System.out.println("|-------------------------- CONSULTAR ROL --------------------------|");
+                    60                       System.out.println("|-------------------------------------------------------------------|");
+                    61                       RolModel rolFound = roles.searchRolById();
+                    62                       System.out.println("|-------------------------------------------------------------------|");
+                    63                       if (rolFound != null) {
+                    64                           System.out.println("|----- " + rolFound.toString());
+                    65                       } else {
+                    66                           System.out.println("|----- ¡Rol No Encontrado!");
+                    67                       }
+                    68                       System.out.println("|-------------------------------------------------------------------|");
+                    69                       
+                    70                   }
+                    71                   case 4 -> {
+                    72                       System.out.println("\n|-------------------------------------------------------------------|");
+                    73                       System.out.println("|-------------------------- ACTUALIZAR ROL -------------------------|");
+                    74                       System.out.println("|-------------------------------------------------------------------|");
+                    75                       if (roles.updateRol()) {
+                    76                           System.out.println("|-------------------------------------------------------------------|");
+                    77                           System.out.println("|----- ¡Rol Actualizado!");
+                    78                       } else {
+                    79                           System.out.println("|-------------------------------------------------------------------|");
+                    80                           System.out.println("|----- ¡Rol No Encontrado!");
+                    81                       }        
+                    82                       System.out.println("|-------------------------------------------------------------------|");
+                    83                   }
+                    84                   case 5 -> {
+                    85                       System.out.println("\n|-------------------------------------------------------------------|");
+                    86                       System.out.println("|-------------------------- ELIMINAR ROL ---------------------------|");
+                    87                       System.out.println("|-------------------------------------------------------------------|");
+                    88                       if (roles.deleteRol()) {
+                    89                           System.out.println("|-------------------------------------------------------------------|");
+                    90                           System.out.println("|----- ¡Rol Eliminado!");
+                    91                       } else {
+                    92                           System.out.println("|-------------------------------------------------------------------|");
+                    93                           System.out.println("|----- ¡Rol No Encontrado!");
+                    94                       }        
+                    95                       System.out.println("|-------------------------------------------------------------------|");
+                    96                   }
+                    97                   case 0 -> {}
+                    98                   default -> {
+                    99                       System.out.println("|----- ¡Opción No Válida!");
+                   100                       System.out.println("|-------------------------------------------------------------------|");
+                   101                   }
+                   102                       
+                   103               }
+                   104               
+                   105           } while (menu != 0);
+                   106           
+                   107       }
+                   108       
+                   109   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.03.  Modificar la Clase 'views.modules.users/UsersView.java': ----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.modules.users;
+                    02 
+                    03   import models.RolModel;
+                    04   import models.UserModel;
+                    05   import controllers.RolesController;
+                    06   import controllers.UsersController;
+                    07   import java.util.Scanner;
+                    08 
+                    09   public class UsersView {
+                    10 
+                    11       private int menu, userId;
+                    12       private RolModel rol = new RolModel();
+                    13       private RolModel rolFound = new RolModel();
+                    14       private UserModel user = new UserModel();
+                    15       private UserModel userFound = new UserModel();
+                    16       private RolesController roles = new RolesController();
+                    17       private UsersController users = new UsersController();
+                    18       private Scanner sc = new Scanner(System.in);
+                    19       
+                    20       public UsersView(){        
+                    21       }
+                    22       
+                    23       public UsersView(RolesController roles, UsersController users){
+                    24           this.roles = roles;
+                    25           this.users = users;
+                    26       }
+                    27       
+                    28       public void usersMenuView() {
+                    29 
+                    30           do {
+                    31 
+                    32               System.out.println("\n|-------------------------------------------------------------------|");
+                    33               System.out.println("|---------------------------- USUARIOS -----------------------------|");
+                    34               System.out.println("|-------------------------------------------------------------------|");
+                    35               System.out.println("    1. Registrar Usuario");
+                    36               System.out.println("    2. Listar Usuarios");
+                    37               System.out.println("    3. Consultar Usuario");
+                    38               System.out.println("    4. Actualizar Usuario");
+                    39               System.out.println("    5. Eliminar Usuario");
+                    40               System.out.println("    0. Volver");
+                    41               System.out.println("|-------------------------------------------------------------------|");
+                    42               System.out.print("|----- Seleccione una opción : ");
+                    43               menu = sc.nextInt();
+                    44               System.out.println("|-------------------------------------------------------------------|");
+                    45 
+                    46               switch (menu) {
+                    47 
+                    48                   case 1 -> {
+                    49                       System.out.println("\n|-------------------------------------------------------------------|");
+                    50                       System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
+                    51                       System.out.println("|-------------------------------------------------------------------|");
+                    52                       rolFound = roles.searchRolById();
+                    53                       System.out.println("|-------------------------------------------------------------------|");
+                    54                       if (rolFound != null) {
+                    55                           users.addUser(rolFound);
+                    56                           System.out.println("|-------------------------------------------------------------------|");
+                    57                           System.out.println("|----- ¡Usuario Creado!");
+                    58                       } else {
+                    59                           System.out.println("|----- ¡Rol No Encontrado!");
+                    60                       }
+                    61                       System.out.println("|-------------------------------------------------------------------|");                    
+                    62                   }
+                    63                   case 2 -> {
+                    64                       System.out.println("\n|-------------------------------------------------------------------|");
+                    65                       System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
+                    66                       System.out.println("|-------------------------------------------------------------------|");
+                    67                       users.getUsers();
+                    68                       System.out.println("|-------------------------------------------------------------------|");
+                    69                   }
+                    70                   case 3 -> {
+                    71                       System.out.println("\n|-------------------------------------------------------------------|");
+                    72                       System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
+                    73                       System.out.println("|-------------------------------------------------------------------|");
+                    74                       userFound = users.searchUserById();
+                    75                       System.out.println("|-------------------------------------------------------------------|");
+                    76                       if (userFound != null) {
+                    77                           System.out.println("|----- " + userFound.toString());
+                    78                       } else {
+                    79                           System.out.println("|----- ¡Usuario No Encontrado!");
+                    80                       }
+                    81                       System.out.println("|-------------------------------------------------------------------|");
+                    82                   }
+                    83                   case 4 -> {
+                    84                       System.out.println("\n|-------------------------------------------------------------------|");
+                    85                       System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
+                    86                       System.out.println("|-------------------------------------------------------------------|");
+                    87                       userFound = users.searchUserById();                    
+                    88                       System.out.println("|-------------------------------------------------------------------|");
+                    89                       if (userFound != null) {
+                    90                           userId = userFound.getUserId();
+                    91                           rolFound = roles.searchRolById();
+                    92                           if (rolFound != null) {
+                    93                               users.updateUser(userId, rolFound);
+                    94                               System.out.println("|-------------------------------------------------------------------|");
+                    95                               System.out.println("|----- ¡Usuario Actualizado!");
+                    96                           } else {
+                    97                               System.out.println("|-------------------------------------------------------------------|");
+                    98                               System.out.println("|----- ¡Rol No Encontrado!");
+                    99                           }
+                   100                       } else {
+                   101                           System.out.println("|----- ¡Usuario No Encontrado!");
+                   102                       }
+                   103                       System.out.println("|-------------------------------------------------------------------|");
+                   104                   }
+                   105                   case 5 -> {
+                   106                       System.out.println("\n|-------------------------------------------------------------------|");
+                   107                       System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
+                   108                       System.out.println("|-------------------------------------------------------------------|");
+                   109                       if (users.deleteUser()) {
+                   110                           System.out.println("|-------------------------------------------------------------------|");
+                   111                           System.out.println("|----- ¡Usuario Eliminado!");
+                   112                       } else {
+                   113                           System.out.println("|-------------------------------------------------------------------|");
+                   114                           System.out.println("|----- ¡Usuario No Encontrado!");
+                   115                       }        
+                   116                       System.out.println("|-------------------------------------------------------------------|");
+                   117                   }
+                   118                   case 0 -> {}
+                   119                   default -> {
+                   120                       System.out.println("|----- ¡Opción No Válida!");
+                   121                       System.out.println("|-------------------------------------------------------------------|");
+                   122                   }
+                   123 
+                   124               }
+                   125 
+                   126           } while (menu != 0);
+                   127
+                   128       }
+                   129
+                   130   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.04.  Codificar la Clase 'controllers/RolesController.java': ------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import models.RolModel;
+                    04   import views.modules.roles.RolesView;
+                    05   import views.modules.roles.RolesFormView;
+                    06   import java.util.ArrayList;
+                    07 
+                    08   public class RolesController {
+                    09       
+                    10       private int rolId;
+                    11       private String rolName;
+                    12       private RolModel rol;
+                    13       private RolesView rolesView;    
+                    14       private RolesFormView rolesFormView = new RolesFormView();
+                    15       private ArrayList<RolModel> roles = new ArrayList<>();
+                    16       
+                    17       public void rolesMenu(RolesController roles) {
+                    18           rolesView = new RolesView(roles);
+                    19           rolesView.rolesMenuView();
+                    20       }
+                    21       
+                    22       public void addRol(){
+                    23           rolId = roles.size() + 1;
+                    24           rolName = rolesFormView.getRolName();
+                    25           rol = new RolModel(rolId, rolName);
+                    26           roles.add(rol);
+                    27       }
+                    28 
+                    29       public void getRoles(){
+                    30           for(RolModel getRol : roles){
+                    31               System.out.println("|----- " + getRol);
+                    32           }        
+                    33       }
+                    34 
+                    35       public RolModel searchRolById(){
+                    36           rolId = rolesFormView.getRolId();
+                    37           for (RolModel getRol : roles) {
+                    38               if (getRol.getRolId() == rolId) {
+                    39                   return getRol;
+                    40               }
+                    41           }
+                    42           return null;
+                    43       }
+                    44       
+                    45       public boolean updateRol(){        
+                    46           rolId = rolesFormView.getRolId();        
+                    47           for (RolModel getRol : roles){
+                    48               if (getRol.getRolId() == rolId) {
+                    49                   rolName = rolesFormView.getRolName();
+                    50                   getRol.setRolName(rolName);
+                    51                   return true;
+                    52               }
+                    53           }
+                    54           return false;
+                    55       }
+                    56 
+                    57       public boolean deleteRol(){
+                    58           rolId = rolesFormView.getRolId();
+                    59           if (roles.removeIf(getRol -> getRol.getRolId() == rolId)) {
+                    60               return true;
+                    61           } else {
+                    62               return false;
+                    63           }
+                    64       }
+                    65 
+                    66   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.05. Modificar la Clase 'controllers/UsersController.java': -------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package controllers;
+                    02 
+                    03   import models.RolModel;
+                    04   import models.UserModel;
+                    05   import views.modules.users.UsersView;
+                    06   import views.modules.users.UsersFormView;
+                    07   import java.util.ArrayList;
+                    08 
+                    09   public class UsersController {
+                    10       
+                    11       private int rolId, userId;
+                    12       private String userName, userLastName, userEmail, userPass;
+                    13       private boolean userState;
+                    14       private RolModel rol;
+                    15       private RolesController roles = new RolesController();
+                    16       private UserModel user;    
+                    17       private UsersView usersView;
+                    18       private UsersFormView usersFormView = new UsersFormView();    
+                    19       private ArrayList<UserModel> users = new ArrayList<>();
+                    20       
+                    21       public void usersMenu(RolesController roles, UsersController users) {        
+                    22           usersView = new UsersView(roles, users);
+                    23           usersView.usersMenuView();        
+                    24       }
+                    25       
+                    26       public void addUser(RolModel rol){
+                    27           userId = users.size() + 1;
+                    28           userName = usersFormView.getUserName();
+                    29           userLastName = usersFormView.getUserLastName();
+                    30           userEmail = usersFormView.getUserEmail();
+                    31           userPass = usersFormView.getUserPass();
+                    32           userState = usersFormView.getUserState();        
+                    33           user = new UserModel(userId, userName, userLastName, userEmail, userPass, userState, rol);
+                    34           users.add(user);
+                    35       }
+                    36       
+                    37       public void getUsers(){
+                    38           for(UserModel getUser : users){
+                    39               System.out.println("|----- " + getUser);
+                    40           }        
+                    41       }
+                    42       
+                    43       public UserModel searchUserById(){
+                    44           userId = usersFormView.getUserId();
+                    45           for (UserModel getUser : users) {
+                    46               if (getUser.getUserId()== userId) {
+                    47                   return getUser;
+                    48               }
+                    49           }
+                    50           return null;
+                    51       }
+                    52 
+                    53       public boolean updateUser(int userId, RolModel rol){        
+                    54           for (UserModel getUser : users){
+                    55               if (getUser.getUserId() == userId) {
+                    56                   getUser.setUserName(usersFormView.getUserName());                
+                    57                   getUser.setUserLastName(usersFormView.getUserLastName());
+                    58                   getUser.setUserEmail(usersFormView.getUserEmail());
+                    59                   getUser.setUserPass(usersFormView.getUserPass());
+                    60                   getUser.setUserState(usersFormView.getUserState());
+                    61                   getUser.setRolModel(rol);
+                    62                   return true;
+                    63               }
+                    64           }
+                    65           return false;
+                    66       }
+                    67       
+                    68       public boolean deleteUser(){
+                    69           userId = usersFormView.getUserId();
+                    70           if (users.removeIf(getUser -> getUser.getUserId() == userId)) {
+                    71               return true;
+                    72           } else {
+                    73               return false;
+                    74           }
+                    75       }
+                    76       
+                    77   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.06.  Modificar la Clase 'views.dashboard/DashboardView.java': ----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+                    01   package views.dashboard;
+                    02 
+                    03   import controllers.RolesController;
+                    04   import controllers.UsersController;
+                    05   import java.util.Scanner;
+                    06 
+                    07   public class DashboardView {
+                    08       
+                    09       private int menu;
+                    10       private RolesController roles = new RolesController();
+                    11       private UsersController users = new UsersController();
+                    12       private Scanner sc = new Scanner(System.in);
+                    13       
+                    14       public DashboardView(){        
+                    15       }
+                    16       
+                    17       public DashboardView(RolesController roles, UsersController users){
+                    18           this.roles = roles;
+                    19           this.users = users;
+                    20       }
+                    21       
+                    22       public void dashboardMenuView() {
+                    23           
+                    24           do {            
+                    25               
+                    26               System.out.println("\n|-------------------------------------------------------------------|");
+                    27               System.out.println("|---------------------------- DASHBOARD ----------------------------|");
+                    28               System.out.println("|-------------------------------------------------------------------|");
+                    29               System.out.println("    1. Gestión de Roles");
+                    30               System.out.println("    2. Gestión de Usuarios");
+                    31               System.out.println("    0. Cerrar Sesión");
+                    32               System.out.println("|-------------------------------------------------------------------|");
+                    33               System.out.print("|----- Seleccione una opción : ");
+                    34               menu = sc.nextInt();            
+                    35               System.out.println("|-------------------------------------------------------------------|");
+                    36               
+                    37               switch (menu) {
+                    38                   
+                    39                   case 1 -> {
+                    40                       System.out.println("\n|-------------------------------------------------------------------|");
+                    41                       System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
+                    42                       System.out.println("|-------------------------------------------------------------------|");
+                    43                       RolesController rolesManage = new RolesController();
+                    44                       rolesManage.rolesMenu(roles);
+                    45                   }
+                    46                   case 2 -> {
+                    47                       System.out.println("\n|-------------------------------------------------------------------|");
+                    48                       System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
+                    49                       System.out.println("|-------------------------------------------------------------------|");                    
+                    50                       UsersController usersManage = new UsersController();
+                    51                       usersManage.usersMenu(roles, users);
+                    52                   }
+                    53                   case 0 -> {
+                    54                       System.out.println("|----- ¡Sesión Cerrada! ...");
+                    55                       System.out.println("|-------------------------------------------------------------------|");
+                    56                   }
+                    57                   default -> {
+                    58                       System.out.println("|----- ¡Opción No Válida!");
+                    59                       System.out.println("|-------------------------------------------------------------------|");
+                    60                   }
+                    61               }
+                    62               
+                    63           } while (menu != 0);
+                    64           
+                    65       }
+                    66       
+                    67   }
+
+                ┌ --------------------------------------------------------------------------------------------------------------------------------------- ┐
+                |                                                                                                                                         |
+                  EXPLICACIÓN:   
+                    
+                    ⦿   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+
+                |---------------------------------------------------------------------------------------------------------------------------------------- |
+
+                    A.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                    B.   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+                |                                                                                                                                         |
+                └ --------------------------------------------------------------------------------------------------------------------------------------- ┘
+
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-- 13.07.  Ejectuar el proyecto: ---------------------------------------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
             01. Dar click en la opción 'Run / Run Project' o se presiona la tecla 'F6'.
-

@@ -11,15 +11,16 @@ public class UsersController {
     private int rolId, userId;
     private String userName, userLastName, userEmail, userPass;
     private boolean userState;
-    private RolModel rol;    
+    private RolModel rol;
+    private RolesController roles = new RolesController();
     private UserModel user;    
     private UsersView usersView;
     private UsersFormView usersFormView = new UsersFormView();    
     private ArrayList<UserModel> users = new ArrayList<>();
     
-    public void usersMenu() {        
-        usersView = new UsersView();
-        usersView.usersMenuView();
+    public void usersMenu(RolesController roles, UsersController users) {        
+        usersView = new UsersView(roles, users);
+        usersView.usersMenuView();        
     }
     
     public void addUser(RolModel rol){

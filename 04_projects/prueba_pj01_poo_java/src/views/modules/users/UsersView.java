@@ -17,14 +17,18 @@ public class UsersView {
     private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
     
+    public UsersView(){        
+    }
+    
+    public UsersView(RolesController roles, UsersController users){
+        this.roles = roles;
+        this.users = users;
+    }
+    
     public void usersMenuView() {
-        
-        for (int i = 0; i <= 2; i++) {
-            roles.addRol();
-        }
 
         do {
-            
+
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|---------------------------- USUARIOS -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");

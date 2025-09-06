@@ -1,12 +1,24 @@
 package views.dashboard;
 
+import controllers.RolesController;
+import controllers.UsersController;
 import java.util.Scanner;
 
 public class DashboardView {
     
     private int menu;
+    private RolesController roles = new RolesController();
+    private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
-
+    
+    public DashboardView(){        
+    }
+    
+    public DashboardView(RolesController roles, UsersController users){
+        this.roles = roles;
+        this.users = users;
+    }
+    
     public void dashboardMenuView() {
         
         do {            
@@ -24,23 +36,28 @@ public class DashboardView {
             
             switch (menu) {
                 
-                case 1:
+                case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ GESTIÓN DE ROLES -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 2:
+                    RolesController rolesManage = new RolesController();
+                    rolesManage.rolesMenu(roles);
+                }
+                case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|---------------------- GESTIÓN DE USUARIOS ------------------------|");
-                    System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
+                    System.out.println("|-------------------------------------------------------------------|");                    
+                    UsersController usersManage = new UsersController();
+                    usersManage.usersMenu(roles, users);
+                }
+                case 0 -> {
                     System.out.println("|----- ¡Sesión Cerrada! ...");
-                    System.out.println("|-------------------------------------------------------------------|");        
-                    break;
-                default:
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
+                }
             }
             
         } while (menu != 0);

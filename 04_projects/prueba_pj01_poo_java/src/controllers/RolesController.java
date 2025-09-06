@@ -14,8 +14,8 @@ public class RolesController {
     private RolesFormView rolesFormView = new RolesFormView();
     private ArrayList<RolModel> roles = new ArrayList<>();
     
-    public void rolesMenu() {
-        rolesView = new RolesView();
+    public void rolesMenu(RolesController roles) {
+        rolesView = new RolesView(roles);
         rolesView.rolesMenuView();
     }
     
