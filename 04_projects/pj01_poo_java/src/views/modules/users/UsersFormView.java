@@ -35,10 +35,5 @@ public class UsersFormView {
         System.out.print("|----- Estado (true = activo / false = inactivo): ");
         return sc.nextBoolean();
     }
-
-    public int getUserRolId(){
-        System.out.print("|----- Rol Id: ");
-        return sc.nextInt();
-    }
     
 }

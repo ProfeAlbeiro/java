@@ -1,16 +1,30 @@
 package views.modules.users;
 
+import models.RolModel;
+import models.UserModel;
+import controllers.RolesController;
+import controllers.UsersController;
 import java.util.Scanner;
 
 public class UsersView {
 
-    private int menu;
+    private int menu, userId;
+    private RolModel rol = new RolModel();
+    private RolModel rolFound = new RolModel();
+    private UserModel user = new UserModel();
+    private UserModel userFound = new UserModel();
+    private RolesController roles = new RolesController();
+    private UsersController users = new UsersController();
     private Scanner sc = new Scanner(System.in);
-
-    public void UsersMenuView() {
+    
+    public void usersMenuView() {
+        
+        for (int i = 0; i <= 2; i++) {
+            roles.addRol();
+        }
 
         do {
-
+            
             System.out.println("\n|-------------------------------------------------------------------|");
             System.out.println("|---------------------------- USUARIOS -----------------------------|");
             System.out.println("|-------------------------------------------------------------------|");
@@ -27,36 +41,81 @@ public class UsersView {
 
             switch (menu) {
 
-                case 1:
+                case 1 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- REGISTRAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 2:
+                    rolFound = roles.searchRolById();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    if (rolFound != null) {
+                        users.addUser(rolFound);
+                        System.out.println("|-------------------------------------------------------------------|");
+                        System.out.println("|----- ¡Usuario Creado!");
+                    } else {
+                        System.out.println("|----- ¡Rol No Encontrado!");
+                    }
+                    System.out.println("|-------------------------------------------------------------------|");                    
+                }
+                case 2 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ LISTAR USUARIOS --------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 3:
+                    users.getUsers();
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                case 3 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- CONSULTAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 4:
+                    userFound = users.searchUserById();
+                    System.out.println("|-------------------------------------------------------------------|");
+                    if (userFound != null) {
+                        System.out.println("|----- " + userFound.toString());
+                    } else {
+                        System.out.println("|----- ¡Usuario No Encontrado!");
+                    }
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                case 4 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|----------------------- ACTUALIZAR USUARIO ------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 5:
+                    userFound = users.searchUserById();                    
+                    System.out.println("|-------------------------------------------------------------------|");
+                    if (userFound != null) {
+                        userId = userFound.getUserId();
+                        rolFound = roles.searchRolById();
+                        if (rolFound != null) {
+                            users.updateUser(userId, rolFound);
+                            System.out.println("|-------------------------------------------------------------------|");
+                            System.out.println("|----- ¡Usuario Actualizado!");
+                        } else {
+                            System.out.println("|-------------------------------------------------------------------|");
+                            System.out.println("|----- ¡Rol No Encontrado!");
+                        }
+                    } else {
+                        System.out.println("|----- ¡Usuario No Encontrado!");
+                    }
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                case 5 -> {
                     System.out.println("\n|-------------------------------------------------------------------|");
                     System.out.println("|------------------------ ELIMINAR USUARIO -------------------------|");
                     System.out.println("|-------------------------------------------------------------------|");
-                    break;
-                case 0:
-                    break;
-                default:
+                    if (users.deleteUser()) {
+                        System.out.println("|-------------------------------------------------------------------|");
+                        System.out.println("|----- ¡Usuario Eliminado!");
+                    } else {
+                        System.out.println("|-------------------------------------------------------------------|");
+                        System.out.println("|----- ¡Usuario No Encontrado!");
+                    }        
+                    System.out.println("|-------------------------------------------------------------------|");
+                }
+                case 0 -> {}
+                default -> {
                     System.out.println("|----- ¡Opción No Válida!");
                     System.out.println("|-------------------------------------------------------------------|");
+                }
 
             }
 

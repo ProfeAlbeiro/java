@@ -1,16 +1,76 @@
 package controllers;
 
+import models.RolModel;
+import models.UserModel;
 import views.modules.users.UsersView;
+import views.modules.users.UsersFormView;
+import java.util.ArrayList;
 
 public class UsersController {
     
+    private int rolId, userId;
+    private String userName, userLastName, userEmail, userPass;
+    private boolean userState;
+    private RolModel rol;    
+    private UserModel user;    
     private UsersView usersView;
-
-    public void usersMenu() {
-        
+    private UsersFormView usersFormView = new UsersFormView();    
+    private ArrayList<UserModel> users = new ArrayList<>();
+    
+    public void usersMenu() {        
         usersView = new UsersView();
-        usersView.UsersMenuView();
-        
+        usersView.usersMenuView();
+    }
+    
+    public void addUser(RolModel rol){
+        userId = users.size() + 1;
+        userName = usersFormView.getUserName();
+        userLastName = usersFormView.getUserLastName();
+        userEmail = usersFormView.getUserEmail();
+        userPass = usersFormView.getUserPass();
+        userState = usersFormView.getUserState();        
+        user = new UserModel(userId, userName, userLastName, userEmail, userPass, userState, rol);
+        users.add(user);
+    }
+    
+    public void getUsers(){
+        for(UserModel getUser : users){
+            System.out.println("|----- " + getUser);
+        }        
+    }
+    
+    public UserModel searchUserById(){
+        userId = usersFormView.getUserId();
+        for (UserModel getUser : users) {
+            if (getUser.getUserId()== userId) {
+                return getUser;
+            }
+        }
+        return null;
+    }
+
+    public boolean updateUser(int userId, RolModel rol){        
+        for (UserModel getUser : users){
+            if (getUser.getUserId() == userId) {
+                getUser.setUserName(usersFormView.getUserName());                
+                getUser.setUserLastName(usersFormView.getUserLastName());
+                getUser.setUserEmail(usersFormView.getUserEmail());
+                getUser.setUserPass(usersFormView.getUserPass());
+                getUser.setUserState(usersFormView.getUserState());
+                getUser.setRolModel(rol);
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean deleteUser(){
+        userId = usersFormView.getUserId();
+        if (users.removeIf(getUser -> getUser.getUserId() == userId)) {
+            return true;
+        } else {
+            return false;
+        }
     }
     
 }
